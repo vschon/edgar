@@ -1,77 +1,55 @@
+Instructions
+-----------
 
-'''
-CORE PROCEDURE:
+1. 3rd party Dependency
+numpy
+pandas
+sklearn
 
-    Part 0. Identifier convert and data preparation 
-    1. CUSIP to ticker
-    2. ticker to CIK
-    3. check all data is in position
+2. Modules
+There are 4 modules in this project: form10DB, DataGenerator, forecaster, and utils
 
-    Part 1. Data cleaning:
-        1. raw data:
-            - rs:   daily stock return
-            - rp:   daily portfolio return
-            - sue:  quarterly SUE
-            - F10:  quarterly report
-        2. Transform data into structure data:
+2.1 form10DB
+form10DB is used to download and manage the 10 forms. It includes functions to
+download 10 forms for all symbols from 1993 - present. Form10Manager class is the 
+workhorse to download data and populate them into a structured database.
 
-        Database structure:
-        /
-            /database
-                /section1
-                    /symbol1
-                        /symbol1_date1.txt
-                            symbol: A
-                            fileDate:        2013.01.04
-                            windowBegin:        2013.01.04
-                            windowEnd:          2013.01.06
-                            windowReturn:       0.02
-                            windowPortReturn:   0.003
-                            windowExcessReturn: 0.017
-                            label               1:Rise 2:Flat(-0.003<excessret<0.003) 3:Fall 
-                            SUE:                0.01
-                            WORDLIST:
-                            word1:count1
-                            ...
-                        /symbol1_date2.txt
-                        ...
-                    /symbol2
-                    ...
-                /section2
-                ...
-                /section10
+2.2 DataGenerator
+DataGenerator module contains functions to generate structured dataset.
 
-        ALGO: GENERATE DATABASE
-        window = 2 trading_days
+2.3 forecaster
+forecaster module contains classes and functions to train classifiers and make
+predictions.
 
-        for symbol in section_shortlist
-            get indexfile of symbol
-            read the index file into dataframe
-            for each entry >= 2000 with 10-K or 10-Q
-                filedate = DEF_getfiledate(form)
-                windowBegin, windowEnd, windowReturn = DEF_getWindow(symbol, window, filedate)
-                windowPortReturn = DEF_getPortfolioReturn(windowBegin, windowEnd, section)
-                windowExcessReturn = windowReturn - windowPortReturn
-                SUE = DEF_getSUE(symbol, filedate)
-                BOW = DEF_generateBOW(form)
+2.4 utils
+utils contain usefule helper functions to support other modules.
 
-                store to section/symbol/symbol_date.txt
+3. How to use
+In this demo project, the database and dataset have already been generated. So
+there is no need to use the module form10DB and DataGenerator. These two modulles
+are only needed when you want to repopulat the edgar database on your own machine.
 
-        ALGO: GENERATE BOW
+The only module used in the demo project is forecaster. For demo, please change
+the working directory to edgar directory:
 
-    Part 2. TRAINING SET DEVELOPMENT
+import forecaster
+learner = forecaster.Forecaster()
+#read in training data for learner
+learner.readTrainFile('Dictionary.3label.Industrials','3label.Industrials.train.key')
+#read in development data
+learner.readDevFile('3label.Industrials.dev.key')
+#read in testing data
+learner.readTestFile('3label.Industrials.test.key')
 
-    cutDate: data before cutDate are used as training data
+#Training classifier
+learner.classifier.fit(learner.trainFeature,learner.trainLabel)
 
-    Part 3: UTILITY FUNCTION
-    1. Data Iterator
-        return label, sue, bow
-    2. Get all counts 
-    3. Generate thined dictionary
-    
+#Testing on development set
+learner.classifier.score(learner.devFeature,learner.devLabel)
+
+#Get the accuracy on testing set
+learner.classifier.score(learner.testFeature,learner.testLabel)
 
 
-    Part 3. USE SVM, NB TO TRAIN AND TEST 
 
 
-'''

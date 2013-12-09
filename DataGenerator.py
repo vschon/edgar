@@ -16,10 +16,11 @@ import urllib2
 import ipdb
 import re
 import utils
-
+import form10DB
 
 
 DATA_ADD = os.getenv('DATA')
+translator = form10DB.CIKTranslator()
 
 
 
@@ -30,7 +31,7 @@ def updateCoreIndex():
     '''
     coreindexpath = DATA_ADD + '/Edgar/coreindex.txt'
     coreindex = pd.DataFrame(columns=['CIK','Ticker','Date','Type','Address'])
-    CIKdict = getCIKdict()
+    CIKdict = translator.tickerGetter
     for cik in CIKdict:
         indexfilepath = DATA_ADD + '/Edgar/' + str(cik) + \
                 '_' + str(CIKdict[cik]) + '/' + 'index.txt'
@@ -58,7 +59,7 @@ def checkEmpty(symbolList):
 
     '''
 
-    tickerdict = getTickerdict()
+    tickerdict = translator.cikGetter
     NotInTickerDict = []
     NoIndexFile = []
     for symbol in symbolList:
@@ -158,7 +159,7 @@ def loadData(sector):
 
 
 
-def init(sector,data,begin,end):
+def GenerateDataset(sector,data,begin,end):
     '''
     Generate data set
     Args:
@@ -180,7 +181,7 @@ def init(sector,data,begin,end):
     #symbolList =['PCO']
 
 
-    checkResults = va.datamanage.edgar.checkEmpty(symbolList)
+    checkResults = checkEmpty(symbolList)
     if len(checkResults['NoSymbol']) is not 0 or len(checkResults['NoIndex']) is not 0:
         print checkResults
         return -1

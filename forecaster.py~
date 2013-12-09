@@ -13,11 +13,8 @@ import urllib2
 import ipdb
 import re
 import utils
-from sklearn.naive_bayes import MultinomialNB
 
 
-module_dir = os.path.dirname(os.path.abspath(__file__))
-print module_dir
 DATA_ADD = os.getenv('DATA')
 
 class Forecaster(object):
@@ -34,10 +31,10 @@ class Forecaster(object):
 
     '''
 
-    def __init__(self):
-        self.indexFilePath = os.path.join(module_dir,'Database','Industrials','Industrials.key')
-        self.indexfile = pd.read_csv(self.indexFilePath,sep = ',',names = ['date','symbol','label','path'], parse_dates = ['date',])
-        self.classifier = MultinomialNB(alpha = 45000)
+    def __init__(self,indexFilePath):
+        self.indexFilePath = indexFilePath
+        self.indexfile = pd.read_csv(indexFilePath,sep = ',',names = ['date','symbol','label','path'], parse_dates = ['date',])
+        self.classifier = None
 
         self.featNum = 0
         self.trainNum = 0

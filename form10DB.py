@@ -12,7 +12,6 @@ import gzip
 from collections import defaultdict
 from dateutil.parser import parse
 import datetime as dt
-import nltk
 from ftplib import FTP
 import urllib2
 import ipdb

@@ -1,16 +1,13 @@
 '''
 This file contains useful supporting functions
 '''
-import numpy as np
 import pandas as pd
-import VA_PYTHON as va
 import os
 import gzip
 from collections import defaultdict
 from dateutil.parser import parse
 import datetime as dt
 import nltk
-from sklearn import svm
 from ftplib import FTP
 import urllib2
 import ipdb
