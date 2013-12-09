@@ -32,7 +32,7 @@ are only needed when you want to repopulat the edgar database on your own machin
 The only module used in the demo project is forecaster. For demo, please change
 the working directory to edgar directory:
 
-import forecaster
+>>>import forecaster
 learner = forecaster.Forecaster()
 #####read in training data for learner
 learner.readTrainFile('Dictionary.3label.Industrials','3label.Industrials.train.key')
