@@ -1,0 +1,416 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>form10DB &mdash; Edgar 0.1.1 documentation</title>
+    
+    <link rel="stylesheet" href="../_static/default.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../',
+        VERSION:     '0.1.1',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/underscore.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <link rel="top" title="Edgar 0.1.1 documentation" href="../index.html" />
+    <link rel="up" title="Module code" href="index.html" /> 
+  </head>
+  <body>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="../py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li><a href="../index.html">Edgar 0.1.1 documentation</a> &raquo;</li>
+          <li><a href="index.html" accesskey="U">Module code</a> &raquo;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body">
+            
+  <h1>Source code for form10DB</h1><div class="highlight"><pre>
+<span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">edgar.form10DB includes functions to download 10 forms from dataset.</span>
+
+<span class="sd">It includes ticker to cik transformation, quarter master file download, and 10 form download functions.</span>
+<span class="sd">&quot;&quot;&quot;</span>
+
+<span class="c">#Author: Brandon,Rucheng Yang</span>
+
+<span class="kn">import</span> <span class="nn">numpy</span> <span class="kn">as</span> <span class="nn">np</span>
+<span class="kn">import</span> <span class="nn">pandas</span> <span class="kn">as</span> <span class="nn">pd</span>
+<span class="kn">import</span> <span class="nn">VA_PYTHON</span> <span class="kn">as</span> <span class="nn">va</span>
+<span class="kn">import</span> <span class="nn">os</span>
+<span class="kn">import</span> <span class="nn">gzip</span>
+<span class="kn">from</span> <span class="nn">collections</span> <span class="kn">import</span> <span class="n">defaultdict</span>
+<span class="kn">from</span> <span class="nn">dateutil.parser</span> <span class="kn">import</span> <span class="n">parse</span>
+<span class="kn">import</span> <span class="nn">datetime</span> <span class="kn">as</span> <span class="nn">dt</span>
+<span class="kn">import</span> <span class="nn">nltk</span>
+<span class="kn">from</span> <span class="nn">sklearn</span> <span class="kn">import</span> <span class="n">svm</span>
+<span class="kn">from</span> <span class="nn">ftplib</span> <span class="kn">import</span> <span class="n">FTP</span>
+<span class="kn">import</span> <span class="nn">urllib2</span>
+<span class="kn">import</span> <span class="nn">ipdb</span>
+<span class="kn">import</span> <span class="nn">re</span>
+
+
+<span class="n">DATA_ADD</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">getenv</span><span class="p">(</span><span class="s">&#39;DATA&#39;</span><span class="p">)</span>
+
+<span class="c">###CIK-Ticker Translator####</span>
+
+<div class="viewcode-block" id="CIKTranslator"><a class="viewcode-back" href="../form10DB.html#form10DB.CIKTranslator">[docs]</a><span class="k">class</span> <span class="nc">CIKTranslator</span><span class="p">(</span><span class="nb">object</span><span class="p">):</span>
+    <span class="sd">&#39;&#39;&#39;</span>
+<span class="sd">    CIKTranslator manages the mapping between cik and ticker</span>
+
+<span class="sd">    Users can get the dictionary from two members:</span>
+<span class="sd">        CIKtranslator.tickerGetter:   dictionary with cik:ticker</span>
+
+<span class="sd">        CIKtranslator.cikGetter:      dictionary with ticker:cik</span>
+<span class="sd">    &#39;&#39;&#39;</span>
+    <span class="k">def</span> <span class="nf">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">dictpath</span> <span class="o">=</span> <span class="n">DATA_ADD</span> <span class="o">+</span> <span class="s">&#39;/Edgar/cik2ticker.txt&#39;</span>
+        <span class="k">try</span><span class="p">:</span>
+
+            <span class="bp">self</span><span class="o">.</span><span class="n">tickerGetter</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">__getCIKdict</span><span class="p">()</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">cikGetter</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">__getTickerdict</span><span class="p">()</span>
+        <span class="k">except</span><span class="p">:</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">tickerGetter</span> <span class="o">=</span> <span class="bp">None</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">cikGetter</span> <span class="o">=</span> <span class="bp">None</span>
+
+    <span class="k">def</span> <span class="nf">__tickerCIKMapper</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span><span class="n">ticker</span><span class="p">):</span>
+
+        <span class="sd">&#39;&#39;&#39;</span>
+<span class="sd">        Given a ticker, return corresponding CIK code</span>
+<span class="sd">        CIK is 10 digit number</span>
+
+<span class="sd">        Args:</span>
+<span class="sd">            ticker(str)</span>
+
+<span class="sd">        Return:</span>
+<span class="sd">            cik(str): the cik code</span>
+
+<span class="sd">        &#39;&#39;&#39;</span>
+
+        <span class="n">string_match</span> <span class="o">=</span> <span class="s">&#39;rel=&quot;alternate&quot;&#39;</span>
+        <span class="n">url</span> <span class="o">=</span> <span class="s">&#39;http://www.sec.gov/cgi-bin/browse-edgar?company=&amp;match=&amp;CIK=</span><span class="si">%s</span><span class="s">&amp;owner=exclude&amp;Find=Find+Companies&amp;action=getcompany&#39;</span> <span class="o">%</span> <span class="n">ticker</span>
+        <span class="n">response</span> <span class="o">=</span> <span class="n">urllib2</span><span class="o">.</span><span class="n">urlopen</span><span class="p">(</span><span class="n">url</span><span class="p">)</span>
+        <span class="n">cik</span> <span class="o">=</span> <span class="s">&#39;&#39;</span>
+        <span class="k">for</span> <span class="n">line</span> <span class="ow">in</span> <span class="n">response</span><span class="p">:</span>
+            <span class="k">if</span> <span class="n">string_match</span> <span class="ow">in</span> <span class="n">line</span><span class="p">:</span>
+                <span class="k">for</span> <span class="n">element</span> <span class="ow">in</span> <span class="n">line</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s">&#39;;&#39;</span><span class="p">):</span>
+                    <span class="k">if</span> <span class="s">&#39;CIK&#39;</span> <span class="ow">in</span> <span class="n">element</span><span class="p">:</span>
+                        <span class="n">cik</span> <span class="o">=</span> <span class="n">element</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s">&#39;&amp;amp&#39;</span><span class="p">,</span> <span class="s">&#39;&#39;</span><span class="p">)</span>
+        <span class="n">cik</span> <span class="o">=</span> <span class="n">cik</span><span class="p">[</span><span class="mi">4</span><span class="p">:]</span>
+        <span class="k">return</span> <span class="n">cik</span>
+
+    <span class="k">def</span> <span class="nf">__getCIKdict</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&#39;&#39;&#39;</span>
+<span class="sd">        return the dictionary of CIK-ticker</span>
+<span class="sd">        In the dictionary, you can input a cik code, and the dictionary</span>
+<span class="sd">        will return the ticker name</span>
+<span class="sd">        &#39;&#39;&#39;</span>
+
+        <span class="n">CIKtable</span> <span class="o">=</span> <span class="n">defaultdict</span><span class="p">(</span><span class="nb">str</span><span class="p">)</span>
+        <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">dictpath</span><span class="p">,</span> <span class="s">&#39;rb&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span>
+            <span class="k">for</span> <span class="n">line</span> <span class="ow">in</span> <span class="n">f</span><span class="o">.</span><span class="n">readlines</span><span class="p">():</span>
+                <span class="n">line</span><span class="o">=</span><span class="n">line</span><span class="o">.</span><span class="n">rstrip</span><span class="p">(</span><span class="s">&#39;</span><span class="se">\n</span><span class="s">&#39;</span><span class="p">)</span>
+                <span class="n">ticker</span><span class="p">,</span> <span class="n">CIK</span> <span class="o">=</span> <span class="n">line</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s">&#39;,&#39;</span><span class="p">)</span>
+                <span class="k">if</span> <span class="n">CIK</span> <span class="o">!=</span> <span class="s">&#39;&#39;</span><span class="p">:</span>
+                    <span class="n">CIKtable</span><span class="p">[</span><span class="n">CIK</span><span class="p">]</span> <span class="o">=</span> <span class="n">ticker</span>
+        <span class="k">return</span> <span class="n">CIKtable</span>
+
+    <span class="k">def</span> <span class="nf">__getTickerdict</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&#39;&#39;&#39;</span>
+<span class="sd">        return the dictionary of ticker-CIK</span>
+<span class="sd">        You can input a ticker, and the dict will return the cik code</span>
+<span class="sd">        &#39;&#39;&#39;</span>
+
+        <span class="n">cikdict</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">__getCIKdict</span><span class="p">()</span>
+        <span class="n">tickerdict</span> <span class="o">=</span> <span class="n">defaultdict</span><span class="p">(</span><span class="nb">str</span><span class="p">)</span>
+        <span class="k">for</span> <span class="n">key</span><span class="p">,</span> <span class="n">val</span> <span class="ow">in</span> <span class="n">cikdict</span><span class="o">.</span><span class="n">items</span><span class="p">():</span>
+            <span class="n">tickerdict</span><span class="p">[</span><span class="n">val</span><span class="p">]</span> <span class="o">=</span> <span class="n">key</span>
+        <span class="k">return</span> <span class="n">tickerdict</span>
+
+<div class="viewcode-block" id="CIKTranslator.updateCIKtable"><a class="viewcode-back" href="../form10DB.html#form10DB.CIKTranslator.updateCIKtable">[docs]</a>    <span class="k">def</span> <span class="nf">updateCIKtable</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span><span class="n">tickers</span><span class="p">):</span>
+        <span class="sd">&#39;&#39;&#39;</span>
+<span class="sd">        generate a txt file that map ticker to cik</span>
+
+<span class="sd">        Args:</span>
+<span class="sd">            sequence of symbol(str): symbols to add to the dictionary</span>
+
+<span class="sd">        Return:</span>
+<span class="sd">            emptycik(list): list of ticker without cik</span>
+
+<span class="sd">        Output:</span>
+<span class="sd">            DATA_ADD + &#39;/Edgar/cik2ticker.txt</span>
+<span class="sd">        &#39;&#39;&#39;</span>
+        <span class="n">emptycik</span> <span class="o">=</span> <span class="p">[]</span>
+
+        <span class="n">tablepath</span> <span class="o">=</span> <span class="n">DATA_ADD</span> <span class="o">+</span> <span class="s">&#39;/Edgar/cik2ticker.txt&#39;</span>
+        <span class="k">if</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">exists</span><span class="p">(</span><span class="n">tablepath</span><span class="p">):</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">cikGetter</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">__getTickerdict</span><span class="p">()</span>
+            <span class="k">for</span> <span class="n">ticker</span> <span class="ow">in</span> <span class="n">tickers</span><span class="p">:</span>
+                <span class="n">cik</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">__tickerCIKMapper</span><span class="p">(</span><span class="n">ticker</span><span class="p">)</span>
+                <span class="k">if</span> <span class="n">cik</span> <span class="o">!=</span> <span class="s">&#39;&#39;</span><span class="p">:</span>
+                    <span class="bp">self</span><span class="o">.</span><span class="n">cikGetter</span><span class="p">[</span><span class="n">ticker</span><span class="p">]</span> <span class="o">=</span> <span class="n">cik</span>
+                <span class="k">else</span><span class="p">:</span>
+                    <span class="n">emptycik</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">ticker</span><span class="p">)</span>
+
+        <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="n">tablepath</span><span class="p">,</span> <span class="s">&#39;wb&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">fout</span><span class="p">:</span>
+            <span class="k">for</span> <span class="n">ticker</span><span class="p">,</span><span class="n">cik</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">cikGetter</span><span class="o">.</span><span class="n">items</span><span class="p">():</span>
+                <span class="n">line</span> <span class="o">=</span> <span class="n">ticker</span> <span class="o">+</span> <span class="s">&#39;,&#39;</span> <span class="o">+</span> <span class="n">cik</span> <span class="o">+</span> <span class="s">&#39;</span><span class="se">\n</span><span class="s">&#39;</span>
+                <span class="n">fout</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="n">line</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">tickerGetter</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">__getCIKdict</span><span class="p">()</span>
+
+<span class="c">####Master file management####</span></div></div>
+<div class="viewcode-block" id="Form10Manager"><a class="viewcode-back" href="../form10DB.html#form10DB.Form10Manager">[docs]</a><span class="k">class</span> <span class="nc">Form10Manager</span><span class="p">(</span><span class="nb">object</span><span class="p">):</span>
+    <span class="sd">&#39;&#39;&#39;</span>
+<span class="sd">    MasterFileManager download and maintains quarterly master file of</span>
+<span class="sd">    EDGAR database</span>
+<span class="sd">    &#39;&#39;&#39;</span>
+
+    <span class="k">def</span> <span class="nf">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">translator</span> <span class="o">=</span> <span class="n">CIKTranslator</span><span class="p">()</span>
+
+<div class="viewcode-block" id="Form10Manager.updateQuarterMasterFile"><a class="viewcode-back" href="../form10DB.html#form10DB.Form10Manager.updateQuarterMasterFile">[docs]</a>    <span class="k">def</span> <span class="nf">updateQuarterMasterFile</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span><span class="n">beginyear</span><span class="p">,</span> <span class="n">beginqtr</span><span class="p">,</span> <span class="n">endyear</span><span class="p">,</span> <span class="n">endqtr</span><span class="p">):</span>
+        <span class="sd">&#39;&#39;&#39;Download quarterly master file from edgar database</span>
+<span class="sd">        Args:</span>
+<span class="sd">            beginyear, ..., endqtr (int): specify required date range</span>
+<span class="sd">        &#39;&#39;&#39;</span>
+        <span class="k">print</span> <span class="s">&#39;login to edgar ftp&#39;</span>
+        <span class="n">ftp</span> <span class="o">=</span> <span class="n">FTP</span><span class="p">(</span><span class="s">&#39;ftp.sec.gov&#39;</span><span class="p">)</span>
+        <span class="k">print</span> <span class="n">ftp</span><span class="o">.</span><span class="n">login</span><span class="p">()</span>
+        <span class="k">for</span> <span class="n">year</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">beginyear</span><span class="p">,</span> <span class="p">(</span><span class="n">endyear</span> <span class="o">+</span> <span class="mi">1</span><span class="p">)):</span>
+            <span class="k">if</span> <span class="n">year</span> <span class="o">==</span> <span class="n">endyear</span><span class="p">:</span>
+                <span class="n">maxqtr</span> <span class="o">=</span> <span class="n">endqtr</span> <span class="o">+</span> <span class="mi">1</span>
+            <span class="k">else</span><span class="p">:</span>
+                <span class="n">maxqtr</span> <span class="o">=</span> <span class="mi">5</span>
+            <span class="k">if</span> <span class="n">year</span> <span class="o">==</span> <span class="n">beginyear</span><span class="p">:</span>
+                <span class="n">minqtr</span> <span class="o">=</span> <span class="n">beginqtr</span>
+            <span class="k">else</span><span class="p">:</span>
+                <span class="n">minqtr</span> <span class="o">=</span> <span class="mi">1</span>
+            <span class="k">for</span> <span class="n">qtr</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">minqtr</span><span class="p">,</span> <span class="n">maxqtr</span><span class="p">):</span>
+                <span class="n">remotefile</span> <span class="o">=</span> <span class="s">&#39;RETR /edgar/full-index/&#39;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">year</span><span class="p">)</span> <span class="o">+</span> \
+                        <span class="s">&#39;/QTR&#39;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">qtr</span><span class="p">)</span> <span class="o">+</span> <span class="s">&#39;/master.gz&#39;</span>
+                <span class="n">localfile</span> <span class="o">=</span> <span class="n">DATA_ADD</span> <span class="o">+</span> <span class="s">&#39;/Edgar/MasterFile/&#39;</span> <span class="o">+</span> \
+                        <span class="nb">str</span><span class="p">(</span><span class="n">year</span><span class="p">)</span> <span class="o">+</span> <span class="s">&#39;QTR&#39;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">qtr</span><span class="p">)</span> <span class="o">+</span> <span class="s">&#39;master.gz&#39;</span>
+                <span class="n">ftp</span><span class="o">.</span><span class="n">retrbinary</span><span class="p">(</span><span class="n">remotefile</span><span class="p">,</span> <span class="nb">open</span><span class="p">(</span><span class="n">localfile</span><span class="p">,</span> <span class="s">&#39;wb&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">write</span><span class="p">)</span>
+                <span class="k">print</span> <span class="s">&#39;download &#39;</span><span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">year</span><span class="p">)</span> <span class="o">+</span> <span class="s">&#39;QTR&#39;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">qtr</span><span class="p">)</span> <span class="o">+</span> \
+                        <span class="s">&#39;master.gz&#39;</span>
+        <span class="n">ftp</span><span class="o">.</span><span class="n">quit</span><span class="p">()</span>
+</div>
+    <span class="k">def</span> <span class="nf">__scanQuaterMasterFile</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span><span class="n">year</span><span class="p">,</span><span class="n">qtr</span><span class="p">):</span>
+        <span class="sd">&#39;&#39;&#39;</span>
+<span class="sd">        Extract 10Q/K addresss information contained in the quarterly masterfile.</span>
+<span class="sd">        Return as a dataframe</span>
+
+<span class="sd">        Args:</span>
+<span class="sd">            year(int)</span>
+<span class="sd">            qtr(int)</span>
+
+<span class="sd">        Return:</span>
+<span class="sd">            forms(DataFrame):</span>
+<span class="sd">                CIK: cik code</span>
+<span class="sd">                Ticker</span>
+<span class="sd">                Date: filing date</span>
+<span class="sd">                Type: form type 10-Q/10-K,..</span>
+<span class="sd">                Address: url for download</span>
+<span class="sd">        &#39;&#39;&#39;</span>
+
+        <span class="n">masterfilepath</span> <span class="o">=</span> <span class="n">DATA_ADD</span> <span class="o">+</span> <span class="s">&#39;/Edgar/MasterFile/&#39;</span> <span class="o">+</span> \
+                <span class="nb">str</span><span class="p">(</span><span class="n">year</span><span class="p">)</span> <span class="o">+</span> <span class="s">&#39;QTR&#39;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">qtr</span><span class="p">)</span> <span class="o">+</span> <span class="s">&#39;master.gz&#39;</span>
+        <span class="n">forms</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">columns</span><span class="o">=</span><span class="p">[</span><span class="s">&#39;CIK&#39;</span><span class="p">,</span><span class="s">&#39;Ticker&#39;</span><span class="p">,</span><span class="s">&#39;Date&#39;</span><span class="p">,</span><span class="s">&#39;Type&#39;</span><span class="p">,</span><span class="s">&#39;Address&#39;</span><span class="p">])</span>
+        <span class="n">f</span> <span class="o">=</span> <span class="n">gzip</span><span class="o">.</span><span class="n">open</span><span class="p">(</span><span class="n">masterfilepath</span><span class="p">,</span> <span class="s">&#39;rb&#39;</span><span class="p">)</span>
+        <span class="k">for</span> <span class="n">line</span> <span class="ow">in</span> <span class="n">f</span><span class="o">.</span><span class="n">readlines</span><span class="p">():</span>
+            <span class="n">line</span> <span class="o">=</span> <span class="n">line</span><span class="o">.</span><span class="n">rstrip</span><span class="p">(</span><span class="s">&#39;</span><span class="se">\n</span><span class="s">&#39;</span><span class="p">)</span>
+            <span class="k">if</span> <span class="n">line</span><span class="p">[</span><span class="o">-</span><span class="mi">4</span><span class="p">:]</span> <span class="o">==</span> <span class="s">&#39;.txt&#39;</span><span class="p">:</span>
+                <span class="n">cik</span><span class="p">,</span> <span class="n">name</span><span class="p">,</span> <span class="n">formtype</span><span class="p">,</span> <span class="n">formdate</span><span class="p">,</span> <span class="n">address</span> <span class="o">=</span> <span class="n">line</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s">&#39;|&#39;</span><span class="p">)</span>
+                <span class="k">if</span> <span class="n">re</span><span class="o">.</span><span class="n">search</span><span class="p">(</span><span class="s">&#39;^10.*$&#39;</span><span class="p">,</span> <span class="n">formtype</span><span class="p">):</span>
+                    <span class="k">if</span> <span class="n">cik</span><span class="o">.</span><span class="n">zfill</span><span class="p">(</span><span class="mi">10</span><span class="p">)</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">translator</span><span class="o">.</span><span class="n">tickerGetter</span><span class="o">.</span><span class="n">keys</span><span class="p">():</span>
+                        <span class="n">pdline</span><span class="o">=</span><span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span>
+                            <span class="p">{</span><span class="s">&#39;CIK&#39;</span><span class="p">:[</span><span class="n">cik</span><span class="o">.</span><span class="n">zfill</span><span class="p">(</span><span class="mi">10</span><span class="p">)],</span>
+                            <span class="s">&#39;Ticker&#39;</span><span class="p">:[</span><span class="bp">self</span><span class="o">.</span><span class="n">translator</span><span class="o">.</span><span class="n">tickerGetter</span><span class="p">[</span><span class="n">cik</span><span class="o">.</span><span class="n">zfill</span><span class="p">(</span><span class="mi">10</span><span class="p">)]],</span>
+                            <span class="s">&#39;Date&#39;</span><span class="p">:[</span><span class="n">parse</span><span class="p">(</span><span class="n">formdate</span><span class="p">)],</span>
+                            <span class="s">&#39;Type&#39;</span><span class="p">:[</span><span class="n">formtype</span><span class="p">],</span>
+                            <span class="s">&#39;Address&#39;</span><span class="p">:[</span><span class="n">address</span><span class="p">]},</span>
+                            <span class="n">columns</span><span class="o">=</span><span class="p">[</span><span class="s">&#39;CIK&#39;</span><span class="p">,</span><span class="s">&#39;Ticker&#39;</span><span class="p">,</span><span class="s">&#39;Date&#39;</span><span class="p">,</span><span class="s">&#39;Type&#39;</span><span class="p">,</span><span class="s">&#39;Address&#39;</span><span class="p">])</span>
+                        <span class="n">forms</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">concat</span><span class="p">([</span><span class="n">forms</span><span class="p">,</span><span class="n">pdline</span><span class="p">])</span>
+        <span class="n">f</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
+        <span class="k">return</span> <span class="n">forms</span>
+
+    <span class="k">def</span> <span class="nf">__downloader</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span><span class="n">_ftp</span><span class="p">,</span><span class="n">remotefile</span><span class="p">,</span><span class="n">localfile</span><span class="p">):</span>
+        <span class="sd">&#39;&#39;&#39;Download 10QK form  from edgar</span>
+
+<span class="sd">        Args:</span>
+<span class="sd">            ftp:  FTP instance</span>
+<span class="sd">            remotefile(str): url of the target form</span>
+<span class="sd">            localfile(str): local address to store the form</span>
+
+<span class="sd">        Return:</span>
+
+<span class="sd">        &#39;&#39;&#39;</span>
+        <span class="n">ftp</span> <span class="o">=</span> <span class="n">_ftp</span>
+        <span class="n">remotefile</span> <span class="o">=</span> <span class="s">&#39;RETR /&#39;</span><span class="o">+</span> <span class="n">remotefile</span>
+        <span class="k">if</span> <span class="ow">not</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">exists</span><span class="p">(</span><span class="n">localfile</span> <span class="o">+</span> <span class="s">&#39;.gz&#39;</span><span class="p">):</span>
+            <span class="c">#ipdb.set_trace()</span>
+            <span class="n">ftp</span><span class="o">.</span><span class="n">retrbinary</span><span class="p">(</span><span class="n">remotefile</span><span class="p">,</span> <span class="nb">open</span><span class="p">(</span><span class="n">localfile</span><span class="p">,</span> <span class="s">&#39;wb&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">write</span><span class="p">)</span>
+            <span class="n">f_in</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="n">localfile</span><span class="p">,</span><span class="s">&#39;rb&#39;</span><span class="p">)</span>
+            <span class="n">f_out</span> <span class="o">=</span> <span class="n">gzip</span><span class="o">.</span><span class="n">open</span><span class="p">(</span><span class="n">localfile</span><span class="o">+</span><span class="s">&#39;.gz&#39;</span><span class="p">,</span><span class="s">&#39;wb&#39;</span><span class="p">)</span>
+            <span class="n">f_out</span><span class="o">.</span><span class="n">writelines</span><span class="p">(</span><span class="n">f_in</span><span class="p">)</span>
+            <span class="n">f_out</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
+            <span class="n">f_in</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
+            <span class="n">os</span><span class="o">.</span><span class="n">remove</span><span class="p">(</span><span class="n">localfile</span><span class="p">)</span>
+            <span class="k">print</span> <span class="n">dt</span><span class="o">.</span><span class="n">datetime</span><span class="o">.</span><span class="n">now</span><span class="p">(),</span><span class="s">&#39;: &#39;</span><span class="p">,</span><span class="n">localfile</span> <span class="o">+</span> <span class="s">&#39; downloaded&#39;</span>
+            <span class="k">return</span> <span class="mi">1</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="k">print</span> <span class="n">localfile</span> <span class="o">+</span> <span class="s">&#39;.gz already exists&#39;</span>
+            <span class="k">return</span> <span class="mi">0</span>
+
+<div class="viewcode-block" id="Form10Manager.updateForms"><a class="viewcode-back" href="../form10DB.html#form10DB.Form10Manager.updateForms">[docs]</a>    <span class="k">def</span> <span class="nf">updateForms</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">year</span><span class="p">,</span> <span class="n">qtr</span><span class="p">,</span> <span class="nb">range</span> <span class="o">=</span> <span class="s">&#39;all&#39;</span><span class="p">):</span>
+        <span class="sd">&#39;&#39;&#39;</span>
+<span class="sd">        download all 10 forms listed in the master file to corresponding ticker directory</span>
+
+<span class="sd">        Args:</span>
+<span class="sd">            year,qtr(int):  year and quarter of master file</span>
+<span class="sd">            range(str):     specify date range to download</span>
+<span class="sd">                            &#39;all&#39;: download all forms in the master file</span>
+<span class="sd">                            &#39;today&#39;: download forms with date == today</span>
+<span class="sd">        return:</span>
+
+<span class="sd">        &#39;&#39;&#39;</span>
+
+        <span class="n">ftp</span> <span class="o">=</span> <span class="n">FTP</span><span class="p">(</span><span class="s">&#39;ftp.sec.gov&#39;</span><span class="p">)</span>
+        <span class="n">ftp</span><span class="o">.</span><span class="n">login</span><span class="p">()</span>
+        <span class="n">masterfile</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">__scanQuaterMasterFile</span><span class="p">(</span><span class="n">year</span><span class="p">,</span><span class="n">qtr</span><span class="p">)</span>
+        <span class="n">ipdb</span><span class="o">.</span><span class="n">set_trace</span><span class="p">()</span>
+        <span class="k">if</span> <span class="nb">range</span> <span class="o">==</span> <span class="s">&#39;today&#39;</span><span class="p">:</span>
+            <span class="n">today</span> <span class="o">=</span> <span class="n">dt</span><span class="o">.</span><span class="n">date</span><span class="o">.</span><span class="n">today</span><span class="p">()</span>
+            <span class="n">today</span> <span class="o">=</span> <span class="n">dt</span><span class="o">.</span><span class="n">datetime</span><span class="p">(</span><span class="n">today</span><span class="o">.</span><span class="n">year</span><span class="p">,</span><span class="n">today</span><span class="o">.</span><span class="n">month</span><span class="p">,</span><span class="n">today</span><span class="o">.</span><span class="n">day</span><span class="p">)</span>
+            <span class="n">masterfile</span> <span class="o">=</span> <span class="n">masterfile</span><span class="p">[</span><span class="n">masterfile</span><span class="p">[</span><span class="s">&#39;Date&#39;</span><span class="p">]</span> <span class="o">==</span> <span class="n">today</span><span class="p">]</span>
+        <span class="k">elif</span> <span class="nb">range</span> <span class="o">==</span> <span class="s">&#39;all&#39;</span><span class="p">:</span>
+            <span class="k">pass</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="k">print</span> <span class="s">&#39;range Error&#39;</span>
+            <span class="k">return</span> <span class="o">-</span><span class="mi">1</span>
+
+        <span class="n">updatefiles</span> <span class="o">=</span> <span class="p">[]</span>
+
+        <span class="k">for</span> <span class="n">index</span><span class="p">,</span><span class="n">row</span> <span class="ow">in</span> <span class="n">masterfile</span><span class="o">.</span><span class="n">iterrows</span><span class="p">():</span>
+            <span class="n">ticker</span> <span class="o">=</span> <span class="n">row</span><span class="p">[</span><span class="s">&#39;Ticker&#39;</span><span class="p">]</span>
+            <span class="n">cik</span> <span class="o">=</span> <span class="n">row</span><span class="p">[</span><span class="s">&#39;CIK&#39;</span><span class="p">]</span>
+            <span class="n">formtype</span> <span class="o">=</span> <span class="n">row</span><span class="p">[</span><span class="s">&#39;Type&#39;</span><span class="p">]</span>
+            <span class="n">formtype</span> <span class="o">=</span> <span class="n">formtype</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s">&#39;/&#39;</span><span class="p">,</span><span class="s">&#39;-&#39;</span><span class="p">)</span>
+            <span class="n">formdate</span> <span class="o">=</span> <span class="n">row</span><span class="p">[</span><span class="s">&#39;Date&#39;</span><span class="p">]</span>
+
+            <span class="n">isTickerLegal</span> <span class="o">=</span> <span class="bp">False</span>
+            <span class="k">try</span><span class="p">:</span>
+                <span class="bp">self</span><span class="o">.</span><span class="n">translator</span><span class="o">.</span><span class="n">cikGetter</span><span class="p">[</span><span class="n">ticker</span><span class="p">]</span>
+                <span class="n">isTickerLegal</span> <span class="o">=</span> <span class="bp">True</span>
+            <span class="k">except</span> <span class="ne">KeyError</span><span class="p">:</span>
+                <span class="k">pass</span>
+
+            <span class="k">if</span> <span class="n">isTickerLegal</span><span class="p">:</span>
+                <span class="n">localfile</span> <span class="o">=</span> <span class="n">DATA_ADD</span> <span class="o">+</span> <span class="s">&#39;/Edgar/&#39;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">cik</span><span class="p">)</span> <span class="o">+</span> \
+                        <span class="s">&#39;_&#39;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">ticker</span><span class="p">)</span> <span class="o">+</span> <span class="s">&#39;/&#39;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">cik</span><span class="p">)</span> <span class="o">+</span> <span class="s">&#39;_&#39;</span> <span class="o">+</span> \
+                        <span class="nb">str</span><span class="p">(</span><span class="n">ticker</span><span class="p">)</span> <span class="o">+</span> <span class="s">&#39;_&#39;</span> <span class="o">+</span> <span class="n">formdate</span><span class="o">.</span><span class="n">strftime</span><span class="p">(</span><span class="s">&#39;%Y%m</span><span class="si">%d</span><span class="s">&#39;</span><span class="p">)</span> <span class="o">+</span> \
+                        <span class="s">&#39;_&#39;</span> <span class="o">+</span> <span class="n">formtype</span> <span class="o">+</span> <span class="s">&#39;.txt&#39;</span>
+                <span class="n">remotefile</span> <span class="o">=</span> <span class="n">row</span><span class="p">[</span><span class="s">&#39;Address&#39;</span><span class="p">]</span>
+                <span class="n">downloadFlag</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">__downloader</span><span class="p">(</span><span class="n">ftp</span><span class="p">,</span><span class="n">remotefile</span><span class="p">,</span><span class="n">localfile</span><span class="p">)</span>
+                <span class="k">if</span> <span class="n">downloadFlag</span> <span class="o">==</span> <span class="mi">1</span><span class="p">:</span>
+                    <span class="n">updatefiles</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">row</span><span class="p">)</span>
+            <span class="k">else</span><span class="p">:</span>
+                <span class="k">print</span> <span class="n">ticker</span> <span class="o">+</span> <span class="s">&#39;not in ticker-cik table, pass&#39;</span>
+        <span class="k">return</span> <span class="n">updatefiles</span>
+</div>
+<div class="viewcode-block" id="Form10Manager.updateAndDownload"><a class="viewcode-back" href="../form10DB.html#form10DB.Form10Manager.updateAndDownload">[docs]</a>    <span class="k">def</span> <span class="nf">updateAndDownload</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span><span class="n">year</span><span class="p">,</span><span class="n">qtr</span><span class="p">,</span><span class="nb">range</span> <span class="o">=</span> <span class="s">&#39;all&#39;</span><span class="p">):</span>
+        <span class="sd">&#39;&#39;&#39;</span>
+<span class="sd">        update master file and download new forms</span>
+<span class="sd">        &#39;&#39;&#39;</span>
+
+        <span class="bp">self</span><span class="o">.</span><span class="n">updateQuarterMasterFile</span><span class="p">(</span><span class="n">year</span><span class="p">,</span><span class="n">qtr</span><span class="p">,</span><span class="n">year</span><span class="p">,</span><span class="n">qtr</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">updateForms</span><span class="p">(</span><span class="n">year</span><span class="p">,</span><span class="n">qtr</span><span class="p">,</span><span class="nb">range</span><span class="p">)</span>
+
+
+
+
+
+
+</div>
+<div class="viewcode-block" id="Form10Manager.listQuraterMasterFile"><a class="viewcode-back" href="../form10DB.html#form10DB.Form10Manager.listQuraterMasterFile">[docs]</a>    <span class="k">def</span> <span class="nf">listQuraterMasterFile</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&#39;&#39;&#39;</span>
+<span class="sd">        List all available quarterly master file</span>
+<span class="sd">        &#39;&#39;&#39;</span>
+        <span class="c">#ipdb.set_trace()</span>
+        <span class="n">filepath</span> <span class="o">=</span> <span class="n">DATA_ADD</span> <span class="o">+</span> <span class="s">&#39;/Edgar/MasterFile&#39;</span>
+        <span class="n">masterList</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">listdir</span><span class="p">(</span><span class="n">filepath</span><span class="p">)</span>
+        <span class="n">masterList</span> <span class="o">=</span> <span class="nb">sorted</span><span class="p">(</span><span class="n">masterList</span><span class="p">)</span>
+        <span class="c">#masterList=sorted(os.listdir(filepath))</span>
+        <span class="n">prevyear</span> <span class="o">=</span> <span class="s">&#39;&#39;</span>
+        <span class="k">for</span> <span class="n">masterfile</span> <span class="ow">in</span> <span class="n">masterList</span><span class="p">:</span>
+            <span class="n">currentyear</span> <span class="o">=</span> <span class="n">masterfile</span><span class="p">[</span><span class="mi">0</span><span class="p">:</span><span class="mi">4</span><span class="p">]</span>
+            <span class="n">currentquarter</span> <span class="o">=</span> <span class="n">masterfile</span><span class="p">[</span><span class="mi">4</span><span class="p">:</span><span class="mi">8</span><span class="p">]</span>
+            <span class="k">if</span> <span class="n">currentyear</span> <span class="o">!=</span> <span class="n">prevyear</span><span class="p">:</span>
+                <span class="k">print</span> <span class="s">&#39;</span><span class="se">\n</span><span class="s">&#39;</span> <span class="o">+</span> <span class="n">currentyear</span> <span class="o">+</span> <span class="s">&#39;  &#39;</span> <span class="o">+</span> <span class="n">currentquarter</span><span class="p">,</span>
+            <span class="k">else</span><span class="p">:</span>
+                <span class="k">print</span> <span class="s">&#39;  &#39;</span> <span class="o">+</span> <span class="n">currentquarter</span><span class="p">,</span>
+            <span class="n">prevyear</span> <span class="o">=</span> <span class="n">currentyear</span>
+</pre></div></div></div>
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar">
+        <div class="sphinxsidebarwrapper">
+<div id="searchbox" style="display: none">
+  <h3>Quick search</h3>
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="../py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li><a href="../index.html">Edgar 0.1.1 documentation</a> &raquo;</li>
+          <li><a href="index.html" >Module code</a> &raquo;</li> 
+      </ul>
+    </div>
+    <div class="footer">
+        &copy; Copyright 2013, Brandon.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.2b3.
+    </div>
+  </body>
+</html>

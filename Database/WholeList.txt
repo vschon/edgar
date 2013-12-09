@@ -1,0 +1,2921 @@
+companyid	company_name	cusip	MSCIsec	sedol
+BZSQX0-S-US	Agilent Technologies Inc.	00846U10	Information Technology	252015
+NGW61L-S-US	Alcoa Inc.	1381710	Materials	202180
+RK3780-S-US	Aaron's Inc.	253530	Consumer Discretionary	200291
+HSDCT7-S-US	AAON Inc.	36020	Industrials	226813
+KXFJ5F-S-US	Advance Auto Parts Inc.	00751Y10	Consumer Discretionary	282201
+R85KLC-S-US	Apple Inc.	3783310	Information Technology	204625
+GNPWR1-S-US	American Assets Trust Inc.	2401310	Financials	B3NTLD
+Q2R6NH-S-US	Atlas Air Worldwide Holdin	4916420	Industrials	B01Z8P
+T7H04W-S-US	ABAXIS Inc.	256710	Health Care	201155
+V3049L-S-US	AbbVie Inc.	00287Y10	Health Care	B92SR7
+B3FZ0D-S-US	AmerisourceBergen Corp.	3.07E+13	Health Care	279539
+D68LVD-S-US	Ameris Bancorp	03076K10	Financials	203884
+QG6Z5C-S-US	The Advisory Board Co.	00762W10	Industrials	279465
+SVZRQK-S-US	Arkansas Best Corp.	4079010	Industrials	204807
+WPL7RZ-S-US	Asbury Automotive Group In	4343610	Consumer Discretionary	285585
+L7GJB9-S-US	ABM Industries Inc.	95710	Industrials	202490
+DF3N8D-S-US	ABIOMED Inc.	365410	Health Care	200369
+Q1KJQ2-S-US	Abbott Laboratories	282410	Health Care	200230
+VLCQ2P-S-US	American Capital Ltd.	02503Y10	Financials	210199
+GC90Z0-S-US	Arctic Cat Inc.	3967010	Consumer Discretionary	204750
+P378JR-S-US	American Campus Communitie	2483510	Financials	B02H87
+QLRSRJ-S-US	Accelrys Inc.	00430U10	Information Technology	268752
+R2KQ06-S-US	ACCO Brands Corp.	00081T10	Industrials	B0G7SZ
+M9K04P-S-US	ACE Ltd.	H0023R10	Financials	B3BQMF
+PLZ1VJ-S-US	Aceto Corp.	444610	Industrials	200470
+T7BPYV-S-US	Acorn Energy Inc.	484810	Industrials	226285
+BZSW54-S-US	Arch Capital Group Ltd.	G0450A10	Financials	274054
+BHXVXH-S-US	Acadia Healthcare Co. Inc.	00404A10	Health Care	B65VZ3
+MTD0MH-S-US	Achillion Pharmaceuticals	00448Q20	Health Care	B17T9T
+Q4YYS0-S-US	Arch Coal Inc.	3938010	Energy	203718
+BGT3MW-S-US	ACI Worldwide Inc.	449810	Information Technology	288915
+FFS69K-S-US	Axcelis Technologies Inc.	5454010	Information Technology	260748
+RWF3B6-S-US	AECOM Technology Corp.	00766T10	Industrials	B1VZ43
+W24RPK-S-US	Accenture Plc	G1151C10	Information Technology	B4BNMY
+P1XTCS-S-US	AMCOL International Corp.	02341W10	Materials	202533
+M3WKK1-S-US	Acorda Therapeutics Inc.	00484M10	Health Care	292584
+K6M5BT-S-US	Ares Commercial Real Estat	04013V10	Financials	B77PWP
+JK7YB9-S-US	Actavis Plc	00507K10	Health Care	BD1NQJ
+TF0ST3-S-US	Acacia Research Corp.	388130	Health Care	216958
+WJ3H3S-S-US	The Active Network Inc.	00506D10	Information Technology	B4PTL6
+Q68ND6-S-US	Acura Pharmaceuticals Inc.	00509L70	Health Care	240590
+WW9HVB-S-US	Accuride Corp.	00439T20	Industrials	B60CN2
+B7YWWQ-S-US	Acxiom Corp.	512510	Information Technology	215977
+DJH8TL-S-US	Adobe Systems Inc.	00724F10	Information Technology	200815
+H2YYLP-S-US	Agree Realty Corp.	849210	Financials	206216
+Q684DQ-S-US	Advanced Emissions Solutio	520810	Materials	BBXZ19
+KYJG0D-S-US	American DG Energy Inc.	2539810	Utilities	B28T76
+P0X865-S-US	Analog Devices Inc.	3265410	Information Technology	203206
+DKH0FF-S-US	Archer Daniels Midland Co.	3948310	Consumer Staples	204731
+KFG3KQ-S-US	Audience Inc.	05070J10	Information Technology	B7ZCL8
+RXHPCQ-S-US	Automatic Data Processing	5301510	Information Technology	206530
+D656C6-S-US	Alliance Data Systems Corp	1858110	Information Technology	276203
+WSZW73-S-US	Autodesk Inc.	5276910	Information Technology	206515
+P47Z0J-S-US	The ADT Corp.	00101J10	Industrials	B7XWRM
+Q8JV82-S-US	ADTRAN Inc.	00738A10	Information Technology	205292
+CM3BKS-S-US	Advent Software Inc.	797410	Information Technology	204915
+G5L7T3-S-US	Adams Resources & Energy I	635130	Energy	200752
+KQM323-S-US	Associated Estates Realty	4560410	Financials	204439
+Q8DPB5-S-US	Ameren Corp.	2360810	Utilities	205083
+QMWTKD-S-US	Aegion Corp.	00770F10	Industrials	B764L3
+D9SPXS-S-US	Aegerion Pharmaceuticals I	7.67E+12	Health Care	B1YWPY
+CYB3R2-S-US	Advanced Energy Industries	797310	Information Technology	204917
+MZZX8P-S-US	American Equity Investment	2567620	Financials	219130
+LY1H63-S-US	American Eagle Outfitters	2.55E+13	Consumer Discretionary	204859
+SW3WLF-S-US	American Electric Power Co	2553710	Utilities	202624
+TZ19X5-S-US	AEP Industries Inc.	103110	Materials	200139
+Q0KPX4-S-US	The AES Corp.	00130H10	Utilities	200247
+L1TX9F-S-US	Aetna Inc.	00817Y10	Health Care	269592
+TBXMHY-S-US	Astoria Financial Corp.	4626510	Financials	205268
+S5KFQ3-S-US	Almost Family Inc.	2040910	Health Care	279644
+QSDQCP-S-US	AFC Enterprises Inc.	00104Q10	Consumer Discretionary	271332
+WRQ4FT-S-US	Affymetrix Inc.	00826T10	Health Care	203498
+P9WM2D-S-US	American Financial Group I	2593210	Financials	213453
+PJNLKG-S-US	Aflac Inc.	105510	Financials	202636
+KMDL8Q-S-US	AmTrust Financial Services	3235930	Financials	B1H4YP
+TG8ZJW-S-US	AGCO Corp.	108410	Industrials	201027
+JDR6V5-S-US	Agenus Inc.	00847G70	Health Care	B58J3K
+D0MJZ3-S-US	Argo Group International H	G0464B10	Financials	249954
+HVQ6TN-S-US	Federal Agricultural Mortg	31314830	Financials	236338
+CC1SML-S-US	Allergan Inc.	1849010	Health Care	201721
+WV3Y74-S-US	American Capital Agency Co	02503X10	Financials	B2R8TC
+VH3279-S-US	Assured Guaranty Ltd.	G0585R10	Financials	B00V7H
+DRBFFP-S-US	Argan Inc.	4.01E+13	Industrials	280450
+B28D82-S-US	Agilysys Inc.	00847J10	Information Technology	268916
+CK3YH5-S-US	Accretive Health Inc.	00438V10	Health Care	B3QVXD
+D1M01P-S-US	Aspen Insurance Holdings L	G0538410	Financials	217237
+M4ZVZ7-S-US	AMN Healthcare Services In	174410	Health Care	281355
+Q7D9GQ-S-US	Ashford Hospitality Trust	4410310	Financials	231011
+TCWNT4-S-US	Arlington Asset Investment	4135620	Financials	251681
+S8TF9W-S-US	American International Gro	2687478	Financials	202734
+C5FG3Z-S-US	Altra Holdings Inc.	02208R10	Industrials	B1L82T
+M3RBH2-S-US	Albany International Corp.	1234810	Industrials	201275
+L32SFX-S-US	Apollo Investment Corp.	03761U10	Financials	B00NWP
+WHQNFK-S-US	AAR Corp.	36110	Industrials	200111
+B05NTB-S-US	Air Methods Corp.	912830	Health Care	204977
+WYCCN8-S-US	Applied Industrial Technol	03820C10	Industrials	208630
+M65FQK-S-US	Apartment Investment & Man	03748R10	Financials	205705
+N5NWXV-S-US	Assurant Inc.	04621X10	Financials	233143
+KRRDD7-S-US	Arthur J. Gallagher & Co.	36357610	Financials	235950
+HXZ69B-S-US	Akamai Technologies Inc.	00971T10	Information Technology	250745
+FT2SZL-S-US	Acadia Realty Trust	423910	Financials	256652
+GRS8JF-S-US	Akorn Inc.	972810	Health Care	201210
+F5YW44-S-US	AK Steel Holding Corp.	154710	Materials	206773
+JHH0PW-S-US	Air Lease Corp.	00912X30	Industrials	B3XS56
+C8SHKM-S-US	Albemarle Corp.	1265310	Materials	204685
+JMR6PT-S-US	Assisted Living Concepts I	04544X30	Health Care	B1G80B
+K7ZRFN-S-US	Alico Inc.	1623010	Consumer Staples	201642
+RJ0BM6-S-US	ALLETE Inc.	1852230	Utilities	B02R1L
+DPZB89-S-US	Alexander & Baldwin Inc.	1449110	Financials	B827VB
+XQBGXN-S-US	Alamo Group Inc.	1131110	Industrials	202163
+H68H4X-S-US	Align Technology Inc.	1625510	Health Care	267920
+NJ36K8-S-US	Allegiant Travel Co.	01748X10	Industrials	B15M2C
+D8MBKN-S-US	ALON USA Energy Inc.	2052010	Energy	B0FGJN
+FLFZFF-S-US	Alaska Air Group Inc.	1165910	Industrials	201260
+X9RDZL-S-US	Alkermes Plc	G0176710	Health Care	B3P6D2
+Q8DVNB-S-US	The Allstate Corp.	2000210	Financials	201995
+M1M8H2-S-US	Alnylam Pharmaceuticals In	02043Q10	Health Care	B00FWN
+BCC9YN-S-US	Analogic Corp.	3265720	Health Care	203209
+M0H9T8-S-US	Alere Inc.	01449J10	Health Care	282308
+H3PLY2-S-US	Allison Transmission Holdi	01973R10	Consumer Discretionary	B4PZ89
+QLMMTM-S-US	Altera Corp.	2144110	Information Technology	202169
+P46K95-S-US	Alexander's Inc.	1475210	Financials	201402
+RDKWL9-S-US	Alexion Pharmaceuticals In	1535110	Health Care	203607
+DY0BYS-S-US	American Greetings Corp.	2637510	Consumer Discretionary	202686
+MZ0NL9-S-US	AMAG Pharmaceuticals Inc.	00163U10	Health Care	200812
+QR4XC8-S-US	Applied Materials Inc.	3822210	Information Technology	204655
+CKZKD9-S-US	Ambarella Inc.	G037AX10	Information Technology	B7KH3G
+W28P57-S-US	Applied Micro Circuits Cor	03822W40	Information Technology	212876
+WMPR62-S-US	AMC Networks Inc.	00164V10	Consumer Discretionary	B4MG4Z
+T0NKXG-S-US	Advanced Micro Devices Inc	790310	Information Technology	200784
+D7DHD4-S-US	AMETEK Inc.	3110010	Industrials	208921
+PGF1Y6-S-US	Amedisys Inc.	2343610	Health Care	202433
+PP7H5M-S-US	Affiliated Managers Group	825210	Financials	212789
+T8GLHL-S-US	Amgen Inc.	3116210	Health Care	202360
+W938QT-S-US	Amkor Technology Inc.	3165210	Information Technology	224292
+QQ44SG-S-US	American National Bankshar	2774510	Financials	259695
+TP1XYX-S-US	Ameriprise Financial Inc.	03076C10	Financials	B0J7D5
+DBQ36K-S-US	Ampio Pharmaceuticals Inc.	03209T10	Health Care	B5BNLD
+DW1349-S-US	Ameresco Inc.	2.36E+13	Industrials	B3SWPT
+NYBK9H-S-US	AmREIT Inc.	03216B20	Financials	B832L9
+PL2Y42-S-US	Amyris Inc.	03236M10	Energy	B67TTN
+HR98S7-S-US	American Superconductor Co	3011110	Industrials	203272
+DVT5YT-S-US	Amerisafe Inc.	03071H10	Financials	B0PPHS
+B3G26H-S-US	AmSurg Corp.	03232P40	Health Care	278138
+KHYJ27-S-US	American Software Inc.	2968310	Information Technology	202957
+W13F06-S-US	American Tower Corp.	03027X10	Telecommunication Serv	B7FBFL
+MFZF7N-S-US	TD Ameritrade Holding Corp	87236Y10	Financials	298315
+CK9PFK-S-US	Apollo Residential Mortgag	03763V10	Financials	B4MT4L
+TVMRL3-S-US	American Woodmark Corp.	3050610	Industrials	203067
+RMCVZ9-S-US	Amazon.Com Inc.	2313510	Consumer Discretionary	200001
+P0XDG9-S-US	AutoNation Inc.	05329W10	Consumer Discretionary	273263
+PWBSBD-S-US	Anacor Pharmaceuticals Inc	3242010	Health Care	B28M78
+CPF2D3-S-US	ANADIGICS Inc.	3251510	Information Technology	203353
+SD7T6Q-S-US	American National Insuranc	2859110	Financials	202842
+QDYZTS-S-US	Access National Corp.	433710	Financials	B01Y8T
+FV74CR-S-US	The Andersons Inc.	3416410	Consumer Staples	227492
+CZ9VBX-S-US	Anaren Inc.	3274410	Information Technology	203210
+QF2V5D-S-US	Abercrombie & Fitch Co.	289620	Consumer Discretionary	200418
+VRV8GT-S-US	Angie's List Inc.	3475410	Information Technology	B5B33P
+B83T8B-S-US	AngioDynamics Inc.	03475V10	Health Care	B00CR0
+N4J5TB-S-US	Anworth Mortgage Asset Cor	3734710	Financials	258190
+QJC03B-S-US	Anika Therapeutics Inc.	3525510	Health Care	203575
+H0QXYX-S-US	Ann Inc.	3562310	Consumer Discretionary	203853
+S5GXXR-S-US	Alpha Natural Resources In	02076X10	Energy	B066NX
+C0SZHB-S-US	ANSYS Inc.	03662Q10	Information Technology	204562
+S91P4P-S-US	Allied Nevada Gold Corp.	1934410	Materials	B1VPN4
+FT723L-S-US	Alliance One International	1877210	Consumer Staples	226986
+N2HB1G-S-US	AOL Inc.	00184X10	Information Technology	B3XD9K
+H9T6DW-S-US	Aon Plc	G0408V10	Financials	B5BT0K
+B7YG19-S-US	A. O. Smith Corp.	83186520	Industrials	281602
+SFH6KW-S-US	Alpha & Omega Semiconducto	G6331P10	Information Technology	B5Q3KZ
+LMYX4V-S-US	Ampco-Pittsburgh Corp.	3203710	Industrials	203168
+VFT77X-S-US	Apache Corp.	3741110	Energy	204396
+KB3YPS-S-US	Apco Oil & Gas Internation	G0471F10	Energy	204586
+PN3GCR-S-US	Anadarko Petroleum Corp.	3251110	Energy	203238
+P7M7WC-S-US	Air Products & Chemicals I	915810	Materials	201160
+C36GPC-S-US	American Public Education	02913V10	Consumer Discretionary	B292GM
+WL12NL-S-US	Amphenol Corp.	3209510	Information Technology	214508
+SYFF0K-S-US	Apogee Enterprises Inc.	3759810	Industrials	204617
+L9XNJR-S-US	Apollo Group Inc.	3760410	Consumer Discretionary	204369
+C6PV7Y-S-US	Accuray Inc.	439710	Health Care	B1R2HW
+FXMQMR-S-US	Arbitron Inc.	03875Q10	Consumer Discretionary	274141
+S0Y3BL-S-US	ARC Document Solutions Inc	00191G10	Industrials	B6XSGQ
+GKZZL5-S-US	Ares Capital Corp.	04010L10	Financials	B032FN
+SC3WLY-S-US	Arden Group Inc.	3976210	Consumer Staples	204742
+L9WQRW-S-US	Alexandria Real Estate Equ	1527110	Financials	200921
+H6CM7Z-S-US	Approach Resources Inc.	03834A10	Energy	B28RSK
+DR9JQV-S-US	Airgas Inc.	936310	Materials	201156
+PP9RMW-S-US	Apollo Commercial Real Est	03762U10	Financials	B4JTYX
+T6CY5X-S-US	ARIAD Pharmaceuticals Inc.	04033A10	Health Care	206662
+V2KCXJ-S-US	American Railcar Industrie	02916P10	Industrials	B0WR83
+SZD8ZL-S-US	Arena Pharmaceuticals Inc.	4004710	Health Care	261444
+LJPTBZ-S-US	Aéropostale Inc.	786510	Consumer Discretionary	287209
+QWQ6VW-S-US	Arrow Financial Corp.	4274410	Financials	205137
+H53GG3-S-US	ArQule Inc.	4.27E+13	Health Care	205399
+PSLVBP-S-US	ARMOUR Residential REIT In	4231510	Financials	B59YHZ
+RZR3SW-S-US	ARRIS Group Inc.	04270V10	Information Technology	B9SMM0
+JMN5XZ-S-US	Array BioPharma Inc.	04269X10	Health Care	267865
+QXZSB0-S-US	Arabian American Developme	3846510	Materials	204714
+MCTHLV-S-US	ArthroCare Corp.	4313610	Health Care	205091
+PD849D-S-US	Artesian Resources Corp.	4311320	Utilities	241825
+BLDK5G-S-US	Aruba Networks Inc.	4317610	Information Technology	B1VRPM
+HKMMSD-S-US	Arrow Electronics Inc.	4273510	Information Technology	205140
+N8C6Z5-S-US	Aeroflex Holding Corp.	776710	Information Technology	B3WX3C
+F5YZB7-S-US	Associated Banc-Corp.	4548710	Financials	205571
+HN0ZL5-S-US	Ameristar Casinos Inc.	03070Q10	Consumer Discretionary	204171
+C0T2TK-S-US	Ascent Capital Group Inc.	4363210	Consumer Discretionary	B3D6PB
+S5KDN2-S-US	American Science & Enginee	2942910	Industrials	202920
+DY09WR-S-US	Asta Funding Inc.	4622010	Financials	205263
+JNSTXF-S-US	On Assignment Inc.	68215910	Industrials	265872
+HXZ9HF-S-US	Ashland Inc.	4420910	Materials	B0BVFJ
+K5K7DS-S-US	American Safety Insurance	G0299510	Financials	240616
+P22QRD-S-US	Ascena Retail Group Inc.	04351G10	Consumer Discretionary	B65D9Z
+SZKCPC-S-US	Astec Industries Inc.	4622410	Industrials	206037
+PFDFMJ-S-US	Astex Pharmaceuticals Inc.	04624B10	Health Care	B6Z8X2
+FZRRKQ-S-US	Atlantic Power Corp.		Utilities	B4MND1
+F9FX5J-S-US	Alphatec Holdings Inc.	02081G10	Health Care	B16CHX
+JKJ3XZ-S-US	Athenahealth Inc.	04685W10	Health Care	B24FJV
+TD0RLZ-S-US	Allegheny Technologies Inc	01741R10	Materials	252611
+LP4GX5-S-US	Alliant Techsystems Inc.	1880410	Industrials	201767
+VLJKB7-S-US	Ames National Corp.	3100110	Financials	B00MZ0
+F3PDR0-S-US	ATMI Inc.	00207R10	Information Technology	211627
+HRFSCG-S-US	Atmel Corp.	4951310	Information Technology	206231
+SZJPCQ-S-US	Atlantic Tele-Network Inc.	4907920	Telecommunication Serv	214134
+TBTJM1-S-US	API Technologies Corp.	1.87E+22	Industrials	B0BBWP
+QHBDVP-S-US	Atmos Energy Corp.	4956010	Utilities	231535
+HBT8P1-S-US	AptarGroup Inc.	3833610	Materials	204524
+CRQLT7-S-US	AtriCure Inc.	04963C20	Health Care	B0C8KV
+C0SR13-S-US	Atrion Corp.	4990410	Health Care	201273
+MWR1Y1-S-US	Astronics Corp.	4643310	Industrials	206051
+MH2PLT-S-US	Antares Pharma Inc.	3664210	Health Care	238316
+SGHZ0K-S-US	Air Transport Services Gro	00922R10	Industrials	293800
+QQ0TFB-S-US	Actuant Corp.	00508X20	Industrials	271679
+G9ZQ25-S-US	Activision Blizzard Inc.	00507V10	Information Technology	257581
+VZZHDF-S-US	Atwood Oceanics Inc.	5009510	Energy	206244
+BDMXGT-S-US	Costa Inc.	22747810	Consumer Discretionary	BF2HSC
+NXDM3B-S-US	Golden Minerals Co.	38111910	Materials	B3K931
+KFK34D-S-US	Auxilium Pharmaceuticals I	05334D10	Health Care	B01ZP8
+GHND41-S-US	Avista Corp.	05379B10	Utilities	294260
+SQNS5T-S-US	AeroVironment Inc.	807310	Industrials	B1P5YY
+GX5W1M-S-US	AvalonBay Communities Inc.	5348410	Financials	213117
+KXDH6G-S-US	American Vanguard Corp.	3037110	Materials	202571
+VXSVJ2-S-US	AVEO Pharmaceuticals Inc.	5358810	Health Care	B52G99
+GP60L7-S-US	AVG Technologies NV	N0783110	Information Technology	B7GH38
+MDX5ZL-S-US	Avago Technologies Ltd.	Y0486S10	Information Technology	B3WS2X
+TXYF8C-S-US	AV Homes Inc.	00234P10	Financials	B7M670
+D9QDJM-S-US	Avid Technology Inc.	05367P10	Information Technology	206587
+QHC7FG-S-US	AVANIR Pharmaceuticals Inc	05348P40	Health Care	B0WR7L
+G49L4W-S-US	Aviat Networks Inc.	05366Y10	Information Technology	B1PPR1
+FYNJ8L-S-US	Avon Products Inc.	5430310	Consumer Staples	206672
+T67LXV-S-US	Avnet Inc.	5380710	Information Technology	206650
+S0W8VW-S-US	AVX Corp.	244410	Information Technology	205398
+TVTFDF-S-US	Avery Dennison Corp.	5361110	Industrials	206640
+CGZS92-S-US	HomeAway Inc.	43739Q10	Consumer Discretionary	B54YZ8
+P9XVFK-S-US	Allied World Assurance Co.	H0153110	Financials	B4LMCN
+JLGFVH-S-US	Armstrong World Industries	04247X10	Industrials	B1FT46
+CSNXVW-S-US	American Water Works Co. I	3042010	Utilities	B2R3PV
+MBP56P-S-US	American States Water Co.	2989910	Utilities	226717
+X7MH7Q-S-US	Aware Inc. (Massachusetts)	05453N10	Information Technology	206709
+FFRVN7-S-US	Abraxas Petroleum Corp.	383010	Energy	200303
+QVKN0H-S-US	Anixter International Inc.	3529010	Information Technology	246884
+WRTSD7-S-US	American Axle & Manufactur	2406110	Consumer Discretionary	238241
+HG6Y66-S-US	Axiall Corp.	05463D10	Materials	B9F5TH
+DBQ20D-S-US	American Express Co.	2581610	Financials	202608
+GJTCRT-S-US	AXIS Capital Holdings Ltd.	G0692U10	Financials	267760
+VT9770-S-US	AXT Inc.	00246W10	Information Technology	224797
+G5M4HY-S-US	Acuity Brands Inc.	00508Y10	Industrials	281846
+RGXK5H-S-US	Aircastle Ltd.	G0129K10	Industrials	B1BDJQ
+V3L7PF-S-US	AutoZone Inc.	5333210	Consumer Discretionary	206595
+M3VV5C-S-US	Aspen Technology Inc.	4532710	Information Technology	205186
+N2CV92-S-US	AZZ Inc.	247410	Industrials	206767
+V8549L-S-US	Barnes Group Inc	6780610	Industrials	208073
+P8WJT7-S-US	The Boeing Co.	9702310	Industrials	210860
+V0B1PG-S-US	Natus Medical Inc.	63905010	Health Care	277113
+Q3TRMZ-S-US	Bank Of America Corp.	6050510	Financials	229567
+FMK5NJ-S-US	Einstein Noah Restaurant G	28257U10	Consumer Discretionary	204248
+ST5LQZ-S-US	Booz Allen Hamilton Holdin	9950210	Information Technology	B5367T
+FYNZ40-S-US	Banc Of California Inc.	33589V10	Financials	BCD47X
+D0LSJD-S-US	BancFirst Corp. (Oklahoma)	05945F10	Financials	207878
+J75C4Y-S-US	Banner Corp.	06652V20	Financials	234600
+D53253-S-US	Basic Energy Services Inc.	06985P10	Energy	B0H5CZ
+LY6TC3-S-US	Baxter International Inc.	7181310	Health Care	208510
+HLQJF6-S-US	Bed Bath & Beyond Inc.	7589610	Consumer Discretionary	208587
+DQ58GR-S-US	BBCN Bancorp Inc.	7329510	Financials	B70YTB
+K6WXXX-S-US	Bill Barrett Corp.	06846N10	Energy	B04M3T
+H57SQ5-S-US	Beasley Broadcast Group In	7401410	Consumer Discretionary	254496
+XBZZJS-S-US	Bridge Capital Holdings	10803010	Financials	276347
+G7RH16-S-US	Black Box Corp.	9182610	Information Technology	254697
+B09QK4-S-US	BRAVO BRIO Restaurant Grou	10567B10	Consumer Discretionary	B4PXJW
+KHSW6W-S-US	Barrett Business Services	6846310	Industrials	208267
+XN2JJ0-S-US	BB&T Corp.	5493710	Financials	283090
+KHXCX5-S-US	Best Buy Co. Inc.	8651610	Consumer Discretionary	209467
+MJD4RS-S-US	Brunswick Corp.	11704310	Consumer Discretionary	214930
+QM3X33-S-US	Boise Cascade Co.	09739D10	Materials	B9BP4R
+MGWBGV-S-US	Bonanza Creek Energy Inc.	9779310	Energy	B71B3K
+DJBT9D-S-US	The Brink's Co.	10969610	Industrials	269130
+Q8J4YF-S-US	Blucora Inc.	9522910	Information Technology	B8L2DV
+GMXRQD-S-US	Brightcove Inc.	10921T10	Information Technology	B4XS3D
+DMRHWL-S-US	Balchem Corp.	5766520	Materials	207207
+GPH5YQ-S-US	C.R. Bard Inc. (New Jersey	6738310	Health Care	207790
+NSYR4X-S-US	BioCryst Pharmaceuticals I	09058V10	Health Care	210036
+BK8RTT-S-US	Boulder Brands Inc.	10140510	Consumer Staples	B9657F
+WL01PM-S-US	Belden Inc.	7745410	Information Technology	B01WL7
+BGS2NX-S-US	Black Diamond Inc.	09202G10	Consumer Discretionary	225019
+QR4B7Q-S-US	Bridge Bancorp Inc.	10803510	Financials	B00MZ1
+S0W9XX-S-US	Brandywine Realty Trust	10536820	Financials	251895
+M0B0Q9-S-US	BioDelivery Sciences Inter	09060J10	Health Care	282016
+QLL3Y6-S-US	Becton Dickinson & Co.	7588710	Health Care	208780
+RFPT62-S-US	Beam Inc.	7373010	Consumer Discretionary	B4NH4W
+GHPF30-S-US	BE Aerospace Inc.	7330210	Industrials	208942
+Q9P7S9-S-US	Bebe Stores Inc.	7557110	Consumer Discretionary	225767
+FXKD5K-S-US	Beacon Roofing Supply Inc.	7368510	Industrials	B02TS9
+SC8V1L-S-US	Strategic Hotels & Resorts	86272T10	Financials	243865
+XN3NP2-S-US	Bel Fuse Inc.	7734730	Information Technology	227989
+Q8CFZ0-S-US	Franklin Resources Inc.	35461310	Financials	235068
+X7KX77-S-US	Berkshire Bancorp Inc. (Ne	8459720	Financials	B015LD
+QH5T7J-S-US	Berry Plastics Group Inc.	08579W10	Materials	B8BR3H
+X56PLJ-S-US	Brown-Forman Corp.	11563720	Consumer Staples	214683
+QB4TM0-S-US	Bright Horizons Family Sol	10919410	Consumer Discretionary	B7MJWP
+B16W7K-S-US	BankFinancial Corp.	06643P10	Financials	B03828
+FVDCBN-S-US	Saul Centers Inc.	80439510	Financials	277777
+JKCXY1-S-US	Bunge Ltd.	G1696210	Consumer Staples	278871
+LGFBYV-S-US	General Cable Corp.	36930010	Industrials	236985
+H7JS2S-S-US	BGC Partners Inc.	05541T10	Financials	252816
+G355MN-S-US	Big 5 Sporting Goods Corp.	08915P10	Consumer Discretionary	295864
+HMWSL7-S-US	Briggs & Stratton Corp.	10904310	Industrials	215658
+RT1RKH-S-US	BG Medicine Inc.	08861T10	Health Care	B29VDZ
+CB3Q59-S-US	B&G Foods Inc.	05508R10	Consumer Staples	B034L4
+HKL974-S-US	Biglari Holdings Inc.	08986R10	Consumer Discretionary	284343
+VS6BL6-S-US	Bar Harbor Bankshares	6684910	Financials	261811
+S8VPR2-S-US	Benchmark Electronics Inc.	08160H10	Information Technology	209081
+C6H18K-S-US	Baker Hughes Inc.	5722410	Energy	207208
+QZ2NYT-S-US	Berkshire Hills Bancorp In	8468010	Financials	260657
+BPQNV7-S-US	Sotheby's	83589810	Consumer Discretionary	282240
+CD4L29-S-US	Big Lots Inc.	8930210	Consumer Discretionary	221844
+S38X5X-S-US	Biogen Idec Inc.	09062X10	Health Care	245596
+TSCFG3-S-US	Bio-Rad Laboratories Inc.	9057220	Health Care	209850
+VQXJNV-S-US	BioScrip Inc.	09069N10	Health Care	259485
+D0MFS0-S-US	Actuate Corp.	00508B10	Information Technology	227518
+HSDL6F-S-US	BJ's Restaurants Inc.	09180C10	Consumer Discretionary	220055
+HSDSLM-S-US	The Bank Of New York Mello	6405810	Financials	B1Z77F
+H2YLYC-S-US	BlackRock Kelso Capital Co	9253310	Financials	B1VRDC
+R5VL9T-S-US	Brookdale Senior Living In	11246310	Health Care	B0PZN3
+P0SXV1-S-US	The Buckle Inc.	11844010	Consumer Discretionary	214993
+FRYR3P-S-US	Black Hills Corp.	9211310	Utilities	210174
+HQ4B6H-S-US	Buckeye Technologies Inc.	11825510	Materials	215294
+DQ1RSG-S-US	Bank Mutual Corp.	6375010	Financials	273492
+C5BS0G-S-US	Michael Baker Corp.	5714910	Industrials	232320
+KV597J-S-US	Barnes & Noble Inc.	6777410	Consumer Discretionary	208114
+HTWM3R-S-US	BankUnited Inc.	06652K10	Financials	B3NNTZ
+KV4TB2-S-US	The Bank Of Kentucky Finan	6289610	Financials	260379
+N834FG-S-US	Belo Corp.	8055510	Consumer Discretionary	209077
+DG4WRN-S-US	Builders FirstSource Inc.	12008R10	Industrials	B0BV2M
+PB11JK-S-US	BlackRock Inc.	09247X10	Financials	249450
+GGL2LS-S-US	Blackbaud Inc.	09227Q10	Information Technology	245887
+PHJ859-S-US	Ball Corp.	5849810	Materials	207302
+BNFKCM-S-US	Bloomin' Brands Inc.	9423510	Consumer Discretionary	B847RJ
+P3WCWM-S-US	BSB Bancorp Inc. (Massachu	05573H10	Financials	B6X0LC
+BX9R5W-S-US	Infoblox Inc.	45672H10	Information Technology	B7TWX5
+TF5425-S-US	Blount International Inc.	9518010	Industrials	248491
+JNSSVD-S-US	Banco Latinoamericano De C	P1699413	Financials	206948
+L0PS9G-S-US	BMC Software Inc.	5592110	Information Technology	206892
+FNQ9KF-S-US	Badger Meter Inc.	5652510	Industrials	206912
+KW9W2X-S-US	BioMed Realty Trust Inc.	09063H10	Financials	B02GMQ
+FL8GY8-S-US	Bank Of Marin Bancorp	6342510	Financials	264737
+NGW2VH-S-US	BioMarin Pharmaceutical In	09061G10	Health Care	243707
+MDV1SG-S-US	Bemis Co. Inc.	8143710	Materials	209017
+DQ6FPV-S-US	Bryn Mawr Bank Corp.	11766510	Financials	261964
+H547YV-S-US	Bristol-Myers Squibb Co.	11012210	Health Care	212633
+NPNWXB-S-US	Beneficial Mutual Bancorp	08173R10	Financials	B1YWQT
+L1KNPT-S-US	Annie's Inc.	03600T10	Consumer Staples	B73CG2
+PY4ZD0-S-US	Bob Evans Farms Inc.	9676110	Consumer Discretionary	210775
+DFD3DB-S-US	Body Central Corp.	09689U10	Consumer Discretionary	B3R9KG
+CX83T3-S-US	BofI Holding Inc.	05566U10	Financials	B0637D
+QNX12P-S-US	Bank Of Hawaii Corp.	6254010	Financials	207407
+B04MVC-S-US	BOK Financial Corp.	05561Q20	Financials	210909
+L4359C-S-US	Bolt Technology Corp.	9769810	Energy	210934
+JNTQM8-S-US	The Bon-Ton Stores Inc.	09776J10	Consumer Discretionary	211053
+L569DD-S-US	Dynamic Materials Corp.	26788810	Industrials	232604
+V05L58-S-US	Boston Private Financial H	10111910	Financials	208113
+C8SLWV-S-US	Bridgepoint Education Inc.	10807M10	Consumer Discretionary	B3VVNF
+CL0CSX-S-US	Popular Inc.	73317470	Financials	B86QM9
+MBQ9CR-S-US	BPZ Resources Inc.	5563910	Energy	215545
+W3B9CV-S-US	Broadridge Financial Solut	11133T10	Information Technology	B1VP7R
+LVRYNX-S-US	Brady Corp.	10467410	Industrials	211772
+GGPQK6-S-US	Brocade Communications Sys	11162130	Information Technology	242217
+DR9KSW-S-US	Broadcom Corp.	11132010	Information Technology	223582
+NXHS05-S-US	BRE Properties Inc.	5.56E+13	Financials	207542
+VPY0G6-S-US	Craft Brew Alliance Inc.	22412210	Consumer Staples	272335
+N138TY-S-US	Berkshire Hathaway Inc.	8467070	Financials	207339
+G8VM47-S-US	Brookline Bancorp Inc.	11373M10	Financials	296767
+TZ6TDB-S-US	Bruker Corp.	11679410	Health Care	261613
+L56GQK-S-US	Brooks Automation Inc.	11434010	Information Technology	214546
+GV0R0M-S-US	Bio-Reference Laboratories	09057G60	Health Care	257555
+H0KJNV-S-US	Brown & Brown Inc.	11523610	Financials	269268
+SGMVF6-S-US	Bristow Group Inc.	11039410	Energy	265622
+R07SVQ-S-US	Berry Petroleum Co.	8578910	Energy	209422
+C1Y5MC-S-US	Bassett Furniture Industri	7020310	Consumer Discretionary	208352
+NBHRRH-S-US	BroadSoft Inc.	11133B40	Information Technology	B5M9PG
+SDC6PX-S-US	Sierra Bancorp	82620P10	Financials	258631
+WJX51T-S-US	Biospecifics Technologies	9093110	Health Care	209883
+G7VKY3-S-US	Boston Scientific Corp.	10113710	Health Care	211343
+V1G0C8-S-US	Blyth Inc.	09643P20	Consumer Discretionary	210398
+P7LW50-S-US	Peabody Energy Corp.	70454910	Energy	275345
+N27VPB-S-US	BioTime Inc.	09066L10	Health Care	209222
+X9Q7RH-S-US	First Busey Corp.	31938310	Financials	248847
+T8C9BM-S-US	Bazaarvoice Inc.	7327110	Information Technology	B7711M
+D4ZW23-S-US	BorgWarner Inc.	9972410	Consumer Discretionary	211195
+G1CD79-S-US	The Babcock & Wilcox Co.	05615F10	Industrials	B432VZ
+H0KGJS-S-US	Baldwin & Lyons Inc.	5775520	Financials	207287
+HSKJN2-S-US	Buffalo Wild Wings Inc.	11984810	Consumer Discretionary	217030
+KN9D9T-S-US	Brown Shoe Co. Inc.	11573610	Consumer Discretionary	214692
+JKGCLB-S-US	BlueLinx Holdings Inc.	09624H10	Industrials	B02TSB
+HWYFQJ-S-US	Boston Properties Inc.	10112110	Financials	201947
+Q1LLR2-S-US	BancorpSouth Inc.	5969210	Financials	207411
+RFV7N7-S-US	Boyd Gaming Corp.	10330410	Consumer Discretionary	211723
+P6MG4G-S-US	Bally Technologies Inc.	05874B10	Consumer Discretionary	238081
+V63XR8-S-US	Boise Inc.	09746Y10	Materials	B1Z7FH
+J5XTNS-S-US	Beazer Homes USA Inc.	07556Q88	Consumer Discretionary	B8KHZT
+T6BMPP-S-US	Citigroup Inc.	17296742	Financials	229790
+JFV7R3-S-US	CA Inc.	12673P10	Information Technology	221483
+TKRCBN-S-US	Cabela's Inc.	12680430	Consumer Discretionary	B00N2Z
+WW3RWY-S-US	Camden National Corp. (Mai	13303410	Financials	211665
+G8WQ78-S-US	Cascade Bancorp	14715420	Financials	218423
+C5BPWD-S-US	Credit Acceptance Corp.	22531010	Financials	223205
+F97122-S-US	CACI International Inc.	12719030	Information Technology	215926
+SHQB8M-S-US	Cadence Pharmaceuticals In	12738T10	Health Care	B1GBTZ
+DNXYCS-S-US	ConAgra Foods Inc.	20588710	Consumer Staples	221546
+T0PLWF-S-US	Cardinal Health Inc.	14149Y10	Health Care	217567
+PY5SYS-S-US	Cheesecake Factory Inc.	16307210	Consumer Discretionary	219239
+THFY3M-S-US	Callidus Software Inc.	1.31E+54	Information Technology	216383
+SX94RG-S-US	MagicJack VocalTec Ltd.	M6787E10	Telecommunication Serv	B0S5WZ
+SY8XFB-S-US	Cal-Maine Foods Inc.	12803020	Consumer Staples	215878
+PHRMBB-S-US	Calix Inc.	13100M50	Information Technology	B3S4L6
+HHB297-S-US	Cameron International Corp	13342B10	Energy	222223
+LQ7BGY-S-US	CalAmp Corp.	12812610	Information Technology	216470
+X5DP04-S-US	CAI International Inc.	12477X10	Industrials	B1VZ4J
+D9KY0F-S-US	Avis Budget Group Inc.	5377410	Industrials	B1CL8J
+T6Z3VZ-S-US	Carbonite Inc.	14133710	Information Technology	B53C33
+DG752S-S-US	A.M. Castle & Co.	14841110	Materials	217965
+QR8LCQ-S-US	Cass Information Systems I	14808P10	Information Technology	208655
+SP9JM5-S-US	Casey's General Stores Inc	14752810	Consumer Staples	217941
+S48T3X-S-US	Caterpillar Inc.	14912310	Industrials	218020
+GB31F9-S-US	Cardtronics Inc.	14161H10	Financials	B00K2K
+NNL1BK-S-US	The Cato Corp.	14920510	Consumer Discretionary	218043
+QWPS0G-S-US	Cathay General Bancorp	14915010	Financials	226423
+RNR9Y4-S-US	Cavium Inc.	14964U10	Information Technology	B3TWGL
+F4V0NF-S-US	The Chubb Corp.	17123210	Financials	219572
+RLDYY7-S-US	Cincinnati Bell Inc.	17187110	Telecommunication Serv	219687
+MLL4FL-S-US	Cbeyond Inc.	14984710	Telecommunication Serv	B0GWDQ
+K3D3DT-S-US	Capital Bank Financial Cor	13979410	Financials	B8HFV2
+K3B0CT-S-US	CBRE Group Inc.	12504L10	Financials	B6WVMH
+STV928-S-US	Chicago Bridge & Iron Co.	16725010	Industrials	220053
+VKCW8R-S-US	CBL & Associates Propertie	12483010	Financials	216747
+D78GQC-S-US	Cambrex Corp.	13201110	Health Care	216581
+QBSCWB-S-US	Cape Bancorp Inc.	13920910	Financials	B2PFJP
+X5H2LD-S-US	CBOE Holdings Inc.	12503M10	Financials	B5834C
+MPXHKL-S-US	CIBER Inc.	17163B10	Information Technology	220024
+V3RMZH-S-US	Cracker Barrel Old Country	22410J10	Consumer Discretionary	223109
+QCW7G3-S-US	CBS Corp.	12485720	Consumer Discretionary	B0SRLH
+LY70R9-S-US	Commerce Bancshares Inc. (	20052510	Financials	221320
+XP1YJK-S-US	Cubist Pharmaceuticals Inc	22967810	Health Care	224093
+M2RJR5-S-US	Cabot Corp.	12705510	Materials	216250
+HLX1ZD-S-US	Community Bank System Inc.	20360710	Financials	222206
+JS76T8-S-US	CBIZ Inc.	12480510	Industrials	273078
+SQM89D-S-US	Capital City Bank Group In	13967410	Financials	218675
+FYNLDN-S-US	Calgon Carbon Corp.	12960310	Materials	216436
+HZ6Y5P-S-US	Coca-Cola Enterprises Inc.	19122T10	Consumer Staples	B42BPG
+B3LCDJ-S-US	Chase Corp.	16150R10	Materials	221228
+WFRKY7-S-US	Campus Crest Communities I	13466Y10	Financials	B4BQQ4
+LY1BXZ-S-US	Crown Castle International	22822710	Telecommunication Serv	228599
+JDXXQJ-S-US	Coleman Cable Inc.	19345930	Industrials	B1TDPZ
+GC85B6-S-US	Crown Holdings Inc.	22836810	Materials	242798
+QBS6K5-S-US	Carnival Corp.	14365830	Consumer Discretionary	252304
+KGNR6X-S-US	Cabot Microelectronics Cor	12709P10	Information Technology	257238
+F9BJRC-S-US	CNB Financial Corp. (Penns	12612810	Financials	261970
+PY7TTP-S-US	Clear Channel Outdoor Hold	18451C10	Consumer Discretionary	B0P01M
+C37X9L-S-US	Cogent Communications Grou	19239V30	Telecommunication Serv	B06RWD
+V19R78-S-US	Cross Country Healthcare I	22748310	Health Care	280905
+GN7H4D-S-US	Catamaran Corp.		Health Care	B3N9ZT
+D47KN8-S-US	OFS Capital Corp.	67103B10	Undefined	B7L7HC
+S6DNVV-S-US	ChemoCentryx Inc.	16383L10	Health Care	B6ZL96
+V1G6RG-S-US	Coeur Mining Inc.	19210850	Materials	220813
+KZKPCJ-S-US	CDI Corp.	12507110	Industrials	218112
+KZJPGL-S-US	Cadence Design Systems Inc	12738710	Information Technology	230223
+WQQGZ1-S-US	Cedar Realty Trust Inc.	15060220	Financials	203324
+JJ71MH-S-US	Codexis Inc.	19200510	Health Care	B5LL2C
+PY4JJL-S-US	Cadiz Inc.	12753720	Utilities	223866
+PJQNHD-S-US	Celanese Corp.	15087010	Materials	B05MZT
+GFF774-S-US	The Corporate Executive Bo	21988R10	Industrials	239238
+BDJRFV-S-US	CEC Entertainment Inc.	12513710	Consumer Discretionary	280571
+DQ27PX-S-US	CECO Environmental Corp.	12514110	Industrials	201197
+SHNQ63-S-US	Career Education Corp.	14166510	Consumer Discretionary	214364
+XHD8GP-S-US	Celgene Corp.	15102010	Health Care	218234
+N0TNHZ-S-US	Cempra Inc.	15130J10	Health Care	B73B6X
+FJ79FZ-S-US	Central Garden & Pet Co.	15352720	Consumer Staples	B1P36Y
+D0MDPZ-S-US	Century Aluminum Co.	15643110	Materials	218625
+P8KVG8-S-US	Ceres Inc.	15677310	Energy	B7370B
+K7T7YH-S-US	Cerner Corp.	15678210	Health Care	218528
+NL58RD-S-US	Cerus Corp.	15708510	Health Care	222247
+LC1YVW-S-US	Central European Media Ent	G2004520	Consumer Discretionary	252984
+PRM3LQ-S-US	CEVA Inc.	15721010	Information Technology	298693
+D52CVG-S-US	CF Industries Holdings Inc	12526910	Materials	B0G4K5
+D2W2LC-S-US	C&F Financial Corp.	12466Q10	Financials	249451
+QS84ND-S-US	Capitol Federal Financial	14057J10	Financials	B3KWJV
+DVPXQR-S-US	Culp Inc.	23021510	Consumer Discretionary	223979
+SRTPTN-S-US	CareFusion Corp.	14170T10	Health Care	B3N2D3
+GW0BCB-S-US	California First National	13022210	Financials	203143
+M3RCK3-S-US	Cardinal Financial Corp.	14149F10	Financials	227755
+BFS7VZ-S-US	Cullen/Frost Bankers Inc.	22989910	Financials	223955
+WZNQR8-S-US	Colfax Corp.	19401410	Industrials	B2RB4W
+KTZLC5-S-US	Celadon Group Inc.	15083810	Industrials	218419
+STWC38-S-US	Cognex Corp.	19242210	Information Technology	220828
+QWNV7L-S-US	Consolidated Graphics Inc.	20934110	Industrials	222277
+RK8Z6D-S-US	City Holding Co.	17783510	Financials	216177
+QVJHVF-S-US	Church & Dwight Co. Inc.	17134010	Consumer Staples	219584
+WN8QGY-S-US	Churchill Downs Inc.	17148410	Consumer Discretionary	219410
+X7FM16-S-US	Chindex International Inc.	16946710	Health Care	239730
+NL9CK7-S-US	Chemed Corp.	16359R10	Health Care	219008
+K8FKSM-S-US	The Chefs' Warehouse Inc.	16308610	Consumer Staples	B63RTD
+P36J31-S-US	Chemical Financial Corp.	16373110	Financials	219027
+DBT83D-S-US	Charter Financial Corp. (G	16122W10	Financials	B8T1SQ
+VNNDY1-S-US	Choice Hotels Internationa	16990510	Consumer Discretionary	210678
+R6XL7S-S-US	Chesapeake Energy Corp.	16516710	Energy	218277
+N18SB3-S-US	Cherokee Inc.	16444H10	Consumer Discretionary	218692
+CCJ2X0-S-US	Chemtura Corp.	16389320	Materials	B5KT5L
+NK4J5L-S-US	C.H. Robinson Worldwide In	12541W20	Industrials	211622
+WM44MK-S-US	Chico's FAS Inc.	16861510	Consumer Discretionary	219678
+WZLT2G-S-US	Chesapeake Lodging Trust	16524010	Financials	B4TC8L
+MTDQ28-S-US	Charter Communications Inc	16117M30	Consumer Discretionary	B4XT1S
+NPD5D8-S-US	Chuy's Holdings Inc.	17160410	Consumer Discretionary	B88WMY
+XHJHJN-S-US	Cigna Corp.	12550910	Health Care	219647
+NGRRHC-S-US	Citizens Inc.	17474010	Financials	219947
+S0ZG0Z-S-US	Cobalt International Energ	19075F10	Energy	B4XH00
+HF2HLY-S-US	Ciena Corp.	17177930	Information Technology	B1FLZ2
+DD0XYR-S-US	CIFC Corp.	12547R10	Financials	B5STZB
+SHRWC6-S-US	Chimera Investment Corp.	16934Q10	Financials	B295NH
+WJVTHK-S-US	Cincinnati Financial Corp.	17206210	Financials	219688
+D9QGNP-S-US	CIRCOR International Inc.	17273K10	Industrials	249638
+CZFD7C-S-US	CIT Group Inc.	12558180	Financials	B4Z73G
+DVQ8D2-S-US	CompX International Inc.	20563P10	Industrials	220190
+RX2RQL-S-US	C&J Energy Services Inc.	12467B30	Energy	B4Z7Z5
+HCYP68-S-US	Carmike Cinemas Inc.	14343640	Consumer Discretionary	284546
+HZ83DS-S-US	SEACOR Holdings Inc.	81190410	Energy	279783
+CKTXCS-S-US	Checkpoint Systems Inc.	16282510	Information Technology	218972
+LX1RL8-S-US	Colgate-Palmolive Co.	19416210	Consumer Staples	220910
+LBX6TF-S-US	CLARCOR Inc.	17989510	Industrials	220126
+CTS62X-S-US	Collectors Universe Inc.	19421R20	Consumer Discretionary	216548
+V734HR-S-US	Cloud Peak Energy Inc.	18911Q10	Energy	B57LN8
+QCWPFN-S-US	Chatham Lodging Trust	16208T10	Financials	B5LYMC
+FZYC7Z-S-US	Celldex Therapeutics Inc.	15117B10	Health Care	286844
+VKDB45-S-US	Cliffs Natural Resources I	18683K10	Materials	220270
+Q9ND4H-S-US	CoreLogic Inc.	21871D10	Information Technology	B5541Y
+C5GRM6-S-US	Clean Harbors Inc.	18449610	Industrials	220247
+KDD2FL-S-US	Mack-Cali Realty Corp.	55448910	Financials	219231
+MQ3BQ2-S-US	Calamos Asset Management I	12811R10	Financials	B02J6B
+CX8W7T-S-US	Clean Energy Fuels Corp.	18449910	Energy	B1Y1PC
+DF643V-S-US	Colony Financial Inc.	19624R10	Financials	B4K007
+QG63JK-S-US	Colonial Properties Trust	19587210	Financials	220911
+BMJYPP-S-US	Continental Resources Inc.	21201510	Energy	B1XGWS
+D2TZHB-S-US	Town Sports International	89214A10	Consumer Discretionary	B0H9BD
+NB0GL4-S-US	Clovis Oncology Inc.	18946410	Health Care	B6RS2B
+D54QFS-S-US	Clearwater Paper Corp.	18538R10	Materials	B3K9Z3
+W5LPMX-S-US	Clearwire Corp.	18538Q10	Telecommunication Serv	B1SVWL
+MLMRJ3-S-US	The Clorox Co.	18905410	Consumer Staples	220402
+S8TKL0-S-US	Comerica Inc.	20034010	Financials	221287
+G9ZP04-S-US	Commercial Metals Co.	20172310	Materials	221326
+HXZN4R-S-US	Columbus McKinnon Corp.	19933310	Industrials	221107
+M647FF-S-US	Comcast Corp.	20030N10	Consumer Discretionary	204454
+D9K19L-S-US	CME Group Inc.	12572Q10	Financials	296583
+SW780L-S-US	Chipotle Mexican Grill Inc	16965610	Consumer Discretionary	B0X7DZ
+TG4SJY-S-US	Cummins Inc.	23102110	Industrials	224020
+M78P0P-S-US	Cumulus Media Inc.	23108210	Consumer Discretionary	225973
+KQRB42-S-US	Cantel Medical Corp.	13809810	Health Care	218815
+CTXPP4-S-US	Capstead Mortgage Corp.	1.41E+54	Financials	277198
+FK9HS4-S-US	Compass Minerals Internati	20451N10	Materials	220276
+TNYNQV-S-US	CMS Energy Corp.	12589610	Utilities	221922
+JVCBYB-S-US	Comtech Telecommunications	20582620	Information Technology	221534
+KQQFF7-S-US	CNA Financial Corp.	12611710	Financials	220486
+PQCSHR-S-US	Center Bancorp Inc. (New J	15140810	Financials	249448
+G26GZS-S-US	Century Bancorp Inc. (Mass	15643210	Financials	218556
+R3JBJ0-S-US	Centene Corp.	15135B10	Health Care	280706
+LXW513-S-US	Coronado Biosciences Inc.	21976U10	Health Care	B6YRT7
+T56WF2-S-US	CNH Industrial NV	N2093520	Industrials	BDX85Z
+GZNG3H-S-US	Cinemark Holdings Inc.	17243V10	Consumer Discretionary	B1W7RQ
+RCLQ0Z-S-US	Cleco Corp.	12561W10	Utilities	218244
+W7YZDP-S-US	CONMED Corp.	20741010	Health Care	221601
+V3LWY1-S-US	CNO Financial Group Inc.	1.26E+14	Financials	265775
+VZHCL8-S-US	ConnectOne Bancorp Inc.	20786U10	Financials	B9699W
+PW1X8Y-S-US	CenterPoint Energy Inc.	15189T10	Utilities	244063
+TF5WHW-S-US	Concur Technologies Inc.	20670810	Information Technology	232509
+JDWYWM-S-US	Cohen & Steers Inc. (New Y	19247A10	Financials	B02H88
+BFMRFX-S-US	Comverse Inc.	20585P10	Information Technology	B8LS5J
+QVM2RV-S-US	Consolidated Communication	20903410	Telecommunication Serv	B07LSQ
+WPK8Y2-S-US	Con-Way Inc.	20594410	Health Care	221722
+JQXLB4-S-US	CONSOL Energy Inc.	20854P10	Energy	241375
+HD1PZ3-S-US	CommunityOne Bancorp	20416Q10	Financials	BBXBWH
+SSRGKJ-S-US	CoBiz Financial Inc.	19089710	Financials	225775
+KCCKB0-S-US	Corinthian Colleges Inc.	21886810	Consumer Discretionary	238602
+LFFQK3-S-US	Spansion Inc.	84649R20	Information Technology	B4M6PQ
+LFBF80-S-US	Capital One Financial Corp	14040H10	Financials	265446
+X8RFXJ-S-US	Cabot Oil & Gas Corp.	12709710	Energy	216234
+MYWCD8-S-US	Coach Inc.	18975410	Consumer Discretionary	264601
+L1T1NM-S-US	Coherent Inc.	19247910	Information Technology	220837
+QTJP1H-S-US	Cohu Inc.	19257610	Information Technology	220842
+DXZKG1-S-US	Coca-Cola Bottling Co. Con	19109810	Consumer Staples	220672
+H7DHYS-S-US	Rockwell Collins Inc.	77434110	Industrials	276722
+CW1SM2-S-US	Columbia Banking System In	19723610	Financials	217660
+FT89GR-S-US	Columbia Sportswear Co.	19851610	Consumer Discretionary	222912
+G62QBN-S-US	CyrusOne Inc.	23283R10	Financials	B7YRLH
+CPDD2G-S-US	Conn's Inc.	20824210	Consumer Discretionary	292579
+P45KD7-S-US	The Cooper Cos. Inc.	21664840	Health Care	222263
+L6CX6R-S-US	ConocoPhillips	20825C10	Energy	268571
+DP5SB4-S-US	CoreSite Realty Corp.	21870Q10	Financials	B3T3VV
+T68FHM-S-US	Core-Mark Holding Co. Inc.	21868110	Consumer Discretionary	B0637B
+RXGZ01-S-US	Corcept Therapeutics Inc.	21835210	Health Care	B00SCY
+X0MHD2-S-US	Costco Wholesale Corp.	22160K10	Consumer Staples	270127
+FK820S-S-US	Covidien Plc	G2554F11	Health Care	B68SQD
+TF3005-S-US	Cowen Group Inc.	22362210	Financials	B59SWL
+H7M2GY-S-US	Copa Holdings SA	P3107610	Industrials	B0TNJH
+BCD5LG-S-US	Campbell Soup Co.	13442910	Consumer Staples	216284
+C36S4J-S-US	Callon Petroleum Co.	13123X10	Energy	218607
+CP8LVX-S-US	Central Pacific Financial	15476040	Financials	223094
+B98JCV-S-US	Cepheid	15670R10	Health Care	258914
+PM6CTD-S-US	Cumberland Pharmaceuticals	23077010	Health Care	B23WLP
+TXYD6B-S-US	Chesapeake Utilities Corp.	16530310	Utilities	219075
+THCNSH-S-US	Capella Education Co.	13959410	Consumer Discretionary	B0GWDP
+NRTCTV-S-US	Calpine Corp.	13134730	Utilities	B2NKK2
+P455NW-S-US	Copart Inc.	21720410	Industrials	220807
+MVGS05-S-US	Computer Programs & System	20530610	Health Care	287212
+FBBDMB-S-US	Capstone Turbine Corp.	14067D10	Industrials	260624
+DH80VP-S-US	Camden Property Trust	13313110	Financials	216632
+N920DH-S-US	Compuware Corp.	20563810	Information Technology	222088
+XQBP9V-S-US	Chiquita Brands Internatio	17003280	Consumer Staples	285546
+X415Z8-S-US	Crane Co.	22439910	Industrials	223189
+PSR5GM-S-US	CRA International Inc.	12618T10	Industrials	224062
+S24LVS-S-US	Cray Inc.	22522330	Information Technology	B16NWY
+HJG333-S-US	Crawford & Co.	22463310	Financials	223207
+P35SQC-S-US	Cree Inc.	22544710	Information Technology	223235
+TNZG7L-S-US	Carter's Inc.	14622910	Consumer Discretionary	298093
+CRP87Z-S-US	Curis Inc.	23126910	Health Care	261541
+HSFM5D-S-US	Comstock Resources Inc.	20576820	Energy	221357
+V19WHD-S-US	Charles River Laboratories	15986410	Health Care	260433
+DVRKW9-S-US	Salesforce.Com Inc.	79466L30	Information Technology	231052
+LVXRVF-S-US	America's Car-Mart Inc.	03062T10	Consumer Discretionary	281396
+QRCTJR-S-US	Crocs Inc.	22704610	Consumer Discretionary	B0T7Z6
+CN8FDN-S-US	CARBO Ceramics Inc.	14078110	Energy	223882
+T8HSSQ-S-US	Courier Corp.	22266010	Industrials	222974
+WZMSV8-S-US	Carpenter Technology Corp.	14428510	Materials	217750
+BV8ZBV-S-US	Cornerstone Therapeutics I	21924P10	Health Care	B00PWL
+R3HCP3-S-US	Cirrus Logic Inc.	17275510	Information Technology	219730
+F049RP-S-US	CorVel Corp.	22100610	Health Care	234727
+XBZNYH-S-US	Crown Media Holdings Inc.	22841110	Consumer Discretionary	257758
+TF1VV3-S-US	CryoLife Inc.	22890310	Health Care	223901
+NZSVKW-S-US	Carrizo Oil & Gas Inc.	14457710	Energy	209280
+PGDL0R-S-US	Clifton Savings Bancorp In	18712Q10	Financials	221622
+CP765L-S-US	Computer Sciences Corp.	20536310	Information Technology	221520
+K14DFC-S-US	Cisco Systems Inc.	17275R10	Information Technology	219816
+CF9KQ2-S-US	CapitalSource Inc.	14055X10	Financials	293024
+JMK796-S-US	CenterState Banks Inc.	15201P10	Financials	269865
+NZRXT0-S-US	CoStar Group Inc.	22160N10	Industrials	226286
+MH3BVF-S-US	CSG Systems International	12634910	Information Technology	221088
+L1SYGJ-S-US	Cash America International	14754D10	Financials	217942
+K5NJPW-S-US	Cardiovascular Systems Inc	14161910	Health Care	B17HG5
+WB2MM9-S-US	Carlisle Cos. Inc.	14233910	Industrials	217631
+WVBS8K-S-US	Cornerstone OnDemand Inc.	21925Y10	Information Technology	B40471
+PD9DQL-S-US	CSS Industries Inc.	12590610	Consumer Discretionary	216069
+GHGWNX-S-US	CST Brands Inc.	12646R10	Consumer Discretionary	B9GD0X
+D8DC83-S-US	Capital Senior Living Corp	14047510	Health Care	212177
+VDV2RM-S-US	Carriage Services Inc.	14390510	Consumer Discretionary	217778
+M50F0R-S-US	Capital Southwest Corp.	14050110	Financials	217458
+NFMH78-S-US	CSX Corp.	12640810	Industrials	216075
+TKPJVY-S-US	Cintas Corp.	17290810	Industrials	219713
+NZNPMZ-S-US	Cooper Tire & Rubber Co.	21683110	Consumer Discretionary	222260
+N03WWF-S-US	Community Trust Bancorp In	20414910	Financials	270647
+VYZ8W4-S-US	Constant Contact Inc.	21031310	Information Technology	B2871D
+CLYW1L-S-US	Computer Task Group Inc.	20547710	Information Technology	221511
+DKNL1N-S-US	CenturyLink Inc.	15670010	Telecommunication Serv	218504
+CM07NW-S-US	Consolidated Tomoka Land C	21022610	Financials	221870
+QQ6MHS-S-US	Citi Trends Inc.	17306X10	Consumer Discretionary	B06FLD
+Q0G8BX-S-US	CTS Corp.	12650110	Information Technology	223924
+RLF8JJ-S-US	Cognizant Technology Solut	19244610	Information Technology	225701
+MH2MGR-S-US	Connecticut Water Service	20779710	Utilities	221625
+JBFJ2W-S-US	Citrix Systems Inc.	17737610	Information Technology	218255
+XKNB2F-S-US	Cubic Corp.	22966910	Industrials	223926
+QHD9GG-S-US	CubeSmart	22966310	Financials	B6SW91
+FGVTF3-S-US	Cousins Properties Inc.	22279510	Financials	222992
+S6P83S-S-US	Covanta Holding Corp.	2.23E+14	Industrials	225577
+T2Z4DM-S-US	CVB Financial Corp.	12660010	Financials	216064
+JCPY8W-S-US	Cablevision Systems Corp.	12686C10	Consumer Discretionary	216224
+L1TC7X-S-US	Cavco Industries Inc.	14956810	Consumer Discretionary	278702
+B5VZ1S-S-US	Covance Inc.	22281610	Health Care	222902
+H9SNCC-S-US	Convergys Corp.	21248510	Information Technology	228476
+VMP45M-S-US	Commercial Vehicle Group I	20260810	Industrials	B02GMS
+RK7LL3-S-US	Calavo Growers Inc.	12824610	Consumer Staples	285920
+DYZ4XW-S-US	CVR Energy Inc.	12662P10	Energy	B23PS1
+RH1ZMN-S-US	CommVault Systems Inc.	20416610	Information Technology	B142B3
+L57758-S-US	Cenveo Inc.	15670S10	Industrials	256727
+JDWM79-S-US	CVS Caremark Corp.	12665010	Consumer Staples	257760
+TVP6BG-S-US	CPI Aerostructures Inc.	12591930	Industrials	243131
+MBKTVK-S-US	Chevron Corp.	16676410	Energy	283855
+GM2HHM-S-US	Curtiss-Wright Corp.	23156110	Industrials	224120
+HSFP9G-S-US	Consolidated Water Co. Ltd	G2377310	Utilities	209909
+C4BNP8-S-US	Clayton Williams Energy In	96949010	Energy	220243
+T67MZW-S-US	CommonWealth REIT	20323310	Financials	241774
+RFPPZZ-S-US	Casella Waste Systems Inc.	14744810	Industrials	212049
+P5H92G-S-US	California Water Service G	13078810	Utilities	216538
+Q8H75K-S-US	Concho Resources Inc.	20605P10	Energy	B1YWRK
+BT5848-S-US	Crimson Exploration Inc.	22662K20	Energy	B1FH08
+QLMFFF-S-US	Corrections Corp. Of Ameri	22025Y40	Industrials	275941
+PD8ZY6-S-US	Cypress Semiconductor Corp	23280610	Information Technology	224454
+SDCG54-S-US	Cyberonics Inc.	23251P10	Health Care	224247
+CGGG4R-S-US	Community Health Systems I	20366810	Health Care	260024
+XF4X5L-S-US	City National Corp.	17856610	Financials	219911
+J886QQ-S-US	Cynosure Inc.	23257720	Health Care	B0T4N7
+LQCGGY-S-US	CYS Investments Inc.	12673A10	Financials	B6YB1G
+L6HWTH-S-US	Cytec Industries Inc.	23282010	Materials	224295
+JBL729-S-US	Cytori Therapeutics Inc.	23283K10	Health Care	B0Q4M9
+CLZ09Q-S-US	Citizens & Northern Corp.	17292210	Financials	242066
+NS889W-S-US	Caesars Entertainment Corp	12768610	Consumer Discretionary	B3TDL4
+LHF4PR-S-US	Dominion Resources Inc.	25746U10	Utilities	254204
+T7HVSP-S-US	Daktronics Inc.	23426410	Information Technology	225401
+K6S3NB-S-US	Delta Air Lines Inc.	24736170	Industrials	B1W9D4
+GFJKQD-S-US	Dana Holding Corp.	23582520	Consumer Discretionary	B2PFJR
+RJ0470-S-US	Darling International Inc.	23726610	Consumer Staples	225028
+K92R8K-S-US	Diebold Inc.	25365110	Information Technology	226922
+CY5P8X-S-US	Donaldson Co. Inc.	25765110	Industrials	227646
+T2SNZH-S-US	Dime Community Bancshares	25392210	Financials	203414
+K132Y4-S-US	DCT Industrial Trust Inc.	23315310	Financials	B1L5PD
+B97HDW-S-US	E.I. Du Pont De Nemours &	26353410	Materials	201817
+HQ43T9-S-US	3D Systems Corp.	88554D20	Industrials	288976
+QS8F5N-S-US	DDR Corp.	23317H10	Financials	B6S2DF
+NNL4JN-S-US	Dillard's Inc.	25406710	Consumer Discretionary	226976
+G5FWH0-S-US	Deere & Co.	24419910	Industrials	226120
+GV0V6Q-S-US	Deckers Outdoor Corp.	24353710	Consumer Discretionary	226727
+NZQBSJ-S-US	Douglas Emmett Inc.	25960P10	Financials	B1G3M5
+J5Y11Z-S-US	Deltic Timber Corp.	24785010	Materials	226743
+FGX1S8-S-US	Dell Inc.	24702R10	Information Technology	226152
+TWS419-S-US	Denny's Corp.	24869P10	Consumer Discretionary	225058
+SM6FG2-S-US	Depomed Inc.	24990810	Health Care	210017
+FBB1Z0-S-US	Destination Maternity Corp	25065D10	Consumer Discretionary	260591
+QTFPBP-S-US	Dean Foods Co.	24237010	Consumer Staples	BD5JS9
+PJHQD0-S-US	Del Frisco's Restaurant Gr	24507710	Consumer Discretionary	B8B204
+KNF6LD-S-US	Discover Financial Service	25470910	Financials	B1YLC4
+FFVZR9-S-US	DuPont Fabros Technology I	26613Q10	Financials	B28HRD
+J756WT-S-US	R.G. Barry Corp.	6879810	Consumer Discretionary	208180
+RMMHNL-S-US	Dollar General Corp.	25667710	Consumer Discretionary	B5B1S1
+M2M9P6-S-US	Delta Natural Gas Co. Inc.	24774810	Utilities	226198
+D41SQY-S-US	DigitalGlobe Inc.	25389M87	Industrials	B0V025
+TRCKL4-S-US	Donegal Group Inc.	25770120	Financials	275273
+RDPYB3-S-US	Digi International Inc.	25379810	Information Technology	226966
+TF0G4S-S-US	Digital Generation Inc.	25400B10	Consumer Discretionary	B6SRZX
+QPZXQH-S-US	Quest Diagnostics Inc.	74834L10	Health Care	270279
+VVFQYB-S-US	D.R. Horton Inc.	23331A10	Consumer Discretionary	225068
+MTGV04-S-US	Diamond Hill Investment Gr	25264R20	Financials	280113
+NK1C4M-S-US	Danaher Corp.	23585110	Industrials	225087
+WRT20K-S-US	Dice Holdings Inc.	25301710	Information Technology	B23DMS
+GJYDFL-S-US	DineEquity Inc.	25442310	Consumer Discretionary	245695
+WL4NGY-S-US	Diodes Inc.	25454310	Information Technology	227050
+K8YTSW-S-US	The Walt Disney Co.	25468710	Consumer Discretionary	227072
+DP3GXZ-S-US	Discovery Communications I	25470F10	Consumer Discretionary	B3D7K3
+X7KY98-S-US	DISH Network Corp.	25470M10	Consumer Discretionary	230358
+SGN2WF-S-US	Daily Journal Corp.	23391210	Consumer Discretionary	225158
+XGC45J-S-US	Delek US Holdings Inc.	24664710	Energy	B142DK
+F5TFNZ-S-US	Dick's Sporting Goods Inc.	25339310	Consumer Discretionary	296963
+KZNQ4C-S-US	Delta Apparel Inc.	24736810	Consumer Discretionary	260324
+SRN308-S-US	Dolby Laboratories Inc.	25659T10	Information Technology	B04NJM
+HD3F7Q-S-US	DFC Global Corp.	23324T10	Financials	B6SM9H
+WC0FKB-S-US	Delphi Automotive Plc	G2782310	Consumer Discretionary	B783TY
+WB8GRS-S-US	Digital Realty Trust Inc.	25386810	Financials	B03GQS
+N81W08-S-US	Dollar Tree Inc.	25674610	Consumer Discretionary	227247
+WZH4ZX-S-US	Deluxe Corp.	24801910	Industrials	226036
+VYTJTP-S-US	The Dolan Co.	25659P40	Industrials	B23J68
+NXQ488-S-US	Demand Media Inc.	24802N10	Information Technology	B3RWW4
+PN4KGS-S-US	Diamond Foods Inc.	25260310	Consumer Staples	B081PN
+FWCK13-S-US	Digimarc Corp.	25381B10	Information Technology	B3F05P
+Q2PLKZ-S-US	Dun & Bradstreet Corp.	2.65E+14	Industrials	263625
+MYZNPC-S-US	Dendreon Corp.	24823Q10	Health Care	260254
+PKF3DJ-S-US	Dunkin' Brands Group Inc.	26550410	Consumer Discretionary	B3LHT0
+JS364H-S-US	Denbury Resources Inc.	24791620	Energy	241847
+PD9BLJ-S-US	Diamond Offshore Drilling	25271C10	Energy	226102
+W2C1TL-S-US	Dole Food Co. Inc.	25660310	Consumer Staples	B551JT
+TXX939-S-US	Dorman Products Inc.	25827810	Consumer Discretionary	271859
+VXR79F-S-US	Dover Corp.	26000310	Industrials	227840
+R1CXVP-S-US	The Dow Chemical Co.	26054310	Materials	227871
+SKY5L7-S-US	Amdocs Ltd.	G0260210	Information Technology	225690
+T6CYB1-S-US	Dr. Pepper Snapple Group I	2.61E+14	Consumer Staples	B2QW0Z
+L8T0G7-S-US	Domino's Pizza Inc.	25754A20	Consumer Discretionary	B01SD7
+FJ731S-S-US	Dresser-Rand Group Inc.	26160810	Energy	B0G0V7
+JWHCR6-S-US	Duke Realty Corp.	26441150	Financials	228408
+M1NVHK-S-US	DiamondRock Hospitality Co	25278430	Financials	B090B9
+L6CF99-S-US	Darden Restaurants Inc.	23719410	Consumer Discretionary	228987
+J4RNPV-S-US	Digital River Inc.	25388B10	Information Technology	228461
+XLV00V-S-US	Doral Financial Corp.	25811P88	Financials	BBTB35
+FV7VRF-S-US	Dril-Quip Inc.	26203710	Energy	211676
+TR6L6L-S-US	Durata Therapeutics Inc.	26658A10	Health Care	B8DMLY
+X8QL8Q-S-US	Derma Sciences Inc.	24982750	Health Care	244430
+BGXCVY-S-US	Discovery Laboratories Inc	25466840	Health Care	213002
+WZMMJ3-S-US	DSP Group Inc.	23332B10	Information Technology	227568
+CHPMZL-S-US	DST Systems Inc.	23332610	Information Technology	228294
+FV9FRX-S-US	DSW Inc.	23334L10	Consumer Discretionary	B0BV2V
+GJSPG5-S-US	DTE Energy Co.	23333110	Utilities	228022
+WTYJSY-S-US	Datalink Corp.	23793410	Information Technology	248134
+Q63PYK-S-US	DTS Inc.	23335C10	Information Technology	264110
+X9QST0-S-US	DIRECTV	25490A30	Consumer Discretionary	B84LSN
+RPTTVL-S-US	Duke Energy Corp.	26441C20	Utilities	B7VD3F
+MZ0G63-S-US	DeVry Education Group Inc.	25189310	Consumer Discretionary	226760
+N03PH7-S-US	DaVita Healthcare Partners	23918K10	Health Care	289808
+HHGZNV-S-US	Dynavax Technologies Corp.	26815810	Health Care	269873
+TWYMJG-S-US	Devon Energy Corp.	25179M10	Energy	248067
+JFXXVM-S-US	Cal Dive International Inc	12802T10	Energy	B1L5W9
+LSHRT1-S-US	Drew Industries Inc.	26168L20	Consumer Discretionary	228069
+M3Y5MK-S-US	DreamWorks Animation SKG I	26153C10	Consumer Discretionary	B03BLR
+PVP941-S-US	Demandware Inc.	24802Y10	Information Technology	B7GYKF
+VNM4HV-S-US	Dawson Geophysical Co.	23935910	Energy	225848
+H4050X-S-US	Dynex Capital Inc.	26817Q50	Financials	271868
+GDBBLB-S-US	DexCom Inc.	25213110	Health Care	B0796X
+PX1T6Y-S-US	Destination XL Group Inc.	25065K10	Consumer Discretionary	B86P8R
+KDHSJ2-S-US	DXP Enterprises Inc.	23337740	Industrials	227662
+NMFZGN-S-US	Dycom Industries Inc.	26747510	Information Technology	228984
+M2M8M5-S-US	Dyax Corp.	2.67E+14	Health Care	262148
+P7Q9Q7-S-US	Electronic Arts Inc.	28551210	Information Technology	231019
+JCR09W-S-US	Brinker International Inc.	10964110	Consumer Discretionary	219354
+S5G28Y-S-US	EBay Inc.	27864210	Information Technology	229381
+VZTYR5-S-US	Ennis Inc.	29338910	Industrials	231610
+GJZHJM-S-US	Ebix Inc.	27871520	Information Technology	200840
+BBG7D9-S-US	Emergent BioSolutions Inc.	29089Q10	Health Care	B1HJLW
+J85751-S-US	Meridian Interstate Bancor	58964Q10	Financials	B285M3
+GST9MH-S-US	Enterprise Bancorp Inc.	29366810	Financials	B00K2L
+NL7L8P-S-US	Echo Global Logistics Inc.	27875T10	Industrials	B4M7GZ
+L46MXM-S-US	Ecolab Inc.	27886510	Materials	230422
+BZSY96-S-US	US Ecology Inc.	91732J10	Industrials	277239
+DSFPSV-S-US	Encore Capital Group Inc.	29255410	Financials	244307
+HKYGNR-S-US	Endocyte Inc.	29269A10	Health Care	B40DYZ
+D506QF-S-US	Consolidated Edison Inc.	20911510	Utilities	221685
+HKS15J-S-US	Empire District Electric C	29164110	Utilities	231380
+SVXHJK-S-US	Edgen Group Inc.	28014Q10	Industrials	B7SQN2
+J5ZVNT-S-US	Education Management Corp.	28140M10	Consumer Discretionary	B4WB84
+WNH2LX-S-US	Education Realty Trust Inc	28140H10	Financials	B04NJN
+GX4HFB-S-US	El Paso Electric Co.	28367785	Utilities	285180
+BNL2ZV-S-US	Euronet Worldwide Inc.	29873610	Information Technology	232014
+GKY2ZD-S-US	Electronics For Imaging In	28608210	Information Technology	231020
+KM6BBV-S-US	Enterprise Financial Servi	29371210	Financials	276888
+NL59TF-S-US	Equifax Inc.	29442910	Industrials	231914
+WTZNZ0-S-US	Eagle Bancorp Inc. (Maryla	26894810	Financials	264805
+TP4L0D-S-US	8x8 Inc.	28291410	Telecommunication Serv	203717
+PKRC28-S-US	Engility Holdings Inc.	29285W10	Industrials	B83M6H
+H1TVNR-S-US	Energen Corp.	29265N10	Energy	201267
+QYZBLP-S-US	NIC Inc.	62914B10	Information Technology	243812
+M09XJ6-S-US	EastGroup Properties Inc.	27727610	Financials	245576
+CC62TM-S-US	VAALCO Energy Inc.	91851C20	Energy	293335
+H0SBN7-S-US	EHealth Inc.	28238P10	Financials	B1G0F8
+MBM9NY-S-US	Employers Holdings Inc.	29221810	Financials	B1Q1RR
+FS6HXZ-S-US	Eastern Insurance Holdings	27653410	Financials	B0MSV8
+N03TRC-S-US	Edison International	28102010	Utilities	282951
+BFMGRH-S-US	Estee Lauder Cos. Inc.	51843910	Consumer Staples	232052
+XP6G3S-S-US	Endologix Inc.	29266S10	Health Care	217775
+DGFSW4-S-US	Ellie Mae Inc.	28849P10	Information Technology	B532X7
+D2RS98-S-US	EarthLink Inc.	27032110	Information Technology	254398
+J9FFTQ-S-US	Echelon Corp.	27874N10	Information Technology	228537
+WW43K8-S-US	Electro Rent Corp.	28521810	Information Technology	231038
+G11LK3-S-US	Equity LifeStyle Propertie	29472R10	Financials	256312
+MVF83R-S-US	Emulex Corp.	29247520	Information Technology	231442
+C9WMNN-S-US	Callaway Golf Co.	13119310	Consumer Discretionary	217393
+G25QK2-S-US	EMC Corp.	26864810	Information Technology	229517
+BRVC3W-S-US	EMC Insurance Group Inc.	26866410	Financials	229526
+QS9KBQ-S-US	EMCOR Group Inc.	29084Q10	Industrials	247416
+SD7YGV-S-US	Eastern Co.	27631710	Industrials	230008
+WNDVBT-S-US	Eastman Chemical Co.	27743210	Materials	229838
+KZJ3C1-S-US	Emerson Electric Co.	29101110	Industrials	231340
+TMZ7Q9-S-US	Endeavour International Co	29259G20	Energy	295540
+WHW98X-S-US	Endo Health Solutions Inc.	29264F20	Health Care	261228
+QVQD1Y-S-US	Endurance Specialty Holdin	G3039710	Financials	235301
+GQQ389-S-US	EnerNOC Inc.	29276410	Information Technology	B1XKFG
+GJKP6Q-S-US	Enphase Energy Inc.	29355A10	Industrials	B65SQW
+W7XR1J-S-US	Energizer Holdings Inc.	29266R10	Consumer Staples	256929
+WCD2S8-S-US	EnerSys Inc.	29275Y10	Industrials	B020GQ
+D8JSVD-S-US	The Ensign Group Inc.	29358P10	Health Care	B1YWPP
+R4SH5R-S-US	Entegris Inc.	29362U10	Information Technology	259970
+R6WLGZ-S-US	Entropic Communications In	29384R10	Information Technology	B29VF1
+FWNZXV-S-US	Envestnet Inc.	29404K10	Information Technology	B474ZK
+D24YCL-S-US	Envivio Inc.	29413T10	Information Technology	B3Q5FF
+NB725B-S-US	Enzon Pharmaceuticals Inc.	29390410	Health Care	231866
+W926PT-S-US	EOG Resources Inc.	26875P10	Energy	231802
+P8KBGS-S-US	E2open Inc.	29788A10	Information Technology	B8BZB4
+GHQ8QT-S-US	Emerald Oil Inc.	29101U20	Energy	B8Q67F
+WG9TZK-S-US	EPAM Systems Inc.	29414B10	Information Technology	B44Z3T
+S7Q60R-S-US	Bottomline Technologies In	10138810	Information Technology	238955
+FQTN5R-S-US	EPIQ Systems Inc.	26882D10	Information Technology	237133
+Q4YSFV-S-US	EPL Oil & Gas Inc.	26883D10	Energy	B83L9Z
+D2WX54-S-US	Evolution Petroleum Corp.	30049A10	Energy	236778
+G0Y61X-S-US	EPR Properties	26884U10	Financials	B8XXZP
+JPYYTB-S-US	Equinix Inc.	29444U50	Information Technology	220475
+CN301K-S-US	Equity Residential	29476L10	Financials	231915
+PRN3HN-S-US	EQT Corp.	26884L10	Utilities	231941
+TF08TM-S-US	Equity One Inc.	29475210	Financials	224632
+Q3CNSS-S-US	Era Group Inc.	26885G10	Energy	B8KM2D
+B5QFDJ-S-US	Erie Indemnity Co.	29530P10	Financials	231171
+XP7RR4-S-US	Energy Recovery Inc.	29270J10	Industrials	B3B5J0
+D2WSZ1-S-US	ESB Financial Corp.	26884F10	Financials	248246
+J5X030-S-US	Emeritus Corp.	29100510	Health Care	231349
+VBJLDJ-S-US	ESCO Technologies Inc.	29631510	Industrials	232158
+PZHYFD-S-US	Enstar Group Ltd.	G3075P10	Financials	B1Q76J
+X69QHG-S-US	ITT Educational Services I	45068B10	Consumer Discretionary	245237
+W37WSL-S-US	Electro Scientific Industr	28522910	Information Technology	231044
+KPM0SY-S-US	Esterline Technologies Cor	29742510	Industrials	232204
+VQWFKT-S-US	Express Scripts Holding Co	30219G10	Health Care	B7QQYV
+LG8VCM-S-US	Essex Property Trust Inc.	29717810	Financials	231661
+B2CCYW-S-US	ESSA Bancorp Inc.	29667D10	Financials	B1VXG4
+JL8XFF-S-US	ExactTarget Inc.	30064K10	Information Technology	B7LRJ4
+KQKRHV-S-US	E*TRADE Financial Corp.	26924640	Financials	229901
+SRM45C-S-US	Ethan Allen Interiors Inc.	29760210	Consumer Discretionary	232082
+QWV4BK-S-US	Entercom Communications Co	29363910	Consumer Discretionary	238289
+KZJCW9-S-US	Eaton Corp. Plc	G2918310	Industrials	B8KQN8
+WSV8FS-S-US	Entergy Corp.	29364G10	Utilities	231708
+NZRWW3-S-US	EnteroMedics Inc.	29365M20	Health Care	B1YWPV
+VBDMVT-S-US	Eaton Vance Corp.	27826510	Financials	230105
+NL5F0J-S-US	Entravision Communications	29382R10	Consumer Discretionary	261511
+QBLJVZ-S-US	EverBank Financial Corp.	29977G10	Financials	B64D2M
+WL2PR3-S-US	Evercore Partners Inc.	29977A10	Financials	B1BHXZ
+FWHW51-S-US	Edwards Lifesciences Corp.	2.82E+14	Health Care	256711
+NL48VG-S-US	East West Bancorp Inc.	27579R10	Financials	248740
+VQPJFD-S-US	Exa Corp.	30061450	Information Technology	B7Y48V
+WL4VW4-S-US	ExacTech Inc.	3.01E+14	Health Care	230635
+FVQJR6-S-US	ExamWorks Group Inc.	30066A10	Health Care	B4N8VP
+QS9MGS-S-US	Exar Corp.	30064510	Information Technology	232520
+G3C518-S-US	EXACT Sciences Corp.	30063P10	Health Care	271995
+HG5T14-S-US	Exelon Corp.	30161N10	Utilities	267051
+X1RTS7-S-US	Exelixis Inc.	30161Q10	Health Care	257694
+CSS0MN-S-US	Exterran Holdings Inc.	30225X10	Energy	B241SX
+JFYRKJ-S-US	Excel Trust Inc.	30068C10	Financials	B563VF
+LBZ3F6-S-US	ExlService Holdings Inc.	30208110	Information Technology	B07LST
+KM9MMY-S-US	Eagle Materials Inc.	26969P10	Materials	219139
+X42FBF-S-US	Expeditors International O	30213010	Industrials	232550
+WSWSB6-S-US	Expedia Inc.	30212P30	Consumer Discretionary	B748CK
+Q53LMC-S-US	Exponent Inc.	30214U10	Industrials	233031
+TD4ZNY-S-US	Express Inc.	3.02E+14	Consumer Discretionary	B464DZ
+PPDFM8-S-US	Extra Space Storage Inc.	30225T10	Financials	B02HWR
+GX95BQ-S-US	Extreme Networks Inc.	30226D10	Information Technology	240705
+RPR4R2-S-US	Energy XXI (Bermuda) Ltd.	G1008214	Energy	B1YBPT
+G9ZCDV-S-US	EZCORP Inc.	30230110	Financials	232628
+LHLM3W-S-US	Ford Motor Co.	34537086	Consumer Discretionary	261546
+PX9JZ6-S-US	First American Financial C	31847R10	Financials	B4NFPK
+D78DL9-S-US	FalconStor Software Inc.	30613710	Information Technology	262975
+DR9WKB-S-US	Diamondback Energy Inc.	25278X10	Energy	B7Y8YR
+WL03TP-S-US	Farmer Brothers Co.	30767510	Consumer Staples	233178
+NW89N2-S-US	FARO Technologies Inc.	31164210	Information Technology	210666
+D1QS87-S-US	Fastenal Co.	31190010	Industrials	233226
+BHM9TN-S-US	Facebook Inc.	30303M10	Information Technology	B7TL82
+HK3M7C-S-US	Fortune Brands Home & Secu	34964C10	Industrials	B3MC7D
+STZYZN-S-US	First Bancorp (North Carol	31891010	Financials	235149
+C7195R-S-US	First Connecticut Bancorp	31985010	Financials	B3ZHVN
+TF4SDV-S-US	First BanCorp (Puerto Rico	31867270	Financials	229692
+N4M05Z-S-US	FBR & Co.	30247C40	Financials	B8N06L
+L9XVXY-S-US	Franklin Covey Co.	35346910	Industrials	235283
+L2Z5KJ-S-US	First Community Bancshares	31983A10	Financials	264871
+J9FDRP-S-US	Forest City Enterprises In	34555010	Financials	234645
+SM6T5F-S-US	FuelCell Energy Inc.	35952H10	Industrials	231511
+DKJ7SL-S-US	First Commonwealth Financi	31982910	Financials	235154
+H2TSNS-S-US	First Cash Financial Servi	31942D10	Financials	235010
+T1SX9M-S-US	FelCor Lodging Trust Inc.	31430F10	Financials	238839
+NBBQ3R-S-US	FTI Consulting Inc.	30294110	Industrials	235144
+M7415B-S-US	First Citizens BancShares	31946M10	Financials	235558
+GRRNBV-S-US	Fairchild Semiconductor In	30372610	Information Technology	244447
+MMRHSQ-S-US	Freeport-McMoRan Copper &	35671D85	Materials	235211
+NXD1XP-S-US	First Defiance Financial C	32006W10	Financials	235670
+THF6W2-S-US	Federal-Mogul Corp.	31354940	Consumer Discretionary	B29N9B
+BT3WHZ-S-US	Family Dollar Stores Inc.	30700010	Consumer Discretionary	233122
+Q0KLQ1-S-US	Fresh Del Monte Produce In	G3673810	Consumer Staples	211870
+DJC0PL-S-US	FactSet Research Systems I	30307510	Information Technology	232977
+SMQXXK-S-US	Fidus Investment Corp.	31650010	Financials	B3RV2F
+HKM5XZ-S-US	FedEx Corp.	31428X10	Industrials	214278
+TZ642P-S-US	FirstEnergy Corp.	33793210	Utilities	210092
+J3RSTW-S-US	FEI Co.	30241L10	Information Technology	235576
+CX2TQ4-S-US	Franklin Electric Co. Inc.	35351410	Industrials	235038
+BXKN89-S-US	Forbes Energy Services Ltd	34514310	Energy	B6X0GW
+N5F8HT-S-US	Forum Energy Technologies	34984V10	Energy	B4K4F4
+LQDZCC-S-US	FutureFuel Corp.	36116M10	Materials	B3BBRD
+J85ZGM-S-US	First Financial Bancorp (O	32020910	Financials	235280
+K1158B-S-US	First Federal Bancshares O	32020F30	Financials	232926
+J1JFJS-S-US	First Financial Holdings I	32023910	Financials	234137
+WQK3R0-S-US	FBL Financial Group Inc.	30239F10	Financials	232908
+M65CLH-S-US	Flushing Financial Corp.	34387310	Financials	236011
+H448WS-S-US	First Financial Bankshares	32020R10	Financials	226602
+GQM0CD-S-US	F5 Networks Inc.	31561610	Information Technology	242759
+K7T4WJ-S-US	First Financial Northwest	32022K10	Financials	B28FZ9
+BDJL3P-S-US	The Female Health Co.	31446210	Consumer Staples	297403
+C0TNSZ-S-US	First Horizon National Cor	32051710	Financials	234148
+S5HDZB-S-US	First Interstate BancSyste	32055Y20	Financials	B4RGHN
+HR8H8H-S-US	Fair Isaac Corp.	30325010	Information Technology	233029
+D54FSD-S-US	Federated Investors Inc.	31421110	Financials	224628
+RMJ8CF-S-US	The Finish Line Inc.	31792310	Consumer Discretionary	234981
+MN48BW-S-US	Fusion-Io Inc.	36112J10	Information Technology	B66QPT
+S6S2HF-S-US	Sourcefire Inc.	83616T10	Information Technology	B1TX67
+BZT3MC-S-US	Fidelity National Informat	31620M10	Information Technology	276979
+HG6Z87-S-US	Financial Institutions Inc	31758540	Financials	259694
+B00CQC-S-US	Fiserv Inc.	33773810	Information Technology	234203
+HWZGPH-S-US	Fifth Third Bancorp	31677310	Financials	233674
+K47Q7W-S-US	Five Below Inc.	33829M10	Consumer Discretionary	B85KFY
+HMWTN8-S-US	Comfort Systems USA Inc.	19990810	Industrials	203604
+H7K807-S-US	National Beverage Corp.	63501710	Consumer Staples	263862
+B82TCD-S-US	Foot Locker Inc.	34484910	Consumer Discretionary	298090
+G7VWNJ-S-US	Fluidigm Corp.	34385P10	Health Care	B3D32T
+W5NBSG-S-US	First Of Long Island Corp.	32073410	Financials	235591
+QTDDXH-S-US	FLIR Systems Inc.	30244510	Information Technology	234471
+QMW11N-S-US	Flowers Foods Inc.	34349810	Consumer Staples	274424
+GFJHG6-S-US	Flow International Corp.	34346810	Industrials	234363
+MJBXDM-S-US	Fluor Corp.	34341210	Industrials	269683
+PZF9CX-S-US	Flowserve Corp.	34354P10	Industrials	228840
+D0SXB8-S-US	FleetCor Technologies Inc.	33904110	Information Technology	B4R28B
+W5J3WN-S-US	FleetMatics Group Ltd.	G3556910	Information Technology	B4XKTT
+P8R5H4-S-US	1-800-Flowers.Com Inc.	68243Q10	Consumer Discretionary	244412
+JLK2WZ-S-US	Flexsteel Industries Inc.	33938210	Consumer Discretionary	234292
+C9X8X8-S-US	First Midwest Bancorp Inc.	32086710	Financials	234143
+VPS8DR-S-US	FMC Corp.	30249130	Materials	232860
+G5LTXN-S-US	First Marblehead Corp.	32077110	Financials	283932
+SD74Z3-S-US	FirstMerit Corp.	33791510	Financials	233943
+BW90JZ-S-US	Farmers National Banc Corp	30962710	Financials	B019BK
+X5H7XK-S-US	Fabrinet	G3323L10	Information Technology	B4JSZL
+N3CZP9-S-US	F.N.B. Corp. (Pennsylvania	30252010	Financials	204130
+VCMPFJ-S-US	Fidelity National Financia	31620R10	Financials	B0LL8N
+RNPLNJ-S-US	First Niagara Financial Gr	33582V10	Financials	242117
+RLGWR5-S-US	Financial Engines Inc.	31748510	Financials	B65V2X
+DTGB3J-S-US	The First Bancorp Inc. (Ma	31866P10	Financials	235304
+J61YJN-S-US	Fifth & Pacific Cos. Inc.	31664510	Consumer Discretionary	B87FD0
+DVQ55Z-S-US	Finisar Corp.	31787A50	Information Technology	251783
+BK6MRT-S-US	Ferro Corp.	31540510	Materials	233500
+B3N5W7-S-US	Amicus Therapeutics Inc.	03152W10	Health Care	B19FQ4
+NB5Z6F-S-US	Forestar Group Inc.	34623310	Financials	B29YGD
+WXCXKP-S-US	FormFactor Inc.	34637510	Information Technology	289182
+PRGWJR-S-US	Forrester Research Inc.	34656310	Information Technology	239885
+FT88DQ-S-US	Fossil Group Inc.	34988V10	Consumer Discretionary	BBGT60
+DSCKQV-S-US	21st Century Fox Inc.	90130A10	Consumer Discretionary	BBM4S6
+V9F8ZB-S-US	First Potomac Realty Trust	33610F10	Financials	204145
+L42028-S-US	First Industrial Realty Tr	32054K10	Financials	236075
+MC807F-S-US	Francesca's Holdings Corp.	35179310	Consumer Discretionary	B4RM4H
+L6TPMT-S-US	First Republic Bank Inc.	33616C10	Financials	B4WHY1
+NZRWQZ-S-US	Fred's Inc.	35610810	Consumer Discretionary	235438
+F647H9-S-US	Fortegra Financial Corp.	34954W10	Financials	B4VK05
+WJT04Z-S-US	Fiesta Restaurant Group In	31660B10	Consumer Discretionary	B7V5P5
+GRRDWM-S-US	Furmanite Corp.	36108610	Industrials	248362
+RMCZ5D-S-US	First Merchants Corp. (Ind	32081710	Financials	234241
+TGJ8KV-S-US	Franklin Financial Corp.	35353C10	Financials	B5BF21
+MXPRKX-S-US	Frontline Ltd.	G3682E12	Energy	230263
+K1HLY0-S-US	FairPoint Communications I	30556030	Telecommunication Serv	B4YR1W
+P6MF2F-S-US	Frisch's Restaurants Inc.	35874810	Consumer Discretionary	235318
+DLNFXM-S-US	Federal Realty Investment	31374720	Financials	233393
+H3YXNR-S-US	Forest Laboratories Inc.	34583810	Health Care	234650
+QXZQB2-S-US	Fifth Street Finance Corp.	31678A10	Financials	B39W7B
+F2J5N0-S-US	Fisher Communications Inc.	33775620	Consumer Discretionary	264874
+RDYBK5-S-US	Freescale Semiconductor Lt	G3727Q10	Information Technology	B4349B
+D2YQMV-S-US	First Solar Inc.	33643310	Industrials	B1HMF2
+B9572R-S-US	Franklin Street Properties	35471R10	Financials	B02T2D
+LD1SNT-S-US	Federal Signal Corp.	31385510	Industrials	233398
+JH4QZ3-S-US	Forest Oil Corp.	34609170	Energy	271212
+HRDWNM-S-US	L.B. Foster Co.	35006010	Industrials	234822
+GQJ0NL-S-US	Fuel Systems Solutions Inc	35952W10	Consumer Discretionary	B1CNCG
+KGNGPN-S-US	FMC Technologies Inc.	30249U10	Energy	276356
+QTJYKR-S-US	Flotek Industries Inc.	34338910	Materials	281655
+X9YT9Q-S-US	Fortinet Inc.	3.50E+14	Information Technology	B5B210
+HSJVBF-S-US	Frontier Communications Co	35906A10	Telecommunication Serv	219793
+G8WK17-S-US	1st United Bancorp Inc. (F	33740N10	Financials	B2Q5S9
+PP6F4M-S-US	H.B. Fuller Co.	35969410	Materials	235466
+NXC56V-S-US	Fulton Financial Corp.	36027110	Financials	235658
+SB4503-S-US	Winthrop Realty Trust Inc.	97639130	Financials	234076
+PZKZ99-S-US	Furiex Pharmaceuticals Inc	36106P10	Health Care	B56Q87
+W23QQL-S-US	Five Star Quality Care Inc	33832D10	Health Care	282615
+X0NQR7-S-US	Forward Air Corp.	34985310	Industrials	251079
+BJ3ZL7-S-US	Fox Chase Bancorp Inc.	35137T10	Financials	B3YRMP
+XM8SFX-S-US	FXCM Inc.	30269310	Financials	B3YPMH
+JMPF94-S-US	FX Energy Inc.	30269510	Energy	232840
+VCNCR5-S-US	Genpact Ltd.	G3922B10	Information Technology	B23DBK
+VDVGGZ-S-US	German American Bancorp In	37386510	Financials	250215
+BYR5TG-S-US	Gladstone Investment Corp.	37654610	Financials	B0C1G4
+X1RMD1-S-US	AGL Resources Inc.	120410	Utilities	206096
+F2JBZ5-S-US	Greatbatch Inc.	39153L10	Health Care	264109
+SYD5ND-S-US	Glacier Bancorp Inc.	37637Q10	Financials	237058
+QBWXRS-S-US	Golub Capital BDC Inc.	38173M10	Financials	B60K6F
+HHB176-S-US	GAMCO Investors Inc.	36143810	Financials	238682
+FT7WPC-S-US	Global Indemnity Plc	G3931910	Financials	B5NH3H
+TSGJC0-S-US	Guaranty Bancorp (Colorado	40075T60	Financials	B9XQFP
+MS67GZ-S-US	Greenbrier Cos. Inc.	39365710	Industrials	238753
+MJG3HM-S-US	Global Cash Access Holding	37896710	Information Technology	B0LFXJ
+J3Z1WW-S-US	GAIN Capital Holdings Inc.	36268W10	Financials	B3YK24
+W5NFZK-S-US	Gannett Co. Inc.	36473010	Consumer Discretionary	236030
+X421M2-S-US	Genesco Inc.	37153210	Consumer Discretionary	236710
+QJG66B-S-US	Globecomm Systems Inc.	37956X10	Information Technology	209574
+DCZG4C-S-US	General Dynamics Corp.	36955010	Industrials	236516
+RZW3DM-S-US	Gardner Denver Inc.	36555810	Industrials	237417
+FG686T-S-US	Green Dot Corp.	39304D10	Financials	B3WNNP
+LJK9RR-S-US	Goodrich Petroleum Corp.	38241040	Energy	220096
+P321KV-S-US	General Electric Co.	36960410	Industrials	238049
+GHV8BK-S-US	Greif Inc.	39762410	Materials	238801
+LRCC8T-S-US	GEO Group Inc.	36159R10	Financials	294329
+JCQ6T4-S-US	Geospace Technologies Corp	37364X10	Energy	B89MJ9
+SM5DH3-S-US	Geron Corp.	37416310	Health Care	237038
+F86595-S-US	Guess? Inc.	40161710	Consumer Discretionary	238710
+SYF9TG-S-US	Synageva BioPharma Corp.	87159A10	Health Care	B5VY9M
+Q7QVQR-S-US	Gevo Inc.	37439610	Energy	B5SBGV
+JPY47K-S-US	Griffon Corp.	39843310	Industrials	246334
+JJ5KNZ-S-US	GFI Group Inc.	36165220	Financials	B05KYY
+K4FQLD-S-US	Graco Inc.	38410910	Industrials	238044
+CVY7VR-S-US	General Growth Properties	37002310	Financials	B56VLR
+DBSLZX-S-US	Global Geophysical Service	37946S10	Energy	B1CH2V
+NPSFNN-S-US	Genomic Health Inc.	37244C10	Health Care	B0J2NP
+N5NNGM-S-US	Greenhill & Co. Inc.	39525910	Financials	B00G8B
+Q1PLFW-S-US	Graham Corp.	38455610	Industrials	238090
+NBBGNJ-S-US	Gulf Island Fabrication In	40230710	Energy	241263
+JLCX03-S-US	G-III Apparel Group Ltd.	36237H10	Consumer Discretionary	236972
+RMF5GJ-S-US	Gilead Sciences Inc.	37555810	Health Care	236917
+D68V9M-S-US	General Mills Inc.	37033410	Consumer Staples	236702
+S21BMQ-S-US	G&K Services Inc.	36126810	Industrials	235731
+T8M8DZ-S-US	Geeknet Inc.	36846Q20	Consumer Discretionary	252823
+SJRV94-S-US	Gladstone Capital Corp.	37653510	Financials	279333
+J784GK-S-US	Great Lakes Dredge & Dock	39060710	Industrials	B1LDZK
+N2F4S9-S-US	GulfMark Offshore Inc.	40262920	Energy	B62TH6
+BFS4NW-S-US	Golar LNG Ltd.	G9456A10	Energy	236796
+LMQTSB-S-US	GasLog Ltd.	G3758510	Energy	B79J09
+MP5CFW-S-US	Global Power Equipment Gro	37941P30	Industrials	B2PJYB
+J0G0TF-S-US	Greenlight Capital Re Ltd.	G4095J10	Financials	B1XRCZ
+SN9V2C-S-US	P.H. Glatfelter Co.	37731610	Materials	237200
+NBF3Q0-S-US	Glu Mobile Inc.	37989010	Information Technology	B1VP20
+QWNLSC-S-US	Corning Inc.	21935010	Information Technology	222470
+J0JKSY-S-US	General Motors Co.	37045V10	Consumer Discretionary	B665KZ
+PGVDCQ-S-US	Gordmans Stores Inc.	38269P10	Consumer Discretionary	B4XL94
+L1V3PM-S-US	Green Mountain Coffee Roas	39312210	Consumer Staples	238759
+NCB8DF-S-US	GameStop Corp.	36467W10	Consumer Discretionary	B0LLFT
+WW2DDS-S-US	Globus Medical Inc.	37957720	Health Care	B7D65M
+SPG04C-S-US	General Moly Inc.	37037310	Materials	B01S2H
+VK7WP0-S-US	GATX Corp.	36144810	Industrials	236212
+K9H88F-S-US	GNC Holdings Inc.	36191G10	Consumer Discretionary	B3VLKV
+WYHQZC-S-US	General Communication Inc.	36938510	Telecommunication Serv	236501
+MGV7CT-S-US	Genie Energy Ltd.	37228420	Utilities	B725NJ
+VYS7BG-S-US	Genco Shipping & Trading L	Y2685T10	Industrials	B0DPJS
+T0R732-S-US	Generac Holdings Inc.	36873610	Industrials	B6197Q
+QYYL4Z-S-US	Gentex Corp.	37190110	Consumer Discretionary	236679
+N5TDJ2-S-US	Genworth Financial Inc.	37247D10	Financials	B011WL
+SM1RJP-S-US	Gladstone Commercial Corp.	37653610	Financials	291847
+XF9TK6-S-US	Google Inc.	38259P50	Information Technology	B020QX
+PYCN38-S-US	Gold Resource Corp.	38068T10	Materials	B1DZ91
+W3G2QJ-S-US	Government Properties Inco	38376A10	Financials	B4ZG8D
+BXFH68-S-US	Genuine Parts Co.	37246010	Consumer Discretionary	236748
+GJZ1P6-S-US	Group 1 Automotive Inc.	39890510	Consumer Discretionary	212135
+DTLXWV-S-US	Graphic Packaging Holding	38868910	Materials	B2Q824
+VK6XV3-S-US	Global Payments Inc.	37940X10	Information Technology	271201
+QG719F-S-US	Gulfport Energy Corp.	40263530	Energy	239868
+V3V1KR-S-US	Green Plains Renewable Ene	39322210	Energy	B11FJD
+T0NLZH-S-US	Gap Inc.	36476010	Consumer Discretionary	236032
+FMLY05-S-US	Gramercy Property Trust In	38489R10	Financials	B8RFM5
+F96BRF-S-US	GP Strategies Corp.	36225V10	Industrials	262666
+VWFMWB-S-US	W.R. Grace & Co.	38388F10	Materials	223268
+SN9X6F-S-US	The Gorman-Rupp Co.	38308210	Industrials	237928
+B05W6J-S-US	Griffin Land & Nurseries I	39823110	Consumer Staples	202393
+NCCKWN-S-US	Garmin Ltd.	H2906T10	Consumer Discretionary	B3Z5T1
+XBMNZ5-S-US	Groupon Inc.	39947310	Consumer Discretionary	B77D16
+L57CFD-S-US	Glimcher Realty Trust	37930210	Financials	237169
+HG5HFV-S-US	The Goldman Sachs Group In	38141G10	Financials	240796
+MBQFMW-S-US	Great Southern Bancorp Inc	39090510	Financials	238700
+DXWFH3-S-US	Golden Star Resources Ltd.	38119T10	Materials	237661
+P7CTQD-S-US	GSE Holding Inc.	36191X10	Materials	B6RLWH
+BNL1XT-S-US	GSI Group Inc.	36191C20	Information Technology	B4Z48T
+C5KQ7Z-S-US	GSI Technology Inc.	36241U10	Information Technology	B00SMG
+KM8HM0-S-US	Globe Specialty Metals Inc	37954N20	Materials	B3VLNB
+LGG5JM-S-US	Global Sources Ltd.	G3930010	Consumer Discretionary	257652
+DBQ32F-S-US	Gastar Exploration Ltd.	36729920	Energy	B01DJB
+P4JQTV-S-US	GSV Capital Corp.	36191J10	Financials	B3T78R
+J8BDXS-S-US	Goodyear Tire & Rubber Co.	38255010	Consumer Discretionary	237820
+FT8K23-S-US	GT Advanced Technologies I	36191U10	Information Technology	B6TB70
+PHKLQK-S-US	GrafTech International Ltd	38431310	Industrials	290671
+K4LJRX-S-US	Gentiva Health Services In	37247A10	Health Care	256102
+B3MR0T-S-US	Chart Industries Inc.	16115Q30	Industrials	B19HNF
+XHD26M-S-US	Triple-S Management Corp.	89674910	Health Care	B29GJQ
+CZBLSM-S-US	GTx Inc.	40052B10	Health Care	226372
+LF4QCN-S-US	Getty Realty Corp.	37429710	Financials	269814
+KM880N-S-US	Guidance Software Inc.	40169210	Information Technology	B1L6HX
+WHS11V-S-US	Granite Construction Inc.	38732810	Industrials	238118
+KVV0X3-S-US	Greenway Medical Technolog	39679B10	Health Care	B76XCZ
+LSJVX2-S-US	Genesee & Wyoming Inc.	37155910	Industrials	237406
+NVXZ1H-S-US	Guidewire Software Inc.	40171V10	Information Technology	B7JYSG
+SHMTH8-S-US	W.W. Grainger Inc.	38480210	Industrials	238086
+LTN487-S-US	Great Plains Energy Inc.	39116410	Utilities	248370
+RT2N46-S-US	GenCorp Inc.	36868210	Industrials	236695
+R4MBBX-S-US	Gyrodyne Co. Of America In	40382010	Financials	239970
+QY1R5Z-S-US	Hyatt Hotels Corp.	44857910	Consumer Discretionary	B5B82X
+F03RQ5-S-US	Hawaiian Holdings Inc.	41987910	Industrials	240804
+CFGDYM-S-US	Haemonetics Corp.	40502410	Health Care	240119
+F5TDLY-S-US	Hanmi Financial Corp.	41049520	Financials	B6TPXR
+VWKLF1-S-US	The Hain Celestial Group I	40521710	Consumer Staples	249233
+M1LGZB-S-US	Halliburton Co.	40621610	Energy	240530
+WRPQNF-S-US	Hallmark Financial Service	40624Q20	Financials	B19HTB
+NDG606-S-US	GLOBAL YACHT SERVICES INC.	40637H10	Health Care	297509
+TMTFJS-S-US	Harman International Indus	41308610	Consumer Discretionary	241113
+W92VYF-S-US	Hasbro Inc.	41805610	Consumer Discretionary	241458
+FNRDNG-S-US	Haynes International Inc.	42087720	Materials	B02WVH
+JYS4QM-S-US	Huntington Bancshares Inc.	44615010	Financials	244596
+N6Y3VS-S-US	Home Bancorp Inc.	4.37E+14	Financials	B39XGV
+GSRG2R-S-US	Hancock Holding Co.	41012010	Financials	241549
+V86L1Y-S-US	Hanesbrands Inc.	41034510	Consumer Discretionary	B1BJSL
+DRBS30-S-US	Harvard Bioscience Inc.	41690610	Health Care	269499
+HWT6NK-S-US	Horizon Bancorp (Indiana)	44040710	Financials	294931
+D2YBXH-S-US	Heritage Financial Group I	42726X10	Financials	B40Z91
+JXZR9V-S-US	HCA Holdings Inc.	40412C10	Health Care	B4MGBG
+K15V5Q-S-US	Hudson City Bancorp Inc.	44368310	Financials	243795
+BW94T3-S-US	HCC Insurance Holdings Inc	40413210	Financials	240042
+TWT78G-S-US	Heritage-Crystal Clean Inc	42726M10	Industrials	B2Q96P
+MH3STZ-S-US	HCI Group Inc.	4.04E+14	Financials	BBN23F
+X46RLH-S-US	The Hackett Group Inc.	40460910	Information Technology	224925
+FXHMTX-S-US	Health Care REIT Inc.	42217K10	Financials	244096
+BVGL57-S-US	Hawaiian Telcom HoldCo Inc	42003110	Telecommunication Serv	B4ZDRV
+L9XWZZ-S-US	HCP Inc.	40414L10	Financials	241757
+CVYNN4-S-US	Healthcare Services Group	42190610	Industrials	241761
+DY0D0T-S-US	The Home Depot Inc.	43707610	Consumer Discretionary	243420
+J1JKSX-S-US	Hardinge Inc.	41232430	Industrials	240352
+VPRQC7-S-US	Hawaiian Electric Industri	41987010	Utilities	241520
+HX1V6Q-S-US	H&E Equipment Services Inc	40403010	Industrials	B0WR84
+LVXC21-S-US	HEICO Corp.	42280610	Industrials	241921
+P49VL8-S-US	Helen Of Troy Ltd.	G4388N10	Consumer Discretionary	241953
+L2XSY7-S-US	Heritage Oaks Bancorp	42724R10	Financials	255035
+M0DZC2-S-US	Hercules Offshore Inc.	42709310	Energy	B0J2NQ
+PQCHZH-S-US	Hess Corp.	42809H10	Energy	202374
+JDSH8C-S-US	HFF Inc.	40418F10	Financials	B1Q1RT
+RCGDTY-S-US	HollyFrontier Corp.	43610610	Energy	B5VX1H
+BRV5SQ-S-US	Heritage Financial Corp. (	42722X10	Financials	261988
+BFRJH9-S-US	Hhgregg Inc.	42833L10	Consumer Discretionary	B23F71
+NDM05Q-S-US	Hanger Inc.	41043F20	Health Care	279665
+DX3DNK-S-US	The Howard Hughes Corp.	44267D10	Financials	B5VR4H
+XF84BM-S-US	Harte-Hanks Inc.	41619610	Consumer Discretionary	241081
+W4DZRL-S-US	Hillenbrand Inc.	43157110	Consumer Discretionary	B2QGDP
+HP151F-S-US	Hibbett Sports Inc.	42856710	Consumer Discretionary	242837
+G6L7Y6-S-US	Hingham Institution For Sa	43332310	Financials	242843
+F4NDZ5-S-US	The Hartford Financial Ser	41651510	Financials	247619
+HM3LKN-S-US	Huntington Ingalls Industr	44641310	Industrials	B40SSC
+BF2D6H-S-US	Health Insurance Innovatio	42225K10	Financials	B7YHN6
+RL98XS-S-US	Hill International Inc.	43146610	Industrials	B01TPN
+TNZRTW-S-US	Hi-Tech Pharmacal Co. Inc.	42840B10	Health Care	240043
+WJYDDZ-S-US	Hittite Microwave Corp.	43365Y10	Information Technology	B0D672
+GKZ98J-S-US	Highwoods Properties Inc.	43128410	Financials	242064
+T52TP8-S-US	Halcón Resources Corp.	40537Q20	Energy	B7L26X
+T9RLT4-S-US	Hecla Mining Co.	42270410	Materials	241860
+MR7KX4-S-US	Herbalife Ltd.	G4412G10	Consumer Staples	B0539H
+P0RL8S-S-US	Harmonic Inc.	41316010	Information Technology	251065
+KK1P79-S-US	HealthSouth Corp.	42192430	Health Care	B1G9B9
+MYKJS5-S-US	Home Loan Servicing Soluti	G6648D10	Financials	B731MH
+D3WLPY-S-US	Helix Energy Solutions Gro	42330P10	Energy	203706
+BCBZ9B-S-US	Health Management Associat	42193310	Health Care	241798
+JVCF2D-S-US	Home Properties Inc.	43730610	Financials	241407
+WQK0JX-S-US	Horace Mann Educators Corp	44032710	Financials	243711
+X72CLN-S-US	HomeStreet Inc.	43785V10	Financials	B4WHS4
+RMKHQL-S-US	HMS Holdings Corp.	40425J10	Health Care	241804
+SGQ6YF-S-US	Handy & Harman Ltd.	41031510	Materials	B0FZHQ
+D2X8WH-S-US	HNI Corp.	40425110	Industrials	243524
+BZV7SF-S-US	Harvest Natural Resources	41754V10	Energy	209286
+J5WTRV-S-US	Hallador Energy Co.	40609P10	Energy	240497
+HLYQ3Y-S-US	Hansen Medical Inc.	41130710	Health Care	B1HLJ4
+V3LG2M-S-US	Health Net Inc.	42222G10	Health Care	241862
+RFV060-S-US	Hooker Furniture Corp.	43903810	Consumer Discretionary	274891
+TQ3YYX-S-US	Harley-Davidson Inc.	41282210	Consumer Discretionary	241105
+RDLR73-S-US	Hologic Inc.	43644010	Health Care	243353
+DVTKP5-S-US	Home Bancshares Inc. (Arka	43689320	Financials	B17MTL
+NMBXMS-S-US	Home Federal Bancorp Inc.	43710G10	Financials	B2N6NK
+LKTW6W-S-US	Honeywell International In	43851610	Industrials	202045
+KHS6Z8-S-US	Hornbeck Offshore Services	44054310	Energy	B00G81
+X7GP26-S-US	Starwood Hotels & Resorts	85590A40	Consumer Discretionary	B12GHV
+CTXKF0-S-US	Hovnanian Enterprises Inc.	44248720	Consumer Discretionary	243716
+RCF7LV-S-US	Helmerich & Payne Inc.	42345210	Energy	242010
+RH4Y8F-S-US	Hudson Pacific Properties	44409710	Financials	B64B9P
+V601BM-S-US	Hewlett-Packard Co.	42823610	Information Technology	242400
+GB43G9-S-US	Hospitality Properties Tru	44106M10	Financials	243896
+X9K9FZ-S-US	Hyperion Therapeutics Inc.	44915N10	Health Care	B7Y2TK
+FBDQ0H-S-US	Heartland Payment Systems	42235N10	Information Technology	B02T2G
+DKGW59-S-US	Healthcare Realty Trust In	42194610	Financials	241792
+Q2PPS2-S-US	H&R Block Inc.	9367110	Industrials	210550
+B7YJ5C-S-US	Hill-Rom Holdings Inc.	43147510	Health Care	242592
+CLZ7RY-S-US	Harbinger Group Inc.	41146A10	Consumer Staples	B4WZ08
+M88FPK-S-US	Hormel Foods Corp.	44045210	Consumer Staples	243726
+PRGHTD-S-US	Harris Corp.	41387510	Information Technology	241200
+PNLFYT-S-US	Horizon Technology Finance	44045A10	Financials	B5BD5P
+NBCJPJ-S-US	Harsco Corp.	41586410	Industrials	241270
+LJQYJ1-S-US	The Hillshire Brands Co.	43258910	Consumer Staples	B76FBQ
+WZMJB0-S-US	Henry Schein Inc.	80640710	Health Care	241696
+PZ8Y1T-S-US	Heidrick & Struggles Inter	42281910	Industrials	241307
+JFWF3B-S-US	HSN Inc.	40430310	Consumer Discretionary	B3CLRB
+JT6DCL-S-US	Hudson Global Inc.	44378710	Industrials	B828N6
+VNSYL9-S-US	Hospira Inc.	44106010	Health Care	B00PWV
+PKSNFC-S-US	Host Hotels & Resorts Inc.	44107P10	Financials	256750
+D78HSD-S-US	Healthstream Inc.	42222N10	Health Care	257787
+KJY9T4-S-US	The Hershey Co.	42786610	Consumer Staples	242280
+BNM74X-S-US	Hersha Hospitality Trust	42782510	Financials	261863
+NPJ742-S-US	HomeTrust Bancshares Inc.	43787210	Financials	B84T2F
+RV6YGB-S-US	Heritage Commerce Corp.	42692710	Financials	250391
+WTZDFR-S-US	Hickory Tech Corporation	42906010	Telecommunication Serv	261995
+JS8MHL-S-US	Hercules Technology Growth	42709650	Financials	B07LT0
+GB4NHT-S-US	Hilltop Holdings Inc.	43274810	Financials	236542
+R1CZZR-S-US	Heartland Express Inc.	42234710	Industrials	241401
+GFF9C6-S-US	Heartland Financial USA In	42234Q10	Financials	282814
+HWV2FH-S-US	Hatteras Financial Corp.	41902R10	Financials	B2R5SY
+B3DTVB-S-US	Harris Teeter Supermarkets	41458510	Consumer Staples	B7GH6J
+FDMG84-S-US	HeartWare International In	42236810	Health Care	B5BVY6
+CHSKKB-S-US	Hertz Global Holdings Inc.	42805T10	Industrials	B1HHJP
+XBV9MD-S-US	Hubbell Inc.	44351020	Industrials	244229
+S0VV0G-S-US	Hub Group Inc.	44332010	Industrials	240763
+NNK8WV-S-US	Humana Inc.	44485910	Health Care	244506
+T6DTWR-S-US	Huntsman Corp.	44701110	Materials	B0650B
+N826NL-S-US	Hurco Cos. Inc.	44732410	Industrials	244636
+NLBVCM-S-US	Huron Consulting Group Inc	44746210	Industrials	B018V7
+J9FN6X-S-US	Hudson Valley Holding Corp	44417210	Financials	B019CT
+DKJ6QK-S-US	Haverty Furniture Cos. Inc	41959610	Consumer Discretionary	241424
+RZW8QS-S-US	Headwaters Inc.	42210P10	Materials	222977
+P0SRHW-S-US	Healthways Inc.	42224510	Health Care	202605
+FS23JV-S-US	Houston Wire & Cable Co.	44244K10	Industrials	B171W4
+KHT2M2-S-US	Hawkins Inc.	42026110	Materials	241559
+V0BZGB-S-US	Hexcel Corp.	42829110	Industrials	241677
+F9B7B7-S-US	Hyster-Yale Materials Hand	44917210	Industrials	B7LG30
+Q4L8H1-S-US	Horizon Pharma Inc.	44047T10	Health Care	B5NT3F
+TKQKTX-S-US	MarineMax Inc.	56790810	Consumer Discretionary	225035
+TD1RHX-S-US	IAC/InterActiveCorp.	44919P50	Information Technology	B0F0F0
+D68983-S-US	Integra LifeSciences Holdi	45798520	Health Care	224869
+Q3TXZ4-S-US	IBERIABANK Corp.	45082810	Financials	245245
+WRXGHR-S-US	Interactive Brokers Group	45841N10	Financials	B1WT4X
+MCPQD9-S-US	International Business Mac	45920010	Information Technology	200597
+QWP0KR-S-US	International Bancshares C	45904410	Financials	224391
+H6GV8W-S-US	IntercontinentalExchange I	45865V10	Financials	B0PBS8
+HHDGWH-S-US	ICF International Inc.	44925C10	Industrials	B1FP36
+SGP3VD-S-US	ICG Group Inc.	44928D10	Information Technology	B011HG
+CRNZQQ-S-US	Iconix Brand Group Inc.	45105510	Consumer Discretionary	217557
+FBH1MV-S-US	Intercept Pharmaceuticals	45845P10	Health Care	B7N59F
+VPR59Q-S-US	ICU Medical Inc.	44930G10	Health Care	245191
+LG9YGN-S-US	IDACORP Inc.	45110710	Utilities	229693
+P7M8YD-S-US	InterDigital Inc.	45867G10	Information Technology	246573
+L0Q86X-S-US	Idenix Pharmaceuticals Inc	45166R20	Health Care	287753
+X9WGQD-S-US	IDT Corp.	44894750	Telecommunication Serv	275730
+V5VGMB-S-US	Integrated Device Technolo	45811810	Information Technology	246243
+VT67J6-S-US	IDEXX Laboratories Inc.	45168D10	Health Care	245920
+HTKWFH-S-US	IDEX Corp.	45167R10	Industrials	245661
+W7TP6N-S-US	International Flavors & Fr	45950610	Materials	246416
+M2QWHK-S-US	International Game Technol	45990210	Consumer Discretionary	246497
+MKCWCM-S-US	IGATE Corp.	45169U10	Information Technology	254443
+VBL6H1-S-US	Independence Holding Co.	45344030	Financials	246122
+FR15MW-S-US	IHS Inc.	45173410	Energy	B08L7X
+QP172M-S-US	Insteel Industries Inc.	45774W10	Industrials	232587
+DXWFM7-S-US	Interval Leisure Group Inc	46113M10	Consumer Discretionary	B3CLS0
+NB68NL-S-US	II-VI Inc.	90210410	Industrials	245269
+RKF7BD-S-US	Intralinks Holdings Inc.	46118H10	Information Technology	B4Z5RW
+CC0SQN-S-US	Illumina Inc.	45232710	Health Care	261399
+HJHDLB-S-US	Ingram Micro Inc.	45715310	Information Technology	248909
+D65353-S-US	ImmunoGen Inc.	45253H10	Health Care	245786
+QNP3X6-S-US	Intermolecular Inc.	45882D10	Information Technology	B5ZTLC
+LQDW14-S-US	Ingles Markets Inc.	45703010	Consumer Staples	246055
+N4K6S9-S-US	Immersion Corp.	45252110	Information Technology	251785
+LMYZ8X-S-US	Immunomedics Inc.	45290710	Health Care	245796
+QVKTBN-S-US	Imation Corp.	45245A10	Information Technology	247549
+RZKCVH-S-US	Imperva Inc.	45321L10	Information Technology	B523R5
+C5F2DM-S-US	ImmunoCellular Therapeutic	45253610	Health Care	B17ZL9
+TLVRYY-S-US	Intermec Inc.	45878610	Information Technology	211684
+RPN75B-S-US	Internap Network Services	45885A30	Information Technology	B17P4M
+SGJQG8-S-US	Incyte Corp.	45337C10	Health Care	247195
+FBBGRD-S-US	Independent Bank Corp. (Ma	45383610	Financials	244782
+MVKRPZ-S-US	Informatica Corp.	45666Q10	Information Technology	241206
+TQ7P1D-S-US	Infinity Pharmaceuticals I	45665G30	Health Care	B1FCQS
+SYH9MB-S-US	Infinera Corp.	45667G10	Information Technology	B1YB5Y
+MG3J1H-S-US	Ingredion Inc.	45718710	Consumer Staples	B7K24P
+WYJNR7-S-US	Interactive Intelligence G	45841V10	Information Technology	B4Q936
+QTX0T8-S-US	Summit Hotel Properties In	86608210	Financials	B3M7R6
+SRLSJ1-S-US	Innodata Inc.	45764220	Information Technology	222674
+T3Z7QT-S-US	World Fuel Services Corp.	98147510	Energy	246945
+PJSZYL-S-US	Intel Corp.	45814010	Information Technology	246324
+SZD2LD-S-US	INTL FCStone Inc.	46116V10	Financials	245644
+LJQMXR-S-US	Intuit Inc.	46120210	Information Technology	245902
+PHP5JX-S-US	Intersections Inc.	46098130	Industrials	223876
+PS7KPZ-S-US	InvenSense Inc.	46123D20	Information Technology	B3XTGL
+P9XWHL-S-US	InnerWorkings Inc.	45773Y10	Industrials	B17W6V
+H686MN-S-US	ION Geophysical Corp.	46204410	Energy	246029
+WQK5W2-S-US	Innospec Inc.	45768S10	Materials	224559
+GX4W4P-S-US	International Paper Co.	46014610	Materials	246525
+KX84YD-S-US	Inter Parfums Inc.	45833410	Consumer Staples	247315
+D50J9Q-S-US	IPass Inc.	46261V10	Information Technology	236728
+QLQKDC-S-US	Infinity Property & Casual	45665Q10	Financials	231373
+KGS4V7-S-US	IPC The Hospitalist Co. In	44984A10	Health Care	B2NW6R
+DXTWJN-S-US	Interpublic Group Of Cos.	46069010	Consumer Discretionary	246632
+FJ33G1-S-US	IPG Photonics Corp.	44980X10	Information Technology	269878
+QFGKJD-S-US	Inphi Corp.	45772F10	Information Technology	B5TRVW
+F067FH-S-US	Innophos Holdings Inc.	45774N10	Materials	B1GHPN
+JH07J0-S-US	Intrepid Potash Inc.	46121Y10	Materials	B2QVR7
+RL8W4D-S-US	Impax Laboratories Inc.	45256B10	Health Care	237372
+JJ7QY4-S-US	Inteliquent Inc.	64128B10	Telecommunication Serv	BBXBX0
+M6459C-S-US	Ingersoll-Rand Plc	G4779110	Industrials	B63303
+NRXHNN-S-US	IRobot Corp.	46272610	Consumer Discretionary	B0J2NS
+GJSQJ6-S-US	Inland Real Estate Corp.	45746120	Financials	B03WNC
+KHSZK3-S-US	Iridium Communications Inc	46269C10	Telecommunication Serv	B2QH31
+MNWT3V-S-US	Investors Real Estate Trus	46173010	Financials	265260
+MYV776-S-US	International Rectifier Co	46025410	Information Technology	246538
+GHM954-S-US	Ignite Restaurant Group In	45173010	Consumer Discretionary	B87SG9
+K6VNHQ-S-US	Iron Mountain Inc.	46284610	Industrials	254293
+TQ9ZKP-S-US	Ironwood Pharmaceuticals I	46333X10	Health Care	B3MZ6K
+L6L0WH-S-US	Investors Bancorp Inc. (Ne	46146P10	Financials	B0J2NT
+BXJVMF-S-US	International Speedway Cor	46033520	Consumer Discretionary	247814
+HSDPDJ-S-US	International Shipholding	46032120	Industrials	246549
+RNHVQ4-S-US	Intersil Corp.	46069S10	Information Technology	255195
+K5KZVH-S-US	Isis Pharmaceuticals Inc.	46433010	Health Care	245978
+SPG28F-S-US	Isle Of Capri Casinos Inc.	46459210	Consumer Discretionary	217834
+W7T9H9-S-US	Intuitive Surgical Inc.	4.61E+64	Health Care	287130
+X9WS9P-S-US	Isramco Inc.	46514140	Energy	224757
+WPK5QZ-S-US	Integrated Silicon Solutio	45812P10	Information Technology	244815
+SPBJJ3-S-US	Gartner Inc.	36665110	Information Technology	237276
+V2NWLT-S-US	ITC Holdings Corp.	46568510	Utilities	B0F7FR
+HLVN92-S-US	Investment Technology Grou	46145F10	Financials	247275
+MJ6N8M-S-US	Investors Title Co.	46180410	Financials	246989
+KHX6L0-S-US	InterMune Inc.	45884X10	Health Care	256589
+NCCBFF-S-US	Itron Inc.	46574110	Information Technology	247194
+NXJG9T-S-US	ITT Corp.	45091120	Industrials	B6Y9SW
+KC74XW-S-US	Illinois Tool Works Inc.	45230810	Industrials	245755
+CTYG3V-S-US	Intevac Inc.	46114810	Information Technology	247581
+BFNJSH-S-US	Invacare Corp.	46120310	Health Care	246797
+VR34H7-S-US	Invesco Mortgage Capital I	46131B10	Financials	B5ZW0F
+JVBLHM-S-US	Invesco Ltd.	G491BT10	Financials	B28XP7
+LZCGBK-S-US	IXYS Corp.	46600W10	Information Technology	224359
+DDZ4P5-S-US	Jack In The Box Inc.	46636710	Consumer Discretionary	234492
+CX1BWR-S-US	Jarden Corp.	47110910	Consumer Discretionary	202832
+KPM885-S-US	JAKKS Pacific Inc.	4.70E+14	Consumer Discretionary	247885
+BPTBYR-S-US	Jazz Pharmaceuticals Plc	G5087110	Health Care	B4Q5ZN
+QNZYNF-S-US	J.B. Hunt Transport Servic	44565810	Industrials	244541
+MCNVRH-S-US	Jabil Circuit Inc.	46631310	Information Technology	247178
+TWS2Z8-S-US	JetBlue Airways Corp.	47714310	Industrials	285276
+KM5GQ1-S-US	John B. Sanfilippo & Son I	80042210	Consumer Staples	277299
+HKMMXJ-S-US	John Bean Technologies Cor	47783910	Industrials	B3BRJZ
+W6TLYH-S-US	Johnson Controls Inc.	47836610	Consumer Discretionary	247680
+PJNPRK-S-US	J2 Global Inc.	48123V10	Information Technology	B75DGJ
+PKY98Q-S-US	J. C. Penney Co. Inc.	70816010	Consumer Discretionary	268030
+LBWC5M-S-US	JDS Uniphase Corp.	46612J50	Information Technology	B1G2LX
+NGXKNW-S-US	Jacobs Engineering Group I	46981410	Industrials	246905
+TXQ4CJ-S-US	Jive Software Inc.	47760A10	Information Technology	B7DX5W
+BB6S59-S-US	J&J Snack Foods Corp.	46603210	Consumer Staples	246917
+DSGZ71-S-US	Jack Henry & Associates In	42628110	Information Technology	246919
+VNN3BR-S-US	Jones Lang LaSalle Inc.	48020Q10	Financials	204064
+GXCKXZ-S-US	Jamba Inc.	47023A30	Consumer Discretionary	BBDJK3
+R2BZB1-S-US	JAVELIN Mortgage Investmen	47200B10	Financials	B882ZR
+CW4N1R-S-US	JMP Group Inc.	46629U10	Financials	B1XDBR
+T7HSNM-S-US	Johnson & Johnson	47816010	Health Care	247583
+W8XCG8-S-US	Juniper Networks Inc.	48203R10	Information Technology	243184
+BGRLRG-S-US	Janus Capital Group Inc.	47102X10	Financials	260555
+DBPRF3-S-US	The Jones Group Inc.	48020T10	Consumer Discretionary	247715
+FZY1NP-S-US	The St. Joe Co.	79014810	Financials	276866
+NL4LFR-S-US	Jos. A. Bank Clothiers Inc	48083810	Consumer Discretionary	247897
+R822Z3-S-US	Johnson Outdoors Inc.	47916710	Consumer Discretionary	247684
+RCGRH8-S-US	Joy Global Inc.	48116510	Industrials	278190
+N5N6M6-S-US	JPMorgan Chase & Co.	46625H10	Financials	219038
+SPGL7X-S-US	Journal Communications Inc	48113010	Consumer Discretionary	254813
+JJ82GB-S-US	John Wiley & Sons Inc.	96822320	Consumer Discretionary	296566
+Q67K95-S-US	Nordstrom Inc.	65566410	Consumer Discretionary	264182
+TKQVC5-S-US	Kellogg Co.	48783610	Consumer Staples	248681
+N27DTX-S-US	Kadant Inc.	48282T10	Industrials	276997
+JFYHZ5-S-US	Kaiser Aluminum Corp.	48300770	Materials	B15CJ3
+FMDKW6-S-US	Kaman Corp.	48354810	Industrials	248322
+GHS16L-S-US	KAR Auction Services Inc.	48238T10	Industrials	B4Y1MH
+MMNDWT-S-US	Kimball International Inc.	49427410	Industrials	249163
+HNZZTB-S-US	KB Home	48666K10	Consumer Discretionary	248507
+XC1HLC-S-US	KaloBios Pharmaceuticals I	48344T10	Health Care	B99HPW
+BXMDGT-S-US	KBR Inc.	48242W10	Industrials	B1HHB1
+BMDH5H-S-US	KCAP Financial Inc.	4.87E+14	Financials	B8J966
+FXHR10-S-US	Knight Capital Group Inc.	49900510	Financials	226627
+N04TN9-S-US	Kansas City Life Insurance	48483610	Financials	248397
+S8YM9T-S-US	Kaydon Corp.	48658710	Industrials	248523
+VFZF4S-S-US	Key Energy Services Inc.	49291410	Energy	249079
+V988DM-S-US	Kelly Services Inc.	48815220	Industrials	248711
+DG72YQ-S-US	KEMET Corp.	48836020	Information Technology	248761
+CY5VM2-S-US	Keryx Biopharmaceuticals I	49251510	Health Care	261337
+Q1LFDX-S-US	Kirby Corp.	49726610	Industrials	249353
+SX82QG-S-US	KeyCorp	49326710	Financials	249091
+F2CR5V-S-US	Keynote Systems Inc.	49330810	Information Technology	249217
+RBLFCM-S-US	The KEYW Holding Corp.	49372310	Industrials	B40SY1
+R2D4CZ-S-US	Kforce Inc.	49373210	Industrials	274698
+D4ZZ86-S-US	Korn/Ferry International	50064320	Industrials	238684
+Q50887-S-US	Kimco Realty Corp.	49446R10	Financials	249159
+FZBD25-S-US	KiOR Inc.	49721710	Energy	B4QN8Z
+LSJ1B9-S-US	Kirkland's Inc.	49749810	Consumer Discretionary	296092
+JVHL09-S-US	Krispy Kreme Doughnuts Inc	50101410	Consumer Discretionary	257681
+FJ1F7G-S-US	KLA-Tencor Corp.	48248010	Information Technology	248013
+X0NKF2-S-US	Kimberly-Clark Corp.	49436810	Consumer Staples	249183
+WGMKDK-S-US	KMG Chemicals Inc.	48256410	Materials	211492
+GYN3G6-S-US	Kinder Morgan Inc.	49456B10	Energy	B3NQ4P
+VDPXTQ-S-US	Kemper Corp.	48840110	Financials	B52KRV
+MYVXJV-S-US	Kennametal Inc.	48917010	Industrials	248812
+J2NC4K-S-US	CarMax Inc.	14313010	Consumer Discretionary	298356
+P7KT40-S-US	Kindred Healthcare Inc.	49458010	Health Care	275267
+HZ96HT-S-US	Knoll Inc.	49890420	Industrials	B051B4
+MG3020-S-US	Knight Transportation Inc.	49906410	Industrials	248769
+T0JCXJ-S-US	The Coca-Cola Co.	19121610	Consumer Staples	220665
+GD8XX0-S-US	Kodiak Oil & Gas Corp.	50015Q10	Energy	B06MB4
+DZ70T4-S-US	Koppers Holdings Inc.	50060P10	Materials	B0X46B
+X699Q2-S-US	Kopin Corp.	50060010	Information Technology	249241
+FNBWSQ-S-US	Michael Kors Holdings Ltd.	G6075410	Consumer Discretionary	B7341C
+C05NSB-S-US	Kosmos Energy Ltd.	G5315B10	Energy	B53HHH
+M518NK-S-US	The Kroger Co.	50104410	Consumer Staples	249740
+GNG73V-S-US	Kraton Performance Polymer	50077C10	Materials	B547X7
+VLJF23-S-US	Kilroy Realty Corp.	49427F10	Financials	249552
+S4D2D0-S-US	Kraft Foods Group Inc.	50076Q10	Consumer Staples	B8P0S0
+DWWZDJ-S-US	Kite Realty Group Trust	49803T10	Financials	B02H89
+MXRZV0-S-US	Kearny Financial Corp.	48716910	Financials	B034L8
+CGFTZ5-S-US	Kronos Worldwide Inc.	50105F10	Materials	216639
+NPN18J-S-US	KapStone Paper & Packaging	48562P10	Materials	B0L2NP
+K7VKFQ-S-US	Kohl's Corp.	50025510	Consumer Discretionary	249611
+DSFSZY-S-US	Kansas City Southern	48517030	Industrials	260764
+KB76XV-S-US	Key Tronic Corp.	49314410	Information Technology	249124
+MLJC0X-S-US	Kratos Defense & Security	50077B20	Industrials	251214
+MR6L06-S-US	KVH Industries Inc. (Delaw	48273810	Information Technology	249550
+TBWFBY-S-US	Kennedy-Wilson Holdings In	48939810	Financials	B29849
+SZJFXH-S-US	Quicksilver Resources Inc.	74837R10	Energy	240124
+NPL6ST-S-US	Quaker Chemical Corp.	74731610	Materials	271518
+KFN66G-S-US	KYTHERA Biopharmaceuticals	50157010	Health Care	B75H4Z
+VYPZ0B-S-US	Loews Corp.	54042410	Financials	252302
+S5LHR3-S-US	Multi-Color Corp.	62538310	Industrials	260985
+QKLFDD-S-US	Lithia Motors Inc.	53679710	Consumer Discretionary	251503
+NL5J6M-S-US	Lamar Advertising Co.	51281510	Consumer Discretionary	250841
+PX4PQN-S-US	Lancaster Colony Corp.	51384710	Consumer Staples	250320
+WZH2VV-S-US	Layne Christensen Co.	52105010	Industrials	250801
+PM4PLT-S-US	Lazard Ltd.	G5405010	Financials	B081VQ
+TZ5Q99-S-US	Lakeland Bancorp Inc.	51163710	Financials	262003
+C4CKD3-S-US	Liberty Global Plc	G5480U10	Consumer Discretionary	B8W676
+SKXZ61-S-US	Libbey Inc.	52989810	Consumer Discretionary	251585
+HCYM26-S-US	US Airways Group Inc.	90341W10	Industrials	B0LGKM
+LLVZG0-S-US	Lannett Co. Inc.	51601210	Health Care	244769
+N5TVCH-S-US	Lifetime Brands Inc.	53222Q10	Consumer Discretionary	251577
+QG6RS5-S-US	Lydall Inc.	55081910	Industrials	253467
+HLYHQR-S-US	Leidos Holdings Inc.	78390X10	Information Technology	BDV82B
+QP00SH-S-US	Landauer Inc.	51476K10	Health Care	287971
+MJGC2Z-S-US	Lear Corp.	52186520	Consumer Discretionary	B570P9
+K11YS2-S-US	Leap Wireless Internationa	52186330	Telecommunication Serv	B02L89
+TVS739-S-US	Lincoln Electric Holdings	53390010	Industrials	251685
+F3QSC9-S-US	Market Leader Inc.	57056R10	Information Technology	B02T2H
+PB0T2B-S-US	Leggett & Platt Inc.	52466010	Consumer Discretionary	251068
+GRSGXM-S-US	Lennar Corp.	52605710	Consumer Discretionary	251192
+RNJ119-S-US	LeapFrog Enterprises Inc.	52186N10	Consumer Discretionary	294668
+SGMYM9-S-US	Littelfuse Inc.	53700810	Information Technology	253183
+WN9N7T-S-US	The Laclede Group Inc.	50559710	Utilities	250021
+HP078K-S-US	Lions Gate Entertainment C	53591920	Consumer Discretionary	275350
+BRV7XS-S-US	Ligand Pharmaceuticals Inc	53220K50	Health Care	250157
+XLSWXT-S-US	Laboratory Corp. Of Americ	50540R40	Health Care	258612
+XGGNXV-S-US	LHC Group Inc.	50187A10	Health Care	B06DT5
+H6CYS5-S-US	LaSalle Hotel Properties	51794210	Financials	224016
+FGWXJ4-S-US	Life Technologies Corp.	53217V10	Health Care	239718
+QDY7D2-S-US	Lennox International Inc.	52610710	Industrials	244205
+DG2SRP-S-US	LIN Media LLC	53277410	Consumer Discretionary	BCB82K
+KQNCH9-S-US	Lincoln Educational Servic	53353510	Consumer Discretionary	B0BV2Y
+DR8CHR-S-US	Liberty Interactive Corp.	53071M10	Consumer Discretionary	B14470
+L9W9ZH-S-US	Fidelity Southern Corp.	31639410	Financials	234842
+BQWH4V-S-US	Lionbridge Technologies In	53625210	Information Technology	247973
+QNVQLG-S-US	Lakeland Financial Corp.	51165610	Financials	253752
+FYN7RB-S-US	LKQ Corp.	50188920	Consumer Discretionary	297102
+VPRBS0-S-US	Lumber Liquidators Holding	55003T10	Consumer Discretionary	B5KKQN
+BCHWNY-S-US	L-3 Communications Holding	50242410	Industrials	224736
+S37C7G-S-US	Limelight Networks Inc.	53261M10	Information Technology	B1YB67
+D50Z54-S-US	Linear Technology Corp.	53567810	Information Technology	251683
+W38FV3-S-US	Eli Lilly & Co.	53245710	Health Care	251615
+TF5788-S-US	Legg Mason Inc.	52490110	Financials	251061
+MM3CDV-S-US	Liberty Media Corp.	53122910	Consumer Discretionary	B7KYMP
+R02GPQ-S-US	LMI Aerospace Inc.	50207910	Industrials	226119
+J5XYXX-S-US	Limoneira Co.	53274610	Consumer Staples	210176
+RBFXSD-S-US	Luminex Corp.	5.50E+14	Health Care	257210
+MB9TL1-S-US	Lumos Networks Corp.	55028310	Telecommunication Serv	B74WVF
+BV8916-S-US	Lockheed Martin Corp.	53983010	Industrials	252209
+HVQ5RM-S-US	Lincoln National Corp.	53418710	Financials	251637
+JWM3WQ-S-US	Snyder's-Lance Inc.	83355110	Consumer Staples	B54DFD
+KM5BFX-S-US	Landec Corp.	51476610	Materials	251705
+Q774MW-S-US	Cheniere Energy Inc.	16411R20	Energy	265436
+TL2670-S-US	LinkedIn Corp.	53578A10	Information Technology	B3ZVCQ
+GC4QRZ-S-US	Lindsay Corp.	53555510	Industrials	251661
+X9RH3N-S-US	Alliant Energy Corp.	1880210	Utilities	297382
+WJW42V-S-US	Lorillard Inc.	54414710	Consumer Staples	B39GHT
+RNJ4DK-S-US	LifeLock Inc.	53224V10	Consumer Discretionary	B84VW1
+CSQZST-S-US	LogMeIn Inc.	54142L10	Information Technology	B600J1
+LSJ3LH-S-US	Grand Canyon Education Inc	38526M10	Consumer Discretionary	B3F1XM
+BT6FCC-S-US	Loral Space & Communicatio	54388110	Consumer Discretionary	B0LXSR
+FWGKNT-S-US	Spark Networks Inc.	84651P10	Information Technology	B2351B
+N91ZBG-S-US	Lowe's Cos. Inc.	54866110	Consumer Discretionary	253676
+R0N4D9-S-US	LipoScience Inc.	53630M10	Health Care	285757
+LWQ5DB-S-US	Laredo Petroleum Holdings	51680610	Energy	B7DX5X
+JJJB62-S-US	LPL Financial Holdings Inc	50212V10	Financials	B75JX3
+VDT4ZR-S-US	LifePoint Hospitals Inc.	53219L10	Health Care	241303
+SGP0SF-S-US	Lender Processing Services	5.26E+14	Information Technology	B39TRZ
+QPZM46-S-US	LivePerson Inc.	53814610	Information Technology	257705
+MBNYTH-S-US	Louisiana-Pacific Corp.	54634710	Materials	253524
+GGS44G-S-US	Liquidity Services Inc.	53635B10	Information Technology	B0ZN8Z
+N9757B-S-US	Lam Research Corp.	51280710	Information Technology	250224
+FL8L8H-S-US	K12 Inc.	48273U10	Consumer Discretionary	B29ZB6
+RWHVKS-S-US	Liberty Property Trust	53117210	Financials	251368
+MBNTKC-S-US	Lattice Semiconductor Corp	51841510	Information Technology	250665
+BRVV1B-S-US	CapLease Inc.	14028810	Financials	B00FXP
+TCWFBX-S-US	LSI Corp.	50216110	Information Technology	249899
+H7DL2V-S-US	Landstar System Inc.	51509810	Industrials	250399
+FLDXDF-S-US	LTC Properties Inc.	50217510	Financials	249878
+B3L74D-S-US	L Brands Inc.	50179710	Consumer Discretionary	B9M2WX
+NZP7PH-S-US	Life Time Fitness Inc.	53217R20	Consumer Discretionary	B01R1Z
+NSYWF1-S-US	Ladenburg Thalmann Financi	50575Q10	Financials	248278
+T2Z28K-S-US	LTX-Credence Corp.	50240320	Information Technology	249950
+KW3WP9-S-US	Luby's Inc.	54928210	Consumer Discretionary	216292
+BDNXCR-S-US	Lufkin Industries Inc.	54976410	Energy	253748
+XKSVQP-S-US	Leucadia National Corp.	52728810	Financials	251301
+MXVHMC-S-US	Southwest Airlines Co.	84474110	Industrials	283154
+TMTS63-S-US	Steinway Musical Instrumen	85849510	Consumer Discretionary	284877
+TKPVG7-S-US	Level 3 Communications Inc	52729N30	Telecommunication Serv	B5LL29
+TMYX30-S-US	Liberty Interactive Corp.	53071M88	Consumer Discretionary	B8FK6R
+BPSQS5-S-US	Las Vegas Sands Corp.	51783410	Consumer Discretionary	B02T2J
+VGZF8W-S-US	Lifeway Foods Inc.	53191410	Consumer Staples	254530
+CHQQ0L-S-US	Lexmark International Inc.	52977110	Information Technology	251190
+VS1QSW-S-US	Lexington Realty Trust	52904310	Financials	213915
+R95603-S-US	Lexicon Pharmaceuticals In	52887210	Health Care	257693
+NV79M1-S-US	LSB Industries Inc.	50216010	Materials	253688
+M1W3FF-S-US	LyondellBasell Industries	N5374510	Materials	B3SPXZ
+HTJTDH-S-US	LSI Industries Inc.	50216C10	Industrials	249902
+C5FWZD-S-US	Live Nation Entertainment	53803410	Consumer Discretionary	B0T7YX
+BNL65Y-S-US	La-Z-Boy Inc.	50533610	Consumer Discretionary	250840
+KHRMVQ-S-US	Macy's Inc.	55616P10	Consumer Discretionary	234502
+HLTYZF-S-US	MasterCard Inc.	57636Q10	Information Technology	B12155
+TLPSG8-S-US	Mid-America Apartment Comm	59522J10	Financials	258913
+RPSRTL-S-US	Macerich Co.	55438210	Financials	254396
+MYPH9W-S-US	Merrimack Pharmaceuticals	59032810	Health Care	B72XX6
+TBQVMN-S-US	Main Street Capital Corp.	56035L10	Financials	B28BNR
+QHC03C-S-US	MAKO Surgical Corp.	56087910	Health Care	B2PLY0
+GKZ0R8-S-US	ManpowerGroup	56418H10	Industrials	256249
+X56F28-S-US	Manhattan Associates Inc.	56275010	Information Technology	223947
+KZJH2D-S-US	ManTech International Corp	56456310	Information Technology	282530
+CC0PJK-S-US	Marriott International Inc	57190320	Consumer Discretionary	221061
+GPBWRP-S-US	Masco Corp.	57459910	Industrials	257020
+Q6CJWX-S-US	Masimo Corp.	57479510	Health Care	B1YWR6
+RS1WKD-S-US	Mattel Inc.	57708110	Consumer Discretionary	257230
+J99KF2-S-US	Mattersight Corp.	57709710	Information Technology	B5TGY4
+B4K45G-S-US	Matthews International Cor	57712810	Consumer Discretionary	256809
+MLMM7Z-S-US	Matson Inc.	57686G10	Industrials	B8GNC9
+BDMVBR-S-US	Maxygen Inc.	57777610	Health Care	252982
+HY2GJD-S-US	MB Financial Inc.	55264U10	Financials	281765
+QH5ZDJ-S-US	MBIA Inc.	55262C10	Financials	254704
+PN6NGR-S-US	Middleburg Financial Corp.	59609410	Financials	264783
+SW4WHC-S-US	Merchants Bancshares Inc.	58844810	Financials	258071
+DS954L-S-US	Mercantile Bank Corp.	58737610	Financials	262025
+WQJW8S-S-US	MetroCorp Bancshares Inc.	59165010	Financials	244472
+CDHPCV-S-US	Medley Capital Corp.	58503F10	Financials	B451X5
+F1F0GY-S-US	McDonald's Corp.	58013510	Consumer Discretionary	255070
+JR360D-S-US	Contango Oil & Gas Co.	21075N20	Energy	275294
+MT99FY-S-US	MCG Capital Corp.	58047P10	Financials	282339
+SY92RH-S-US	Microchip Technology Inc.	59501710	Information Technology	259217
+PW14V7-S-US	Marchex Inc.	56624R10	Information Technology	223894
+LRDD7S-S-US	McKesson Corp.	58155Q10	Health Care	237853
+C4BW2G-S-US	Moody's Corp.	61536910	Financials	225205
+GGV50C-S-US	Molycorp Inc.	60875310	Materials	B458HM
+QLL86B-S-US	Monarch Casino & Resort In	60902710	Consumer Discretionary	259919
+LSJLCT-S-US	Micrel Inc.	59479310	Information Technology	258973
+LZ5YVD-S-US	MICROS Systems Inc.	59490110	Information Technology	258808
+BNM1TR-S-US	Marcus Corp.	56633010	Consumer Discretionary	256482
+PHPRNG-S-US	Mercury General Corp.	58940010	Financials	257846
+QBNT1Z-S-US	MEDNAX Inc.	58502B10	Health Care	267764
+G5FRC0-S-US	MedAssets Inc.	58404510	Health Care	B29YMY
+XD3RWF-S-US	M.D.C. Holdings Inc.	55267610	Consumer Discretionary	256120
+H8N5Q2-S-US	MDC Partners Inc.		Consumer Discretionary	257449
+KYKSFJ-S-US	The Medicines Co.	58468810	Health Care	261677
+D8DHJ7-S-US	Mondelez International Inc	60920710	Consumer Staples	B8CKK0
+GB58PD-S-US	Meredith Corp.	58943310	Consumer Discretionary	257851
+VLC2X3-S-US	McDermott International In	58003710	Energy	255031
+HD2MQZ-S-US	Allscripts Healthcare Solu	01988P10	Health Care	271003
+CX3NF1-S-US	Medidata Solutions Inc.	58471A10	Health Care	B5424Q
+TTHQS7-S-US	Medtronic Inc.	58505510	Health Care	257546
+P45G64-S-US	MDU Resources Group Inc.	55269010	Utilities	254732
+W91Z7L-S-US	Medivation Inc.	58501N10	Health Care	B033T7
+MG3YWX-S-US	Midway Gold Corp.		Materials	B01DLW
+R3HHY7-S-US	Metalico Inc.	59117610	Industrials	B015P5
+MLJD2Y-S-US	Measurement Specialties In	58342110	Information Technology	257235
+K39KJD-S-US	Medifast Inc.	58470H10	Consumer Staples	293403
+TSCHL5-S-US	MeetMe Inc.	58514110	Information Technology	B8J72D
+JVB0D2-S-US	Methode Electronics Inc.	59152020	Information Technology	258329
+X0T7BG-S-US	Mentor Graphics Corp.	58720010	Information Technology	257803
+NV2X6X-S-US	MetLife Inc.	59156R10	Financials	257320
+BDMMYK-S-US	Metro Bancorp Inc. (Pennsy	59161R10	Financials	243393
+SKWSYY-S-US	MFA Financial Inc.	55272X10	Financials	241816
+VCM27Y-S-US	Maidenform Brands Inc.	56030510	Consumer Discretionary	B0DPJT
+NNLG3Y-S-US	MicroFinancial Inc.	59507210	Financials	241167
+QMXJY2-S-US	Multi-Fineline Electronix	62541B10	Information Technology	B011MJ
+RV0G27-S-US	Mattress Firm Holding Corp	57722W10	Consumer Discretionary	B6ZW53
+BFW6MW-S-US	MISTRAS Group Inc.	60649T10	Industrials	B4WCCG
+Q3W246-S-US	Multimedia Games Holding C	62545310	Consumer Discretionary	290085
+SPFVW7-S-US	MGE Energy Inc.	55277P10	Utilities	255416
+V2MYTY-S-US	MoneyGram International In	60935Y20	Information Technology	B4L508
+PLYM03-S-US	Magellan Health Services I	55907920	Health Care	230778
+MQ18S4-S-US	MGM Resorts International	55295310	Consumer Discretionary	254741
+CQHVTT-S-US	McGrath RentCorp	58058910	Industrials	255155
+NXC32S-S-US	McGraw Hill Financial Inc.	58064510	Consumer Discretionary	255144
+WPJ3PZ-S-US	Morgans Hotel Group Co.	61748W10	Consumer Discretionary	B0YRYS
+NK4RMT-S-US	Mohawk Industries Inc.	60819010	Consumer Discretionary	259869
+HHBX04-S-US	Maiden Holdings Ltd.	G5753U11	Financials	B2RB07
+KPM401-S-US	M/I Homes Inc.	55305B10	Consumer Discretionary	254938
+VS56F4-S-US	Magnum Hunter Resources Co	55973B10	Energy	285097
+G900JC-S-US	The Middleby Corp.	59627810	Industrials	259093
+KHSV4V-S-US	Meadowbrook Insurance Grou	58319P10	Financials	257494
+G7VGR0-S-US	Miller Energy Resources In	60052710	Energy	B01D5M
+MG410Z-S-US	Mitcham Industries Inc.	60650110	Energy	259713
+VKC2S0-S-US	Mobile Mini Inc.	60740F10	Industrials	254817
+LRW9TX-S-US	AG Mortgage Investment Tru	122810	Financials	B4NKX3
+SM1XZZ-S-US	Mead Johnson Nutrition Co.	58283910	Consumer Staples	B4W9F2
+DVR40W-S-US	McCormick & Co. Inc.	57978020	Consumer Staples	255016
+J75JH3-S-US	Markel Corp.	57053510	Financials	256643
+TGB6X1-S-US	MKS Instruments Inc.	55306N10	Information Technology	240487
+CCJBHC-S-US	Responsys Inc.	76124810	Information Technology	B5MYYV
+GV31DS-S-US	MarketAxess Holdings Inc.	57060D10	Financials	B03Q9D
+WB6GYX-S-US	Mesa Laboratories Inc.	59064R10	Information Technology	255381
+GQM6RL-S-US	Herman Miller Inc.	60054410	Industrials	259422
+Q771FS-S-US	Mueller Industries Inc.	62475610	Industrials	260971
+LY60VC-S-US	Martin Marietta Materials	57328410	Materials	257207
+DG7WGG-S-US	ModusLink Global Solutions	60786L10	Information Technology	220355
+PRM6ST-S-US	Miller Industries Inc. (Te	60055120	Industrials	280119
+M6WZVV-S-US	Millennial Media Inc.	60040N10	Information Technology	B7GJ9R
+RWB1HB-S-US	Marsh & McLennan Cos. Inc.	57174810	Financials	256774
+R17LLM-S-US	3M Co.	88579Y10	Industrials	259570
+HY2KQH-S-US	MAXIMUS Inc.	57793310	Information Technology	201866
+LWY7WZ-S-US	Merit Medical Systems Inc.	58988910	Health Care	258055
+R7V8ZQ-S-US	Manning & Napier Inc.	56382Q10	Financials	B5L94X
+DWQ23Z-S-US	The McClatchy Co.	57948910	Consumer Discretionary	257448
+CJWNLB-S-US	MannKind Corp.	56400P20	Health Care	B010TR
+GN6H7G-S-US	Monmouth Real Estate Inves	60972010	Financials	250407
+LRHWY2-S-US	Monro Muffler Brake Inc.	61023610	Consumer Discretionary	260008
+NT3TVP-S-US	Monster Beverage Corp.	61174010	Consumer Staples	B6X2H8
+G0YHN6-S-US	Momenta Pharmaceuticals In	60877T10	Health Care	B018VB
+WPL1CS-S-US	MTR Gaming Group Inc.	55376910	Consumer Discretionary	297267
+BRWRT6-S-US	Altria Group Inc.	02209S10	Consumer Staples	269263
+B8483R-S-US	Modine Manufacturing Co.	60782810	Consumer Discretionary	259835
+LHG8VT-S-US	MidWestOne Financial Group	59851110	Financials	298717
+J996RR-S-US	Moog Inc.	61539420	Industrials	260121
+CB1BN2-S-US	Molina Healthcare Inc.	60855R10	Health Care	221270
+D559F6-S-US	Molex Inc.	60855410	Information Technology	259914
+CN7JPT-S-US	Monsanto Co.	61166W10	Materials	265432
+TQ9V5F-S-US	Morningstar Inc.	61770010	Consumer Discretionary	B081VR
+GW5WZK-S-US	The Mosaic Co.	61945C10	Materials	B3NPHP
+N4NNBJ-S-US	MoSys Inc.	61971810	Information Technology	277079
+MR6HW4-S-US	Movado Group Inc.	62458010	Consumer Discretionary	264316
+QMWRFB-S-US	Move Inc.	62458M20	Information Technology	B7CPZL
+MQLFH7-S-US	Marathon Petroleum Corp.	56585A10	Energy	B3K3L4
+H0GWRH-S-US	Midstates Petroleum Co. In	59804T10	Energy	B7TWX3
+JZVY5B-S-US	Met-Pro Corp.	59087630	Industrials	258285
+M8H3DT-S-US	Medical Properties Trust I	58463J30	Financials	B0JL5L
+CZJM88-S-US	Monolithic Power Systems I	60983910	Information Technology	B01Z7J
+STZMBB-S-US	Marine Products Corp.	56842710	Consumer Discretionary	273710
+V032J1-S-US	MRC Global Inc.	55345K10	Industrials	B7M66F
+JR3CBK-S-US	Mercury Systems Inc.	58937810	Information Technology	214404
+NW86FZ-S-US	Merge Healthcare Inc.	58949910	Health Care	214423
+S48NVS-S-US	Montpelier Re Holdings Ltd	G6218510	Financials	295688
+V9FMMN-S-US	Merck & Co. Inc.	58933Y10	Health Care	277884
+X2XKYS-S-US	Marlin Business Services C	57115710	Financials	212288
+NCHX4Q-S-US	Marathon Oil Corp.	56584910	Energy	291097
+QXVDZX-S-US	Marten Transport Ltd.	57307510	Industrials	256835
+F3NL57-S-US	Marvell Technology Group L	G5876H10	Information Technology	259465
+RWHXPV-S-US	Morgan Stanley	61744644	Financials	226231
+DZ4019-S-US	Mine Safety Appliances Co.	60272010	Industrials	259531
+SQMDKJ-S-US	Microsemi Corp.	59513710	Information Technology	258814
+TP36J7-S-US	MSCI Inc.	55354G10	Financials	B2972D
+KDCJD2-S-US	Middlesex Water Co.	59668010	Utilities	258946
+PN2FDS-S-US	MainSource Financial Group	56062Y10	Financials	247515
+DF3K29-S-US	Microsoft Corp.	59491810	Information Technology	258817
+RT8PT0-S-US	The Madison Square Garden	55826P10	Consumer Discretionary	B60SJT
+X8M6VK-S-US	Motorola Solutions Inc.	62007630	Information Technology	B5BKPQ
+CSTJJ2-S-US	MidSouth Bancorp Inc.	59803910	Financials	258723
+WPDTDW-S-US	MSC Industrial Direct Co.	55353010	Industrials	256765
+M8DZBT-S-US	Martha Stewart Living Omni	57308310	Consumer Discretionary	250351
+LJQBBG-S-US	Mindspeed Technologies Inc	60268220	Information Technology	280861
+B700XP-S-US	MicroStrategy Inc.	59497240	Information Technology	297432
+VBL5F0-S-US	M&T Bank Corp.	55261F10	Financials	234016
+VNSTB5-S-US	Mettler-Toledo Internation	59268810	Information Technology	212624
+MCJB7C-S-US	Matador Resources Co.	57648520	Energy	B7MSLL
+LY1F21-S-US	MGIC Investment Corp.	55284810	Financials	254861
+LDMY8V-S-US	American Capital Mortgage	02504A10	Financials	B6QB58
+XCZ9C7-S-US	Meritage Homes Corp.	59001A10	Consumer Discretionary	260132
+XQ6C1S-S-US	Vail Resorts Inc.	91879Q10	Consumer Discretionary	295419
+QZ3MSQ-S-US	Meritor Inc.	59001K10	Industrials	260834
+K14JPH-S-US	Materion Corp.	57669010	Materials	214962
+GW67MW-S-US	Matrix Service Co.	57685310	Energy	257206
+TH9T7R-S-US	MTS Systems Corp.	55377710	Information Technology	260898
+HPVS0L-S-US	M/A-COM Technology Solutio	55405Y10	Information Technology	B5B15Y
+MJ6M6L-S-US	Mattson Technology Inc.	57722310	Information Technology	257229
+FMG5YQ-S-US	Manitowoc Co. Inc.	56357110	Industrials	256204
+QQ0ZRH-S-US	Minerals Technologies Inc.	60315810	Materials	259561
+NGW1SG-S-US	MasTec Inc.	57632310	Industrials	215530
+D1RR34-S-US	Micron Technology Inc.	59511210	Information Technology	258818
+PKTM88-S-US	Murphy Oil Corp.	62671710	Energy	261120
+RPSD37-S-US	McEwen Mining Inc.	58039P10	Materials	B7M5FL
+CFGCWL-S-US	The Men's Wearhouse Inc.	58711810	Consumer Discretionary	257632
+CHNTDT-S-US	Mueller Water Products Inc	62475810	Industrials	B15RZR
+HVWRCV-S-US	MWI Veterinary Supply Inc.	55402X10	Health Care	B0FZ5Q
+G5M8S2-S-US	MeadWestvaco Corp.	58333410	Materials	284004
+TTHG7Z-S-US	Monster Worldwide Inc.	61174210	Information Technology	289204
+V0BDBS-S-US	Maxim Integrated Products	57772K10	Information Technology	257376
+BCLHSJ-S-US	MaxLinear Inc.	57776J10	Information Technology	B3RDWC
+R06PRP-S-US	Maxwell Technologies Inc.	57776710	Information Technology	257377
+KFP4W6-S-US	Myers Industries Inc.	62846410	Materials	261308
+V4VNWF-S-US	Myriad Genetics Inc.	62855J10	Health Care	261415
+VH2XZ5-S-US	Mylan Inc.	62853010	Health Care	261380
+P46QRG-S-US	MYR Group Inc.	55405W10	Industrials	B3CLS1
+SFHJ55-S-US	NetSuite Inc.	64118Q10	Information Technology	B2B0FZ
+WFHPXV-S-US	Nash-Finch Co.	63115810	Consumer Staples	262331
+W14H16-S-US	Nanometrics Inc.	63007710	Information Technology	262222
+T6788J-S-US	NASB Financial Inc.	62896810	Financials	263461
+TP4M2F-S-US	Nordic American Tankers Lt	G6577310	Energy	211387
+K00N4R-S-US	Nathan's Famous Inc.	63234710	Consumer Discretionary	262274
+L1V2ML-S-US	National Instruments Corp.	63651810	Information Technology	264507
+B2BRS9-S-US	National Interstate Corp.	63654U10	Financials	B05Q28
+SDC7RY-S-US	Nature's Sunshine Products	63902710	Consumer Staples	262781
+RRXLHH-S-US	National American Universi	63245Q10	Consumer Discretionary	B29ZGG
+T1PR8N-S-US	Navistar International Cor	6.39E+14	Industrials	262446
+X56G49-S-US	Navidea Biopharmaceuticals	63937X10	Health Care	B5BBBX
+NZMC2Q-S-US	The Navigators Group Inc.	63890410	Financials	262785
+FLD3XQ-S-US	National Bank Holdings Cor	63370710	Financials	B888DV
+JS30TB-S-US	Neurocrine Biosciences Inc	64125C10	Health Care	262391
+WW7382-S-US	Noble Energy Inc.	65504410	Energy	264076
+Q1PKCV-S-US	Nabors Industries Ltd.	G6359F10	Energy	296337
+RT6C6P-S-US	NBT Bancorp Inc.	62877810	Financials	262645
+GJT01G-S-US	NACCO Industries Inc.	62957910	Consumer Discretionary	261697
+WSZQYZ-S-US	Navigant Consulting Inc.	63935N10	Industrials	256479
+L97VX8-S-US	Norwegian Cruise Line Hold	G6672110	Consumer Discretionary	B9CGTC
+DD15DZ-S-US	National CineMedia Inc.	63530910	Consumer Discretionary	B1R2N5
+F6YHJW-S-US	NCR Corp.	6.29E+14	Information Technology	263265
+VDTGL1-S-US	NCI Building Systems Inc.	62885220	Industrials	261748
+QP196P-S-US	The NASDAQ OMX Group Inc.	63110310	Financials	296510
+H57L9Z-S-US	Nordson Corp.	65566310	Industrials	264183
+VLCR4Q-S-US	NextEra Energy Inc.	65339F10	Utilities	232891
+P5BL31-S-US	Newmont Mining Corp.	65163910	Materials	263660
+PFFBBC-S-US	Neogen Corp.	64049110	Health Care	263008
+RMKGNK-S-US	Neonode Inc.	64051M40	Information Technology	B1VVZR
+P6FP85-S-US	Nuverra Environmental Solu	67091K10	Consumer Staples	B97CDD
+KW9NPQ-S-US	NewMarket Corp.	65158710	Materials	B01CGF
+S5KHV5-S-US	Newport Corp.	65182410	Information Technology	263674
+XHGZN7-S-US	NewStar Financial Inc.	65251F10	Financials	B1L7CP
+TTN01C-S-US	Northfield Bancorp Inc. (N	66611T10	Financials	B8NB2R
+QLMDCD-S-US	National Fuel Gas Co.	63618010	Utilities	262610
+BT4517-S-US	Netflix Inc.	64110L10	Consumer Discretionary	285781
+DBTYF1-S-US	National Financial Partner	63607P20	Financials	277292
+KQL6C8-S-US	Newfield Exploration Co.	65129010	Energy	263507
+LD2TMS-S-US	NGP Capital Resources Co.	62912R10	Financials	B03PGK
+J3M97N-S-US	Natural Gas Services Group	63886Q10	Energy	298615
+SGBJSL-S-US	Natural Grocers By Vitamin	63888U10	Consumer Staples	B82C9Z
+N4N7K4-S-US	National HealthCare Corp.	63590610	Health Care	213973
+JBM2Q3-S-US	National Health Investors	63633D10	Financials	262612
+N00KJ9-S-US	NiSource Inc.	65473P10	Utilities	264540
+Q400NX-S-US	Nicholas Financial Inc.	65373J20	Financials	241599
+TSJWW7-S-US	NII Holdings Inc.	62913F20	Telecommunication Serv	209048
+DR5L64-S-US	Blue Nile Inc.	09578R10	Consumer Discretionary	B00G5P
+SKY8SB-S-US	New Jersey Resources Corp.	64602510	Utilities	263051
+WK0NR3-S-US	NIKE Inc.	65410610	Consumer Discretionary	264014
+NM9P8M-S-US	National Bankshares Inc.	63486510	Financials	253255
+X7L8YL-S-US	Nektar Therapeutics	64026810	Health Care	245444
+NFMVYM-S-US	NL Industries Inc.	62915640	Industrials	261806
+DJ9WJJ-S-US	NewLink Genetics Corp.	65151110	Health Care	B4LHRV
+BLJDN6-S-US	Nielsen Holdings NV	N6321810	Industrials	B4NTRF
+B18X3G-S-US	Annaly Capital Management	3571040	Financials	211345
+XL11KK-S-US	New Mountain Finance Corp.	64755110	Financials	B61WWF
+GNCQ6C-S-US	Numerex Corp.	67053A10	Information Technology	263620
+KSZK51-S-US	NN Inc.	62933710	Industrials	262055
+W002HZ-S-US	Nelnet Inc.	64031N10	Financials	219619
+CC672R-S-US	National Retail Properties	63741710	Financials	221181
+D2W0G9-S-US	Northrop Grumman Corp.	66680710	Industrials	264880
+RZV3HP-S-US	Northern Oil & Gas Inc.	66553110	Energy	B0WRP8
+QGB58C-S-US	Noranda Aluminum Holding C	65542W10	Materials	B3T6G1
+C37KN8-S-US	National Oilwell Varco Inc	63707110	Energy	262448
+W9VPHX-S-US	ServiceNow Inc.	81762P10	Information Technology	B80NXX
+DKPSBS-S-US	Neenah Paper Inc.	64007910	Materials	B03W0P
+MYW1SZ-S-US	National Penn Bancshares I	63713810	Financials	260515
+GXB7CQ-S-US	National Presto Industries	63721510	Consumer Discretionary	262680
+JS2P50-S-US	EnPro Industries Inc.	29355X10	Industrials	295129
+LVXKG7-S-US	NPS Pharmaceuticals Inc.	62936P10	Health Care	265178
+CGSB34-S-US	NeoPhotonics Corp.	64051T10	Information Technology	B3TMC7
+MCQ45P-S-US	Newpark Resources Inc.	65171850	Energy	263687
+C55L4M-S-US	National Research Corp.	63737220	Health Care	B8W3QK
+LHMTF0-S-US	NorthStar Realty Finance C	66704R10	Financials	B03DSG
+SPB6XT-S-US	NRG Energy Inc.	62937750	Utilities	221292
+K5JWRG-S-US	Northrim Bancorp Inc.	66676210	Financials	264027
+TY1NFD-S-US	Norfolk Southern Corp.	65584410	Industrials	264189
+G3BR7W-S-US	Insight Enterprises Inc.	45765U10	Information Technology	247506
+SVVS7Y-S-US	Nationstar Mortgage Holdin	63861C10	Financials	B7F8P7
+NXHPW3-S-US	Insperity Inc.	45778Q10	Industrials	200728
+GFGLVF-S-US	NeuStar Inc.	64126X20	Telecommunication Serv	B0C8R6
+Q4ZSBS-S-US	NetApp Inc.	64110D10	Information Technology	263064
+PQCGXG-S-US	NetScout Systems Inc.	64115T10	Information Technology	244728
+PJP4LZ-S-US	NETGEAR Inc.	64111Q10	Information Technology	268836
+XN5W08-S-US	Nortek Inc.	65655930	Industrials	B5Q3K4
+RXQ4PS-S-US	NTELOS Holdings Corp.	67020Q30	Telecommunication Serv	B77D2B
+JYS5SN-S-US	NutriSystem Inc.	67069D10	Consumer Discretionary	262039
+X9PX35-S-US	Northern Trust Corp.	66585910	Financials	264866
+F0K8GV-S-US	NetSpend Holdings Inc.	64118V10	Financials	B4N6MB
+MTFQX3-S-US	Northeast Utilities	66439710	Utilities	264510
+QMRMKG-S-US	Nuance Communications Inc.	67020Y10	Information Technology	240212
+V3LF0L-S-US	Nucor Corp.	67034610	Materials	265108
+V4VS2J-S-US	Nu Skin Enterprises Inc.	67018T10	Consumer Staples	261687
+DTGMPT-S-US	Nutraceutical Internationa	67060Y10	Consumer Staples	215277
+P1XDLD-S-US	NuVasive Inc.	67070410	Health Care	B00GJC
+VCQ42T-S-US	Novavax Inc.	67000210	Health Care	263774
+QDYJZC-S-US	NVIDIA Corp.	67066G10	Information Technology	237950
+BV8C58-S-US	NV Energy Inc.	67073Y10	Utilities	244379
+HZ6Z7Q-S-US	NVE Corp.	62944520	Information Technology	207212
+LVXML9-S-US	NVR Inc.	62944T10	Consumer Discretionary	263778
+WSVP75-S-US	Northwest Bancshares Inc.	66734010	Financials	B523Z7
+LZ7ZQ9-S-US	NorthWestern Corp.	66807430	Utilities	B03PGL
+K10BPK-S-US	Newell Rubbermaid Inc.	65122910	Consumer Discretionary	263570
+XGF87J-S-US	National Western Life Insu	63852210	Financials	262776
+PW0XD0-S-US	Northwest Natural Gas Co.	66765510	Utilities	264958
+FXNNDM-S-US	Northwest Pipe Co.	66774610	Industrials	203592
+T8JRMM-S-US	New York & Co. Inc.	64929510	Consumer Discretionary	B034L9
+BSZMCZ-S-US	Quanex Building Products C	74761910	Industrials	B2QXCJ
+B4KM2X-S-US	Nexstar Broadcasting Group	65336K10	Consumer Discretionary	294975
+GB2NPY-S-US	NxStage Medical Inc.	67072V10	Health Care	B0J2NW
+DQ5K00-S-US	New York Community Bancorp	64944510	Financials	271165
+N83PGZ-S-US	New York Mortgage Trust In	64960450	Financials	B01LWM
+STWKHG-S-US	The New York Times Co.	65011110	Consumer Discretionary	263200
+V3PN5M-S-US	NYSE Euronext	62949110	Financials	B1VJYW
+VFV0RN-S-US	Realty Income Corp.	75610910	Financials	272419
+NK7374-S-US	OmniAmerican Bancorp Inc.	68216R10	Financials	B3LPR9
+C6SJCG-S-US	Oasis Petroleum Inc.	67421510	Energy	B64R5J
+SX6HPZ-S-US	OneBeacon Insurance Group	G6774210	Financials	B1GN3G
+KHZRFD-S-US	Owens Corning	69074210	Industrials	B1FW7Q
+TTP54B-S-US	OceanFirst Financial Corp.	67523410	Financials	212590
+KNH9LC-S-US	Oclaro Inc.	67555N20	Information Technology	B01W5C
+NM9FTD-S-US	Ocwen Financial Corp.	67574630	Financials	B14PL7
+BV8HFD-S-US	Omnicare Inc.	68190410	Health Care	265977
+TJKSQG-S-US	OCZ Technology Group Inc.	6.71E+34	Information Technology	B66Q59
+NDLSSJ-S-US	Oil-Dri Corp. Of America	67786410	Consumer Staples	265779
+NPQK1W-S-US	Old Dominion Freight Line	67958010	Industrials	265642
+X9VCMC-S-US	Office Depot Inc.	67622010	Consumer Discretionary	265598
+XP2B7X-S-US	Orient-Express Hotels Ltd.	G6774310	Consumer Discretionary	261928
+N3J4M6-S-US	Corporate Office Propertie	22002T10	Financials	275615
+PHQ03P-S-US	OFG Bancorp	67103X10	Financials	B87LKR
+DYZ1LN-S-US	Orthofix International NV	N6748L10	Health Care	264454
+WW56N9-S-US	Omega Flex Inc.	68209510	Industrials	B0FPH7
+D7F1FN-S-US	OGE Energy Corp.	67083710	Utilities	265780
+FQYX9R-S-US	OncoGenex Pharmaceuticals	68230A10	Health Care	280887
+MLGW6J-S-US	Omega Healthcare Investors	68193610	Financials	204327
+PZFFN1-S-US	Owens-Illinois Inc.	69076840	Materials	266286
+KNBNR0-S-US	Oceaneering International	67523210	Energy	265558
+NJ0NPW-S-US	Oil States International I	67802610	Energy	272447
+LSHSW2-S-US	ONEOK Inc.	68268010	Utilities	213010
+L0PGQ5-S-US	Southwest Bancorp Inc. (Ok	84476710	Financials	282996
+TWRXN3-S-US	Universal Display Corp.	91347P10	Information Technology	227788
+L2Y6QM-S-US	Olin Corp.	68066520	Materials	265852
+MCQ0ZL-S-US	One Liberty Properties Inc	68240610	Financials	265961
+L41WW5-S-US	Omnicom Group Inc.	68191910	Consumer Discretionary	227930
+CB0XVP-S-US	Omnicell Inc.	68213N10	Health Care	278952
+S6P95T-S-US	Omega Protein Corp.	68210P10	Consumer Staples	223265
+C11CQD-S-US	Omeros Corp.	68214310	Health Care	B4NB85
+K39Z9S-S-US	Odyssey Marine Exploration	67611810	Industrials	251735
+CGKL3P-S-US	OM Group Inc.	67087210	Materials	265368
+RV60PG-S-US	Owens & Minor Inc.	69073210	Health Care	266512
+XF826K-S-US	OMNOVA Solutions Inc.	68212910	Materials	249472
+T1NHXH-S-US	OfficeMax Inc.	67622P10	Consumer Discretionary	210900
+HLWVL6-S-US	Old National Bancorp	68003310	Financials	265844
+H9YNY2-S-US	Higher One Holdings Inc.	42983D10	Information Technology	B575RZ
+D69DC4-S-US	ON Semiconductor Corp.	68218910	Information Technology	258357
+W7TBKB-S-US	Oncothyreon Inc.	68232410	Health Care	210604
+NL8VKR-S-US	Onyx Pharmaceuticals Inc.	68339910	Health Care	265606
+LQ8ZRM-S-US	OpenTable Inc.	68372A10	Information Technology	B4K3ZJ
+X9Q5MF-S-US	OPKO Health Inc.	68375N10	Health Care	211590
+XKPF5G-S-US	Oplink Communications Inc.	68375Q40	Information Technology	B0PKPN
+DZ6BHH-S-US	Optimer Pharmaceuticals In	68401H10	Health Care	B1R96T
+TZ2SQK-S-US	Oppenheimer Holdings Inc.	68379710	Financials	B42G8D
+L0W7QL-S-US	ORMAT Technologies Inc.	68668810	Utilities	B03L31
+CDBJDW-S-US	Orbital Sciences Corp.	68556410	Industrials	266173
+K3CD03-S-US	ORBCOMM Inc.	68555P10	Information Technology	B19FR0
+HVVK2Q-S-US	Oracle Corp.	68389X10	Information Technology	266156
+HKTM60-S-US	Orexigen Therapeutics Inc.	68616410	Health Care	B1WLCZ
+M65BJG-S-US	Old Republic International	68022310	Financials	265910
+HN2QXT-S-US	Oritani Financial Corp.	68633D10	Financials	B3SLD9
+SDDLB6-S-US	O'Reilly Automotive Inc.	67103H10	Consumer Discretionary	B65LWX
+HQCDQ4-S-US	Orion Marine Group Inc.	68628V30	Industrials	B1WTHL
+GYCFSY-S-US	Osiris Therapeutics Inc.	68827R10	Health Care	B17W93
+C4BPR9-S-US	OSI Systems Inc.	67104410	Information Technology	211157
+PBZR5F-S-US	Oshkosh Corp.	68823920	Industrials	266352
+S39RTQ-S-US	Overstock.Com Inc.	69037010	Consumer Discretionary	285593
+W3FB4P-S-US	OraSure Technologies Inc.	68554V10	Health Care	231879
+J4WTMR-S-US	Otter Tail Corp.	68964810	Utilities	266410
+GZKMQV-S-US	Outerwall Inc.	19259P30	Consumer Discretionary	BC1QQP
+F5XT34-S-US	OmniVision Technologies In	68212810	Information Technology	261131
+L1XNK0-S-US	Orbitz Worldwide Inc.	68557K10	Consumer Discretionary	B23G85
+HLVTM7-S-US	Oxford Industries Inc.	69149730	Consumer Discretionary	266530
+MT931R-S-US	Occidental Petroleum Corp.	67459910	Energy	265540
+RS34ZL-S-US	Bank Of The Ozarks Inc.	6390410	Financials	208585
+KNVL72-S-US	Pandora Media Inc.	69835410	Information Technology	B62N8L
+KYWP9T-S-US	Pacific Biosciences Of Cal	69404D10	Health Care	B4N8MH
+WXCCJ5-S-US	Pacer International Inc.	69373H10	Industrials	271199
+CB1ZWP-S-US	PacWest Bancorp	69526310	Financials	261977
+K3DWWJ-S-US	Penske Automotive Group In	70959W10	Consumer Discretionary	294352
+W32HMN-S-US	Palo Alto Networks Inc.	69743510	Information Technology	B87ZMX
+SGHNF8-S-US	Patrick Industries Inc.	70334310	Industrials	267315
+Q0DYVP-S-US	Patriot Transportation Hol	70337B10	Industrials	234347
+KHV4N2-S-US	VeriFone Systems Inc.	92342Y10	Information Technology	B07RH6
+XMY0XS-S-US	Paychex Inc.	70432610	Information Technology	267445
+FQZV2M-S-US	Prosperity Bancshares Inc.	74360610	Financials	231025
+H447TR-S-US	People's United Financial	71270410	Financials	B1W41J
+Q2J7BY-S-US	PBF Energy Inc.	69318G10	Energy	B7F4TJ
+VCR51S-S-US	Prestige Brands Holdings I	74112D10	Consumer Staples	B0650P
+XF959L-S-US	Pitney Bowes Inc.	72447910	Industrials	269050
+BQWK8X-S-US	The Pep Boys-Manny Moe & J	71327810	Consumer Discretionary	268144
+H433NP-S-US	PACCAR Inc.	69371810	Industrials	266586
+MXQYW1-S-US	Pacific Continental Corp.	69412V10	Financials	243397
+W7T7C7-S-US	PC Connection Inc.	69318J10	Information Technology	215717
+V84XXD-S-US	PG&E Corp.	69331C10	Utilities	268956
+XJK4XC-S-US	Potlatch Corp.	73763010	Financials	B0XXJN
+HJLB52-S-US	Plum Creek Timber Co. Inc.	72925110	Financials	269239
+CM333K-S-US	Priceline.Com Inc.	74150340	Consumer Discretionary	277906
+GW4PPF-S-US	Pendrell Corp.	70686R10	Industrials	B6WCX3
+BS0118-S-US	Precision Castparts Corp.	74018910	Industrials	269951
+BWM50M-S-US	Pacira Pharmaceuticals Inc	69512710	Health Care	B3X26D
+XHF0XD-S-US	PCTEL Inc.	69325Q10	Information Technology	250411
+GNBQ9F-S-US	Pharmacyclics Inc.	71693310	Health Care	268969
+H1W9F3-S-US	PDC Energy Inc.	69327R10	Energy	B89M5F
+HZ76PY-S-US	Patterson Cos. Inc.	70339510	Health Care	267268
+RS33XK-S-US	PDF Solutions Inc.	69328210	Information Technology	278242
+HWZP2P-S-US	PDI Inc.	69329V10	Health Care	224742
+FH08Y9-S-US	PDL BioPharma Inc.	69329Y10	Health Care	270670
+TLXD5L-S-US	Piedmont Office Realty Tru	72019020	Financials	B3M327
+XKRZ4Z-S-US	Pebblebrook Hotel Trust	70509V10	Financials	B4XBDV
+SKXVZY-S-US	Peoples Bancorp Inc. (Ohio	70978910	Financials	267941
+DXV63Y-S-US	Public Service Enterprise	74457310	Utilities	270767
+NT38T5-S-US	Pegasystems Inc.	70557310	Information Technology	267586
+L33679-S-US	Pennsylvania Real Estate I	70910210	Financials	268076
+VT5YZY-S-US	Penn National Gaming Inc.	70756910	Consumer Discretionary	268210
+B2LMSP-S-US	Peoples Federal Bancshares	71103710	Financials	B3WSZ8
+DCZH6D-S-US	PepsiCo Inc.	71344810	Consumer Staples	268151
+VMNN85-S-US	Perfumania Holdings Inc.	71376C10	Consumer Discretionary	285220
+CM018P-S-US	Perry Ellis International	28885310	Consumer Discretionary	285170
+CZC2Q2-S-US	Pioneer Energy Services Co	72366410	Energy	B68D80
+XCZKWH-S-US	PetSmart Inc.	71676810	Consumer Discretionary	268610
+WHXC9X-S-US	PetMed Express Inc.	71638210	Consumer Discretionary	214309
+LX2TM8-S-US	Preferred Bank (California	74036740	Financials	276360
+JDQZCY-S-US	Pfizer Inc.	71708110	Health Care	268470
+FJ0FBJ-S-US	The Principal Financial Gr	74251V10	Financials	280301
+N27CSX-S-US	Performant Financial Corp.	7.14E+14	Industrials	B835PW
+HLN1V0-S-US	Proofpoint Inc.	74342410	Information Technology	B6VDQC
+DG2F1B-S-US	Provident Financial Servic	74386T10	Financials	217160
+RWC9XJ-S-US	Procter & Gamble Co.	74271810	Consumer Staples	270440
+Q9JZN9-S-US	Peapack-Gladstone Financia	70469910	Financials	230773
+NM8FXG-S-US	Premiere Global Services I	74058510	Telecommunication Serv	270515
+QLQVZN-S-US	Progenics Pharmaceuticals	74318710	Health Care	215250
+HTJWJK-S-US	Progressive Corp.	74331510	Financials	270502
+F2HD48-S-US	PGT Inc.	69336V10	Industrials	B17V2N
+KPL0X0-S-US	Parker-Hannifin Corp.	70109410	Industrials	267150
+FMGYDF-S-US	PHH Corp.	69332020	Financials	B05JV2
+D0MM35-S-US	PHI Inc.	69336T20	Energy	268441
+VFZRT3-S-US	PulteGroup Inc.	74586710	Consumer Discretionary	270884
+LZ6N51-S-US	PhotoMedex Inc.	71935830	Health Care	242098
+G4G828-S-US	Panhandle Oil & Gas Inc.	69847710	Energy	241638
+RZXBRS-S-US	PICO Holdings Inc.	69336620	Financials	232673
+S90346-S-US	Polaris Industries Inc.	73106810	Consumer Discretionary	269293
+HSMB1R-S-US	Pike Corp.	72128310	Industrials	B0FBMR
+C8R1T8-S-US	Pier 1 Imports Inc.	72027910	Consumer Discretionary	268826
+XHK5V9-S-US	Piper Jaffray Cos.	72407810	Financials	222708
+D2VQY1-S-US	Parker Drilling Co.	70108110	Energy	267146
+MJ6FWF-S-US	Park Electrochemical Corp.	70041620	Information Technology	267130
+P8PY3Z-S-US	Packaging Corp. Of America	69515610	Materials	250456
+NHWWHB-S-US	PerkinElmer Inc. (United S	71404610	Health Care	230584
+CX1SR5-S-US	Park-Ohio Holdings Corp.	70066610	Industrials	267136
+S39W0T-S-US	Procera Networks Inc.	74269U20	Information Technology	202196
+BV96T2-S-US	Parkway Properties Inc.	70159Q10	Financials	266716
+T8GH9H-S-US	Protective Life Corp.	74367410	Financials	270587
+NCHHCB-S-US	Photronics Inc.	71940510	Information Technology	268731
+GJYB9J-S-US	The Children's Place Retai	16890510	Consumer Discretionary	210679
+T2ZBST-S-US	Polycom Inc.	73172K10	Information Technology	269342
+DG873S-S-US	Prologis Inc.	74340W10	Financials	B44WZD
+KNBQW2-S-US	Pall Corp.	69642930	Industrials	266880
+WWHZ5D-S-US	Douglas Dynamics Inc.	25960R10	Industrials	B3N5WD
+BRWLH1-S-US	Preformed Line Products Co	74044410	Industrials	279846
+B4L9DK-S-US	Plantronics Inc.	72749310	Information Technology	269203
+H2TXXX-S-US	EPlus Inc.	29426810	Information Technology	259774
+CD61WP-S-US	Plexus Corp.	72913210	Information Technology	269216
+W7YX8M-S-US	PLX Technology Inc.	69341710	Information Technology	240605
+PRHXMV-S-US	Philip Morris Internationa	71817210	Consumer Staples	B2PKRQ
+B3DZ3G-S-US	Pacific Mercantile Bancorp	69455210	Financials	262047
+SJWNKQ-S-US	PharMerica Corp.	71714F10	Health Care	B23CN9
+WYJJH3-S-US	PMC-Sierra Inc.	69344F10	Information Technology	280749
+W106X6-S-US	PMFG Inc.	69345P10	Industrials	B3CQ3W
+FYQPJR-S-US	PennyMac Mortgage Investme	70931T10	Financials	B3V8JL
+QQ00XL-S-US	PTC Inc.	69370C10	Information Technology	B95N91
+JT792F-S-US	The PNC Financial Services	69347510	Financials	269266
+C8WTXR-S-US	Pinnacle Financial Partner	72346Q10	Financials	267509
+QCS8TB-S-US	Pinnacle Entertainment Inc	72345610	Consumer Discretionary	243222
+NQQK5Z-S-US	PNM Resources Inc.	69349H10	Utilities	270782
+GNFHM1-S-US	PennantPark Investment Cor	70806210	Financials	B1W5VY
+C7R82C-S-US	Pentair Ltd.	H6169Q10	Industrials	B8DTTS
+PW0LSQ-S-US	Panera Bread Co.	69840W10	Consumer Discretionary	206303
+RJ034Z-S-US	Pinnacle West Capital Corp	72348410	Utilities	204880
+SJX071-S-US	Phoenix Cos. Inc.	7.19E+64	Financials	B8BT6C
+LN3CP1-S-US	Piedmont Natural Gas Co. I	72018610	Utilities	268814
+CSW8VQ-S-US	Insulet Corp.	45784P10	Health Care	B1XGNW
+T1NTHS-S-US	PolyOne Corp.	73179P10	Materials	262456
+S11HTS-S-US	Pepco Holdings Inc.	71329110	Utilities	297169
+T8H08Z-S-US	Pool Corp.	73278L10	Consumer Discretionary	278158
+D43HWF-S-US	Portland General Electric	73650884	Utilities	B125XQ
+S2ZPM8-S-US	Post Holdings Inc.	73744610	Consumer Staples	B6T051
+JBGHZT-S-US	Power Integrations Inc.	73927610	Information Technology	213304
+N4JW3Z-S-US	Powell Industries Inc.	73912810	Industrials	269742
+WSVN54-S-US	POZEN Inc.	73941U10	Health Care	264823
+V2H3LD-S-US	Pilgrim's Pride Corp.	72147K10	Consumer Staples	B5L3PZ
+KM6CDW-S-US	PPG Industries Inc.	69350610	Materials	269847
+NCHNPH-S-US	PPL Corp.	69351T10	Utilities	268090
+B01ZSW-S-US	Polypore International Inc	73179V10	Industrials	B02HWV
+JLD066-S-US	Post Properties Inc.	73746410	Financials	270526
+RLCVV6-S-US	Petroquest Energy Inc.	71674810	Energy	229143
+SSRCCF-S-US	ProAssurance Corp.	74267C10	Financials	261273
+BDJQCT-S-US	Portfolio Recovery Associa	73640Q10	Industrials	298616
+GSWTDV-S-US	PartnerRe Ltd.	G6852T10	Financials	267193
+FMK9XN-S-US	Perficient Inc.	71375U10	Information Technology	244254
+JVBJCK-S-US	The Perrigo Co.	71429010	Health Care	268204
+PJT46Q-S-US	Progress Software Corp.	74331210	Information Technology	270519
+M606RN-S-US	PRGX Global Inc.	69357C50	Industrials	B1BSBB
+R3QF7V-S-US	Primerica Inc.	74164M10	Financials	B50K3X
+M7C7Y3-S-US	Primoris Services Corp.	74164F10	Industrials	B1GC20
+P49ZVD-S-US	Park National Corp.	70065810	Financials	267325
+LQ79DX-S-US	ParkerVision Inc.	70135410	Information Technology	267302
+TVJGF4-S-US	Proto Labs Inc.	74371310	Industrials	B6T6J8
+RV9W12-S-US	PROS Holdings Inc.	74346Y10	Information Technology	B1YWQK
+JMNB63-S-US	Provident Financial Holdin	74386810	Financials	213605
+GC8SHS-S-US	Providence Service Corp.	74381510	Health Care	291857
+FYDJ46-S-US	CafePress Inc.	12769A10	Consumer Discretionary	B58TW8
+BMJP5F-S-US	US Auto Parts Network Inc.	90343C10	Consumer Discretionary	B1RBR5
+BRWF4W-S-US	Prudential Financial Inc.	74432010	Financials	281911
+DSB87M-S-US	Premier Exhibitions Inc.	7.41E+14	Consumer Discretionary	274119
+QXZFNP-S-US	PAREXEL International Corp	69946210	Health Care	267131
+MQ12CY-S-US	Public Storage	74460D10	Financials	285253
+DWWKM4-S-US	PS Business Parks Inc.	69360J10	Financials	270795
+C8Y8P3-S-US	Prospect Capital Corp.	74348T10	Financials	B020VX
+M78LWM-S-US	Pericom Semiconductor Corp	71383110	Information Technology	212277
+MH26QD-S-US	Peregrine Semiconductor Co	71366R70	Information Technology	B87S01
+P0WYLW-S-US	PriceSmart Inc.	74151110	Consumer Staples	209294
+R3KXJH-S-US	Park Sterling Corp.	70086Y10	Financials	B1LJ7C
+SP70YY-S-US	Phillips 66	71854610	Energy	B78C4Y
+F1D5X5-S-US	Patterson-UTI Energy Inc.	70348110	Energy	267253
+JKH334-S-US	PTGi Holding Inc.	74192930	Telecommunication Serv	BFG1Y3
+QJH759-S-US	Pain Therapeutics Inc.	69562K10	Health Care	260925
+GB0PZ3-S-US	Platinum Underwriters Hold	G7127P10	Financials	295851
+R5XZX2-S-US	The Pantry Inc.	69865710	Consumer Staples	242768
+B5VJ6C-S-US	Pernix Therapeutics Holdin	71426V10	Health Care	B64JP7
+S8T4SM-S-US	Penn Virginia Corp.	70788210	Energy	268022
+GFFBF7-S-US	PVH Corp.	69365610	Consumer Discretionary	B3V9F1
+VDNNDJ-S-US	PrivateBancorp Inc.	74296210	Financials	248657
+GDFKRC-S-US	Power-One Inc.	73930R10	Industrials	B5PY2X
+PTXP2W-S-US	Penns Woods Bancorp Inc.	70843010	Financials	255286
+WGR10T-S-US	Quanta Services Inc.	7.48E+14	Industrials	215020
+NB64DG-S-US	Praxair Inc.	74005P10	Materials	269929
+D3X1KC-S-US	Pioneer Natural Resources	72378710	Energy	269083
+JS1YSB-S-US	Paramount Gold & Silver Co	69924P10	Materials	B0884L
+L7GMNJ-S-US	Pzena Investment Managemen	74731Q10	Financials	B28HSP
+L6HYYK-S-US	Papa John's International	69881310	Consumer Discretionary	269611
+GT2Z8R-S-US	QAD Inc.	74727D30	Information Technology	B54225
+C7R3T7-S-US	QUALCOMM Inc.	74752510	Information Technology	271492
+D9P67H-S-US	Questcor Pharmaceutical In	74835Y10	Health Care	224294
+Q0F21S-S-US	Quidel Corp.	74838J10	Health Care	271759
+KS5B1C-S-US	QEP Resources Inc.	74733V10	Energy	B60X65
+W0YZK1-S-US	QIAGEN NV		Health Care	243790
+GQHT8D-S-US	QLogic Corp.	74727710	Information Technology	271732
+PFKZ5Q-S-US	Qlik Technologies Inc.	74733T10	Information Technology	B3WPL2
+VJ7GRJ-S-US	Quality Distribution Inc.	74756M10	Industrials	212480
+X3528V-S-US	Qualys Inc.	74758T30	Information Technology	B7XJTN
+NXL2JG-S-US	QuinStreet Inc.	74874Q10	Information Technology	B3PGPB
+F6XS56-S-US	Quality Systems Inc.	74758210	Information Technology	271539
+CX6649-S-US	Quantum Corp.	74790620	Information Technology	244169
+CSYXX6-S-US	Quad/Graphics Inc.	74730110	Industrials	B3YM98
+LTS722-S-US	QuickLogic Corp.	74837P10	Information Technology	250311
+MS9FKZ-S-US	Ryder System Inc.	78354910	Industrials	276066
+J6271X-S-US	Rite-Aid Corp.	76775410	Consumer Staples	274080
+D1MBQ0-S-US	Reynolds American Inc.	76171310	Consumer Staples	242909
+DRCNSV-S-US	FreightCar America Inc.	35702310	Industrials	B06T0P
+XQ65QM-S-US	RAIT Financial Trust	74922760	Financials	213871
+GCTJFH-S-US	Bankrate Inc.	06647F10	Information Technology	B4WDWB
+WGLG9J-S-US	Raven Industries Inc.	75421210	Industrials	272585
+T1PVLW-S-US	Rackspace Hosting Inc.	75008610	Information Technology	259152
+HKQPM8-S-US	Regal-Beloit Corp.	75875010	Industrials	273008
+XMZ52V-S-US	Republic Bancorp Inc. (Ken	76028120	Financials	227711
+BZNHZ5-S-US	Rubicon Technology Inc.	78112T10	Information Technology	B29FBW
+B01DPB-S-US	Rent-A-Center Inc.	76009N10	Consumer Discretionary	273309
+GXCHSX-S-US	Rockville Financial Inc.	77418810	Financials	B5WGC9
+T7J5CZ-S-US	Royal Caribbean Cruises Lt	V7780T10	Consumer Discretionary	275490
+XG8SQB-S-US	Rowan Cos. Plc	G7665A10	Energy	B84026
+FXJD8M-S-US	Elizabeth Arden Inc.	28660G10	Consumer Staples	285652
+SPBMQ6-S-US	Reading International Inc.	75540810	Consumer Discretionary	253644
+STZJ47-S-US	Radian Group Inc.	75023610	Financials	217391
+W6N2D9-S-US	Everest Re Group Ltd.	G3223R10	Financials	255686
+WZHNZD-S-US	Resources Connection Inc.	76122Q10	Industrials	269785
+P0S025-S-US	Regency Centers Corp.	75884910	Financials	272617
+HF175R-S-US	Renewable Energy Group Inc	75972A30	Energy	B7577T
+B4KXP6-S-US	Regeneron Pharmaceuticals	75886F10	Health Care	273019
+D1RV97-S-US	Richardson Electronics Ltd	76316510	Information Technology	273610
+TWX6Z8-S-US	Resolute Energy Corp.	76116A10	Energy	B4PVR7
+GXB9HS-S-US	Rentrak Corp.	76017410	Consumer Discretionary	273068
+H68NH2-S-US	RPC Inc.	74966010	Energy	271945
+HSDH0B-S-US	Revlon Inc.	76152560	Consumer Staples	275002
+GD8TPX-S-US	REX American Resources Cor	76162410	Energy	206367
+P6FKXY-S-US	Resource America Inc.	76119520	Financials	273239
+FLDJP2-S-US	Rex Energy Corp.	76156510	Energy	B23K5J
+JJ8RRZ-S-US	Regions Financial Corp.	7591EP10	Financials	B01R31
+DBNSL6-S-US	RF Micro Devices Inc.	74994110	Information Technology	201666
+BCQ0GT-S-US	Resolute Forest Products I	76117W10	Materials	B87SJM
+NV7H2B-S-US	Reinsurance Group Of Ameri	75935160	Financials	273119
+VPWZH7-S-US	Regal Entertainment Group	75876610	Consumer Discretionary	286682
+DLSQ1M-S-US	Repligen Corp.	75991610	Health Care	273165
+QSDP9N-S-US	Royal Gold Inc.	78028710	Materials	275570
+WRP8Z5-S-US	Regulus Therapeutics Inc.	75915K10	Health Care	B7XB9Q
+LSHH8S-S-US	Sturm Ruger & Co. Inc.	86415910	Consumer Discretionary	285628
+JMPB31-S-US	Regis Corp.	75893210	Consumer Discretionary	273032
+K3PPPT-S-US	Restoration Hardware Holdi	76128310	Consumer Discretionary	B8V9GG
+G7VSB9-S-US	Robert Half International	77032310	Industrials	211070
+J3M61K-S-US	Ryman Hospitality Properti	78377T10	Consumer Discretionary	B8QV5C
+GRMT07-S-US	Red Hat Inc.	75657710	Information Technology	244721
+FXH71J-S-US	Rigel Pharmaceuticals Inc.	76655960	Health Care	283393
+GYG3XG-S-US	Republic Airways Holdings	76027610	Industrials	285834
+QVJYPV-S-US	Raymond James Financial In	75473010	Financials	271899
+JWHK2C-S-US	Rock-Tenn Co.	77273920	Materials	274708
+NH6573-S-US	Ruckus Wireless Inc.	78122010	Information Technology	B8XC1Y
+B83ZLH-S-US	Ralph Lauren Corp.	75121210	Consumer Discretionary	B4V966
+TJR3RB-S-US	RealD Inc.	75604L10	Information Technology	B434YB
+LLZJCH-S-US	Realogy Holdings Corp.	75605Y10	Financials	B5T0CW
+GW1T5Q-S-US	Red Lion Hotels Corp.	75676410	Consumer Discretionary	223273
+JMPNRC-S-US	RLI Corp.	74960710	Financials	271907
+CLBTVV-S-US	RLJ Lodging Trust	74965L10	Financials	B3PY1N
+F9MFQQ-S-US	ReachLocal Inc.	75525F10	Consumer Discretionary	B4PYZD
+LM1DT3-S-US	Rand Logistics Inc.	75218210	Industrials	B041R8
+MT24YC-S-US	Regional Management Corp.	75902K10	Financials	B719DK
+H7DTK2-S-US	Rambus Inc.	75091710	Information Technology	272196
+CHR3SZ-S-US	ResMed Inc.	76115210	Health Care	273290
+B4QQVQ-S-US	Rockwell Medical Inc.	77437410	Health Care	214249
+FPJYLM-S-US	Roundy's Inc.	77926810	Consumer Staples	B6ZLPN
+JQ46ZD-S-US	RigNet Inc.	76658210	Energy	B3WSNV
+R02Q4Y-S-US	RenaissanceRe Holdings Ltd	G7496G10	Financials	272842
+L43BMJ-S-US	Renasant Corp.	7.60E+14	Financials	267080
+C23FN9-S-US	RealNetworks Inc.	75605L70	Information Technology	B6YRFT
+TN1K3G-S-US	Rockwood Holdings Inc.	77441510	Materials	B0GWF9
+PC58QM-S-US	Gibraltar Industries Inc.	37468910	Industrials	236922
+SX3L47-S-US	Rochester Medical Corp.	77149710	Health Care	274701
+HLWYS9-S-US	Rogers Corp.	77513310	Information Technology	274670
+QCXCR9-S-US	Retail Opportunity Investm	76131N10	Financials	B28YD0
+RCF8NW-S-US	Rockwell Automation Inc.	77390310	Industrials	275406
+K8ZFZG-S-US	Rollins Inc.	77571110	Industrials	274730
+H2X681-S-US	RBC Bearings Inc.	75524B10	Industrials	B0GLYB
+LC3792-S-US	Roma Financial Corp.	77581P10	Financials	B192FZ
+FV7BRY-S-US	Roper Industries Inc.	77669610	Industrials	274960
+RK6S0B-S-US	Rosetta Resources Inc.	77777930	Energy	B0YV6N
+C7R70B-S-US	Ross Stores Inc.	77829610	Consumer Discretionary	274671
+G5L9Y5-S-US	Rovi Corp.	77937610	Information Technology	B2R9T1
+GHZF8G-S-US	RealPage Inc.	75606N10	Information Technology	B4W2S2
+NX8D1C-S-US	Retail Properties Of Ameri	76131V20	Financials	B7QR33
+DF312T-S-US	RPM International Inc.	74968510	Materials	275617
+MYW986-S-US	Repros Therapeutics Inc.	76028H20	Health Care	298876
+B15MWD-S-US	Ramco-Gershenson Propertie	75145220	Financials	272277
+LWX1LV-S-US	Raptor Pharmaceutical Corp	75382F10	Health Care	B1FRLT
+WS6571-S-US	RPX Corp.	74972G10	Industrials	B4N92J
+TD0WW3-S-US	Range Resources Corp.	75281A10	Energy	252333
+MNSKYT-S-US	R.R. Donnelley & Sons Co.	25786710	Industrials	227660
+G903QG-S-US	Red Robin Gourmet Burgers	75689M10	Consumer Discretionary	296614
+TZB4RG-S-US	Roadrunner Transportation	76973Q10	Industrials	B3W940
+F07ZS4-S-US	Reliance Steel & Aluminum	75950910	Materials	272906
+WJV8G1-S-US	Rouse Properties Inc.	77928710	Financials	B5KNGQ
+KYDC2F-S-US	Republic Services Inc.	76075910	Industrials	226253
+FV6Z1L-S-US	RadioShack Corp.	75043810	Consumer Discretionary	287150
+LFDG3X-S-US	Resource Capital Corp.		Financials	
+S5G6P6-S-US	Rosetta Stone Inc.	77778010	Information Technology	B3VVMW
+TXYGBD-S-US	Rofin-Sinar Technologies I	77504310	Information Technology	274849
+HVTFZP-S-US	RadiSys Corp.	75045910	Information Technology	275119
+SFC3MX-S-US	Ruby Tuesday Inc.	78118210	Consumer Discretionary	275761
+JXLTFJ-S-US	Rudolph Technologies Inc.	78127010	Information Technology	251841
+T2YG2Z-S-US	RTI International Metals I	74973W10	Materials	229699
+QHBYX6-S-US	RTI Surgical Inc.	74975N10	Health Care	258911
+RCL2VD-S-US	Rentech Inc.	76011210	Energy	275075
+G6L6W5-S-US	Raytheon Co.	75511150	Industrials	275805
+WQSN76-S-US	Rue21 Inc.	78129510	Consumer Discretionary	B574HF
+RYQV4J-S-US	Rush Enterprises Inc.	78184620	Industrials	296687
+DR7JXZ-S-US	Ruth's Hospitality Group I	78333210	Consumer Discretionary	B0G4KC
+W01Z3R-S-US	Riverbed Technology Inc.	76857310	Information Technology	B1FH88
+DF4VKJ-S-US	Revett Minerals Inc.		Materials	B07MLG
+T7HRLL-S-US	Redwood Trust Inc.	75807540	Financials	273087
+ND7B0W-S-US	Rexnord Corp.	76169B10	Industrials	B4NPMX
+D9KVWC-S-US	The Ryland Group Inc.	78376410	Consumer Discretionary	276110
+PP6C0K-S-US	Rayonier Inc.	75490710	Financials	247313
+G6RHZ4-S-US	Sprint Communications Inc.	85206110	Telecommunication Serv	292244
+S4G8K1-S-US	InContact Inc.	4.53E+14	Telecommunication Serv	282204
+N4K4N7-S-US	Sanderson Farms Inc.	80001310	Consumer Staples	277433
+XCZHRF-S-US	Safety Insurance Group Inc	78648T10	Financials	295853
+T57LSR-S-US	Sonic Automotive Inc.	83545G10	Consumer Discretionary	212524
+GFKKH6-S-US	SAIA Inc.	78709Y10	Industrials	298239
+SGNVB4-S-US	Salem Communications Corp.	79409310	Consumer Discretionary	243368
+LSP775-S-US	Boston Beer Co. Inc.	10055710	Consumer Staples	211339
+T679BK-S-US	Sanmina Corp.	80105610	Information Technology	B92RRW
+GGKC73-S-US	Sapient Corp.	80306210	Information Technology	284559
+B6WLCG-S-US	Saratoga Resources Inc.	80352110	Energy	B032LC
+MKBYLR-S-US	Sandy Spring Bancorp Inc.	80036310	Financials	214825
+PVW9QT-S-US	EchoStar Corp.	27876810	Information Technology	B2NC47
+VXYB18-S-US	Spirit Airlines Inc.	84857710	Industrials	B3ZG8F
+G7RJ37-S-US	SBA Communications Corp.	78388J10	Telecommunication Serv	242929
+KHS1N3-S-US	Seacoast Banking Corp. Of	81170730	Financials	279362
+KPFMHW-S-US	Sinclair Broadcast Group I	82922610	Consumer Discretionary	279935
+VG17MH-S-US	Sally Beauty Holdings Inc.	7.95E+14	Consumer Discretionary	B1GZ00
+R2C8R5-S-US	Signature Bank (New York N	82669G10	Financials	B00JQL
+FMZ39N-S-US	Sabra Health Care REIT Inc	78573L10	Financials	B5NLBP
+Q63834-S-US	Southside Bancshares Inc.	84470P10	Financials	248587
+H3ZZPR-S-US	Starbucks Corp.	85524410	Consumer Discretionary	284225
+X9R5PJ-S-US	Silver Bay Realty Trust Co	82735Q10	Financials	B91NKY
+MBQ0VH-S-US	First Financial Holdings I	78401V10	Financials	BC9KR4
+WM5QN1-S-US	Southern Copper Corp.	84265V10	Materials	282377
+VK7L2Q-S-US	SCANA Corp.	80589M10	Utilities	254584
+PP63KB-S-US	Scholastic Corp.	80706610	Consumer Discretionary	277923
+X9RCXK-S-US	Schnitzer Steel Industries	80688210	Materials	282129
+B6VPNM-S-US	The Charles Schwab Corp.	80851310	Financials	277939
+TD0PGX-S-US	Service Corp. Internationa	81756510	Consumer Discretionary	279756
+KL5HMZ-S-US	Stepan Co.	85858610	Materials	284500
+XKN90D-S-US	SciClone Pharmaceuticals I	80862K10	Health Care	277957
+WJZPX6-S-US	Sucampo Pharmaceuticals In	86490910	Health Care	B1CH10
+WC9VJ5-S-US	ComScore Inc.	20564W10	Information Technology	B1YWRF
+NM9RDP-S-US	Steelcase Inc.	85815520	Industrials	215042
+BFT4KT-S-US	ScanSource Inc.	80603710	Information Technology	276775
+R03BBJ-S-US	Select Comfort Corp.	81616X10	Consumer Discretionary	232089
+GD9L9S-S-US	SolarCity Corp.	83416T10	Industrials	B8BZJC
+TG4YW3-S-US	Shoe Carnival Inc.	82488910	Consumer Discretionary	280547
+JYW3HJ-S-US	SandRidge Energy Inc.	80007P30	Energy	B28M89
+P5JV0X-S-US	Spectra Energy Corp.	84756010	Energy	B1L60G
+K25KSK-S-US	SeaChange International In	81169910	Information Technology	280364
+KSVC53-S-US	Seaboard Corp.	81154310	Industrials	278668
+GZDYTG-S-US	Sealed Air Corp.	81211K10	Materials	223279
+K7T5TF-S-US	SEI Investments Co.	78411710	Financials	279361
+JJC8PG-S-US	Select Medical Holdings Co	81619Q10	Health Care	B4MF0Q
+DSD4ZJ-S-US	SemGroup Corp.	81663A10	Energy	B547XN
+BFNVCS-S-US	Seneca Foods Corp.	81707050	Consumer Staples	278162
+DJBVCF-S-US	Stifel Financial Corp.	86063010	Financials	284923
+CC5WFF-S-US	Smithfield Foods Inc.	83224810	Consumer Staples	281623
+HRDSGJ-S-US	Safeguard Scientifics Inc.	78644920	Information Technology	276690
+K7VF5L-S-US	StanCorp Financial Group I	85289110	Financials	240957
+QKMHFD-S-US	IStar Financial Inc.	45031U10	Financials	225919
+R3JJX6-S-US	Ship Finance International	G8107510	Energy	B019MJ
+JNQT1J-S-US	Shutterfly Inc.	82568P30	Consumer Discretionary	B188HK
+CRNDM5-S-US	Simmons First National Cor	82873020	Financials	281013
+RJ3GL4-S-US	Swift Energy Co.	87073810	Energy	286743
+DCZBY8-S-US	Saga Communications Inc.	78659830	Consumer Discretionary	276701
+XD4X1H-S-US	Seattle Genetics Inc.	81257810	Health Care	273812
+GB6BQD-S-US	Silicon Graphics Internati	82706L10	Information Technology	B081PV
+DJBYKJ-S-US	Schawk Inc.	80637310	Industrials	278213
+T8N77W-S-US	Sangamo BioSciences Inc.	80067710	Health Care	257308
+VDT3XQ-S-US	Scientific Games Corp.	80874P10	Consumer Discretionary	291929
+BSC5DV-S-US	Sagent Pharmaceuticals Inc	78669210	Health Care	B687XN
+B3G02F-S-US	Stone Energy Corp.	86164210	Energy	285028
+PRK6ZY-S-US	Synergy Pharmaceuticals In	87163930	Health Care	B60WSC
+H2YXJN-S-US	Shenandoah Telecommunicati	82312B10	Telecommunication Serv	267669
+B4JYV9-S-US	SHFL Entertainment Inc.	78423R10	Consumer Discretionary	B7FKRT
+JFVMGG-S-US	Sears Holdings Corp.	81235010	Consumer Discretionary	263480
+TSDFC1-S-US	A. Schulman Inc.	80819410	Materials	277934
+TG61Z4-S-US	Shiloh Industries Inc.	82454310	Consumer Discretionary	280455
+LZD9ZC-S-US	Sunstone Hotel Investors I	86789210	Financials	B034LG
+FXJNSW-S-US	Steven Madden Ltd.	55626910	Consumer Discretionary	255391
+XJN5P6-S-US	ShoreTel Inc.	82521110	Information Technology	B2496F
+QP1LZ4-S-US	Sears Hometown & Outlet St	81236210	Consumer Discretionary	B8J8DX
+DMY2HT-S-US	The Sherwin-Williams Co.	82434810	Materials	280421
+HGC7D7-S-US	Sigma-Aldrich Corp.	82655210	Materials	280756
+R95ZHV-S-US	SIFCO Industries Inc.	82654610	Industrials	280750
+G7XLT0-S-US	SI Financial Group Inc.	78425V10	Financials	B43N9T
+B7ZXVP-S-US	Signet Jewelers Ltd.	G8127610	Consumer Discretionary	B3CTNK
+FFQL71-S-US	SIGA Technologies Inc.	82691710	Health Care	210743
+KYKGV7-S-US	Selective Insurance Group	81630010	Financials	276617
+BQWRP3-S-US	Sigma Designs Inc.	82656510	Information Technology	280755
+PPBP8M-S-US	Silicon Image Inc.	82705T10	Information Technology	249758
+QFSB8P-S-US	Select Income REIT	81618T10	Financials	B7GBNW
+SPBLN5-S-US	Sirius XM Radio Inc.	82967N10	Consumer Discretionary	215969
+JLDSPY-S-US	Sirona Dental Systems Inc.	82966C10	Health Care	B17MSX
+JGZ7GY-S-US	SVB Financial Group	78486Q10	Financials	280805
+X6QM2K-S-US	Six Flags Entertainment Co	83001A10	Consumer Discretionary	B43VKB
+JMK1Z1-S-US	South Jersey Industries In	83851810	Utilities	282593
+W0Z2R4-S-US	The J. M. Smucker Co.	83269640	Consumer Staples	295145
+KCC9VS-S-US	SJW Corp.	78430510	Utilities	281193
+JH6LHV-S-US	Skilled Healthcare Group I	83066R10	Health Care	B1XFYY
+NBBKVM-S-US	Saks Inc.	79377W10	Consumer Discretionary	270478
+WQK4T1-S-US	Tanger Factory Outlet Cent	87546510	Financials	287458
+BCZC8J-S-US	Skullcandy Inc.	83083J10	Consumer Discretionary	B5LHWS
+W8XR5M-S-US	SKECHERS USA Inc.	83056610	Consumer Discretionary	242804
+R1D35V-S-US	Sky West Inc.	83087910	Industrials	281421
+F4SDKX-S-US	Silicon Laboratories Inc.	82691910	Information Technology	256813
+SZF3KC-S-US	Schlumberger NV	80685710	Energy	277920
+SN0SZ0-S-US	U.S. Silica Holdings Inc.	9.03E+14	Materials	B7GGNT
+X9VRBQ-S-US	SL Green Realty Corp.	78440X10	Financials	209684
+CF8VBD-S-US	Silgan Holdings Inc.	82704810	Materials	280932
+XKRDZB-S-US	Solera Holdings Inc.	83421A10	Information Technology	B1XDZ9
+J9GHVQ-S-US	SLM Corp.	78442P10	Financials	210196
+L0WG7X-S-US	Solar Capital Ltd.	83413U10	Financials	B61FRC
+MMQ0ZB-S-US	Solta Medical Inc.	83438K10	Health Care	B1DYPR
+BS0239-S-US	Salix Pharmaceuticals Ltd.	79543510	Health Care	269398
+CD97ZP-S-US	SM Energy Co.	78454L10	Energy	276418
+XF5F52-S-US	Symmetry Medical Inc.	87154620	Health Care	B02FTV
+HVX0X3-S-US	Super Micro Computer Inc.	86800U10	Information Technology	B1VQR3
+JTCK6F-S-US	Scotts Miracle-Gro Co.	81018610	Materials	278151
+RS2ZNF-S-US	Standard Motor Products In	85366610	Consumer Discretionary	283830
+QTF495-S-US	Simplicity Bancorp Inc.	82886710	Financials	B7ZPJF
+KJX9X6-S-US	Stein Mart Inc.	85837510	Consumer Discretionary	284442
+BXJRFB-S-US	Semtech Corp.	81685010	Information Technology	279554
+L9K09T-S-US	Sanchez Energy Corp.	79970Y10	Energy	B73D51
+DBV80B-S-US	Snap-On Inc.	83303410	Consumer Discretionary	281874
+RZW18K-S-US	Inventure Foods Inc.	46121210	Consumer Staples	269541
+NRT8HM-S-US	Sun Bancorp Inc. (New Jers	86663B10	Financials	242347
+K9230Y-S-US	Synchronoss Technologies I	87157B10	Information Technology	B17BCQ
+NJ1MJS-S-US	SanDisk Corp.	80004C10	Information Technology	276580
+H305YV-S-US	Senior Housing Properties	81721M10	Financials	250163
+NNLBXV-S-US	Sun Hydraulics Corp.	86694210	Industrials	281928
+R5Y379-S-US	Scripps Networks Interacti	81106510	Consumer Discretionary	B39QT2
+JFV4K0-S-US	Synopsys Inc.	87160710	Information Technology	286771
+QG8XX6-S-US	Sunesis Pharmaceuticals In	86732860	Health Care	B05KZ4
+KNJN4M-S-US	Synta Pharmaceuticals Corp	87162T20	Health Care	B08FJW
+QG69XR-S-US	Santarus Inc.	80281730	Health Care	230310
+PX0MZV-S-US	Synovus Financial Corp.	87161C10	Financials	215897
+FH12G1-S-US	SYNNEX Corp.	87162W10	Information Technology	200255
+H44KF1-S-US	The Southern Co.	84258710	Utilities	282960
+SL2Q7H-S-US	Sonoco Products Co.	83549510	Materials	282139
+PZGCDX-S-US	Sonic Corp.	83545110	Consumer Discretionary	282111
+VDT73T-S-US	Sonus Networks Inc.	83591610	Information Technology	259253
+K4K8BQ-S-US	Spartan Motors Inc.	84681910	Consumer Discretionary	283253
+SZMXNW-S-US	Spectrum Brands Holdings I	84763R10	Consumer Staples	B3MYPN
+K8020Y-S-US	Standard Pacific Corp.	85375C10	Consumer Discretionary	285304
+RT71JB-S-US	Simon Property Group Inc.	82880610	Financials	281245
+D2N2BX-S-US	Splunk Inc.	84863710	Information Technology	B42449
+X9QZ45-S-US	Staples Inc.	85503010	Consumer Discretionary	284148
+P9V9L5-S-US	Superior Energy Services I	86815710	Energy	280610
+RVBH6N-S-US	The Spectranetics Corp.	84760C10	Health Care	279036
+NDLWZM-S-US	Sapiens International Corp	N7716A15	Information Technology	277745
+X6FWFC-S-US	Spectrum Pharmaceuticals I	84763A10	Health Care	298292
+GL55H1-S-US	Spirit AeroSystems Holding	84857410	Industrials	B1HMMS
+XBWP7P-S-US	Support.Com Inc.	86858W10	Information Technology	261216
+KM92QK-S-US	SPS Commerce Inc.	78463M10	Information Technology	B57VWJ
+S5DVZT-S-US	Spartan Stores Inc.	84682210	Consumer Staples	261612
+R3NF9V-S-US	SPX Corp.	78463510	Industrials	278718
+CPGVSS-S-US	SunPower Corp.	86765240	Industrials	B59DK9
+F8BYDN-S-US	SciQuest Inc.	80908T10	Information Technology	B3T6ZG
+BLB4L6-S-US	SEQUENOM Inc.	81733740	Health Care	B16CJ1
+LVWLNC-S-US	Spirit Realty Capital Inc.	84860F10	Financials	BBVHWR
+T1N9J9-S-US	1st Source Corp.	33690110	Financials	234184
+CRP2XT-S-US	Stericycle Inc.	85891210	Industrials	286082
+G213RR-S-US	SurModics Inc.	86887310	Health Care	250267
+SDCJ96-S-US	Sempra Energy	81685110	Utilities	213815
+LGNZN4-S-US	Servicesource Internationa	81763U10	Information Technology	B4YD5Q
+VYWJMK-S-US	Stoneridge Inc.	86183P10	Consumer Discretionary	211197
+FPTCJD-S-US	Simpson Manufacturing Co.	82907310	Industrials	280925
+XCZN0K-S-US	Stage Stores Inc.	85254C30	Consumer Discretionary	281225
+S27LPQ-S-US	SS&C Technologies Holdings	78467J10	Information Technology	B58YSC
+NFMTWL-S-US	The E.W. Scripps Co.	81105440	Consumer Discretionary	286253
+RV63WK-S-US	Sovran Self Storage Inc.	84610H10	Financials	283221
+M64PG0-S-US	Shutterstock Inc.	82569010	Information Technology	B7ZR21
+PSLYDN-S-US	Stratasys Ltd.	M8554810	Information Technology	B7WD7D
+GN7MDJ-S-US	STAAR Surgical Co.	85231230	Health Care	283629
+NNS30C-S-US	STAG Industrial Inc.	85254J10	Financials	B64BRQ
+HJM8ZZ-S-US	Standard Parking Corp.	85379010	Industrials	B018W0
+FXJFBN-S-US	S&T Bancorp Inc.	78385910	Financials	278110
+B5XXXR-S-US	State Bank Financial Corp.	85619010	Financials	B4K3XN
+GNBJZ8-S-US	Stewart Information Servic	86037210	Financials	284873
+J1HLZ0-S-US	STERIS Corp.	85915210	Health Care	284511
+CKVNTH-S-US	STEC Inc.	78477410	Information Technology	264114
+R4RF4R-S-US	Stewart Enterprises Inc.	86037010	Consumer Discretionary	284667
+J70THP-S-US	StellarOne Corp.	85856G10	Financials	294932
+VJ6SFW-S-US	State Auto Financial Corp.	85570710	Financials	284189
+X6BVNJ-S-US	SunTrust Banks Inc.	86791410	Financials	286099
+GSWR8S-S-US	St. Jude Medical Inc.	79084910	Health Care	276738
+TVSB9D-S-US	Sterling Bancorp	74402810	Financials	BFNXVB
+NYHQ06-S-US	Sterling Bancorp /Old	85915810	Financials	284527
+GGK810-S-US	Steel Dynamics Inc.	85811910	Materials	284947
+Q1LGGY-S-US	Stamps.Com Inc.	85285720	Consumer Discretionary	B013D7
+W6WKTG-S-US	Scorpio Tankers Inc.	Y7542C10	Energy	B62ZTB
+P9VK1D-S-US	Steiner Leisure Ltd.	P8744Y10	Consumer Discretionary	278469
+S208LQ-S-US	Questar Corp.	74835610	Utilities	271748
+K3FZZK-S-US	Strayer Education Inc.	86323610	Consumer Discretionary	285341
+QLTZ0P-S-US	STR Holdings Inc.	78478V10	Materials	B54D7P
+JDPNWQ-S-US	Sterling Construction Co.	85924110	Industrials	263287
+HP35XB-S-US	Starz	85571Q10	Consumer Discretionary	B8DXDB
+WW2S00-S-US	Sterling Financial Corp. (	85931930	Financials	284567
+LP459W-S-US	Star Scientific Inc.	85517P10	Consumer Staples	253566
+KW96V9-S-US	State Street Corp.	85747710	Financials	284204
+VVDCG5-S-US	Starwood Property Trust In	85571B10	Financials	B3PQ52
+QZ2Q0V-S-US	Constellation Brands Inc.	21036P10	Consumer Staples	217047
+H8JQ2T-S-US	Suffolk Bancorp	86473910	Financials	285798
+X8L2PH-S-US	Sun Communities Inc.	86667410	Financials	286025
+QR87QD-S-US	SunEdison Inc.	86732Y10	Information Technology	BBC399
+K0CPB7-S-US	Solar Senior Capital Ltd.	83416M10	Financials	B4085D
+MKH7SS-S-US	Superior Industries Intern	86816810	Consumer Discretionary	286414
+LCYHHV-S-US	Supernus Pharmaceuticals I	86845910	Health Care	B72ZBG
+TWYG69-S-US	Supertex Inc.	86853210	Information Technology	286103
+TSDLP6-S-US	Susquehanna Bancshares Inc	86909910	Financials	285887
+KFQ918-S-US	Susser Holdings Corp.	86923310	Consumer Staples	B182MF
+DKJ2GF-S-US	SUPERVALU Inc.	86853610	Consumer Staples	286361
+QGK7X4-S-US			Undefined	
+LLZZ1R-S-US	Stillwater Mining Co.	86074Q10	Materials	281053
+DLZ2DS-S-US	Swift Transportation Co.	87074U10	Industrials	B4PZRV
+TG60X3-S-US	Smith & Wesson Holding Cor	83175610	Consumer Discretionary	256816
+G0YP3H-S-US	SolarWinds Inc.	83416B10	Information Technology	B4MTR1
+Q1LMT3-S-US	Stanley Black & Decker Inc	85450210	Consumer Discretionary	B3Q2FJ
+XKV56X-S-US	Skyworks Solutions Inc.	83088M10	Information Technology	296105
+T7H6K2-S-US	Schweitzer Mauduit Interna	80854110	Materials	278203
+B05HH5-S-US	Southwestern Energy Co.	84546710	Energy	282861
+K14LTK-S-US	SWS Group Inc.	78503N10	Financials	285745
+HP4D6G-S-US	Swisher Hygiene Inc.		Industrials	B50Q7Z
+SN6DJ4-S-US	Southwest Gas Corp.	84489510	Utilities	283188
+BL5JSW-S-US	Safeway Inc.	78651420	Consumer Staples	276716
+HNGV05-S-US	SunCoke Energy Inc.	86722A10	Materials	B3R063
+RMD19G-S-US	Standex International Corp	85423110	Industrials	284017
+PC59SN-S-US	Sensient Technologies Corp	81725T10	Materials	292374
+L6F1HY-S-US	Symetra Financial Corp.	87151Q10	Financials	B4Y0JR
+DNWWBS-S-US	S. Y. Bancorp Inc.	78506010	Financials	238943
+NYHJP1-S-US	Stryker Corp.	86366710	Health Care	285368
+L1Z4CD-S-US	Sykes Enterprises Inc.	87123710	Industrials	286053
+L9QXLC-S-US	Symantec Corp.	87150310	Information Technology	286107
+DBTDCJ-S-US	Symmetricom Inc.	87154310	Information Technology	272870
+W0Z4W6-S-US	Synaptics Inc.	87157D10	Information Technology	283926
+G6FPC1-S-US	Synacor Inc.	87156110	Information Technology	B770B1
+K7T90J-S-US	Syntel Inc.	87162H10	Information Technology	209570
+PX4X3V-S-US	Sypris Solutions Inc.	87165510	Industrials	222633
+LP318Y-S-US	Synergy Resources Corp.	87164P10	Energy	B296BJ
+J866XV-S-US	Synutra International Inc.	87164C10	Consumer Staples	245753
+WHRQGK-S-US	Systemax Inc.	87185110	Consumer Discretionary	239471
+TY2J26-S-US	Sysco Corp.	87182910	Consumer Staples	286816
+BKDXWV-S-US	Solazyme Inc.	83415T10	Energy	B3ZCYL
+PQJ6YX-S-US	AT&T Inc.	00206R10	Telecommunication Serv	283181
+RWMW7K-S-US	Tahoe Resources Inc.		Materials	B4WHL9
+D2TLRZ-S-US	TAL International Group In	87408310	Industrials	B0LXSX
+HY0FNH-S-US	Molson Coors Brewing Co.	60871R20	Consumer Staples	B067BM
+D55HTD-S-US	TASER International Inc.	87651B10	Industrials	276719
+DBRS90-S-US	Carrols Restaurant Group I	14574X10	Consumer Discretionary	B1L839
+S6KXRN-S-US	Medallion Financial Corp.	58392810	Financials	258044
+WW2W63-S-US	Taylor Capital Group Inc.	87685110	Financials	295856
+C24GM8-S-US	The Bancorp Inc. (Delaware	05969A10	Financials	B05BRL
+HLW22G-S-US	TrueBlue Inc.	89785X10	Industrials	251984
+CW4SG0-S-US	Territorial Bancorp Inc.	88145X10	Financials	B3MY9Y
+P0ZV3L-S-US	Triangle Capital Corp.	89584810	Financials	B1RP51
+VXQ34C-S-US	TCF Financial Corp.	87227510	Financials	286845
+B4Q0H1-S-US	Texas Capital Bancshares I	88224Q10	Financials	297720
+JJ4DFW-S-US	TriCo Bancshares	89609510	Financials	290413
+NNF3YY-S-US	Taubman Centers Inc.	87666410	Financials	287225
+K8QDS1-S-US	TCP Capital Corp.	87238Q10	Financials	B40RQ7
+D6D7XY-S-US	THL Credit Inc.	87243810	Financials	B64XDW
+NVC84R-S-US	Teradata Corp.	88076W10	Information Technology	B247H1
+QBWP5F-S-US	TransDigm Group Inc.	89364110	Industrials	B11FJK
+LKQGQP-S-US	Telephone & Data Systems I	87943382	Telecommunication Serv	B6YR5K
+D3VV87-S-US	Tidewater Inc.	88642310	Energy	289185
+Q3VM8S-S-US	Teledyne Technologies Inc.	87936010	Industrials	250347
+CB0RJJ-S-US	TECO Energy Inc.	87237510	Utilities	288025
+BNKYQQ-S-US	Tech Data Corp.	87823710	Information Technology	287953
+JLJ543-S-US	Techne Corp.	87837710	Health Care	290145
+BV84S2-S-US	Integrys Energy Group Inc.	45822P10	Utilities	298209
+FGW52F-S-US	Tenneco Inc.	88034910	Consumer Discretionary	251260
+NT47N2-S-US	Teradyne Inc.	88077010	Information Technology	288418
+L0V9YQ-S-US	Tesco Corp.	88157K10	Energy	223702
+CC0QLL-S-US	TESSCO Technologies Inc.	87238610	Information Technology	288429
+CGLVJW-S-US	Terex Corp.	88077910	Industrials	288422
+CXFH14-S-US	The Fresh Market Inc.	35804H10	Consumer Staples	B3MH1K
+S3CPHJ-S-US	TFS Financial Corp.	87240R10	Financials	B1W8J6
+T6776H-S-US	Teleflex Inc.	87936910	Health Care	288140
+BGY5CP-S-US	Tredegar Corp.	89465010	Industrials	290334
+T7GTTQ-S-US	TGC Industries Inc.	87241730	Energy	230820
+F1CT9Y-S-US	Textainer Group Holdings L	G8766E10	Industrials	B054DS
+FJ0D8H-S-US	Triumph Group Inc.	89681810	Industrials	289307
+WX72B4-S-US	Target Corp.	8.76E+14	Consumer Discretionary	225910
+QLQSVL-S-US	Tenet Healthcare Corp.	88033G40	Health Care	B8DMK0
+NYJB5S-S-US	First Financial Corp. (Ind	32021810	Financials	236251
+SY7WGC-S-US	The Hanover Insurance Grou	41086710	Financials	202041
+CTV80V-S-US	Threshold Pharmaceuticals	88580720	Health Care	B00SMD
+WM5J7V-S-US	Thor Industries Inc.	88516010	Consumer Discretionary	288987
+DCZPLL-S-US	Thoratec Corp.	88517530	Health Care	288996
+BG4MPS-S-US	Thermon Group Holdings Inc	88362T10	Industrials	B3N6F0
+SHSV1Z-S-US	Gentherm Inc.	37253A10	Consumer Discretionary	B8JFD2
+M8B979-S-US	Theravance Inc.	88338T10	Health Care	B032G0
+VCM03W-S-US	TreeHouse Foods Inc.	89469A10	Consumer Staples	B095X8
+P6FSB4-S-US	TIBCO Software Inc.	88632Q10	Information Technology	243774
+V2M364-S-US	TICC Capital Corp.	87244T10	Financials	218247
+M2QXKL-S-US	Tiffany & Co.	88654710	Consumer Discretionary	289209
+S3B3H1-S-US	Interface Inc.	45866530	Industrials	B86V80
+CZC6Z6-S-US	Harris & Harris Group Inc.	41383310	Financials	241193
+W3GF7Q-S-US	Orchids Paper Products Co.	68572N10	Consumer Staples	B0CMBD
+T67P1X-S-US	Team Inc.	87815510	Industrials	287912
+WX6X43-S-US	Titan Machinery Inc.	88830R10	Industrials	B29H3T
+LKV0H0-S-US	TiVo Inc.	88870610	Information Technology	249272
+VVB1XW-S-US	The TJX Cos. Inc.	87254010	Consumer Discretionary	298930
+VNRDMV-S-US	Teekay Corp.	Y8564W10	Energy	293379
+RVCJ5M-S-US	The Timken Co.	88738910	Industrials	289280
+T3Y6RV-S-US	Tellabs Inc.	87966410	Information Technology	288153
+QXRPYH-S-US	Tilly's Inc.	88688510	Consumer Discretionary	B7TN3D
+WV6DYG-S-US	Team Health Holdings Inc.	87817A10	Health Care	B51NDL
+MXWGG8-S-US	Torchmark Corp.	89102710	Financials	289671
+LY6R71-S-US	Thermo Fisher Scientific I	88355610	Health Care	288690
+HMWK40-S-US	Tompkins Financial Corp.	89011010	Financials	288861
+F1LYYN-S-US	TMS International Corp.	87261Q10	Industrials	B60BNR
+WYK7VS-S-US	T-Mobile US Inc.	87259010	Telecommunication Serv	B94Q9V
+PW505V-S-US	TeleNav Inc.	87945510	Information Technology	B44D37
+QP063N-S-US	Tennant Co.	88034510	Industrials	288364
+TNL7Z4-S-US	Tangoe Inc.	87582Y10	Information Technology	B3P4WX
+LVS204-S-US	Teekay Tankers Ltd.	Y8565N10	Energy	B29VHY
+PFDHRL-S-US	Toll Brothers Inc.	88947810	Consumer Discretionary	289609
+QF1LT7-S-US	TowneBank	89214P10	Financials	B018PR
+K3QF1G-S-US	Tower International Inc. (	89182610	Consumer Discretionary	B4L16D
+TY1SPJ-S-US	Tutor Perini Corp.	90110910	Industrials	268176
+HJNJC4-S-US	Thomas Properties Group In	88445310	Financials	B020GV
+BJMMFY-S-US	TRI Pointe Homes Inc.	87265H10	Consumer Discretionary	B92CQF
+B2BSVB-S-US	Triangle Petroleum Corp.	89600B20	Energy	B065Y4
+GFK7WX-S-US	Tempur Sealy International	88023U10	Consumer Discretionary	221699
+NSYKTR-S-US	TriQuint Semiconductor Inc	89674K10	Information Technology	290439
+P0RK6R-S-US	Tootsie Roll Industries In	89051610	Consumer Staples	289680
+RZZBKN-S-US	Dealertrack Technologies I	24230910	Information Technology	B0PBS6
+Q3Z755-S-US	Tejon Ranch Co.	87908010	Financials	288044
+KM6R8C-S-US	Tree.Com Inc.	89467510	Financials	B3CLS4
+R2HFP2-S-US	Trex Co. Inc.	89531P10	Industrials	248307
+B0HDHL-S-US	Targa Resources Corp.	87612G10	Energy	B55PZY
+PD5X19-S-US	Targacept Inc.	87611R30	Health Care	B06C9S
+N5N8R8-S-US	Thomson Reuters Corp.		Consumer Discretionary	212606
+RX8FJX-S-US	TripAdvisor Inc.	89694520	Consumer Discretionary	B6ZC3N
+BCJKZL-S-US	Speedway Motorsports Inc.	84778810	Consumer Discretionary	283376
+PY7J8F-S-US	Trulia Inc.	89788810	Information Technology	B7GNSJ
+T8H9W8-S-US	True Religion Apparel Inc.	89784N10	Consumer Discretionary	245745
+QXV6LQ-S-US	Trimble Navigation Ltd.	89623910	Information Technology	290395
+TXXHHH-S-US	Trustmark Corp.	89840210	Financials	234021
+NJZYG9-S-US	Trinity Industries Inc.	89652210	Industrials	290462
+RS038V-S-US	Terreno Realty Corp.	88146M10	Financials	B3N475
+D1YH5N-S-US	Tornier NV	N8723710	Health Care	B3S6F5
+RWGCRD-S-US	T. Rowe Price Group Inc.	74144T10	Financials	270233
+CL026M-S-US	TRC Cos. Inc.	87262510	Industrials	290374
+FKCS38-S-US	TriMas Corp.	89621520	Industrials	B1XHRL
+TJFC45-S-US	TrustCo Bank Corp.	89834910	Financials	290642
+G8VDR1-S-US	The Travelers Cos. Inc.	8.94E+14	Financials	276950
+HHBL8Q-S-US	TRW Automotive Holdings Co	87264S10	Consumer Discretionary	234080
+PM37VG-S-US	Tractor Supply Co.	89235610	Consumer Discretionary	290033
+WWDPYB-S-US	Tesla Motors Inc.	88160R10	Consumer Discretionary	B616C7
+H0KFGR-S-US	Tyson Foods Inc.	90249410	Consumer Staples	290973
+HGC6B6-S-US	Tesoro Corp.	88160910	Energy	288456
+H0NKFP-S-US	Transcept Pharmaceuticals	89354M10	Health Care	B13JP0
+TR7XMQ-S-US	Tessera Technologies Inc.	88164L10	Information Technology	204291
+R6PJY9-S-US	TESARO Inc.	88156910	Health Care	B8BJ9G
+DQBNRT-S-US	Trius Therapeutics Inc.	89685K10	Health Care	B632X9
+KDDG4Y-S-US	Total System Services Inc.	89190610	Information Technology	289769
+W7SP9Q-S-US	The Toro Co.	89109210	Industrials	289704
+T2SLVF-S-US	TeleTech Holdings Inc.	87993910	Information Technology	289288
+XGFMYW-S-US	Tetra Tech Inc.	88162G10	Industrials	288389
+K2CRLC-S-US	TechTarget Inc.	87874R10	Information Technology	B1XH82
+M2S0NM-S-US	TETRA Technologies Inc.	88162F10	Energy	288428
+W3D3VK-S-US	TTM Technologies Inc.	87305R10	Information Technology	263565
+RXH8LB-S-US	Take-Two Interactive Softw	87405410	Information Technology	212211
+CC0BW7-S-US	Mac-Gray Corp.	55415310	Consumer Discretionary	211695
+F17N7X-S-US	Tuesday Morning Corp.	89903550	Consumer Discretionary	241144
+J5T6XJ-S-US	Tumi Holdings Inc.	89969Q10	Consumer Discretionary	B7YQQS
+NHWYMD-S-US	Tupperware Brands Corp.	89989610	Consumer Discretionary	287206
+HHC5D8-S-US	Towers Watson & Co.	89189410	Industrials	B5VW40
+M3T3WR-S-US	Time Warner Cable Inc.	88732J20	Consumer Discretionary	B63BPC
+RPW4BT-S-US	Towerstream Corp.	89200010	Telecommunication Serv	B1DZ96
+S7WSQ0-S-US	Tower Group International	G8988C10	Financials	B8DT1Q
+H30B6Z-S-US	Titan International Inc.	88830M10	Industrials	289026
+R4SNHX-S-US	Twin Disc Inc.	90147610	Industrials	290868
+X7FN7C-S-US	Two Harbors Investment Cor	90187B10	Financials	B563MS
+C32BPC-S-US	TW Telecom Inc.	87311L10	Telecommunication Serv	241421
+DTKZ1Y-S-US	Time Warner Inc.	88731730	Consumer Discretionary	B63QTN
+PQH0NS-S-US	Texas Industries Inc.	88249110	Materials	288530
+SJWX0Y-S-US	Texas Instruments Incorpor	88250810	Information Technology	288540
+CFHCSJ-S-US	Texas Roadhouse Inc.	88268110	Consumer Discretionary	B033TJ
+DMY7TZ-S-US	Textron Inc.	88320310	Industrials	288593
+G4F739-S-US	Tyco International Ltd.	H8912810	Industrials	B64GC9
+VPXV41-S-US	Tyler Technologies Inc.	90225210	Information Technology	290964
+K3DJ55-S-US	Monotype Imaging Holdings	61022P10	Information Technology	B1YWR8
+SHS7YF-S-US	Travelzoo Inc.	89421Q10	Information Technology	BGDFSM
+JYZBJF-S-US	Under Armour Inc.	90431110	Consumer Discretionary	B0PZN1
+Q8L0H5-S-US	Universal Truckload Servic	91388P10	Industrials	B066PX
+VCSCBX-S-US	United Continental Holding	91004710	Industrials	B4QG22
+W2952P-S-US	Universal American Corp.	9.13E+14	Health Care	B3LGWH
+V4QQBQ-S-US	United States Antimony Cor	91154910	Materials	291066
+HN03YC-S-US	Urstadt Biddle Properties	91728620	Financials	225652
+SJZL4G-S-US	United Financial Bancorp I	91030T10	Financials	B29T0B
+VJYLZ9-S-US	Ubiquiti Networks Inc.	90347A10	Information Technology	B76VD6
+W6SBJ9-S-US	Union First Market Banksha	90662P10	Financials	B3MY99
+G0Y0QR-S-US	United Bankshares Inc. (We	90990710	Financials	290579
+QR54TH-S-US	United Community Banks Inc	90984P30	Financials	286215
+T2T4WY-S-US	Ultra Clean Holdings Inc.	90385V10	Information Technology	B00G0F
+WCCDGM-S-US	UDR Inc.	90265310	Financials	272791
+V08ZNG-S-US	Uranium Energy Corp.	91689610	Energy	B0VLLY
+F9B994-S-US	Universal Electronics Inc.	91348310	Consumer Discretionary	291168
+HTQ5MJ-S-US	United Fire Group Inc.	91034010	Financials	B4WXG8
+PY8VSN-S-US	Unifi Inc.	90467720	Consumer Discretionary	291186
+QR89VG-S-US	Universal Forest Products	91354310	Industrials	290649
+Q1KGL0-S-US	UFP Technologies Inc.	90267310	Materials	290865
+W11X3S-S-US	Domtar Corp.	25755920	Materials	B1T84Z
+JQXTSC-S-US	UGI Corp.	90268110	Utilities	291011
+QNWXWL-S-US	AMERCO	2358610	Industrials	202817
+JPY35J-S-US	Universal Health Services	91390310	Health Care	292378
+KTZH52-S-US	Universal Health Realty In	9.14E+14	Financials	292749
+XG83DP-S-US	UIL Holdings Corp.	90274810	Utilities	261378
+VDVKP2-S-US	Unisys Corp.	90921430	Information Technology	293159
+LTMSR1-S-US	Ulta Salon Cosmetics & Fra	90384S30	Consumer Discretionary	B28TS4
+P9WP6G-S-US	The Ultimate Software Grou	90385D10	Information Technology	224996
+PP76NC-S-US	UMB Financial Corp.	90278810	Financials	291851
+DVLWYX-S-US	UMH Properties Inc.	90300210	Financials	290819
+P7Q8N6-S-US	Umpqua Holdings Corp.	90421410	Financials	248438
+DG3TQN-S-US	UniFirst Corp.	90470810	Consumer Discretionary	246642
+PZ97N3-S-US	United Natural Foods Inc.	91116310	Consumer Staples	289516
+R4SVX3-S-US	UnitedHealth Group Inc.	91324P10	Health Care	291776
+DWSCN8-S-US	Unilife Corp.	9.05E+14	Health Care	B61FS4
+WDC30F-S-US	Unum Group	91529Y10	Financials	243384
+B2DTQ7-S-US	Union Pacific Corp.	90781810	Industrials	291473
+X5C0VL-S-US	UNS Energy Corp.	90311910	Utilities	B76S02
+P8RH2F-S-US	Unit Corp.	90921810	Energy	292583
+RK7V1B-S-US	United Online Inc.	91126810	Information Technology	BF4B2M
+KK1JZ5-S-US	Unwired Planet Inc.	91531F10	Information Technology	B7KNF1
+R96B55-S-US	Ultra Petroleum Corp.	90391410	Energy	271444
+C6M0W9-S-US	United Parcel Service Inc.	91131210	Industrials	251738
+H7K4T4-S-US	Urban Outfitters Inc.	91704710	Consumer Discretionary	293343
+SRQ728-S-US	United Rentals Inc.	91136310	Industrials	213478
+SHMBKT-S-US	URS Corp.	90323610	Industrials	291055
+L0TD5V-S-US	Uranerz Energy Corp.	91688T10	Energy	B01115
+WL4TT3-S-US	Universal Stainless & Allo	91383710	Materials	294428
+QQ57WH-S-US	U.S. Bancorp	90297330	Financials	273603
+BSZQL2-S-US	USG Corp.	90329340	Industrials	291060
+J1JLVY-S-US	United States Lime & Miner	91192210	Materials	272411
+PKZC9Q-S-US	United States Cellular Cor	91168410	Telecommunication Serv	291899
+D7DSZF-S-US	USA Mobility Inc.	90341G10	Telecommunication Serv	B045D7
+DG2MFJ-S-US	USANA Health Sciences Inc.	90328M10	Consumer Staples	226769
+D8JVVB-S-US	U.S. Physical Therapy Inc.	90337L10	Health Care	291116
+DH6N7D-S-US	United Stationers Inc.	91300410	Industrials	292381
+JMHWQY-S-US	Ultratech Inc.	90403410	Information Technology	290721
+CW2N7W-S-US	United Therapeutics Corp.	91307C10	Health Care	243041
+V3RBD6-S-US	Universal Technical Instit	91391510	Consumer Discretionary	200254
+G6QPDC-S-US	UTi Worldwide Inc.	G8721010	Industrials	267636
+XGF99K-S-US	UNITIL Corp.	91325910	Utilities	292503
+H8HXL2-S-US	Utah Medical Products Inc.	91748810	Health Care	292589
+K6TLGQ-S-US	United Technologies Corp.	91301710	Industrials	291550
+LJPP2V-S-US	Universal Insurance Holdin	91359V10	Financials	291237
+J3MHMV-S-US	Univest Corp. Of Pennsylva	91527110	Financials	269063
+GKXQ81-S-US	Universal Corp.	91345610	Consumer Staples	292380
+JS7D8K-S-US	Visa Inc.	92826C83	Information Technology	B2PZN0
+VGRVRQ-S-US	Marriott Vacations Worldwi	57164Y10	Consumer Discretionary	B45K9N
+HKM700-S-US	The Valspar Corp.	92035510	Materials	292673
+H9P1GZ-S-US	Value Line Inc.	92043710	Consumer Discretionary	292675
+HP5MKM-S-US	Varian Medical Systems Inc	92220P10	Health Care	292751
+HD1JMY-S-US	Vascular Solutions Inc.	92231M10	Health Care	250406
+F0DNPJ-S-US	Visteon Corp.	92839U20	Consumer Discretionary	B4N0JJ
+CGFF5S-S-US	Virginia Commerce Bancorp	92778Q10	Financials	253769
+GX96DR-S-US	Valassis Communications In	91886610	Consumer Discretionary	291310
+LQDY56-S-US	ValueClick Inc.	92046N10	Information Technology	257211
+SHDGLH-S-US	Vocera Communications Inc.	92857F10	Health Care	B76LYJ
+WK04RM-S-US	VASCO Data Security Intern	92230Y10	Information Technology	224522
+VWFHM6-S-US	Veeco Instruments Inc.	92241710	Information Technology	293842
+KCCH5Y-S-US	VF Corp.	91820410	Consumer Discretionary	292868
+H0NSWX-S-US	Vonage Holdings Corp.	92886T20	Telecommunication Serv	B15JLG
+Q8CK53-S-US	Vector Group Ltd.	92240M10	Consumer Staples	251580
+H8JKTP-S-US	Vista Gold Corp.		Materials	B1XFD4
+X7FWKG-S-US	VirnetX Holding Corp.	92823T10	Information Technology	244334
+L2HJMS-S-US	Vanguard Health Systems In	92203620	Health Care	B41KK8
+X7JW88-S-US	Viacom Inc.	92553P20	Consumer Discretionary	B0SRLF
+MVH3SM-S-US	Viasystems Group Inc.	92553H80	Information Technology	B62FJ4
+KYJQDJ-S-US	Vical Inc.	92560210	Health Care	293342
+HP5G7G-S-US	Vicor Corp.	92581510	Industrials	293077
+TSGX6H-S-US	Vitacost.Com Inc.	92847A20	Consumer Discretionary	B4LJSJ
+Q67LC6-S-US	Meridian Bioscience Inc.	58958410	Health Care	258026
+GZLPRV-S-US	Knightsbridge Tankers Ltd.	G5299G10	Industrials	250927
+L6H39R-S-US	Village Super Market Inc.	92710740	Consumer Staples	292921
+DWW3RQ-S-US	Valero Energy Corp.	91913Y10	Energy	204136
+XJQDY9-S-US	Volterra Semiconductor Cor	92870810	Information Technology	B018W1
+C0T1MD-S-US	Valley National Bancorp	91979410	Financials	293532
+KM5HS2-S-US	Vulcan Materials Co.	92916010	Materials	293120
+K6TSVX-S-US	Valmont Industries Inc.	92025310	Industrials	292682
+DVTV6F-S-US	VMware Inc.	92856340	Information Technology	B23SN6
+JDYP57-S-US	Vanda Pharmaceuticals Inc.	92165910	Health Care	B12W3P
+D9JG61-S-US	Vornado Realty Trust	92904210	Financials	293363
+DH3RVT-S-US	Vantiv Inc.	92210H10	Information Technology	B6X55Y
+HP31N6-S-US	Vocus Inc.	92858J10	Information Technology	B0MSV9
+KW783G-S-US	Volcano Corp.	92864510	Health Care	B17BCR
+TP3L3G-S-US	VOXX International Corp.	91829F10	Consumer Discretionary	B432Y1
+VDRFQ4-S-US	ViewPoint Financial Group	92672A10	Financials	B48CRV
+RCRBWB-S-US	Vishay Precision Group Inc	92835K10	Information Technology	B603LG
+TZ1RRL-S-US	ViroPharma Inc.	92824110	Health Care	294566
+TD3R9S-S-US	Vistaprint NV	N9354010	Information Technology	B48HGT
+G5KPRL-S-US	Validus Holdings Ltd.	G9319H10	Financials	B23HRW
+BLGWMN-S-US	Vera Bradley Inc.	92335C10	Consumer Discretionary	B4626P
+DMSLZM-S-US	Verint Systems Inc.	92343X10	Information Technology	284919
+H46J90-S-US	Verisk Analytics Inc.	92345Y10	Industrials	B4P9W9
+HMWNB3-S-US	VeriSign Inc.	9.23E+14	Information Technology	214292
+XMYGXB-S-US	Virtus Investment Partners	92828Q10	Financials	B3KKGQ
+RFTKBL-S-US	Virtusa Corp.	92827P10	Information Technology	B1YWRN
+RCKMZZ-S-US	Vertex Pharmaceuticals Inc	92532F10	Health Care	293103
+CJPJXL-S-US	ViaSat Inc.	92552V10	Information Technology	294624
+MKJJ6Z-S-US	VantageSouth Bancshares In	22574310	Financials	BCDZM4
+JFV9W5-S-US	VSE Corp.	91828410	Industrials	292677
+N17VK7-S-US	Vishay Intertechnology Inc	92829810	Information Technology	293014
+SL4LZD-S-US	Vitamin Shoppe Inc.	9.28E+14	Consumer Discretionary	B55C7L
+TK88PM-S-US	Verastem Inc.	92337C10	Health Care	B4Z1Y9
+KNJYQX-S-US	Vantage Drilling Co.	G9320511	Energy	B39YS9
+N6TDN5-S-US	Ventas Inc.	92276F10	Health Care	292792
+HD84C8-S-US	Ventrus Biosciences Inc.	92282210	Health Care	B3VH81
+KZNTBG-S-US	Vectren Corp.	92240G10	Utilities	257294
+RXLS8M-S-US	Viad Corp.	92552R40	Industrials	B01KGF
+J9FTK2-S-US	VIVUS Inc.	92855110	Health Care	293465
+RGW4H5-S-US	Verizon Communications Inc	92343V10	Telecommunication Serv	209057
+Q9PG5H-S-US	Westinghouse Air Brake Tec	92974010	Industrials	295573
+G3B1Y7-S-US	Westamerica Bancorporation	95709010	Financials	295037
+G22HD1-S-US	Walter Investment Manageme	93317W10	Financials	B3N5YS
+T0J8QF-S-US	Washington Federal Inc.	93882410	Financials	294198
+QSFJYG-S-US	Walgreen Co.	93142210	Consumer Staples	293483
+WCYM6Q-S-US	WageWorks Inc.	93042710	Industrials	B6WG4R
+VTXL45-S-US	Wesco Aircraft Holdings In	95081410	Industrials	B3Y05W
+MPZ2L2-S-US	Western Alliance Bancorp	95763810	Financials	B0CCGJ
+T0J4G9-S-US	Washington Trust Bancorp I	94061010	Financials	294202
+LSJQMY-S-US	Waters Corp.	94184810	Health Care	293768
+N3HQTT-S-US	WABCO Holdings Inc.	92927K10	Industrials	B23CNQ
+P217Y0-S-US	Washington Banking Co.	93730310	Financials	253799
+VS3VVW-S-US	WebMD Health Corp.	94770V10	Information Technology	B0LMJC
+BQRHK3-S-US	Webster Financial Corp.	94789010	Financials	294514
+HD1HKX-S-US	WESCO International Inc.	95082P10	Industrials	241697
+LP4SHG-S-US	WellCare Health Plans Inc.	94946T10	Health Care	B01R25
+J0D22L-S-US	Waste Connections Inc.	94105310	Industrials	224824
+QWWTK4-S-US	Warner Chilcott Plc	G9436810	Health Care	B446CM
+CFMR7R-S-US	Walker & Dunlop Inc.	93148P10	Financials	B4TZV4
+MS9VJJ-S-US	Workday Inc.	98138H10	Information Technology	B8K6ZD
+WK19ZQ-S-US	Western Digital Corp.	95810210	Information Technology	295469
+C6M1YB-S-US	WD-40 Co.	92923610	Consumer Staples	294474
+XLTRKM-S-US	Waddell & Reed Financial I	93005910	Financials	215650
+C8QZP6-S-US	Wisconsin Energy Corp.	97665710	Utilities	297399
+FRYQ1N-S-US	The Wendy's Co.	95058W10	Consumer Discretionary	B3NXMJ
+V88S80-S-US	Werner Enterprises Inc.	95075510	Industrials	294885
+VYR23C-S-US	WisdomTree Investments Inc	97717P10	Financials	247651
+P7N3J5-S-US	WEX Inc.	96208T10	Information Technology	B8383P
+L7H07R-S-US	Weyco Group Inc.	96214910	Consumer Discretionary	294777
+G4G3T4-S-US	Wells Fargo & Co.	94974610	Financials	264910
+D9KSR9-S-US	Westfield Financial Inc.	96008P10	Financials	B1LX0F
+BCDBXM-S-US	Whole Foods Market Inc.	96683710	Consumer Staples	296389
+MMNK4Y-S-US	Willbros Group Inc.	96920310	Energy	B4WX36
+DMRFRJ-S-US	WGL Holdings Inc.	92924F10	Utilities	294210
+F5XV55-S-US	Winnebago Industries Inc.	97463710	Consumer Discretionary	297272
+FKP557-S-US	WHITEHORSE FINANCE INC	96524V10	Financials	B86YGD
+CY6208-S-US	Westwood Holdings Group In	96176510	Financials	295829
+L9RFKV-S-US	Whirlpool Corp.	96332010	Consumer Discretionary	296038
+T8NCJ0-S-US	Wilshire Bancorp Inc.	97186T10	Financials	253765
+PXJJDW-S-US	Boingo Wireless Inc.	09739C10	Telecommunication Serv	B603XW
+LRL102-S-US	Windstream Holdings Inc.	97381W10	Telecommunication Serv	BD5HK5
+G3C3Z7-S-US	Winmark Corp.	97425010	Consumer Discretionary	239109
+MFYB4M-S-US	Encore Wire Corp. (Delawar	29256210	Industrials	227344
+KV51S9-S-US	Westmoreland Coal Co.	96087810	Energy	295495
+H1TSJP-S-US	Willis Lease Finance Corp.	97064610	Industrials	203677
+K023Z4-S-US	Westlake Chemical Corp.	96041310	Materials	B01ZP2
+S8ZDTK-S-US	Whiting Petroleum Corp.	96638710	Energy	216800
+WC6XYF-S-US	WellPoint Inc.	94973V10	Health Care	279474
+J9FZW7-S-US	Walter Energy Inc.	93317Q10	Materials	295180
+PQJ0KQ-S-US	Waste Management Inc.	94106L10	Industrials	293766
+KGSX4T-S-US	West Marine Inc.	95423510	Consumer Discretionary	295777
+GC3T03-S-US	The Williams Cos. Inc.	96945710	Energy	296718
+D62TZ3-S-US	Western Asset Mortgage Cap	95790D10	Financials	B8421W
+V4Q8H9-S-US	Wright Medical Group Inc.	98235T10	Health Care	277125
+H0PJ8L-S-US	Weis Markets Inc.	94884910	Consumer Staples	294684
+Q8J3WD-S-US	WMS Industries Inc.	92929710	Consumer Discretionary	293145
+DWPYXW-S-US	Wal-Mart Stores Inc.	93114210	Consumer Staples	293692
+QBT8L5-S-US	Wabash National Corp.	92956610	Industrials	293204
+THD6V0-S-US	Western Refining Inc.	95931910	Energy	B0WHXR
+GN6BZB-S-US	VCA Antech Inc.	91819410	Health Care	281827
+HLW10F-S-US	Worthington Industries Inc	98181110	Materials	298193
+NPPM90-S-US	The Washington Post Co.	93964010	Consumer Discretionary	294200
+WW89K6-S-US	Wausau Paper Corp.	94331510	Materials	294370
+HFZK38-S-US	WPX Energy Inc.	98212B10	Energy	B40PCD
+HR94J3-S-US	Westar Energy Inc.	95709T10	Utilities	248400
+LKQP3W-S-US	W.R. Berkley Corp.	8442310	Financials	209364
+X7LD4P-S-US	Washington Real Estate Inv	93965310	Financials	294230
+F3QJX2-S-US	Warren Resources Inc.	93564A10	Energy	298176
+MMSYK2-S-US	Weingarten Realty Investor	94874110	Financials	294661
+PD4Y6D-S-US	World Acceptance Corp.	98141910	Financials	298118
+GM6VTQ-S-US	WesBanco Inc.	95081010	Financials	295378
+M1PJT6-S-US	Waterstone Financial Inc.	94188810	Financials	B0LTK1
+NFQZXK-S-US	WSFS Financial Corp.	92932810	Financials	294037
+J9BCZV-S-US	Williams-Sonoma Inc.	96990410	Consumer Discretionary	296758
+NXD53S-S-US	Watsco Inc.	94262220	Industrials	294303
+TJWK6H-S-US	Whitestone REIT	96608420	Financials	B6452T
+Q64FB7-S-US	West Pharmaceutical Servic	95530610	Health Care	295048
+DRBV72-S-US	Westell Technologies Inc.	95754110	Information Technology	295613
+FT8BJS-S-US	West Bancorp Inc.	95123P10	Financials	240884
+FXNVST-S-US	Wintrust Financial Corp.	97650W10	Financials	242525
+HY0DLG-S-US	W&T Offshore Inc.	92922P10	Energy	B01Z7M
+RV660M-S-US	White Mountains Insurance	G9618E10	Financials	233925
+B5VTSN-S-US	Aqua America Inc.	03836W10	Utilities	268523
+KQL8HB-S-US	Watts Water Technologies I	94274910	Industrials	294362
+HNZP71-S-US	The Wet Seal Inc.	96184010	Consumer Discretionary	295773
+NPQL3X-S-US	Weight Watchers Internatio	94862610	Consumer Discretionary	281358
+JBNF8C-S-US	The Western Union Co.	95980210	Information Technology	B1F76F
+H59PH3-S-US	WhiteWave Foods Co.	96624410	Consumer Staples	B834PQ
+HGCDQD-S-US	Woodward Inc.	98074510	Industrials	294808
+QG1890-S-US	World Wrestling Entertainm	98156Q10	Consumer Discretionary	250352
+RNN717-S-US	Wolverine World Wide Inc.	97809710	Consumer Discretionary	297750
+V3MK9S-S-US	Web.Com Group Inc.	94733A10	Information Technology	B0FNCD
+NPKW4H-S-US	Weyerhaeuser Co.	96216610	Materials	295893
+DF0STQ-S-US	Wyndham Worldwide Corp.	98310W10	Consumer Discretionary	B19839
+H6CGVQ-S-US	Wynn Resorts Ltd.	98313410	Consumer Discretionary	296381
+BDMWDS-S-US	United States Steel Corp.	91290910	Materials	282477
+VVJZ3C-S-US	EXCO Resources Inc.	26927940	Energy	B0YBGD
+J9BBXT-S-US	Cimarex Energy Co.	17179810	Energy	298752
+JMNHJ8-S-US	Xcel Energy Inc.	98389B10	Utilities	261480
+DQ0PRG-S-US	XL Group Plc	G9829010	Financials	B5LRLL
+KHRJNM-S-US	Xilinx Inc.	98391910	Information Technology	298567
+QS05FX-S-US	Exelis Inc.	30162A10	Industrials	B713S5
+SN7R2D-S-US	XenoPort Inc.	98411C10	Health Care	B081Q8
+HP44R7-S-US	Exxon Mobil Corp.	30231G10	Energy	232661
+BDMP0L-S-US	XOMA Corp.	98419J10	Health Care	B70D2L
+B33165-S-US	The ExOne Co.	30210410	Industrials	B8BWT6
+RX05V6-S-US	Xoom Corp.	98419Q10	Information Technology	B95JRH
+B3DY1F-S-US	XO Group Inc.	98377210	Information Technology	252699
+XJQ04X-S-US	XPO Logistics Inc.	98379310	Industrials	B6Z135
+SC30Z4-S-US	DENTSPLY International Inc	24903010	Health Care	236433
+NV748W-S-US	Xerox Corp.	98412110	Information Technology	298520
+T42ZWB-S-US	Crosstex Energy Inc.	22765Y10	Energy	226330
+K6P50K-S-US	Ixia	45071R10	Information Technology	265424
+Q5V0CD-S-US	Xylem Inc.	98419M10	Industrials	B3P2CN
+MVM6GB-S-US	Alleghany Corp.	1717510	Financials	201680
+SMWVF9-S-US	Yelp Inc.	98581710	Information Technology	B7KCD7
+R4N5ZQ-S-US	Yahoo! Inc.	98433210	Information Technology	298653
+FBGX6K-S-US	York Water Co.	98718410	Utilities	242529
+D407NC-S-US	Yum! Brands Inc.	98849810	Consumer Discretionary	209887
+H29NXN-S-US	Zillow Inc.	98954A10	Information Technology	B4KF82
+WFJX6Z-S-US	Zagg Inc.	98884U10	Materials	B1BYGH
+NK1GBQ-S-US	ZaZa Energy Corp.	98919T10	Energy	B6TF63
+T2T1PV-S-US	Zebra Technologies Corp.	98920710	Information Technology	298935
+QKL74B-S-US	Zep Inc.	98944B10	Materials	B28D97
+B6VLGJ-S-US	Olympic Steel Inc.	68162K10	Materials	265901
+STH93Z-S-US	ZAIS Financial Corp.	98886K10	Financials	B95CMS
+NQ0G5C-S-US	Zogenix Inc.	98978L10	Health Care	B5BTKW
+R03T7Z-S-US	Zygo Corp.	98985510	Information Technology	299009
+HY2B88-S-US	Horsehead Holding Corp.	44069430	Materials	B23XLC
+XKV0YS-S-US	Zions Bancorp.	98970110	Financials	298982
+V5XC73-S-US	Ziopharm Oncology Inc.	98973P10	Health Care	B0HZZ4
+Q2QKDW-S-US	Zix Corp.	98974P10	Information Technology	203223
+LVJZCC-S-US	Zeltiq Aesthetics Inc.	98933Q10	Health Care	B715V4
+T8HTVR-S-US	Zimmer Holdings Inc.	98956P10	Health Care	278381
+SRCT6H-S-US	Zynga Inc.	98986T10	Information Technology	B79PX4
+XN3KGZ-S-US	Zoltek Cos. Inc.	98975W10	Materials	298991
+F5XS13-S-US	Quiksilver Inc.	74838C10	Consumer Discretionary	271755
+CQJ281-S-US	Zoetis Inc.	98978V10	Health Care	B95WG1
+WGTBDZ-S-US	Zumiez Inc.	98981710	Consumer Discretionary	B081QB

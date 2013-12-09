@@ -1,0 +1,178 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>10Q/K Form Management &mdash; Edgar 0.1.1 documentation</title>
+    
+    <link rel="stylesheet" href="_static/default.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    './',
+        VERSION:     '0.1.1',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <link rel="top" title="Edgar 0.1.1 documentation" href="index.html" />
+    <link rel="prev" title="Welcome to Edgar’s documentation!" href="index.html" /> 
+  </head>
+  <body>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="index.html" title="Welcome to Edgar’s documentation!"
+             accesskey="P">previous</a> |</li>
+        <li><a href="index.html">Edgar 0.1.1 documentation</a> &raquo;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body">
+            
+  <div class="section" id="module-form10DB">
+<span id="q-k-form-management"></span><h1>10Q/K Form Management<a class="headerlink" href="#module-form10DB" title="Permalink to this headline">¶</a></h1>
+<p>edgar.form10DB includes functions to download 10 forms from dataset.</p>
+<p>It includes ticker to cik transformation, quarter master file download, and 10 form download functions.</p>
+<dl class="class">
+<dt id="form10DB.CIKTranslator">
+<em class="property">class </em><tt class="descclassname">form10DB.</tt><tt class="descname">CIKTranslator</tt><a class="reference internal" href="_modules/form10DB.html#CIKTranslator"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#form10DB.CIKTranslator" title="Permalink to this definition">¶</a></dt>
+<dd><p>CIKTranslator manages the mapping between cik and ticker</p>
+<dl class="docutils">
+<dt>Users can get the dictionary from two members:</dt>
+<dd><p class="first">CIKtranslator.tickerGetter:   dictionary with cik:ticker</p>
+<p class="last">CIKtranslator.cikGetter:      dictionary with ticker:cik</p>
+</dd>
+</dl>
+<dl class="method">
+<dt id="form10DB.CIKTranslator.updateCIKtable">
+<tt class="descname">updateCIKtable</tt><big>(</big><em>tickers</em><big>)</big><a class="reference internal" href="_modules/form10DB.html#CIKTranslator.updateCIKtable"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#form10DB.CIKTranslator.updateCIKtable" title="Permalink to this definition">¶</a></dt>
+<dd><p>generate a txt file that map ticker to cik</p>
+<dl class="docutils">
+<dt>Args:</dt>
+<dd>sequence of symbol(str): symbols to add to the dictionary</dd>
+<dt>Return:</dt>
+<dd>emptycik(list): list of ticker without cik</dd>
+<dt>Output:</dt>
+<dd>DATA_ADD + &#8216;/Edgar/cik2ticker.txt</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="form10DB.Form10Manager">
+<em class="property">class </em><tt class="descclassname">form10DB.</tt><tt class="descname">Form10Manager</tt><a class="reference internal" href="_modules/form10DB.html#Form10Manager"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#form10DB.Form10Manager" title="Permalink to this definition">¶</a></dt>
+<dd><p>MasterFileManager download and maintains quarterly master file of
+EDGAR database</p>
+<dl class="method">
+<dt id="form10DB.Form10Manager.listQuraterMasterFile">
+<tt class="descname">listQuraterMasterFile</tt><big>(</big><big>)</big><a class="reference internal" href="_modules/form10DB.html#Form10Manager.listQuraterMasterFile"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#form10DB.Form10Manager.listQuraterMasterFile" title="Permalink to this definition">¶</a></dt>
+<dd><p>List all available quarterly master file</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="form10DB.Form10Manager.updateAndDownload">
+<tt class="descname">updateAndDownload</tt><big>(</big><em>year</em>, <em>qtr</em>, <em>range='all'</em><big>)</big><a class="reference internal" href="_modules/form10DB.html#Form10Manager.updateAndDownload"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#form10DB.Form10Manager.updateAndDownload" title="Permalink to this definition">¶</a></dt>
+<dd><p>update master file and download new forms</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="form10DB.Form10Manager.updateForms">
+<tt class="descname">updateForms</tt><big>(</big><em>year</em>, <em>qtr</em>, <em>range='all'</em><big>)</big><a class="reference internal" href="_modules/form10DB.html#Form10Manager.updateForms"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#form10DB.Form10Manager.updateForms" title="Permalink to this definition">¶</a></dt>
+<dd><p>download all 10 forms listed in the master file to corresponding ticker directory</p>
+<dl class="docutils">
+<dt>Args:</dt>
+<dd><p class="first">year,qtr(int):  year and quarter of master file
+range(str):     specify date range to download</p>
+<blockquote class="last">
+<div>&#8216;all&#8217;: download all forms in the master file
+&#8216;today&#8217;: download forms with date == today</div></blockquote>
+</dd>
+</dl>
+<p>return:</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="form10DB.Form10Manager.updateQuarterMasterFile">
+<tt class="descname">updateQuarterMasterFile</tt><big>(</big><em>beginyear</em>, <em>beginqtr</em>, <em>endyear</em>, <em>endqtr</em><big>)</big><a class="reference internal" href="_modules/form10DB.html#Form10Manager.updateQuarterMasterFile"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#form10DB.Form10Manager.updateQuarterMasterFile" title="Permalink to this definition">¶</a></dt>
+<dd><p>Download quarterly master file from edgar database
+Args:</p>
+<blockquote>
+<div>beginyear, ..., endqtr (int): specify required date range</div></blockquote>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar">
+        <div class="sphinxsidebarwrapper">
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="index.html"
+                        title="previous chapter">Welcome to Edgar&#8217;s documentation!</a></p>
+  <h3>This Page</h3>
+  <ul class="this-page-menu">
+    <li><a href="_sources/form10DB.txt"
+           rel="nofollow">Show Source</a></li>
+  </ul>
+<div id="searchbox" style="display: none">
+  <h3>Quick search</h3>
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="index.html" title="Welcome to Edgar’s documentation!"
+             >previous</a> |</li>
+        <li><a href="index.html">Edgar 0.1.1 documentation</a> &raquo;</li> 
+      </ul>
+    </div>
+    <div class="footer">
+        &copy; Copyright 2013, Brandon.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.2b3.
+    </div>
+  </body>
+</html>
