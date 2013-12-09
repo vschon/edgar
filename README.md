@@ -1,12 +1,12 @@
 Instructions
 -----------
 
-1. 3rd party Dependency
+###1.3rd party Dependency
 numpy
 pandas
 sklearn
 
-2. Modules
+###2.Modules
 There are 4 modules in this project: form10DB, DataGenerator, forecaster, and utils
 
 2.1 form10DB
@@ -24,7 +24,7 @@ predictions.
 2.4 utils
 utils contain usefule helper functions to support other modules.
 
-3. How to use
+###3.How to use
 In this demo project, the database and dataset have already been generated. So
 there is no need to use the module form10DB and DataGenerator. These two modulles
 are only needed when you want to repopulat the edgar database on your own machine.
@@ -34,20 +34,20 @@ the working directory to edgar directory:
 
 import forecaster
 learner = forecaster.Forecaster()
-#read in training data for learner
+#####read in training data for learner
 learner.readTrainFile('Dictionary.3label.Industrials','3label.Industrials.train.key')
-#read in development data
+#####read in development data
 learner.readDevFile('3label.Industrials.dev.key')
-#read in testing data
+#####read in testing data
 learner.readTestFile('3label.Industrials.test.key')
 
-#Training classifier
+#####Training classifier
 learner.classifier.fit(learner.trainFeature,learner.trainLabel)
 
-#Testing on development set
+#####Testing on development set
 learner.classifier.score(learner.devFeature,learner.devLabel)
 
-#Get the accuracy on testing set
+#####Get the accuracy on testing set
 learner.classifier.score(learner.testFeature,learner.testLabel)
 
 
