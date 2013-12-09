@@ -32,21 +32,19 @@ are only needed when you want to repopulat the edgar database on your own machin
 The only module used in the demo project is forecaster. For demo, please change
 the working directory to edgar directory:
 
->>>import forecaster
+>
+import forecaster
 learner = forecaster.Forecaster()
-#####read in training data for learner
+####read in training data for learner
 learner.readTrainFile('Dictionary.3label.Industrials','3label.Industrials.train.key')
 #####read in development data
 learner.readDevFile('3label.Industrials.dev.key')
 #####read in testing data
 learner.readTestFile('3label.Industrials.test.key')
-
 #####Training classifier
 learner.classifier.fit(learner.trainFeature,learner.trainLabel)
-
 #####Testing on development set
 learner.classifier.score(learner.devFeature,learner.devLabel)
-
 #####Get the accuracy on testing set
 learner.classifier.score(learner.testFeature,learner.testLabel)
 
