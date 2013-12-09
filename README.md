@@ -47,7 +47,10 @@ learner.classifier.fit(learner.trainFeature,learner.trainLabel)
 learner.classifier.score(learner.devFeature,learner.devLabel)
 #####Get the accuracy on testing set
 learner.classifier.score(learner.testFeature,learner.testLabel)
+>
 
+###4.Documentation
+Please refer to Documentation.html for detailed function API and source code
 
 
 

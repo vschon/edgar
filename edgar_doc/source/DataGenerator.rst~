@@ -1,0 +1,5 @@
+Generate train/test dataset
+============================
+
+.. automodule:: DataGenerator
+   :members:

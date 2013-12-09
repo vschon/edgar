@@ -1,0 +1,303 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=iso8859_1" />
+    
+    <title>forecaster</title>
+    
+    <link rel="stylesheet" href="../_static/default.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="top" title="Edgar 0.1.1 documentation" href="../index.html" />
+    <link rel="up" title="Module code" href="index.html" /> 
+  </head>
+  <body>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="../py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li><a href="../index.html">Edgar 0.1.1 documentation</a> &raquo;</li>
+          <li><a href="index.html" accesskey="U">Module code</a> &raquo;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+          <div class="body">
+            
+  <h1>Source code for forecaster</h1><div class="highlight"><pre>
+<span class="kn">import</span> <span class="nn">numpy</span> <span class="kn">as</span> <span class="nn">np</span>
+<span class="kn">import</span> <span class="nn">pandas</span> <span class="kn">as</span> <span class="nn">pd</span>
+<span class="kn">import</span> <span class="nn">VA_PYTHON</span> <span class="kn">as</span> <span class="nn">va</span>
+<span class="kn">import</span> <span class="nn">os</span>
+<span class="kn">import</span> <span class="nn">gzip</span>
+<span class="kn">from</span> <span class="nn">collections</span> <span class="kn">import</span> <span class="n">defaultdict</span>
+<span class="kn">from</span> <span class="nn">dateutil.parser</span> <span class="kn">import</span> <span class="n">parse</span>
+<span class="kn">import</span> <span class="nn">datetime</span> <span class="kn">as</span> <span class="nn">dt</span>
+<span class="kn">import</span> <span class="nn">nltk</span>
+<span class="kn">from</span> <span class="nn">sklearn</span> <span class="kn">import</span> <span class="n">svm</span>
+<span class="kn">from</span> <span class="nn">ftplib</span> <span class="kn">import</span> <span class="n">FTP</span>
+<span class="kn">import</span> <span class="nn">urllib2</span>
+<span class="kn">import</span> <span class="nn">ipdb</span>
+<span class="kn">import</span> <span class="nn">re</span>
+<span class="kn">import</span> <span class="nn">utils</span>
+<span class="kn">from</span> <span class="nn">sklearn.naive_bayes</span> <span class="kn">import</span> <span class="n">MultinomialNB</span>
+
+
+<span class="n">module_dir</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">dirname</span><span class="p">(</span><span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">abspath</span><span class="p">(</span><span class="n">__file__</span><span class="p">))</span>
+<span class="k">print</span> <span class="n">module_dir</span>
+<span class="n">DATA_ADD</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">getenv</span><span class="p">(</span><span class="s">&#39;DATA&#39;</span><span class="p">)</span>
+
+<div class="viewcode-block" id="Forecaster"><a class="viewcode-back" href="../forecaster.html#forecaster.Forecaster">[docs]</a><span class="k">class</span> <span class="nc">Forecaster</span><span class="p">(</span><span class="nb">object</span><span class="p">):</span>
+    <span class="sd">&#39;&#39;&#39;</span>
+<span class="sd">    Forecaster is wrapper class for different classifiers</span>
+
+<span class="sd">    Forecaster can:</span>
+<span class="sd">        (1) train and test on historical edgar data</span>
+
+<span class="sd">        (2) make predictions on new incoming data</span>
+
+<span class="sd">    Constructor Args:</span>
+<span class="sd">        indexFilePath(str): path to the index file of all training data</span>
+
+<span class="sd">    &#39;&#39;&#39;</span>
+
+    <span class="k">def</span> <span class="nf">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">indexFilePath</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">module_dir</span><span class="p">,</span><span class="s">&#39;Database&#39;</span><span class="p">,</span><span class="s">&#39;Industrials&#39;</span><span class="p">,</span><span class="s">&#39;Industrials.key&#39;</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">indexfile</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">indexFilePath</span><span class="p">,</span><span class="n">sep</span> <span class="o">=</span> <span class="s">&#39;,&#39;</span><span class="p">,</span><span class="n">names</span> <span class="o">=</span> <span class="p">[</span><span class="s">&#39;date&#39;</span><span class="p">,</span><span class="s">&#39;symbol&#39;</span><span class="p">,</span><span class="s">&#39;label&#39;</span><span class="p">,</span><span class="s">&#39;path&#39;</span><span class="p">],</span> <span class="n">parse_dates</span> <span class="o">=</span> <span class="p">[</span><span class="s">&#39;date&#39;</span><span class="p">,])</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">classifier</span> <span class="o">=</span> <span class="n">MultinomialNB</span><span class="p">(</span><span class="n">alpha</span> <span class="o">=</span> <span class="mi">45000</span><span class="p">)</span>
+
+        <span class="bp">self</span><span class="o">.</span><span class="n">featNum</span> <span class="o">=</span> <span class="mi">0</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">trainNum</span> <span class="o">=</span> <span class="mi">0</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">trainFeature</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">zeros</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">trainLabel</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">zeros</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
+
+        <span class="bp">self</span><span class="o">.</span><span class="n">testNum</span> <span class="o">=</span> <span class="mi">0</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">testFeature</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">zeros</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">testLabel</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">zeros</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
+
+        <span class="bp">self</span><span class="o">.</span><span class="n">devNum</span> <span class="o">=</span> <span class="mi">0</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">devFeature</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">zeros</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">devLabel</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">zeros</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
+
+    <span class="k">def</span> <span class="nf">readTrainFile</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span><span class="n">dictionarypath</span><span class="p">,</span><span class="n">trainfilename</span><span class="p">):</span>
+
+        <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="n">dictionarypath</span><span class="p">,</span><span class="s">&#39;r&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span>
+            <span class="n">wordlist</span> <span class="o">=</span> <span class="n">f</span><span class="o">.</span><span class="n">read</span><span class="p">()</span>
+            <span class="n">wordlist</span> <span class="o">=</span> <span class="n">wordlist</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s">&#39;</span><span class="se">\n</span><span class="s">&#39;</span><span class="p">)</span>
+            <span class="n">wordlist</span><span class="o">.</span><span class="n">remove</span><span class="p">(</span><span class="s">&#39;&#39;</span><span class="p">)</span>
+            <span class="n">wordlist</span> <span class="o">=</span> <span class="p">[</span><span class="n">item</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s">&#39;:&#39;</span><span class="p">)[</span><span class="mi">0</span><span class="p">]</span> <span class="k">for</span> <span class="n">item</span> <span class="ow">in</span> <span class="n">wordlist</span><span class="p">]</span>
+
+        <span class="bp">self</span><span class="o">.</span><span class="n">Vocabulary</span> <span class="o">=</span> <span class="p">{}</span>
+        <span class="n">keyIndex</span> <span class="o">=</span> <span class="mi">1</span>
+        <span class="k">for</span> <span class="n">key</span> <span class="ow">in</span> <span class="nb">set</span><span class="p">(</span><span class="n">wordlist</span><span class="p">):</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">Vocabulary</span><span class="p">[</span><span class="n">key</span><span class="p">]</span> <span class="o">=</span> <span class="n">keyIndex</span>
+            <span class="n">keyIndex</span> <span class="o">+=</span> <span class="mi">1</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">featNum</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">Vocabulary</span><span class="p">)</span> <span class="o">+</span> <span class="mi">1</span>
+        <span class="k">print</span> <span class="s">&#39;length of voc = &#39;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">Vocabulary</span><span class="p">))</span>
+
+        <span class="n">trainfile</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="n">trainfilename</span><span class="p">,</span> <span class="n">header</span> <span class="o">=</span> <span class="bp">None</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">trainNum</span> <span class="o">=</span> <span class="n">trainfile</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">trainFeature</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">zeros</span><span class="p">((</span><span class="bp">self</span><span class="o">.</span><span class="n">trainNum</span><span class="p">,</span><span class="bp">self</span><span class="o">.</span><span class="n">featNum</span><span class="p">))</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">trainLabel</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">zeros</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">trainNum</span><span class="p">)</span>
+
+        <span class="n">index</span> <span class="o">=</span> <span class="mi">0</span>
+        <span class="k">for</span> <span class="n">item</span> <span class="ow">in</span> <span class="n">utils</span><span class="o">.</span><span class="n">DataIterator</span><span class="p">(</span><span class="n">trainfilename</span><span class="p">):</span>
+            <span class="n">label</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">item</span><span class="p">[</span><span class="s">&#39;label&#39;</span><span class="p">])</span>
+            <span class="n">BOW</span> <span class="o">=</span> <span class="n">item</span><span class="p">[</span><span class="s">&#39;BOW&#39;</span><span class="p">]</span>
+            <span class="n">sue</span> <span class="o">=</span>  <span class="nb">float</span><span class="p">(</span><span class="n">item</span><span class="p">[</span><span class="s">&#39;SUE&#39;</span><span class="p">]</span> <span class="o">+</span> <span class="mi">200</span><span class="p">)</span>
+
+            <span class="k">for</span> <span class="n">word</span><span class="p">,</span><span class="n">count</span> <span class="ow">in</span> <span class="n">BOW</span><span class="o">.</span><span class="n">items</span><span class="p">():</span>
+                <span class="k">try</span><span class="p">:</span>
+                    <span class="n">position</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">Vocabulary</span><span class="p">[</span><span class="n">word</span><span class="p">]</span>
+                    <span class="bp">self</span><span class="o">.</span><span class="n">trainFeature</span><span class="p">[</span><span class="n">index</span><span class="p">][</span><span class="n">position</span><span class="p">]</span> <span class="o">=</span> <span class="n">count</span>
+                <span class="k">except</span> <span class="ne">KeyError</span><span class="p">:</span>
+                    <span class="k">pass</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">trainLabel</span><span class="p">[</span><span class="n">index</span><span class="p">]</span> <span class="o">=</span> <span class="n">label</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">trainFeature</span><span class="p">[</span><span class="n">index</span><span class="p">][</span><span class="mi">0</span><span class="p">]</span> <span class="o">=</span> <span class="n">sue</span>
+            <span class="n">index</span> <span class="o">+=</span> <span class="mi">1</span>
+
+    <span class="k">def</span> <span class="nf">readTestFile</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span><span class="n">testfilename</span><span class="p">):</span>
+        <span class="n">testfile</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="n">testfilename</span><span class="p">,</span> <span class="n">header</span> <span class="o">=</span> <span class="bp">None</span><span class="p">)</span>
+
+        <span class="bp">self</span><span class="o">.</span><span class="n">testNum</span> <span class="o">=</span> <span class="n">testfile</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">testFeature</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">zeros</span><span class="p">((</span><span class="bp">self</span><span class="o">.</span><span class="n">testNum</span><span class="p">,</span><span class="bp">self</span><span class="o">.</span><span class="n">featNum</span><span class="p">))</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">testLabel</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">zeros</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">testNum</span><span class="p">)</span>
+
+        <span class="n">index</span> <span class="o">=</span> <span class="mi">0</span>
+        <span class="k">for</span> <span class="n">item</span> <span class="ow">in</span> <span class="n">utils</span><span class="o">.</span><span class="n">DataIterator</span><span class="p">(</span><span class="n">testfilename</span><span class="p">):</span>
+            <span class="n">label</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">item</span><span class="p">[</span><span class="s">&#39;label&#39;</span><span class="p">])</span>
+            <span class="n">BOW</span> <span class="o">=</span> <span class="n">item</span><span class="p">[</span><span class="s">&#39;BOW&#39;</span><span class="p">]</span>
+            <span class="n">sue</span> <span class="o">=</span> <span class="nb">float</span><span class="p">(</span><span class="n">item</span><span class="p">[</span><span class="s">&#39;SUE&#39;</span><span class="p">]</span> <span class="o">+</span> <span class="mi">200</span><span class="p">)</span>
+            <span class="k">for</span> <span class="n">word</span><span class="p">,</span><span class="n">count</span> <span class="ow">in</span> <span class="n">BOW</span><span class="o">.</span><span class="n">items</span><span class="p">():</span>
+                <span class="k">try</span><span class="p">:</span>
+                    <span class="n">position</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">Vocabulary</span><span class="p">[</span><span class="n">word</span><span class="p">]</span>
+                    <span class="bp">self</span><span class="o">.</span><span class="n">testFeature</span><span class="p">[</span><span class="n">index</span><span class="p">][</span><span class="n">position</span><span class="p">]</span> <span class="o">=</span> <span class="n">count</span>
+                <span class="k">except</span> <span class="ne">KeyError</span><span class="p">:</span>
+                    <span class="k">pass</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">testLabel</span><span class="p">[</span><span class="n">index</span><span class="p">]</span> <span class="o">=</span> <span class="n">label</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">testFeature</span><span class="p">[</span><span class="n">index</span><span class="p">][</span><span class="mi">0</span><span class="p">]</span> <span class="o">=</span> <span class="n">sue</span>
+            <span class="n">index</span> <span class="o">+=</span> <span class="mi">1</span>
+
+    <span class="k">def</span> <span class="nf">readDevFile</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span><span class="n">devfilename</span><span class="p">):</span>
+        <span class="n">devfile</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="n">devfilename</span><span class="p">,</span> <span class="n">header</span> <span class="o">=</span> <span class="bp">None</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">devNum</span> <span class="o">=</span> <span class="n">devfile</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">devFeature</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">zeros</span><span class="p">((</span><span class="bp">self</span><span class="o">.</span><span class="n">devNum</span><span class="p">,</span><span class="bp">self</span><span class="o">.</span><span class="n">featNum</span><span class="p">))</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">devLabel</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">zeros</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">devNum</span><span class="p">)</span>
+
+        <span class="n">index</span> <span class="o">=</span> <span class="mi">0</span>
+        <span class="k">for</span> <span class="n">item</span> <span class="ow">in</span> <span class="n">utils</span><span class="o">.</span><span class="n">DataIterator</span><span class="p">(</span><span class="n">devfilename</span><span class="p">):</span>
+            <span class="n">label</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">item</span><span class="p">[</span><span class="s">&#39;label&#39;</span><span class="p">])</span>
+            <span class="n">BOW</span> <span class="o">=</span> <span class="n">item</span><span class="p">[</span><span class="s">&#39;BOW&#39;</span><span class="p">]</span>
+            <span class="n">sue</span> <span class="o">=</span> <span class="nb">float</span><span class="p">(</span><span class="n">item</span><span class="p">[</span><span class="s">&#39;SUE&#39;</span><span class="p">]</span><span class="o">+</span><span class="mi">200</span><span class="p">)</span>
+            <span class="k">for</span> <span class="n">word</span><span class="p">,</span><span class="n">count</span> <span class="ow">in</span> <span class="n">BOW</span><span class="o">.</span><span class="n">items</span><span class="p">():</span>
+                <span class="k">try</span><span class="p">:</span>
+                    <span class="n">position</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">Vocabulary</span><span class="p">[</span><span class="n">word</span><span class="p">]</span>
+                    <span class="bp">self</span><span class="o">.</span><span class="n">devFeature</span><span class="p">[</span><span class="n">index</span><span class="p">][</span><span class="n">position</span><span class="p">]</span> <span class="o">=</span> <span class="n">count</span>
+                <span class="k">except</span> <span class="ne">KeyError</span><span class="p">:</span>
+                    <span class="k">pass</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">devLabel</span><span class="p">[</span><span class="n">index</span><span class="p">]</span> <span class="o">=</span> <span class="n">label</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">devFeature</span><span class="p">[</span><span class="n">index</span><span class="p">][</span><span class="mi">0</span><span class="p">]</span> <span class="o">=</span> <span class="n">sue</span>
+            <span class="n">index</span> <span class="o">+=</span> <span class="mi">1</span>
+
+<div class="viewcode-block" id="Forecaster.setClassifier"><a class="viewcode-back" href="../forecaster.html#forecaster.Forecaster.setClassifier">[docs]</a>    <span class="k">def</span> <span class="nf">setClassifier</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span><span class="n">classifier_</span><span class="p">):</span>
+        <span class="sd">&#39;&#39;&#39;</span>
+<span class="sd">        set the classifier of the forecaster.</span>
+
+<span class="sd">        The classifier should have a fit(X,y), score(X,y) and predict(X) functions</span>
+
+<span class="sd">        Args:</span>
+<span class="sd">            classifier: instance of a classifier</span>
+<span class="sd">        &#39;&#39;&#39;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">classifier</span> <span class="o">=</span> <span class="n">classifier_</span>
+</div>
+<div class="viewcode-block" id="Forecaster.GenerateTrainTestDateSet"><a class="viewcode-back" href="../forecaster.html#forecaster.Forecaster.GenerateTrainTestDateSet">[docs]</a>    <span class="k">def</span> <span class="nf">GenerateTrainTestDateSet</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span><span class="n">traincut</span><span class="p">,</span><span class="n">devcut</span><span class="p">):</span>
+
+        <span class="sd">&#39;&#39;&#39;</span>
+<span class="sd">        cut training set and testing set based on cut date(cut date include in training set)</span>
+<span class="sd">        &#39;&#39;&#39;</span>
+
+        <span class="n">length</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">indexfile</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+        <span class="n">trainCut</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">traincut</span><span class="o">*</span><span class="n">length</span><span class="p">)</span>
+        <span class="n">devCut</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">devcut</span><span class="o">*</span><span class="n">length</span><span class="p">)</span>
+        <span class="n">trainfile</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">indexfile</span><span class="p">[:</span><span class="n">trainCut</span><span class="p">]</span>
+        <span class="n">devfile</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">indexfile</span><span class="p">[</span><span class="n">trainCut</span><span class="p">:</span><span class="n">devCut</span><span class="p">]</span>
+        <span class="n">testfile</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">indexfile</span><span class="p">[</span><span class="n">devCut</span><span class="p">:]</span>
+
+        <span class="n">trainfileName</span> <span class="o">=</span> <span class="s">&#39;train.key&#39;</span>
+        <span class="n">devfileName</span> <span class="o">=</span> <span class="s">&#39;dev.key&#39;</span>
+        <span class="n">testfileName</span> <span class="o">=</span> <span class="s">&#39;test.key&#39;</span>
+
+        <span class="n">trainfile</span><span class="o">.</span><span class="n">to_csv</span><span class="p">(</span><span class="n">trainfileName</span><span class="p">,</span> <span class="n">sep</span> <span class="o">=</span> <span class="s">&#39;,&#39;</span><span class="p">,</span> <span class="n">header</span> <span class="o">=</span> <span class="bp">False</span><span class="p">,</span> <span class="n">index</span> <span class="o">=</span> <span class="bp">False</span><span class="p">)</span>
+        <span class="n">devfile</span><span class="o">.</span><span class="n">to_csv</span><span class="p">(</span><span class="n">devfileName</span><span class="p">,</span> <span class="n">sep</span> <span class="o">=</span> <span class="s">&#39;,&#39;</span><span class="p">,</span> <span class="n">header</span> <span class="o">=</span> <span class="bp">False</span><span class="p">,</span> <span class="n">index</span> <span class="o">=</span> <span class="bp">False</span><span class="p">)</span>
+        <span class="n">testfile</span><span class="o">.</span><span class="n">to_csv</span><span class="p">(</span><span class="n">testfileName</span><span class="p">,</span> <span class="n">sep</span> <span class="o">=</span> <span class="s">&#39;,&#39;</span><span class="p">,</span> <span class="n">header</span> <span class="o">=</span> <span class="bp">False</span><span class="p">,</span> <span class="n">index</span> <span class="o">=</span> <span class="bp">False</span><span class="p">)</span>
+
+        <span class="k">print</span> <span class="nb">str</span><span class="p">(</span><span class="n">trainfile</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span> <span class="o">+</span> <span class="s">&#39; lines written to &#39;</span> <span class="o">+</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">os</span><span class="o">.</span><span class="n">getcwd</span><span class="p">(),</span> <span class="n">trainfileName</span><span class="p">)</span>
+        <span class="k">print</span> <span class="nb">str</span><span class="p">(</span><span class="n">devfile</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span> <span class="o">+</span> <span class="s">&#39; lines written to &#39;</span> <span class="o">+</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">os</span><span class="o">.</span><span class="n">getcwd</span><span class="p">(),</span> <span class="n">devfileName</span><span class="p">)</span>
+        <span class="k">print</span> <span class="nb">str</span><span class="p">(</span><span class="n">testfile</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span> <span class="o">+</span> <span class="s">&#39; lines written to &#39;</span> <span class="o">+</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">os</span><span class="o">.</span><span class="n">getcwd</span><span class="p">(),</span> <span class="n">testfileName</span><span class="p">)</span>
+
+</div></div>
+<div class="viewcode-block" id="doMostCommonClassify"><a class="viewcode-back" href="../forecaster.html#forecaster.doMostCommonClassify">[docs]</a><span class="k">def</span> <span class="nf">doMostCommonClassify</span><span class="p">(</span><span class="n">keyfile</span><span class="p">,</span><span class="n">outfilename</span><span class="p">):</span>
+    <span class="sd">&#39;&#39;&#39;</span>
+<span class="sd">    guess all label to be 1, 2,3</span>
+<span class="sd">    Most Common Baseline</span>
+<span class="sd">    &#39;&#39;&#39;</span>
+    <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="n">outfilename</span><span class="p">,</span> <span class="s">&#39;w&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span>
+        <span class="k">for</span> <span class="n">inst</span> <span class="ow">in</span> <span class="n">utils</span><span class="o">.</span><span class="n">DataIterator</span><span class="p">(</span><span class="n">keyfile</span><span class="p">):</span>
+            <span class="n">f</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s">&#39;3</span><span class="se">\n</span><span class="s">&#39;</span><span class="p">)</span>
+</div>
+<div class="viewcode-block" id="doWordListClassify"><a class="viewcode-back" href="../forecaster.html#forecaster.doWordListClassify">[docs]</a><span class="k">def</span> <span class="nf">doWordListClassify</span><span class="p">(</span><span class="n">keyfile</span><span class="p">,</span> <span class="n">outfilename</span><span class="p">,</span> <span class="n">sue_weight</span> <span class="o">=</span> <span class="mf">0.0</span><span class="p">,</span> <span class="n">k</span> <span class="o">=</span> <span class="mi">0</span><span class="p">):</span>
+    <span class="sd">&#39;&#39;&#39;</span>
+<span class="sd">    count pos/neg words to make classification</span>
+<span class="sd">    &#39;&#39;&#39;</span>
+
+    <span class="n">dictionary</span> <span class="o">=</span> <span class="n">utils</span><span class="o">.</span><span class="n">getSentVoc</span><span class="p">()</span>
+    <span class="n">pos</span> <span class="o">=</span> <span class="n">dictionary</span><span class="p">[</span><span class="s">&#39;pos&#39;</span><span class="p">]</span>
+    <span class="n">neg</span> <span class="o">=</span> <span class="n">dictionary</span><span class="p">[</span><span class="s">&#39;neg&#39;</span><span class="p">]</span>
+
+    <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="n">outfilename</span><span class="p">,</span> <span class="s">&#39;w&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span>
+        <span class="k">for</span> <span class="n">item</span> <span class="ow">in</span> <span class="n">utils</span><span class="o">.</span><span class="n">DataIterator</span><span class="p">(</span><span class="n">keyfile</span><span class="p">):</span>
+            <span class="n">BOW</span> <span class="o">=</span> <span class="n">item</span><span class="p">[</span><span class="s">&#39;BOW&#39;</span><span class="p">]</span>
+            <span class="n">SUE</span> <span class="o">=</span> <span class="n">item</span><span class="p">[</span><span class="s">&#39;SUE&#39;</span><span class="p">]</span>
+            <span class="n">poscount</span> <span class="o">=</span> <span class="mi">0</span>
+            <span class="n">negcount</span> <span class="o">=</span> <span class="mi">0</span>
+            <span class="k">for</span> <span class="n">word</span><span class="p">,</span> <span class="n">count</span> <span class="ow">in</span> <span class="n">BOW</span><span class="o">.</span><span class="n">items</span><span class="p">():</span>
+                <span class="k">if</span> <span class="n">word</span> <span class="ow">in</span> <span class="n">pos</span><span class="p">:</span>
+                    <span class="n">poscount</span> <span class="o">+=</span> <span class="n">count</span>
+                <span class="k">elif</span> <span class="n">word</span> <span class="ow">in</span> <span class="n">neg</span><span class="p">:</span>
+                    <span class="n">negcount</span> <span class="o">+=</span> <span class="n">count</span>
+            <span class="n">score</span> <span class="o">=</span> <span class="nb">float</span><span class="p">((</span><span class="n">poscount</span> <span class="o">-</span> <span class="n">negcount</span><span class="p">))</span> <span class="o">+</span> <span class="n">sue_weight</span> <span class="o">*</span> <span class="n">SUE</span>
+            <span class="c">#score = float(poscount - negcount)</span>
+            <span class="k">if</span> <span class="n">score</span> <span class="o">&gt;</span> <span class="n">k</span><span class="p">:</span>
+                <span class="n">f</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s">&#39;1</span><span class="se">\n</span><span class="s">&#39;</span><span class="p">)</span>
+            <span class="k">elif</span> <span class="n">score</span> <span class="o">&lt;</span> <span class="o">-</span><span class="n">k</span><span class="p">:</span>
+                <span class="n">f</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s">&#39;3</span><span class="se">\n</span><span class="s">&#39;</span><span class="p">)</span>
+            <span class="k">else</span><span class="p">:</span>
+                <span class="n">f</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s">&#39;2</span><span class="se">\n</span><span class="s">&#39;</span><span class="p">)</span>
+
+</div>
+<span class="k">def</span> <span class="nf">getAllCounts</span><span class="p">(</span><span class="n">dataiterator</span><span class="p">):</span>
+    <span class="n">allcounts</span> <span class="o">=</span> <span class="n">defaultdict</span><span class="p">(</span><span class="nb">int</span><span class="p">)</span>
+    <span class="k">for</span> <span class="n">result</span> <span class="ow">in</span> <span class="n">dataiterator</span><span class="p">:</span>
+        <span class="k">for</span> <span class="n">word</span><span class="p">,</span><span class="n">count</span> <span class="ow">in</span> <span class="n">result</span><span class="p">[</span><span class="s">&#39;BOW&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">items</span><span class="p">():</span>
+            <span class="n">allcounts</span><span class="p">[</span><span class="n">word</span><span class="p">]</span> <span class="o">+=</span> <span class="n">count</span>
+    <span class="k">return</span> <span class="n">allcounts</span>
+
+<span class="kn">import</span> <span class="nn">operator</span>
+<div class="viewcode-block" id="DictionaryGenerator"><a class="viewcode-back" href="../forecaster.html#forecaster.DictionaryGenerator">[docs]</a><span class="k">class</span> <span class="nc">DictionaryGenerator</span><span class="p">():</span>
+    <span class="sd">&#39;&#39;&#39;</span>
+<span class="sd">    Generate a dictionary from the files indicated in the keyfile</span>
+<span class="sd">    &#39;&#39;&#39;</span>
+
+    <span class="k">def</span> <span class="nf">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">allcounts</span> <span class="o">=</span> <span class="n">defaultdict</span><span class="p">(</span><span class="nb">int</span><span class="p">)</span>
+
+<div class="viewcode-block" id="DictionaryGenerator.GenerateDictionary"><a class="viewcode-back" href="../forecaster.html#forecaster.DictionaryGenerator.GenerateDictionary">[docs]</a>    <span class="k">def</span> <span class="nf">GenerateDictionary</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span><span class="n">keyfile</span><span class="p">,</span><span class="n">outdictname</span><span class="p">):</span>
+        <span class="sd">&#39;&#39;&#39;</span>
+<span class="sd">        Args:</span>
+<span class="sd">            keyfile(str): path to look for the keyfile</span>
+<span class="sd">            outdictname: name of the output dictionary</span>
+<span class="sd">        &#39;&#39;&#39;</span>
+        <span class="k">for</span> <span class="n">point</span> <span class="ow">in</span> <span class="n">utils</span><span class="o">.</span><span class="n">DataIterator</span><span class="p">(</span><span class="n">keyfile</span><span class="p">):</span>
+            <span class="k">for</span> <span class="n">word</span><span class="p">,</span><span class="n">count</span> <span class="ow">in</span> <span class="n">point</span><span class="p">[</span><span class="s">&#39;BOW&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">items</span><span class="p">():</span>
+                <span class="bp">self</span><span class="o">.</span><span class="n">allcounts</span><span class="p">[</span><span class="n">word</span><span class="p">]</span> <span class="o">+=</span> <span class="n">count</span>
+        <span class="n">totalWordNum</span> <span class="o">=</span> <span class="nb">sum</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">allcounts</span><span class="o">.</span><span class="n">values</span><span class="p">())</span>
+        <span class="n">wordfilter</span> <span class="o">=</span> <span class="nb">float</span><span class="p">(</span><span class="n">totalWordNum</span><span class="p">)</span> <span class="o">*</span> <span class="mf">0.000001</span>
+        <span class="n">filterVocabulary</span> <span class="o">=</span> <span class="p">{</span><span class="n">key</span><span class="p">:</span><span class="n">value</span> <span class="k">for</span> <span class="n">key</span><span class="p">,</span><span class="n">value</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">allcounts</span><span class="o">.</span><span class="n">items</span><span class="p">()</span> <span class="k">if</span> <span class="p">(</span><span class="n">value</span> <span class="o">&gt;</span> <span class="n">wordfilter</span> <span class="ow">and</span> <span class="nb">len</span><span class="p">(</span><span class="n">key</span><span class="p">)</span> <span class="o">&gt;</span> <span class="mi">3</span><span class="p">)}</span>
+        <span class="n">sortedVocabulary</span> <span class="o">=</span> <span class="nb">sorted</span><span class="p">(</span><span class="n">filterVocabulary</span><span class="o">.</span><span class="n">iteritems</span><span class="p">(),</span><span class="n">key</span> <span class="o">=</span> <span class="n">operator</span><span class="o">.</span><span class="n">itemgetter</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span> <span class="p">)</span>
+        <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="n">outdictname</span><span class="p">,</span><span class="s">&#39;w&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span>
+            <span class="k">for</span> <span class="n">item</span> <span class="ow">in</span> <span class="n">sortedVocabulary</span><span class="p">:</span>
+                <span class="n">word</span><span class="p">,</span><span class="n">count</span> <span class="o">=</span> <span class="n">item</span>
+                <span class="n">f</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="n">word</span> <span class="o">+</span> <span class="s">&#39;:&#39;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">count</span><span class="p">)</span> <span class="o">+</span> <span class="s">&#39;</span><span class="se">\n</span><span class="s">&#39;</span><span class="p">)</span>
+</pre></div></div></div>
+
+          </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="../py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li><a href="../index.html">Edgar 0.1.1 documentation</a> &raquo;</li>
+          <li><a href="index.html" >Module code</a> &raquo;</li> 
+      </ul>
+    </div>
+    <div class="footer">
+        &copy; Copyright 2013, Brandon.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.2b3.
+    </div>
+  </body>
+</html>

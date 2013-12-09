@@ -1,0 +1,126 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=iso8859_1" />
+    
+    <title>Module: DataGenerator</title>
+    
+    <link rel="stylesheet" href="_static/default.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="top" title="Edgar 0.1.1 documentation" href="index.html" />
+    <link rel="prev" title="Module: utils" href="utils.html" /> 
+  </head>
+  <body>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="utils.html" title="Module: utils"
+             accesskey="P">previous</a> |</li>
+        <li><a href="index.html">Edgar 0.1.1 documentation</a> &raquo;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+          <div class="body">
+            
+  <div class="section" id="module-DataGenerator">
+<span id="module-datagenerator"></span><h1>Module: DataGenerator</h1>
+<dl class="function">
+<dt id="DataGenerator.DatabaseIndex">
+<tt class="descclassname">DataGenerator.</tt><tt class="descname">DatabaseIndex</tt><big>(</big><em>sector</em><big>)</big><a class="reference internal" href="_modules/DataGenerator.html#DatabaseIndex"><span class="viewcode-link">[source]</span></a></dt>
+<dd><p>generate a key file indexing all data points for a sector
+file format:</p>
+<blockquote>
+<div>date    symbol  label   path</div></blockquote>
+<dl class="docutils">
+<dt>TODO:</dt>
+<dd>reset path</dd>
+</dl>
+</dd></dl>
+
+<dl class="function">
+<dt id="DataGenerator.GenerateDataset">
+<tt class="descclassname">DataGenerator.</tt><tt class="descname">GenerateDataset</tt><big>(</big><em>sector</em>, <em>data</em>, <em>begin</em>, <em>end</em><big>)</big><a class="reference internal" href="_modules/DataGenerator.html#GenerateDataset"><span class="viewcode-link">[source]</span></a></dt>
+<dd><p>Generate data set
+Args:</p>
+<blockquote>
+<div>sector(str): currenyly only &#8216;Industrials&#8217; available
+data: data returned by loadData
+begin: begin index of the symbol list
+end:    end index of the symbol list</div></blockquote>
+</dd></dl>
+
+<dl class="function">
+<dt id="DataGenerator.checkEmpty">
+<tt class="descclassname">DataGenerator.</tt><tt class="descname">checkEmpty</tt><big>(</big><em>symbolList</em><big>)</big><a class="reference internal" href="_modules/DataGenerator.html#checkEmpty"><span class="viewcode-link">[source]</span></a></dt>
+<dd><p>return ticker list with empty index file</p>
+<dl class="docutils">
+<dt>Args:</dt>
+<dd>symbolList: list of symbols</dd>
+<dt>Return:</dt>
+<dd><dl class="first last docutils">
+<dt>result:{&#8216;NoSymbol&#8217;: symbols not in the cik-ticker dict</dt>
+<dd>&#8216;NoIndex&#8217;: symbol in the cik-ticker dict, but does not have index file}</dd>
+</dl>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="function">
+<dt id="DataGenerator.cleanPrice">
+<tt class="descclassname">DataGenerator.</tt><tt class="descname">cleanPrice</tt><big>(</big><em>price</em><big>)</big><a class="reference internal" href="_modules/DataGenerator.html#cleanPrice"><span class="viewcode-link">[source]</span></a></dt>
+<dd><p>check same ticker used by two companies</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="DataGenerator.loadData">
+<tt class="descclassname">DataGenerator.</tt><tt class="descname">loadData</tt><big>(</big><em>sector</em><big>)</big><a class="reference internal" href="_modules/DataGenerator.html#loadData"><span class="viewcode-link">[source]</span></a></dt>
+<dd><p>read the pricce, portfolio and sue data into memory</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="DataGenerator.updateCoreIndex">
+<tt class="descclassname">DataGenerator.</tt><tt class="descname">updateCoreIndex</tt><big>(</big><big>)</big><a class="reference internal" href="_modules/DataGenerator.html#updateCoreIndex"><span class="viewcode-link">[source]</span></a></dt>
+<dd><p>Core index file stores 10QK filing information of all ticker
+Update core index file based on the indexfile of each stock</p>
+</dd></dl>
+
+</div>
+
+
+          </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="utils.html" title="Module: utils"
+             >previous</a> |</li>
+        <li><a href="index.html">Edgar 0.1.1 documentation</a> &raquo;</li> 
+      </ul>
+    </div>
+    <div class="footer">
+        &copy; Copyright 2013, Brandon.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.2b3.
+    </div>
+  </body>
+</html>

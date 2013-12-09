@@ -1,0 +1,8 @@
+\select@language {english}
+\contentsline {chapter}{\numberline {1}Module: Form10DB}{3}{chapter.1}
+\contentsline {chapter}{\numberline {2}Module: forecaster}{5}{chapter.2}
+\contentsline {chapter}{\numberline {3}Module: utils}{7}{chapter.3}
+\contentsline {chapter}{\numberline {4}Module: DataGenerator}{9}{chapter.4}
+\contentsline {chapter}{\numberline {5}Indices and tables}{11}{chapter.5}
+\contentsline {chapter}{Python Module Index}{13}{section*.32}
+\contentsline {chapter}{Index}{15}{section*.33}

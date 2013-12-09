@@ -1,0 +1,178 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>Module: forecaster &mdash; Edgar 0.1.1 documentation</title>
+    
+    <link rel="stylesheet" href="_static/default.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    './',
+        VERSION:     '0.1.1',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <link rel="top" title="Edgar 0.1.1 documentation" href="index.html" />
+    <link rel="next" title="Module: utils" href="utils.html" />
+    <link rel="prev" title="Module: Form10DB" href="form10DB.html" /> 
+  </head>
+  <body>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="utils.html" title="Module: utils"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="form10DB.html" title="Module: Form10DB"
+             accesskey="P">previous</a> |</li>
+        <li><a href="index.html">Edgar 0.1.1 documentation</a> &raquo;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body">
+            
+  <div class="section" id="module-forecaster">
+<span id="module-forecaster"></span><h1>Module: forecaster<a class="headerlink" href="#module-forecaster" title="Permalink to this headline">¶</a></h1>
+<dl class="class">
+<dt id="forecaster.DictionaryGenerator">
+<em class="property">class </em><tt class="descclassname">forecaster.</tt><tt class="descname">DictionaryGenerator</tt><a class="reference internal" href="_modules/forecaster.html#DictionaryGenerator"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#forecaster.DictionaryGenerator" title="Permalink to this definition">¶</a></dt>
+<dd><p>Generate a dictionary from the files indicated in the keyfile</p>
+<dl class="method">
+<dt id="forecaster.DictionaryGenerator.GenerateDictionary">
+<tt class="descname">GenerateDictionary</tt><big>(</big><em>keyfile</em>, <em>outdictname</em><big>)</big><a class="reference internal" href="_modules/forecaster.html#DictionaryGenerator.GenerateDictionary"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#forecaster.DictionaryGenerator.GenerateDictionary" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="docutils">
+<dt>Args:</dt>
+<dd>keyfile(str): path to look for the keyfile
+outdictname: name of the output dictionary</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="forecaster.Forecaster">
+<em class="property">class </em><tt class="descclassname">forecaster.</tt><tt class="descname">Forecaster</tt><a class="reference internal" href="_modules/forecaster.html#Forecaster"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#forecaster.Forecaster" title="Permalink to this definition">¶</a></dt>
+<dd><p>Forecaster is wrapper class for different classifiers</p>
+<dl class="docutils">
+<dt>Forecaster can:</dt>
+<dd><ol class="first last arabic simple">
+<li>train and test on historical edgar data</li>
+<li>make predictions on new incoming data</li>
+</ol>
+</dd>
+<dt>Constructor Args:</dt>
+<dd>indexFilePath(str): path to the index file of all training data</dd>
+</dl>
+<dl class="method">
+<dt id="forecaster.Forecaster.GenerateTrainTestDateSet">
+<tt class="descname">GenerateTrainTestDateSet</tt><big>(</big><em>traincut</em>, <em>devcut</em><big>)</big><a class="reference internal" href="_modules/forecaster.html#Forecaster.GenerateTrainTestDateSet"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#forecaster.Forecaster.GenerateTrainTestDateSet" title="Permalink to this definition">¶</a></dt>
+<dd><p>cut training set and testing set based on cut date(cut date include in training set)</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="forecaster.Forecaster.setClassifier">
+<tt class="descname">setClassifier</tt><big>(</big><em>classifier_</em><big>)</big><a class="reference internal" href="_modules/forecaster.html#Forecaster.setClassifier"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#forecaster.Forecaster.setClassifier" title="Permalink to this definition">¶</a></dt>
+<dd><p>set the classifier of the forecaster.</p>
+<p>The classifier should have a fit(X,y), score(X,y) and predict(X) functions</p>
+<dl class="docutils">
+<dt>Args:</dt>
+<dd>classifier: instance of a classifier</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="function">
+<dt id="forecaster.doMostCommonClassify">
+<tt class="descclassname">forecaster.</tt><tt class="descname">doMostCommonClassify</tt><big>(</big><em>keyfile</em>, <em>outfilename</em><big>)</big><a class="reference internal" href="_modules/forecaster.html#doMostCommonClassify"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#forecaster.doMostCommonClassify" title="Permalink to this definition">¶</a></dt>
+<dd><p>guess all label to be 1, 2,3
+Most Common Baseline</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="forecaster.doWordListClassify">
+<tt class="descclassname">forecaster.</tt><tt class="descname">doWordListClassify</tt><big>(</big><em>keyfile</em>, <em>outfilename</em>, <em>sue_weight=0.0</em>, <em>k=0</em><big>)</big><a class="reference internal" href="_modules/forecaster.html#doWordListClassify"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#forecaster.doWordListClassify" title="Permalink to this definition">¶</a></dt>
+<dd><p>count pos/neg words to make classification</p>
+</dd></dl>
+
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar">
+        <div class="sphinxsidebarwrapper">
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="form10DB.html"
+                        title="previous chapter">Module: Form10DB</a></p>
+  <h4>Next topic</h4>
+  <p class="topless"><a href="utils.html"
+                        title="next chapter">Module: utils</a></p>
+  <h3>This Page</h3>
+  <ul class="this-page-menu">
+    <li><a href="_sources/forecaster.txt"
+           rel="nofollow">Show Source</a></li>
+  </ul>
+<div id="searchbox" style="display: none">
+  <h3>Quick search</h3>
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="utils.html" title="Module: utils"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="form10DB.html" title="Module: Form10DB"
+             >previous</a> |</li>
+        <li><a href="index.html">Edgar 0.1.1 documentation</a> &raquo;</li> 
+      </ul>
+    </div>
+    <div class="footer">
+        &copy; Copyright 2013, Brandon.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.2b3.
+    </div>
+  </body>
+</html>

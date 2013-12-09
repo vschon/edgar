@@ -1,0 +1,420 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>DataGenerator &mdash; Edgar 0.1.1 documentation</title>
+    
+    <link rel="stylesheet" href="../_static/default.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../',
+        VERSION:     '0.1.1',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/underscore.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <link rel="top" title="Edgar 0.1.1 documentation" href="../index.html" />
+    <link rel="up" title="Module code" href="index.html" /> 
+  </head>
+  <body>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="../py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li><a href="../index.html">Edgar 0.1.1 documentation</a> &raquo;</li>
+          <li><a href="index.html" accesskey="U">Module code</a> &raquo;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body">
+            
+  <h1>Source code for DataGenerator</h1><div class="highlight"><pre>
+<span class="c"># Demo Edgar Project</span>
+<span class="c"># Rucheng Yang 2013</span>
+
+<span class="kn">import</span> <span class="nn">numpy</span> <span class="kn">as</span> <span class="nn">np</span>
+<span class="kn">import</span> <span class="nn">pandas</span> <span class="kn">as</span> <span class="nn">pd</span>
+<span class="kn">import</span> <span class="nn">VA_PYTHON</span> <span class="kn">as</span> <span class="nn">va</span>
+<span class="kn">import</span> <span class="nn">os</span>
+<span class="kn">import</span> <span class="nn">gzip</span>
+<span class="kn">from</span> <span class="nn">collections</span> <span class="kn">import</span> <span class="n">defaultdict</span>
+<span class="kn">from</span> <span class="nn">dateutil.parser</span> <span class="kn">import</span> <span class="n">parse</span>
+<span class="kn">import</span> <span class="nn">datetime</span> <span class="kn">as</span> <span class="nn">dt</span>
+<span class="kn">import</span> <span class="nn">nltk</span>
+<span class="kn">from</span> <span class="nn">sklearn</span> <span class="kn">import</span> <span class="n">svm</span>
+<span class="kn">from</span> <span class="nn">ftplib</span> <span class="kn">import</span> <span class="n">FTP</span>
+<span class="kn">import</span> <span class="nn">urllib2</span>
+<span class="kn">import</span> <span class="nn">ipdb</span>
+<span class="kn">import</span> <span class="nn">re</span>
+<span class="kn">import</span> <span class="nn">utils</span>
+<span class="kn">import</span> <span class="nn">form10DB</span>
+
+
+<span class="n">DATA_ADD</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">getenv</span><span class="p">(</span><span class="s">&#39;DATA&#39;</span><span class="p">)</span>
+<span class="n">translator</span> <span class="o">=</span> <span class="n">form10DB</span><span class="o">.</span><span class="n">CIKTranslator</span><span class="p">()</span>
+
+
+
+<div class="viewcode-block" id="updateCoreIndex"><a class="viewcode-back" href="../DataGenerator.html#DataGenerator.updateCoreIndex">[docs]</a><span class="k">def</span> <span class="nf">updateCoreIndex</span><span class="p">():</span>
+    <span class="sd">&#39;&#39;&#39;</span>
+<span class="sd">    Core index file stores 10QK filing information of all ticker</span>
+<span class="sd">    Update core index file based on the indexfile of each stock</span>
+<span class="sd">    &#39;&#39;&#39;</span>
+    <span class="n">coreindexpath</span> <span class="o">=</span> <span class="n">DATA_ADD</span> <span class="o">+</span> <span class="s">&#39;/Edgar/coreindex.txt&#39;</span>
+    <span class="n">coreindex</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">columns</span><span class="o">=</span><span class="p">[</span><span class="s">&#39;CIK&#39;</span><span class="p">,</span><span class="s">&#39;Ticker&#39;</span><span class="p">,</span><span class="s">&#39;Date&#39;</span><span class="p">,</span><span class="s">&#39;Type&#39;</span><span class="p">,</span><span class="s">&#39;Address&#39;</span><span class="p">])</span>
+    <span class="n">CIKdict</span> <span class="o">=</span> <span class="n">translator</span><span class="o">.</span><span class="n">tickerGetter</span>
+    <span class="k">for</span> <span class="n">cik</span> <span class="ow">in</span> <span class="n">CIKdict</span><span class="p">:</span>
+        <span class="n">indexfilepath</span> <span class="o">=</span> <span class="n">DATA_ADD</span> <span class="o">+</span> <span class="s">&#39;/Edgar/&#39;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">cik</span><span class="p">)</span> <span class="o">+</span> \
+                <span class="s">&#39;_&#39;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">CIKdict</span><span class="p">[</span><span class="n">cik</span><span class="p">])</span> <span class="o">+</span> <span class="s">&#39;/&#39;</span> <span class="o">+</span> <span class="s">&#39;index.txt&#39;</span>
+        <span class="k">if</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">exists</span><span class="p">(</span><span class="n">indexfilepath</span><span class="p">):</span>
+            <span class="n">indexfile</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_table</span><span class="p">(</span><span class="n">indexfilepath</span><span class="p">,</span><span class="n">sep</span> <span class="o">=</span> <span class="s">&#39;,&#39;</span><span class="p">,</span>
+                                        <span class="n">dtype</span><span class="o">=</span><span class="p">{</span><span class="s">&#39;CIK&#39;</span><span class="p">:</span><span class="s">&#39;S10&#39;</span><span class="p">,})</span>
+            <span class="n">indexfile</span><span class="p">[</span><span class="s">&#39;Date&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">indexfile</span><span class="p">[</span><span class="s">&#39;Date&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">apply</span><span class="p">(</span><span class="n">parse</span><span class="p">)</span>
+            <span class="n">coreindex</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">concat</span><span class="p">([</span><span class="n">indexfile</span><span class="p">,</span><span class="n">coreindex</span><span class="p">])</span>
+    <span class="n">coreindex</span> <span class="o">=</span> <span class="n">coreindex</span><span class="o">.</span><span class="n">drop_duplicates</span><span class="p">()</span>
+    <span class="n">coreindex</span> <span class="o">=</span> <span class="n">coreindex</span><span class="o">.</span><span class="n">sort</span><span class="p">(</span><span class="s">&#39;Date&#39;</span><span class="p">)</span>
+    <span class="n">coreindex</span><span class="o">.</span><span class="n">to_csv</span><span class="p">(</span><span class="n">coreindexpath</span><span class="p">,</span><span class="n">sep</span><span class="o">=</span><span class="s">&#39;,&#39;</span><span class="p">,</span><span class="n">header</span><span class="o">=</span><span class="bp">True</span><span class="p">,</span> <span class="n">index</span> <span class="o">=</span> <span class="bp">False</span><span class="p">)</span>
+
+
+</div>
+<div class="viewcode-block" id="checkEmpty"><a class="viewcode-back" href="../DataGenerator.html#DataGenerator.checkEmpty">[docs]</a><span class="k">def</span> <span class="nf">checkEmpty</span><span class="p">(</span><span class="n">symbolList</span><span class="p">):</span>
+    <span class="sd">&#39;&#39;&#39;</span>
+<span class="sd">    return ticker list with empty index file</span>
+
+<span class="sd">    Args:</span>
+<span class="sd">        symbolList: list of symbols</span>
+
+<span class="sd">    Return:</span>
+<span class="sd">        result:{&#39;NoSymbol&#39;: symbols not in the cik-ticker dict</span>
+<span class="sd">                &#39;NoIndex&#39;: symbol in the cik-ticker dict, but does not have index file}</span>
+
+<span class="sd">    &#39;&#39;&#39;</span>
+
+    <span class="n">tickerdict</span> <span class="o">=</span> <span class="n">translator</span><span class="o">.</span><span class="n">cikGetter</span>
+    <span class="n">NotInTickerDict</span> <span class="o">=</span> <span class="p">[]</span>
+    <span class="n">NoIndexFile</span> <span class="o">=</span> <span class="p">[]</span>
+    <span class="k">for</span> <span class="n">symbol</span> <span class="ow">in</span> <span class="n">symbolList</span><span class="p">:</span>
+        <span class="k">if</span> <span class="n">symbol</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">tickerdict</span><span class="o">.</span><span class="n">keys</span><span class="p">():</span>
+            <span class="n">NotInTickerDict</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">symbol</span><span class="p">)</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="n">cik</span> <span class="o">=</span> <span class="n">tickerdict</span><span class="p">[</span><span class="n">symbol</span><span class="p">]</span>
+            <span class="n">indexfilepath</span> <span class="o">=</span> <span class="n">DATA_ADD</span> <span class="o">+</span> <span class="s">&#39;/Edgar/&#39;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">cik</span><span class="p">)</span> <span class="o">+</span> \
+                <span class="s">&#39;_&#39;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">symbol</span><span class="p">)</span> <span class="o">+</span> <span class="s">&#39;/index.txt&#39;</span>
+            <span class="k">if</span> <span class="ow">not</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">exists</span><span class="p">(</span><span class="n">indexfilepath</span><span class="p">):</span>
+                <span class="n">NoIndexFile</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">symbol</span><span class="p">)</span>
+    <span class="n">result</span> <span class="o">=</span> <span class="p">{</span><span class="s">&#39;NoSymbol&#39;</span><span class="p">:</span><span class="n">NotInTickerDict</span><span class="p">,</span>
+              <span class="s">&#39;NoIndex&#39;</span><span class="p">:</span><span class="n">NoIndexFile</span><span class="p">}</span>
+    <span class="k">return</span> <span class="n">result</span>
+</div>
+<div class="viewcode-block" id="cleanPrice"><a class="viewcode-back" href="../DataGenerator.html#DataGenerator.cleanPrice">[docs]</a><span class="k">def</span> <span class="nf">cleanPrice</span><span class="p">(</span><span class="n">price</span><span class="p">):</span>
+    <span class="sd">&#39;&#39;&#39;</span>
+<span class="sd">    check same ticker used by two companies</span>
+<span class="sd">    &#39;&#39;&#39;</span>
+    <span class="c">#sectorPricePath = &#39;/home/brandon/edgar/Database/&#39; + sector + \</span>
+    <span class="c">#        &#39;/&#39; + sector + &#39;_Price.csv&#39;</span>
+    <span class="c">#price = pd.read_csv(sectorPricePath,sep = &#39;,&#39; ,parse_dates = [&#39;date&#39;,])</span>
+    <span class="c">#get out all ticker</span>
+
+    <span class="c">#remove price with B,C</span>
+    <span class="n">price</span> <span class="o">=</span> <span class="n">price</span><span class="p">[(</span><span class="n">price</span><span class="p">[</span><span class="s">&#39;RET&#39;</span><span class="p">]</span> <span class="o">!=</span> <span class="s">&#39;C&#39;</span><span class="p">)</span> <span class="o">&amp;</span> <span class="p">(</span><span class="n">price</span><span class="p">[</span><span class="s">&#39;RET&#39;</span><span class="p">]</span> <span class="o">!=</span> <span class="s">&#39;B&#39;</span><span class="p">)]</span>
+    <span class="n">ticker_set</span> <span class="o">=</span> <span class="nb">set</span><span class="p">(</span><span class="n">price</span><span class="p">[</span><span class="s">&#39;TICKER&#39;</span><span class="p">])</span>
+    <span class="k">for</span> <span class="n">symbol</span> <span class="ow">in</span> <span class="n">ticker_set</span><span class="p">:</span>
+        <span class="n">sub</span> <span class="o">=</span> <span class="n">price</span><span class="p">[</span><span class="n">price</span><span class="p">[</span><span class="s">&#39;TICKER&#39;</span><span class="p">]</span> <span class="o">==</span> <span class="n">symbol</span><span class="p">]</span>
+        <span class="n">sub</span> <span class="o">=</span> <span class="n">sub</span><span class="o">.</span><span class="n">sort</span><span class="p">(</span><span class="s">&#39;date&#39;</span><span class="p">)</span>
+        <span class="n">names</span> <span class="o">=</span> <span class="n">sub</span><span class="p">[</span><span class="s">&#39;COMNAM&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">unique</span><span class="p">()</span>
+        <span class="n">length</span> <span class="o">=</span> <span class="n">names</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+        <span class="k">if</span> <span class="n">length</span> <span class="o">&gt;</span> <span class="mi">1</span><span class="p">:</span>
+            <span class="n">name</span> <span class="o">=</span> <span class="n">names</span><span class="p">[</span><span class="n">length</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span>
+            <span class="n">beginDate</span> <span class="o">=</span> <span class="n">sub</span><span class="p">[</span><span class="n">sub</span><span class="p">[</span><span class="s">&#39;COMNAM&#39;</span><span class="p">]</span> <span class="o">==</span> <span class="n">name</span><span class="p">][</span><span class="s">&#39;date&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">irow</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>
+            <span class="n">endDate</span> <span class="o">=</span> <span class="n">sub</span><span class="p">[</span><span class="n">sub</span><span class="p">[</span><span class="s">&#39;COMNAM&#39;</span><span class="p">]</span> <span class="o">==</span> <span class="n">name</span><span class="p">][</span><span class="s">&#39;date&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">irow</span><span class="p">(</span><span class="o">-</span><span class="mi">1</span><span class="p">)</span>
+
+            <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">length</span><span class="o">-</span><span class="mi">2</span><span class="p">,</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span><span class="o">-</span><span class="mi">1</span><span class="p">):</span>
+                <span class="n">name</span> <span class="o">=</span> <span class="n">names</span><span class="p">[</span><span class="n">i</span><span class="p">]</span>
+                <span class="n">endDate</span> <span class="o">=</span> <span class="n">sub</span><span class="p">[</span><span class="n">sub</span><span class="p">[</span><span class="s">&#39;COMNAM&#39;</span><span class="p">]</span> <span class="o">==</span> <span class="n">name</span><span class="p">][</span><span class="s">&#39;date&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">irow</span><span class="p">(</span><span class="o">-</span><span class="mi">1</span><span class="p">)</span>
+                <span class="n">delta</span> <span class="o">=</span> <span class="n">beginDate</span> <span class="o">-</span> <span class="n">endDate</span>
+                <span class="k">if</span> <span class="n">delta</span><span class="o">.</span><span class="n">days</span> <span class="o">&gt;</span> <span class="mi">7</span> <span class="ow">or</span> <span class="n">delta</span><span class="o">.</span><span class="n">days</span> <span class="o">&lt;</span> <span class="mi">0</span><span class="p">:</span>
+                    <span class="k">print</span> <span class="s">&#39;</span><span class="se">\n\n</span><span class="s">***for symbol: &#39;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">symbol</span><span class="p">)</span>  <span class="o">+</span> <span class="s">&#39;****&#39;</span>
+                    <span class="k">print</span> <span class="n">name</span>
+                    <span class="k">print</span> <span class="n">beginDate</span>
+                    <span class="k">print</span> <span class="n">endDate</span>
+                <span class="n">beginDate</span> <span class="o">=</span> <span class="n">sub</span><span class="p">[</span><span class="n">sub</span><span class="p">[</span><span class="s">&#39;COMNAM&#39;</span><span class="p">]</span> <span class="o">==</span> <span class="n">name</span><span class="p">][</span><span class="s">&#39;date&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">irow</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>
+</div>
+<div class="viewcode-block" id="loadData"><a class="viewcode-back" href="../DataGenerator.html#DataGenerator.loadData">[docs]</a><span class="k">def</span> <span class="nf">loadData</span><span class="p">(</span><span class="n">sector</span><span class="p">):</span>
+    <span class="sd">&#39;&#39;&#39;</span>
+<span class="sd">    read the pricce, portfolio and sue data into memory</span>
+<span class="sd">    &#39;&#39;&#39;</span>
+
+    <span class="n">id2TickerTable</span> <span class="o">=</span> <span class="n">utils</span><span class="o">.</span><span class="n">id2Ticker</span><span class="p">()[</span><span class="s">&#39;GetTicker&#39;</span><span class="p">]</span>
+
+    <span class="k">def</span> <span class="nf">mapID2Ticker</span><span class="p">(</span><span class="nb">id</span><span class="p">):</span>
+        <span class="k">if</span> <span class="nb">id</span> <span class="ow">in</span> <span class="n">id2TickerTable</span><span class="o">.</span><span class="n">keys</span><span class="p">():</span>
+            <span class="k">return</span> <span class="n">id2TickerTable</span><span class="p">[</span><span class="nb">id</span><span class="p">]</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="k">return</span> <span class="s">&#39;*&#39;</span>
+
+    <span class="n">sectorPricePath</span> <span class="o">=</span> <span class="s">&#39;/home/brandon/edgar/Database/&#39;</span> <span class="o">+</span> <span class="n">sector</span> <span class="o">+</span> \
+            <span class="s">&#39;/&#39;</span> <span class="o">+</span> <span class="n">sector</span> <span class="o">+</span> <span class="s">&#39;_Price.csv&#39;</span>
+    <span class="n">portfolioRetPath</span> <span class="o">=</span> <span class="s">&#39;/home/brandon/edgar/Database/&#39;</span> <span class="o">+</span> <span class="n">sector</span> <span class="o">+</span> \
+            <span class="s">&#39;/&#39;</span> <span class="o">+</span> <span class="n">sector</span> <span class="o">+</span> <span class="s">&#39;Portfolio.txt&#39;</span>
+    <span class="n">suePath</span> <span class="o">=</span> <span class="s">&#39;/home/brandon/edgar/Database/&#39;</span> <span class="o">+</span> <span class="n">sector</span> <span class="o">+</span> \
+            <span class="s">&#39;/&#39;</span> <span class="o">+</span> <span class="n">sector</span> <span class="o">+</span> <span class="s">&#39;SUE.txt&#39;</span>
+
+    <span class="c">#ipdb.set_trace()</span>
+    <span class="n">price</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="n">sectorPricePath</span><span class="p">,</span><span class="n">sep</span> <span class="o">=</span> <span class="s">&#39;,&#39;</span> <span class="p">,</span><span class="n">parse_dates</span> <span class="o">=</span> <span class="p">[</span><span class="s">&#39;date&#39;</span><span class="p">,])</span>
+    <span class="c">#price.index = price[&#39;date&#39;]</span>
+    <span class="n">price</span><span class="p">[</span><span class="s">&#39;date&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">to_datetime</span><span class="p">(</span><span class="n">price</span><span class="p">[</span><span class="s">&#39;date&#39;</span><span class="p">])</span>
+    <span class="n">price</span> <span class="o">=</span> <span class="n">price</span><span class="p">[(</span><span class="n">price</span><span class="p">[</span><span class="s">&#39;RET&#39;</span><span class="p">]</span> <span class="o">!=</span> <span class="s">&#39;C&#39;</span><span class="p">)</span> <span class="o">&amp;</span> <span class="p">(</span><span class="n">price</span><span class="p">[</span><span class="s">&#39;RET&#39;</span><span class="p">]</span> <span class="o">!=</span> <span class="s">&#39;B&#39;</span><span class="p">)]</span>
+
+    <span class="sd">&#39;&#39;&#39;</span>
+<span class="sd">    #align price with changed symbols</span>
+<span class="sd">    symbolset = set(price[&#39;TICKER&#39;])</span>
+<span class="sd">    symbolset.discard(np.nan)</span>
+<span class="sd">    for symbol in symbolset:</span>
+<span class="sd">        #ipdb.set_trace()</span>
+<span class="sd">        sub = price[price[&#39;TICKER&#39;] == symbol]</span>
+<span class="sd">        COMNAM = sub[&#39;COMNAM&#39;].irow(0)</span>
+<span class="sd">        PERMNO = sub[&#39;PERMNO&#39;].irow(0)</span>
+<span class="sd">        price[&#39;TICKER&#39;][price[&#39;COMNAM&#39;] == COMNAM] = symbol</span>
+<span class="sd">        price[&#39;TICKER&#39;][price[&#39;PERMNO&#39;] == PERMNO] = symbol</span>
+<span class="sd">    &#39;&#39;&#39;</span>
+
+
+    <span class="n">portfolio</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="n">portfolioRetPath</span><span class="p">,</span> <span class="n">sep</span><span class="o">=</span> <span class="s">&#39;</span><span class="se">\t</span><span class="s">&#39;</span><span class="p">,</span> <span class="n">parse_dates</span> <span class="o">=</span> <span class="p">[</span><span class="s">&#39;date&#39;</span><span class="p">,])</span>
+    <span class="n">portfolio</span><span class="o">.</span><span class="n">index</span> <span class="o">=</span> <span class="n">portfolio</span><span class="p">[</span><span class="s">&#39;date&#39;</span><span class="p">]</span>
+    <span class="n">portfolio</span><span class="p">[</span><span class="s">&#39;date&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">to_datetime</span><span class="p">(</span><span class="n">portfolio</span><span class="p">[</span><span class="s">&#39;date&#39;</span><span class="p">])</span>
+
+    <span class="n">sue</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="n">suePath</span><span class="p">,</span> <span class="n">sep</span> <span class="o">=</span> <span class="s">&#39;</span><span class="se">\t</span><span class="s">&#39;</span><span class="p">,</span> <span class="n">parse_dates</span> <span class="o">=</span> <span class="p">[</span><span class="s">&#39;Date&#39;</span><span class="p">,])</span>
+    <span class="n">sue</span><span class="p">[</span><span class="s">&#39;symbol&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">sue</span><span class="p">[</span><span class="s">&#39;companyid&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">apply</span><span class="p">(</span><span class="n">mapID2Ticker</span><span class="p">)</span>
+
+    <span class="k">return</span> <span class="n">price</span><span class="p">,</span><span class="n">portfolio</span><span class="p">,</span><span class="n">sue</span>
+
+
+</div>
+<div class="viewcode-block" id="GenerateDataset"><a class="viewcode-back" href="../DataGenerator.html#DataGenerator.GenerateDataset">[docs]</a><span class="k">def</span> <span class="nf">GenerateDataset</span><span class="p">(</span><span class="n">sector</span><span class="p">,</span><span class="n">data</span><span class="p">,</span><span class="n">begin</span><span class="p">,</span><span class="n">end</span><span class="p">):</span>
+    <span class="sd">&#39;&#39;&#39;</span>
+<span class="sd">    Generate data set</span>
+<span class="sd">    Args:</span>
+<span class="sd">        sector(str): currenyly only &#39;Industrials&#39; available</span>
+<span class="sd">        data: data returned by loadData</span>
+<span class="sd">        begin: begin index of the symbol list</span>
+<span class="sd">        end:    end index of the symbol list</span>
+<span class="sd">    &#39;&#39;&#39;</span>
+
+    <span class="c">#read in sector symbols</span>
+    <span class="n">symbolfilepath</span> <span class="o">=</span> <span class="s">&#39;/home/brandon/edgar/Database/&#39;</span> <span class="o">+</span> <span class="n">sector</span> <span class="o">+</span> \
+    <span class="s">&#39;/&#39;</span> <span class="o">+</span> <span class="n">sector</span> <span class="o">+</span> <span class="s">&#39;_Symbol_List.csv&#39;</span>
+    <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="n">symbolfilepath</span><span class="p">,</span><span class="s">&#39;rb&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span>
+        <span class="n">symbolList</span> <span class="o">=</span> <span class="n">f</span><span class="o">.</span><span class="n">read</span><span class="p">()</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s">&#39;</span><span class="se">\n</span><span class="s">&#39;</span><span class="p">)</span>
+        <span class="n">symbolList</span><span class="o">.</span><span class="n">remove</span><span class="p">(</span><span class="s">&#39;&#39;</span><span class="p">)</span>
+
+    <span class="n">symbolList</span> <span class="o">=</span> <span class="n">symbolList</span><span class="p">[</span><span class="n">begin</span><span class="p">:</span><span class="n">end</span><span class="p">]</span>
+
+    <span class="c">#symbolList =[&#39;PCO&#39;]</span>
+
+
+    <span class="n">checkResults</span> <span class="o">=</span> <span class="n">checkEmpty</span><span class="p">(</span><span class="n">symbolList</span><span class="p">)</span>
+    <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">checkResults</span><span class="p">[</span><span class="s">&#39;NoSymbol&#39;</span><span class="p">])</span> <span class="ow">is</span> <span class="ow">not</span> <span class="mi">0</span> <span class="ow">or</span> <span class="nb">len</span><span class="p">(</span><span class="n">checkResults</span><span class="p">[</span><span class="s">&#39;NoIndex&#39;</span><span class="p">])</span> <span class="ow">is</span> <span class="ow">not</span> <span class="mi">0</span><span class="p">:</span>
+        <span class="k">print</span> <span class="n">checkResults</span>
+        <span class="k">return</span> <span class="o">-</span><span class="mi">1</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="k">print</span> <span class="s">&#39;Edgar data is in position</span><span class="se">\n</span><span class="s">&#39;</span>
+
+    <span class="c">#load price, portfolio and sue</span>
+    <span class="c">#price, portfolio, sue = loadData(sector)</span>
+    <span class="n">price</span><span class="p">,</span><span class="n">portfolio</span><span class="p">,</span><span class="n">sue</span> <span class="o">=</span> <span class="n">data</span>
+
+    <span class="n">Ticker2CIKDict</span> <span class="o">=</span> <span class="n">va</span><span class="o">.</span><span class="n">datamanage</span><span class="o">.</span><span class="n">edgar</span><span class="o">.</span><span class="n">getTickerdict</span><span class="p">()</span>
+    <span class="k">for</span> <span class="n">ticker</span> <span class="ow">in</span> <span class="n">symbolList</span><span class="p">:</span>
+        <span class="k">print</span> <span class="s">&#39;begin processing ticker: &#39;</span> <span class="o">+</span> <span class="n">ticker</span> <span class="o">+</span> <span class="s">&#39;</span><span class="se">\n</span><span class="s">&#39;</span>
+        <span class="n">cik</span> <span class="o">=</span> <span class="n">Ticker2CIKDict</span><span class="p">[</span><span class="n">ticker</span><span class="p">]</span>
+        <span class="n">indexfilepath</span> <span class="o">=</span> <span class="n">DATA_ADD</span> <span class="o">+</span> <span class="s">&#39;/Edgar/&#39;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">cik</span><span class="p">)</span> <span class="o">+</span> \
+               <span class="s">&#39;_&#39;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">ticker</span><span class="p">)</span> <span class="o">+</span> <span class="s">&#39;/&#39;</span> <span class="o">+</span> <span class="s">&#39;index.txt&#39;</span>
+        <span class="n">indexfile</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_table</span><span class="p">(</span><span class="n">indexfilepath</span><span class="p">,</span> <span class="n">sep</span> <span class="o">=</span> <span class="s">&#39;,&#39;</span><span class="p">,</span> <span class="n">dtype</span> <span class="o">=</span> <span class="p">{</span><span class="s">&#39;CIK&#39;</span><span class="p">:</span><span class="s">&#39;S10&#39;</span><span class="p">,})</span>
+        <span class="n">indexfile</span><span class="p">[</span><span class="s">&#39;Date&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">indexfile</span><span class="p">[</span><span class="s">&#39;Date&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">apply</span><span class="p">(</span><span class="n">parse</span><span class="p">)</span>
+
+        <span class="c">#filter files - remove 10-A, remove duplicates</span>
+        <span class="c">#ipdb.set_trace()</span>
+        <span class="n">indexfile</span> <span class="o">=</span> <span class="n">indexfile</span><span class="p">[((</span><span class="n">indexfile</span><span class="p">[</span><span class="s">&#39;Type&#39;</span><span class="p">]</span> <span class="o">==</span> <span class="s">&#39;10-K&#39;</span><span class="p">)</span> <span class="o">|</span> <span class="p">(</span><span class="n">indexfile</span><span class="p">[</span><span class="s">&#39;Type&#39;</span><span class="p">]</span> <span class="o">==</span> <span class="s">&#39;10-Q&#39;</span><span class="p">))</span> <span class="o">&amp;</span>
+                              <span class="p">(</span><span class="n">indexfile</span><span class="p">[</span><span class="s">&#39;Date&#39;</span><span class="p">]</span> <span class="o">&gt;=</span> <span class="n">dt</span><span class="o">.</span><span class="n">datetime</span><span class="p">(</span><span class="mi">2000</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">))</span> <span class="o">&amp;</span>
+                              <span class="p">(</span><span class="n">indexfile</span><span class="p">[</span><span class="s">&#39;Date&#39;</span><span class="p">]</span> <span class="o">&lt;=</span> <span class="n">dt</span><span class="o">.</span><span class="n">datetime</span><span class="p">(</span><span class="mi">2013</span><span class="p">,</span><span class="mi">6</span><span class="p">,</span><span class="mi">28</span><span class="p">))]</span>
+        <span class="n">indexfile</span> <span class="o">=</span> <span class="n">indexfile</span><span class="o">.</span><span class="n">drop_duplicates</span><span class="p">(</span><span class="n">cols</span> <span class="o">=</span> <span class="s">&#39;Date&#39;</span><span class="p">)</span>
+
+        <span class="c">#build directoy</span>
+        <span class="n">tickerDir</span> <span class="o">=</span> <span class="s">&#39;/home/brandon/edgar/Database/&#39;</span> <span class="o">+</span> <span class="n">sector</span> <span class="o">+</span> <span class="s">&#39;/&#39;</span> <span class="o">+</span> <span class="n">ticker</span>
+        <span class="k">if</span> <span class="ow">not</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">exists</span><span class="p">(</span><span class="n">tickerDir</span><span class="p">):</span>
+            <span class="n">os</span><span class="o">.</span><span class="n">makedirs</span><span class="p">(</span><span class="n">tickerDir</span><span class="p">)</span>
+
+        <span class="c">#ipdb.set_trace()</span>
+        <span class="c">#get query key index</span>
+        <span class="n">sub</span> <span class="o">=</span> <span class="n">price</span><span class="p">[</span><span class="n">price</span><span class="p">[</span><span class="s">&#39;TICKER&#39;</span><span class="p">]</span> <span class="o">==</span> <span class="n">ticker</span><span class="p">]</span>
+        <span class="n">sub</span> <span class="o">=</span> <span class="n">sub</span><span class="o">.</span><span class="n">sort</span><span class="p">(</span><span class="s">&#39;date&#39;</span><span class="p">)</span>
+        <span class="n">COMNAM</span> <span class="o">=</span> <span class="n">sub</span><span class="p">[</span><span class="s">&#39;COMNAM&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">irow</span><span class="p">(</span><span class="o">-</span><span class="mi">1</span><span class="p">)</span>
+        <span class="n">PERMNO</span> <span class="o">=</span> <span class="n">sub</span><span class="p">[</span><span class="s">&#39;PERMNO&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">irow</span><span class="p">(</span><span class="o">-</span><span class="mi">1</span><span class="p">)</span>
+        <span class="n">queryPool</span> <span class="o">=</span> <span class="n">price</span><span class="p">[(</span><span class="n">price</span><span class="p">[</span><span class="s">&#39;TICKER&#39;</span><span class="p">]</span> <span class="o">==</span> <span class="n">ticker</span><span class="p">)</span> <span class="o">|</span> <span class="p">(</span><span class="n">price</span><span class="p">[</span><span class="s">&#39;PERMNO&#39;</span><span class="p">]</span> <span class="o">==</span> <span class="n">PERMNO</span><span class="p">)</span> <span class="o">|</span> <span class="p">(</span><span class="n">price</span><span class="p">[</span><span class="s">&#39;COMNAM&#39;</span><span class="p">]</span> <span class="o">==</span> <span class="n">COMNAM</span><span class="p">)]</span>
+        <span class="n">queryPool</span> <span class="o">=</span> <span class="n">queryPool</span><span class="o">.</span><span class="n">sort</span><span class="p">(</span><span class="s">&#39;date&#39;</span><span class="p">)</span>
+
+        <span class="c">#generate Feature file</span>
+        <span class="k">for</span> <span class="n">index</span><span class="p">,</span><span class="n">row</span> <span class="ow">in</span> <span class="n">indexfile</span><span class="o">.</span><span class="n">iterrows</span><span class="p">():</span>
+            <span class="n">filedate</span> <span class="o">=</span> <span class="n">row</span><span class="p">[</span><span class="s">&#39;Date&#39;</span><span class="p">]</span>
+            <span class="c">#ipdb.set_trace()</span>
+            <span class="n">window</span> <span class="o">=</span> <span class="n">queryPool</span><span class="p">[</span><span class="n">queryPool</span><span class="p">[</span><span class="s">&#39;date&#39;</span><span class="p">]</span> <span class="o">&gt;=</span> <span class="n">filedate</span><span class="p">]</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>
+            <span class="n">windowBegin</span> <span class="o">=</span> <span class="n">window</span><span class="p">[</span><span class="s">&#39;date&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">irow</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>
+            <span class="n">windowEnd</span> <span class="o">=</span> <span class="n">window</span><span class="p">[</span><span class="s">&#39;date&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">irow</span><span class="p">(</span><span class="o">-</span><span class="mi">1</span><span class="p">)</span>
+
+            <span class="n">delay</span> <span class="o">=</span> <span class="n">windowBegin</span> <span class="o">-</span> <span class="n">filedate</span>
+            <span class="k">if</span> <span class="n">delay</span><span class="o">.</span><span class="n">days</span> <span class="o">&gt;</span> <span class="mi">7</span><span class="p">:</span>
+                <span class="c">#delaylogpath = &#39;/home/brandon/edgar/Database/&#39; + sector + &#39;/delay.log&#39;</span>
+                <span class="c">#with open(delaylogpath,&#39;a&#39;) as f:</span>
+                <span class="c">#    f.write(ticker + &#39; &#39; + filedate.strftime(&#39;%Y%m%d&#39;) + &quot; &quot; + windowBegin.strftime(&#39;%Y%m%d&#39;) + &#39;\n&#39;)</span>
+                <span class="k">continue</span>
+
+            <span class="n">windowReturn</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">cumprod</span><span class="p">(</span><span class="n">window</span><span class="p">[</span><span class="s">&#39;RET&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">values</span><span class="o">.</span><span class="n">astype</span><span class="p">(</span><span class="nb">float</span><span class="p">)</span> <span class="o">+</span> <span class="mi">1</span><span class="p">)[</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span>
+            <span class="n">portWindow</span> <span class="o">=</span> <span class="n">portfolio</span><span class="p">[</span><span class="n">windowBegin</span><span class="p">:</span><span class="n">windowEnd</span><span class="p">]</span>
+            <span class="n">windowPortReturn</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">cumprod</span><span class="p">(</span><span class="n">portWindow</span><span class="p">[</span><span class="s">&#39;RET&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">values</span><span class="o">.</span><span class="n">astype</span><span class="p">(</span><span class="nb">float</span><span class="p">)</span> <span class="o">+</span> <span class="mi">1</span><span class="p">)[</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span>
+            <span class="n">windowExcessReturn</span> <span class="o">=</span> <span class="n">windowReturn</span> <span class="o">-</span> <span class="n">windowPortReturn</span>
+            <span class="k">if</span> <span class="n">windowExcessReturn</span> <span class="o">&gt;</span> <span class="mf">0.003</span><span class="p">:</span>
+                <span class="n">label</span> <span class="o">=</span> <span class="mi">1</span>
+            <span class="k">elif</span> <span class="n">windowExcessReturn</span> <span class="o">&lt;</span> <span class="o">-</span><span class="mf">0.003</span><span class="p">:</span>
+                <span class="n">label</span> <span class="o">=</span> <span class="mi">3</span>
+            <span class="k">else</span><span class="p">:</span>
+                <span class="n">label</span> <span class="o">=</span> <span class="mi">2</span>
+
+            <span class="k">try</span><span class="p">:</span>
+                <span class="n">SUE</span> <span class="o">=</span> <span class="n">sue</span><span class="p">[(</span><span class="n">sue</span><span class="p">[</span><span class="s">&#39;Date&#39;</span><span class="p">]</span> <span class="o">==</span> <span class="n">filedate</span><span class="o">.</span><span class="n">strftime</span><span class="p">(</span><span class="s">&#39;%Y%m&#39;</span><span class="p">))</span> <span class="o">&amp;</span> <span class="p">(</span><span class="n">sue</span><span class="p">[</span><span class="s">&#39;symbol&#39;</span><span class="p">]</span> <span class="o">==</span> <span class="n">ticker</span><span class="p">)]</span>
+                <span class="n">SUE</span> <span class="o">=</span> <span class="n">SUE</span><span class="p">[</span><span class="s">&#39;IBES_Standardized_Unexpected_Ear&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">values</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+                <span class="k">if</span> <span class="n">np</span><span class="o">.</span><span class="n">isnan</span><span class="p">(</span><span class="n">SUE</span><span class="p">):</span>
+                    <span class="n">SUE</span> <span class="o">=</span> <span class="mf">0.0</span>
+            <span class="k">except</span> <span class="ne">IndexError</span><span class="p">:</span>
+                <span class="n">SUE</span> <span class="o">=</span> <span class="mf">0.0</span>
+
+            <span class="n">formdate</span> <span class="o">=</span> <span class="n">row</span><span class="p">[</span><span class="s">&#39;Date&#39;</span><span class="p">]</span>
+            <span class="n">formtype</span> <span class="o">=</span> <span class="n">row</span><span class="p">[</span><span class="s">&#39;Type&#39;</span><span class="p">]</span>
+            <span class="n">formtype</span> <span class="o">=</span> <span class="n">formtype</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s">&#39;/&#39;</span><span class="p">,</span><span class="s">&#39;-&#39;</span><span class="p">)</span>
+            <span class="n">localfile</span> <span class="o">=</span> <span class="n">DATA_ADD</span> <span class="o">+</span> <span class="s">&#39;/Edgar/&#39;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">cik</span><span class="p">)</span> <span class="o">+</span> \
+                    <span class="s">&#39;_&#39;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">ticker</span><span class="p">)</span> <span class="o">+</span> <span class="s">&#39;/&#39;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">cik</span><span class="p">)</span> <span class="o">+</span> <span class="s">&#39;_&#39;</span> <span class="o">+</span> \
+                    <span class="nb">str</span><span class="p">(</span><span class="n">ticker</span><span class="p">)</span> <span class="o">+</span> <span class="s">&#39;_&#39;</span> <span class="o">+</span> <span class="n">formdate</span><span class="o">.</span><span class="n">strftime</span><span class="p">(</span><span class="s">&#39;%Y%m</span><span class="si">%d</span><span class="s">&#39;</span><span class="p">)</span> <span class="o">+</span> \
+                    <span class="s">&#39;_&#39;</span> <span class="o">+</span> <span class="n">formtype</span> <span class="o">+</span> <span class="s">&#39;.txt.gz&#39;</span>
+            <span class="n">f_in</span> <span class="o">=</span> <span class="n">gzip</span><span class="o">.</span><span class="n">open</span><span class="p">(</span><span class="n">localfile</span><span class="p">,</span><span class="s">&#39;rb&#39;</span><span class="p">)</span>
+            <span class="n">raw</span> <span class="o">=</span> <span class="n">f_in</span><span class="o">.</span><span class="n">read</span><span class="p">()</span>
+            <span class="n">f_in</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
+            <span class="n">BOW</span> <span class="o">=</span> <span class="n">defaultdict</span><span class="p">(</span><span class="nb">int</span><span class="p">)</span>
+            <span class="n">BOW</span> <span class="o">=</span> <span class="n">va</span><span class="o">.</span><span class="n">datamanage</span><span class="o">.</span><span class="n">edgar</span><span class="o">.</span><span class="n">GenerateBOW</span><span class="p">(</span><span class="n">raw</span><span class="p">)</span>
+
+
+
+            <span class="n">filepath</span> <span class="o">=</span> <span class="n">tickerDir</span> <span class="o">+</span> <span class="s">&#39;/&#39;</span> <span class="o">+</span> <span class="n">ticker</span> <span class="o">+</span> <span class="s">&#39;_&#39;</span> <span class="o">+</span> <span class="n">filedate</span><span class="o">.</span><span class="n">strftime</span><span class="p">(</span><span class="s">&quot;%Y%m</span><span class="si">%d</span><span class="s">&quot;</span><span class="p">)</span> <span class="o">+</span> <span class="s">&#39;.txt&#39;</span>
+            <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="n">filepath</span><span class="p">,</span> <span class="s">&#39;wb&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span>
+                <span class="n">f</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s">&#39;Symbol: &#39;</span> <span class="o">+</span> <span class="n">ticker</span> <span class="o">+</span> <span class="s">&#39;</span><span class="se">\n</span><span class="s">&#39;</span><span class="p">)</span>
+                <span class="n">f</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s">&#39;filedate: &#39;</span> <span class="o">+</span> <span class="n">filedate</span><span class="o">.</span><span class="n">strftime</span><span class="p">(</span><span class="s">&#39;%Y%m</span><span class="si">%d</span><span class="s">&#39;</span><span class="p">)</span> <span class="o">+</span> <span class="s">&#39;</span><span class="se">\n</span><span class="s">&#39;</span><span class="p">)</span>
+                <span class="n">f</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s">&#39;windowBegin: &#39;</span> <span class="o">+</span> <span class="n">windowBegin</span><span class="o">.</span><span class="n">strftime</span><span class="p">(</span><span class="s">&#39;%Y%m</span><span class="si">%d</span><span class="s">&#39;</span><span class="p">)</span> <span class="o">+</span> <span class="s">&#39;</span><span class="se">\n</span><span class="s">&#39;</span><span class="p">)</span>
+                <span class="n">f</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s">&#39;windowEnd: &#39;</span> <span class="o">+</span> <span class="n">windowEnd</span><span class="o">.</span><span class="n">strftime</span><span class="p">(</span><span class="s">&#39;%Y%m</span><span class="si">%d</span><span class="s">&#39;</span><span class="p">)</span> <span class="o">+</span> <span class="s">&#39;</span><span class="se">\n</span><span class="s">&#39;</span><span class="p">)</span>
+                <span class="n">f</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s">&#39;windowReturn: &#39;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">windowReturn</span><span class="p">)</span> <span class="o">+</span> <span class="s">&#39;</span><span class="se">\n</span><span class="s">&#39;</span><span class="p">)</span>
+                <span class="n">f</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s">&#39;windowPortReturn: &#39;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">windowPortReturn</span><span class="p">)</span> <span class="o">+</span> <span class="s">&#39;</span><span class="se">\n</span><span class="s">&#39;</span><span class="p">)</span>
+                <span class="n">f</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s">&#39;windowExcessReturn: &#39;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">windowExcessReturn</span><span class="p">)</span> <span class="o">+</span> <span class="s">&#39;</span><span class="se">\n</span><span class="s">&#39;</span><span class="p">)</span>
+                <span class="n">f</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s">&#39;SUE: &#39;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">SUE</span><span class="p">)</span> <span class="o">+</span> <span class="s">&#39;</span><span class="se">\n</span><span class="s">&#39;</span><span class="p">)</span>
+                <span class="n">f</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s">&#39;Label: &#39;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">label</span><span class="p">)</span> <span class="o">+</span> <span class="s">&#39;</span><span class="se">\n</span><span class="s">&#39;</span><span class="p">)</span>
+                <span class="n">f</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s">&#39;BOWBEGIN</span><span class="se">\n</span><span class="s">&#39;</span><span class="p">)</span>
+                <span class="k">for</span> <span class="n">word</span><span class="p">,</span> <span class="n">count</span> <span class="ow">in</span> <span class="n">BOW</span><span class="o">.</span><span class="n">items</span><span class="p">():</span>
+                    <span class="n">f</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s">&quot;{}:{}</span><span class="se">\n</span><span class="s">&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">word</span><span class="p">,</span><span class="n">count</span><span class="p">))</span>
+                <span class="n">f</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s">&#39;BOWEND</span><span class="se">\n</span><span class="s">&#39;</span><span class="p">)</span>
+            <span class="k">print</span> <span class="s">&#39;Complete writing to &#39;</span> <span class="o">+</span> <span class="n">filepath</span> <span class="o">+</span> <span class="s">&#39;</span><span class="se">\n</span><span class="s">&#39;</span>
+
+</div>
+<div class="viewcode-block" id="DatabaseIndex"><a class="viewcode-back" href="../DataGenerator.html#DataGenerator.DatabaseIndex">[docs]</a><span class="k">def</span> <span class="nf">DatabaseIndex</span><span class="p">(</span><span class="n">sector</span><span class="p">):</span>
+    <span class="sd">&#39;&#39;&#39;</span>
+<span class="sd">    generate a key file indexing all data points for a sector</span>
+<span class="sd">    file format:</span>
+<span class="sd">        date    symbol  label   path</span>
+<span class="sd">    TODO:</span>
+<span class="sd">        reset path</span>
+<span class="sd">    &#39;&#39;&#39;</span>
+
+    <span class="n">symbolfilepath</span> <span class="o">=</span> <span class="s">&#39;/home/brandon/edgar/Database/&#39;</span> <span class="o">+</span> <span class="n">sector</span> <span class="o">+</span> \
+            <span class="s">&#39;/&#39;</span> <span class="o">+</span> <span class="n">sector</span> <span class="o">+</span> <span class="s">&#39;_Symbol_List.csv&#39;</span>
+    <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="n">symbolfilepath</span><span class="p">,</span><span class="s">&#39;rb&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span>
+        <span class="n">symbolList</span> <span class="o">=</span> <span class="n">f</span><span class="o">.</span><span class="n">read</span><span class="p">()</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s">&#39;</span><span class="se">\n</span><span class="s">&#39;</span><span class="p">)</span>
+        <span class="n">symbolList</span><span class="o">.</span><span class="n">remove</span><span class="p">(</span><span class="s">&#39;&#39;</span><span class="p">)</span>
+
+    <span class="n">totalIndex</span> <span class="o">=</span> <span class="p">[]</span>
+    <span class="k">for</span> <span class="n">symbol</span> <span class="ow">in</span> <span class="n">symbolList</span><span class="p">:</span>
+        <span class="n">tickerDir</span> <span class="o">=</span> <span class="s">&#39;/home/brandon/edgar/Database/&#39;</span> <span class="o">+</span> <span class="n">sector</span> <span class="o">+</span> <span class="s">&#39;/&#39;</span> <span class="o">+</span> <span class="n">symbol</span>
+        <span class="k">if</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">exists</span><span class="p">(</span><span class="n">tickerDir</span><span class="p">):</span>
+            <span class="k">for</span> <span class="n">f</span> <span class="ow">in</span> <span class="n">os</span><span class="o">.</span><span class="n">listdir</span><span class="p">(</span><span class="n">tickerDir</span><span class="p">):</span>
+                <span class="n">name</span><span class="p">,</span> <span class="n">date</span> <span class="o">=</span> <span class="n">f</span><span class="o">.</span><span class="n">rstrip</span><span class="p">(</span><span class="s">&#39;.txt&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s">&#39;_&#39;</span><span class="p">)</span>
+                <span class="n">date</span> <span class="o">=</span> <span class="n">parse</span><span class="p">(</span><span class="n">date</span><span class="p">)</span>
+                <span class="n">fpath</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">tickerDir</span><span class="p">,</span><span class="n">f</span><span class="p">)</span>
+                <span class="n">label</span> <span class="o">=</span> <span class="mi">0</span>
+                <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="n">fpath</span><span class="p">,</span><span class="s">&#39;r&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">datafile</span><span class="p">:</span>
+                    <span class="k">for</span> <span class="n">line</span> <span class="ow">in</span> <span class="n">datafile</span><span class="p">:</span>
+                        <span class="k">if</span> <span class="s">&#39;Label: &#39;</span> <span class="ow">in</span> <span class="n">line</span><span class="p">:</span>
+                            <span class="n">label</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">line</span><span class="p">[</span><span class="mi">7</span><span class="p">])</span>
+                            <span class="k">break</span>
+                <span class="n">entry</span> <span class="o">=</span> <span class="p">[</span><span class="n">date</span><span class="p">,</span> <span class="n">symbol</span><span class="p">,</span> <span class="n">label</span><span class="p">,</span> <span class="n">fpath</span><span class="p">]</span>
+                <span class="n">totalIndex</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">entry</span><span class="p">)</span>
+    <span class="n">totalIndex</span> <span class="o">=</span> <span class="nb">sorted</span><span class="p">(</span><span class="n">totalIndex</span><span class="p">,</span> <span class="n">key</span> <span class="o">=</span> <span class="k">lambda</span> <span class="n">x</span><span class="p">:</span><span class="n">x</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
+    <span class="n">indexPath</span> <span class="o">=</span> <span class="s">&#39;/home/brandon/edgar/Database/&#39;</span> <span class="o">+</span> <span class="n">sector</span> <span class="o">+</span> <span class="s">&#39;/&#39;</span> <span class="o">+</span> <span class="n">sector</span> <span class="o">+</span> <span class="s">&#39;.key&#39;</span>
+    <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="n">indexPath</span><span class="p">,</span><span class="s">&#39;wb&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span>
+        <span class="k">for</span> <span class="n">line</span> <span class="ow">in</span> <span class="n">totalIndex</span><span class="p">:</span>
+           <span class="n">f</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="n">line</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">strftime</span><span class="p">(</span><span class="s">&#39;%Y%m</span><span class="si">%d</span><span class="s">&#39;</span><span class="p">)</span><span class="o">+</span><span class="s">&#39;,&#39;</span><span class="o">+</span><span class="n">line</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">+</span> <span class="s">&#39;,&#39;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">line</span><span class="p">[</span><span class="mi">2</span><span class="p">])</span> <span class="o">+</span> <span class="s">&#39;,&#39;</span> <span class="o">+</span> <span class="n">line</span><span class="p">[</span><span class="mi">3</span><span class="p">]</span> <span class="o">+</span> <span class="s">&#39;</span><span class="se">\n</span><span class="s">&#39;</span><span class="p">)</span>
+    <span class="c">#return totalIndex</span>
+</pre></div></div>
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar">
+        <div class="sphinxsidebarwrapper">
+<div id="searchbox" style="display: none">
+  <h3>Quick search</h3>
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="../py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li><a href="../index.html">Edgar 0.1.1 documentation</a> &raquo;</li>
+          <li><a href="index.html" >Module code</a> &raquo;</li> 
+      </ul>
+    </div>
+    <div class="footer">
+        &copy; Copyright 2013, Brandon.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.2b3.
+    </div>
+  </body>
+</html>
